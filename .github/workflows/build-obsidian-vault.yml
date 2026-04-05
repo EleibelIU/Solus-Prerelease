@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: write
+  pull-requests: read
 
 jobs:
   build-vault:
@@ -16,6 +20,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,8 +40,54 @@ jobs:
           path: ./dist/solus-obsidian-vault.zip
           if-no-files-found: error
 
+      - name: Build release notes
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        id: notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PREV_TAG=$(git tag -l 'obsidian-preview' | head -1)
+          if [ -n "$PREV_TAG" ]; then
+            RANGE="${PREV_TAG}..HEAD"
+          else
+            RANGE="HEAD~10..HEAD"
+          fi
+
+          {
+            echo 'BODY<<RELEASE_EOF'
+
+            echo "Built from \`$(git rev-parse --short HEAD)\` on $(date -u +%Y-%m-%d)."
+            echo ""
+
+            # List merged PRs from commit messages
+            PRS=$(git log "$RANGE" --oneline --grep="Merge pull request" --format="%s" \
+              | sed -n 's/.*#\([0-9]*\).*/\1/p' | sort -u)
+
+            if [ -n "$PRS" ]; then
+              echo "## Merged Pull Requests"
+              echo ""
+              for PR in $PRS; do
+                TITLE=$(gh pr view "$PR" --json title --jq '.title' 2>/dev/null || echo "PR #${PR}")
+                echo "- [#${PR}](https://github.com/${{ github.repository }}/pull/${PR}) ${TITLE}"
+              done
+              echo ""
+            fi
+
+            # List direct commits (non-merge)
+            COMMITS=$(git log "$RANGE" --oneline --no-merges --format="- [\`%h\`](https://github.com/${{ github.repository }}/commit/%H) %s")
+
+            if [ -n "$COMMITS" ]; then
+              echo "## Commits"
+              echo ""
+              echo "$COMMITS"
+              echo ""
+            fi
+
+            echo 'RELEASE_EOF'
+          } >> "$GITHUB_OUTPUT"
+
       - name: Publish rolling prerelease
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: obsidian-preview
@@ -45,6 +97,6 @@ jobs:
           overwrite_files: true
           fail_on_unmatched_files: true
           make_latest: false
-          body: Latest Obsidian-ready vault package built from main.
+          body: ${{ steps.notes.outputs.BODY }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
