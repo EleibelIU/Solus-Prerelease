@@ -6,6 +6,8 @@ The active system-book draft now lives in [the manuscript](../system-book/solus-
 
 The original epic and story files now live in [the archive](../archive/epics-and-stories). Use them as source material, not as the active draft.
 
+- A GitHub Actions pipeline can package the current manuscript and archive into an Obsidian-ready vault prerelease.
+
 ## Current Minimum Playable Scope
 
 The current minimum playable target still comes from the material originally drafted under Epic 1 and Epic 2. In manuscript terms, that scope is:
