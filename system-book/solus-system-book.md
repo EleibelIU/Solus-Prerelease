@@ -389,30 +389,30 @@ Madness also has a working threshold rule. At 100 Madness, a creature must use i
 
 ### Dying
 
-When a character starts their turn at 0 HP, that character enters the dying state. Place a `d10` death counter on 10.
+When a character begins their turn at 0 HP, that character enters the dying state. Set a `d10` death counter to 10.
 
-While a character is dying, that character can still act. Movement is halved, and attack rolls are at disadvantage.
+A dying character still takes turns. Their movement is halved, and all attack rolls are made at disadvantage.
 
-Resolve the death counter across the dying character's 3 actions each turn.
+Track the death counter across the dying character's 3 actions each turn:
 
-- If the character does nothing with an action, reduce the counter by 1.
-- If the character uses an action, reduce the counter by 2.
+- For each action the character leaves unused, reduce the counter by 1.
+- For each action the character spends, reduce the counter by 2.
 
-If a character does nothing for the full turn, the counter drops from 10 to 7 by the end of that turn. If a character uses 1 action and leaves the other 2 unused, the counter drops from 10 to 6 by the end of that turn.
+A dying character who takes no actions drops from 10 to 7 by the end of that turn. A dying character who spends 1 action and leaves 2 unused drops from 10 to 6.
 
-When the counter reaches 0, the character dies.
+When the death counter reaches 0, the character dies.
 
-This gives a dying character about 3 rounds to receive help if they do nothing and wait. Acting while dying shortens that window.
+This rule gives a dying character about 3 rounds to receive help if they conserve all 3 actions. Acting while dying shortens that window and can reduce it to about 2 rounds.
 
-If the character receives healing that restores them to at least 1 HP, remove the dying state and reset the death counter.
+If healing restores the character to at least 1 HP, the dying state ends and the death counter resets.
 
 ### Playtest Variant: Repeated Knockdowns
 
-Use this variant if you want dropping to 0 HP multiple times in quick succession to be more punishing.
+Use this variant if you want repeated drops to 0 HP to carry more weight.
 
-If a character leaves the dying state through healing and drops to 0 HP again before 1 full round passes, the death counter resumes at its previous value instead of resetting to 10.
+If healing removes the dying state and the character drops to 0 HP again before 1 full round passes, the death counter resumes at its previous value instead of resetting to 10.
 
-If the character stays above 0 HP for 1 full round, the death counter fully resets.
+If the character stays above 0 HP for 1 full round, the death counter resets in full.
 
 TODO: add a consolidated condition glossary with stack thresholds and removal rules.
 
