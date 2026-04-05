@@ -10,34 +10,75 @@ Those shared mechanics apply across spells, weapons, and influence. The game use
 
 ## Core Mechanics
 
-Most rolls use 2d10, added together instead of read as percentile dice.
+Roll dice to resolve anything that might fail.
 
-### Combat Rolls
+### The Base Roll
 
-Combat rolls use `2d10 + Stat Modifier` against `Armor DR + Stat Modifier`.
+Roll two ten-sided dice (2d10) and add them together. Add a modifier from your character sheet. That total is your result.
 
-A critical success is double 10s.
+> **Example:** You roll a 6 and a 4. Your modifier is +3. Your result is 13.
 
-A critical failure is double 1s.
+Read 2d10 as a sum. A 10 and a 4 is 14, not 104. These are not percentile dice.
 
-### Resist Rolls
+The GM names a target number. Meet or beat it to succeed.
 
-When you resist an effect, roll `2d10 + Stat Modifier`.
+### When to Roll
 
-Compare the result against a gradient from `-5/-10` to `+5/+10`.
+Roll only when the outcome is uncertain. If a task is routine for your character, describe the success without rolling. If a task is beyond them, describe the failure. Roll when the answer could go either way.
 
-Each attribute governs resistance to a category of threats. Resist rolls use degrees of outcome instead of a pass or fail result. Success is not always desirable. Failure is not always negation.
+### Critical Results
 
-### Skill Checks
+Two 10s is a critical success. The effect hits at its best outcome.
 
-When you try to determine information or take an actionable step, make a skill check.
+Two 1s is a critical failure. The effect misfires or backfires.
 
-A skill check uses `2d10 + Skill Modifier`.
+Criticals apply to any 2d10 roll unless a specific rule says otherwise.
 
-Each skill modifier comes from two attributes.
+### The Three Roll Types
 
-- The primary attribute is fixed for that skill and does not change.
-- The secondary attribute comes from one of two listed options, chosen by the player.
+Every Solus roll is one of three types. All three share the 2d10 base. They differ in the modifier you add and the target you compare against.
+
+#### Combat Roll
+
+Use this when you attack a target or swing a harmful effect at them.
+
+- **Roll:** `2d10 + Stat Modifier`
+- **Target:** the defender's `Armor DR + their Stat Modifier`
+- **Result:** hit or miss, then apply damage (see Combat)
+
+> **Example:** You swing a sword at a guard. Your Body is +4, so you roll `2d10 + 4`. The guard wears medium armor (Physical DR 3) and has Body +1, so their target is 4. You roll 9, total 13. You beat 4 by 9. You hit, and you roll damage.
+
+#### Resist Roll
+
+Use this when an effect lands on your character and you try to shrug it off, endure it, or push it away.
+
+- **Roll:** `2d10 + Stat Modifier` from the attribute that covers the threat
+- **Target:** read on a gradient from -10 to +10
+- **Result:** scales with the Degree of 5 (see Running the Game). A high roll can still carry a cost. A low roll can still dodge the worst.
+
+Each attribute covers a category of threats.
+
+| Attribute | Resists |
+| --- | --- |
+| Body | Physical harm, poison, disease, exhaustion |
+| Mind | Illusion, confusion, mental manipulation |
+| Social | Charm, coercion, persuasion |
+| Magic | Arcane effects, spell outcomes |
+| Sanity | Fear, corruption, madness |
+
+> **Example:** A ghoul screams a fear effect at you. You resist with Sanity. Your Sanity is +2, so you roll `2d10 + 2`. You roll 5, total 7. The GM reads the result on the gradient and tells you how hard the fear takes hold.
+
+#### Skill Check
+
+Use this when your character tries something uncertain that is not an attack and not a resist.
+
+- **Roll:** `2d10 + Skill Modifier`
+- **Target:** a Difficulty Class (DC) set by the GM
+- **Result:** read on the Degree of 5 scale (see Running the Game)
+
+Your skill modifier comes from two attributes. The primary is fixed per skill. The secondary is one of two listed options, picked at character creation. The pick stays fixed. See Attributes and Skills for the list.
+
+> **Example:** The GM sets a DC of 10 to pick a lock. Your Stealth modifier is +4. You roll 8, total 12. You beat the DC by 2 and open the lock. If you had rolled 14 for a total of 18, you would beat the DC by 8 and earn a Degree of 5 bonus on top of the success.
 
 ## Character Creation
 
