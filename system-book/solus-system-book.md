@@ -424,10 +424,8 @@ Apply the Degree of 5 outcome from the roll:
 | Beat DC by 10+ | Clean recovery. |
 | Beat DC by 5-9 | Minor wound. Disadvantage on one action category (physical, magical, or social) until the next long rest. |
 | Beat DC by 0-4 | Lingering injury. Persists until treated. |
-| Miss DC by 1-5 | Serious injury and 10 Madness. |
-| Miss DC by 6+ | Grievous injury, 20 Madness, and the character gains the Frightened condition for `1d4` rounds. Requires Regenerate or stronger magic to reverse the injury. |
-
-Madness from recovery accumulates across the campaign. A character who goes down often drifts toward the 100 Madness threshold without anyone tracking a separate Sanity roll at the table.
+| Miss DC by 1-5 | Serious injury. Roll twice on the Lingering Injury table. Both persist until treated. |
+| Miss DC by 6+ | Grievous injury. Permanent scar, lost limb, or organ damage. Requires Regenerate or stronger magic to reverse. |
 
 TODO: create the Lingering Injury table with specific entries.
 
