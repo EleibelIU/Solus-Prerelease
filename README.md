@@ -21,4 +21,4 @@ The manuscript holds the current rules draft in reader-facing order. Older epic 
 
 The manuscript already carries the stable rules material for Solus, including the core mechanics, character framework, combat structure, NPC ranks, and advancement model. Unfinished systems stay marked with short TODOs so they remain visible without pretending to be done.
 
-Treat [system-book/solus-system-book.md](system-book/solus-system-book.md) as the current source of truth for the system book. Use the archive for source tracing, extraction, and comparison, not for new book prose.
+Treat [The System Book Document](system-book/solus-system-book.md) as the current source of truth for all rules. Use the archive for source tracing, extraction, and comparison, not for new book prose.
