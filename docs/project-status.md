@@ -1,12 +1,14 @@
 # Solus Project Status
 
-## MVP Scope
+## Active Manuscript
 
-The current minimum playable target is the material in Epic 1 and Epic 2.
+The active system-book draft now lives in [the manuscript](../system-book/solus-system-book.md). That file is the main writing target for system-book work.
 
-### Epic 1: Core Gameplay Loop
+The original epic and story files now live in [the archive](../archive/epics-and-stories). Use them as source material, not as the active draft.
 
-This epic defines the foundation of the game.
+## Current Minimum Playable Scope
+
+The current minimum playable target still comes from the material originally drafted under Epic 1 and Epic 2. In manuscript terms, that scope is:
 
 1. Mission statement and system identity
 2. Character structure and the systems that affect action resolution
@@ -15,11 +17,9 @@ This epic defines the foundation of the game.
 5. The core gameplay loop and action resolution loop
 6. Character advancement through XP, skills, support skills, and masteries
 
-### Epic 2: Playtesting Standards
+The playtest standard for that scope is:
 
-This epic checks whether the MVP can survive table use.
-
-1. Review the Epic 1 material as a playable rules set
+1. Review the core rules material as a playable rules set
 2. Run a rough scene or playtest against that material
 
 ## What The Repository Already Covers
@@ -46,14 +46,14 @@ These sections still need design work, cleanup, or full drafting before the proj
 - Spellcasting rules and the setting-side lore for magic.
 - Money, general resources, equipment, and languages.
 - Social mechanics beyond the current degree-of-5 framework.
-- Cleanup of duplicated passages and rough-note sections inside the existing story files.
+- Cleanup of duplicated passages and rough-note sections inside the archived source files.
 
 ## Supporting Notes Worth Folding Back Into The Main Draft
 
-- [Combat notes](../Combat%20Needs.md) hold combat assumptions and repeated notes that should be normalized into the main rules text.
-- [Sample character sheets](../Test%20Character%20Sheets.md) give sample builds and enemy templates that help pressure-test balance.
-- [Open task tracking](../Things%20needing%20to%20be%20done.md) lists unresolved system categories that still need ownership.
+- [Combat notes](../archive/rough-notes/Combat%20Needs.md) hold combat assumptions and repeated notes that should be normalized into the main rules text.
+- [Sample character sheets](../archive/playtest-materials/Test%20Character%20Sheets.md) give sample builds and enemy templates that help pressure-test balance.
+- [Open task tracking](../archive/rough-notes/Things%20needing%20to%20be%20done.md) lists unresolved system categories that still need ownership.
 
 ## Current Read On The Repo
 
-This repository already contains enough structure to describe Solus as a playable draft. It does not yet contain a clean, publication-ready rules manuscript. The next layer of work is consolidation: finish the missing systems, resolve contradictions, and turn design notes into book-ready text.
+This repository now contains a real system-book manuscript with the stable rules in book order. It still needs completion work in the unfinished systems, but the main consolidation step is done. The next layer of work is to deepen the missing mechanics, clean contradictions, and strengthen the manuscript for layout.
