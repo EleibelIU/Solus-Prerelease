@@ -39,6 +39,14 @@ Each skill modifier comes from two attributes.
 - The primary attribute is fixed for that skill and does not change.
 - The secondary attribute comes from one of two listed options, chosen by the player.
 
+### Advantage and Disadvantage
+
+Some effects grant advantage or impose disadvantage.
+
+When you roll with advantage, roll `2d10` twice and use the higher total.
+
+When you roll with disadvantage, roll `2d10` twice and use the lower total.
+
 ## Character Creation
 
 At character creation, establish the parts of your character that stay fixed and mark the parts that can change in play.
