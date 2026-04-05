@@ -389,30 +389,84 @@ Madness also has a working threshold rule. At 100 Madness, a creature must use i
 
 ### Dying
 
-When a character starts their turn at 0 HP, that character enters the dying state. Place a `d10` death counter on 10.
+When a character starts their turn at 0 HP, that character enters the dying state. Set the death counter to `10 + Body modifier`. The counter ranges from 5 (Body -5) to 15 (Body +5).
 
-While a character is dying, that character can still act. Movement is halved, and attack rolls are at disadvantage.
+Place a die or token on the counter value. When the counter reaches 0, the character dies.
 
-Resolve the death counter across the dying character's 3 actions each turn.
+While dying, a character can still act. Movement is halved, and attack rolls are at disadvantage.
 
-- If the character does nothing with an action, reduce the counter by 1.
-- If the character uses an action, reduce the counter by 2.
+#### Death Counter Resolution
 
-If a character does nothing for the full turn, the counter drops from 10 to 7 by the end of that turn. If a character uses 1 action and leaves the other 2 unused, the counter drops from 10 to 6 by the end of that turn.
+Resolve the death counter in two phases each turn.
 
-When the counter reaches 0, the character dies.
+**Phase 1: Start-of-Turn Stack Damage.** Before the dying character takes any actions, resolve all active stack damage against the death counter. For each point of stack damage that would be dealt, reduce the death counter by 1. Magic DR from armor reduces this as normal. If a character is dying with 4 Burn stacks and wears Light armor (Magic DR 3), the counter drops by 1 at the start of their turn, not 4.
 
-This gives a dying character about 3 rounds to receive help if they do nothing and wait. Acting while dying shortens that window.
+If the counter reaches 0 during this phase, the character dies before acting.
 
-If the character receives healing that restores them to at least 1 HP, remove the dying state and reset the death counter.
+**Phase 2: Action Slots.** Resolve the death counter across the dying character's 3 action slots.
 
-### Playtest Variant: Repeated Knockdowns
+- If the character does nothing with an action slot, reduce the counter by 1.
+- If the character uses an action slot, reduce the counter by 2.
 
-Use this variant if you want dropping to 0 HP multiple times in quick succession to be more punishing.
+If the counter reaches 0 during any action slot, the character dies immediately. Remaining action slots are lost.
 
-If a character leaves the dying state through healing and drops to 0 HP again before 1 full round passes, the death counter resumes at its previous value instead of resetting to 10.
+An action slot consumed by a condition (Venomous removing an action, Frozen requiring an action to break free) counts as "doing nothing" for the death counter. The slot still costs 1 from the counter.
 
-If the character stays above 0 HP for 1 full round, the death counter fully resets.
+#### Condition Interactions While Dying
+
+Active conditions compound the dying state.
+
+- **Ignited.** Healing from all sources is blocked. The dying character cannot leave the dying state through healing until Ignited is removed. Allies must apply Chilled stacks or use another removal method first.
+- **Venomous.** Lost actions still drain the counter. Poison stacks accelerate the counter through Phase 1 stack damage. Self-escalation of Venomous continues while dying.
+- **Frozen.** Movement drops to 0 (dying halves movement, Frozen removes the rest). Breaking free still costs an action slot, which reduces the counter by 2.
+- **Shocked.** Disadvantage on actions compounds with dying's disadvantage on attacks. Half-movement stacks with dying's half-movement, reducing the character to quarter movement speed.
+- **Stunned.** The dying character loses their Reaction. Allies cannot use Reaction-triggered healing or shields to save them. Disadvantage on actions compounds with dying.
+- **Corroded.** Active Corrosion Countdowns continue while dying. If a countdown completes and costs a limb, the death counter drops by 3 immediately on top of normal resolution.
+- **Blind.** The dying character cannot target specific creatures with attacks or spells unless another sense locates them.
+
+#### Trauma: Sanity Check on Entering the Dying State
+
+When a character first enters the dying state, that character makes a Sanity check. Roll `2d10 + Sanity` against DC 12. Use the Degree of 5 table.
+
+| Degree | Madness Gained |
+| --- | --- |
+| +10 or more | 0 Madness. The character stays focused through the pain. |
+| +5 to +9 | 5 Madness. |
+| +0 to +4 | 10 Madness. |
+| -1 to -5 | 20 Madness. |
+| -6 or worse | 30 Madness, and the character gains the Frightened condition while dying. |
+
+This Madness accumulates across multiple dying episodes. A character who drops to 0 HP repeatedly across a campaign drifts toward the 100 Madness threshold. The system does not forgive a pattern of near-death.
+
+#### Recovery: Lingering Injury Check
+
+If the character receives healing that restores them to at least 1 HP, remove the dying state. Then roll for lingering injury.
+
+The Recovery DC scales with how close to death the character was at the time of healing.
+
+**Recovery DC = 15 minus the current death counter value when healed.**
+
+A character healed at counter 8 faces DC 7. A character healed at counter 2 faces DC 13. A character pulled from the edge at counter 1 faces DC 14.
+
+Roll `2d10 + Body` against the Recovery DC. Use the Degree of 5 table.
+
+| Degree | Outcome |
+| --- | --- |
+| +10 or more | Clean recovery. No lingering injury. |
+| +5 to +9 | Minor wound. Disadvantage on one category of action (physical, magical, or social) until the next long rest. |
+| +0 to +4 | Lingering injury. Roll on the Lingering Injury table. The injury persists until treated. |
+| -1 to -5 | Serious injury. Roll twice on the Lingering Injury table. Both persist until treated. |
+| -6 or worse | Grievous injury. Permanent scar, lost limb, or Sanity damage (GM determines, referencing the Corroded Organic rules for limb loss). Requires Regenerate or stronger magic to reverse. |
+
+TODO: create the Lingering Injury table with specific entries.
+
+#### Repeated Knockdowns
+
+If a character leaves the dying state through healing and drops to 0 HP again before 1 full round passes, the death counter resumes at its previous value instead of recalculating from `10 + Body`.
+
+If the character stays above 0 HP for 1 full round, the death counter resets to `10 + Body` on the next knockdown.
+
+Each entry into the dying state triggers a separate Sanity check and a separate Lingering Injury check on recovery. A character who bounces between 0 HP and 1 HP accumulates Madness and injury rolls fast.
 
 TODO: add a consolidated condition glossary with stack thresholds and removal rules.
 
