@@ -22,3 +22,15 @@ The manuscript holds the current rules draft in reader-facing order. Older epic 
 The manuscript already carries the stable rules material for Solus, including the core mechanics, character framework, combat structure, NPC ranks, and advancement model. Unfinished systems stay marked with short TODOs so they remain visible without pretending to be done.
 
 Treat [The System Book Document](system-book/solus-system-book.md) as the current source of truth for all rules. Use the archive for source tracing, extraction, and comparison, not for new book prose.
+
+## Obsidian Vault Package
+
+This repository includes a GitHub Actions workflow that builds an Obsidian-ready vault package from the manuscript and archive.
+
+The published package includes:
+
+- the full manuscript
+- generated chapter files split from the manuscript
+- archive material for source browsing
+- small navigation notes for Obsidian
+- a rolling prerelease download on GitHub
