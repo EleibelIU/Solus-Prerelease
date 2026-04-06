@@ -34,43 +34,25 @@ Two 1s is a critical failure. The effect misfires or backfires.
 
 Criticals apply to any 2d10 roll unless a specific rule says otherwise.
 
-### The Three Roll Types
+### The Two Roll Types
 
-Every Solus roll is one of three types. All three share the 2d10 base. They differ in the modifier you add and the target you compare against.
+Every Solus roll is one of two types. Both share the 2d10 base. They differ in the modifier you add and the target you compare against.
 
 #### Combat Roll
 
-Use this when you attack a target or swing a harmful effect at them.
+Use this when you attack a target with a weapon or a spell.
 
-- **Roll:** `2d10 + Stat Modifier`
-- **Target:** the defender's `Armor DR + their Stat Modifier`
-- **Result:** hit or miss, then apply damage (see Combat)
+- **Roll:** `2d10 + Body` (for physical/martial attacks) or `2d10 + Magic` (for magical attacks)
+- **Target:** the defender's Physical AC (for physical attacks) or Magical AC (for magical attacks)
+- **Result:** meet or beat the AC to hit, then apply damage (see Combat)
 
-> **Example:** You swing a sword at a guard. Your Body is +4, so you roll `2d10 + 4`. The guard wears medium armor (Physical DR 3) and has Body +1, so their target is 4. You roll 9, total 13. You beat 4 by 9. You hit, and you roll damage.
+Physical AC = Physical DR + Body. Magical AC = Magic DR + Magic. See Equipment, Armor, and Weapons for the full AC and DR rules.
 
-#### Resist Roll
-
-Use this when an effect lands on your character and you try to shrug it off, endure it, or push it away.
-
-- **Roll:** `2d10 + Stat Modifier` from the attribute that covers the threat
-- **Target:** read on a gradient from -10 to +10
-- **Result:** scales with the Degree of 5 (see Running the Game). A high roll can still carry a cost. A low roll can still dodge the worst.
-
-Each attribute covers a category of threats.
-
-| Attribute | Resists |
-| --- | --- |
-| Body | Physical harm, poison, disease, exhaustion |
-| Mind | Illusion, confusion, mental manipulation |
-| Social | Charm, coercion, persuasion |
-| Magic | Arcane effects, spell outcomes |
-| Sanity | Fear, corruption, madness |
-
-> **Example:** A ghoul screams a fear effect at you. You resist with Sanity. Your Sanity is +2, so you roll `2d10 + 2`. You roll 5, total 7. The GM reads the result on the gradient and tells you how hard the fear takes hold.
+> **Example:** You swing a sword at a guard. Your Body is +4, so you roll `2d10 + 4`. The guard wears medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You roll 9, total 13. You beat 4 and hit. You roll damage, then the guard's Physical DR (3) reduces the damage dealt.
 
 #### Skill Check
 
-Use this when your character tries something uncertain that is not an attack and not a resist.
+Use this when your character tries something uncertain that is not a combat attack.
 
 - **Roll:** `2d10 + Skill Modifier`
 - **Target:** a Difficulty Class (DC) set by the GM
@@ -92,7 +74,7 @@ Choose the kind of character you want to play. Solus supports martial, magical, 
 
 Your five ability scores use modifiers from `-5` to `+5`.
 
-You have 5 points to spend. Negative modifiers refund points, and you must spend those refunded points.
+You have 5 points to spend. Negative modifiers refund points. You must spend all 5 points. No points can remain unspent after assigning stats.
 
 | Modifier | Cost |
 | --- | --- |
@@ -110,9 +92,19 @@ You have 5 points to spend. Negative modifiers refund points, and you must spend
 
 ### Step 3: Choose Your Race
 
-Record your race first. Your race sets your base movement speed and character size, and it also gives you your racial bonuses, including traits such as dark vision or movement bonuses when your race grants them.
+Record your race first. Your race sets your base movement speed and character size, and gives you racial bonuses including traits such as dark vision or movement bonuses.
 
-TODO: add the full race list and race traits.
+The available races are:
+
+1. Elves
+2. Dwarves
+3. Orcs
+4. Gnomes
+5. Constructs
+6. Half-Breeds
+7. Humans
+
+TODO: define racial traits for each race (speed, size, unique mechanical trait). Jacob has also floated a custom race option where players select from preset racial trait lists, which could become the primary race-creation system.
 
 ### Step 4: Choose Your Background
 
@@ -122,23 +114,25 @@ Background determines starting health and mana behavior, but it does not restric
 - Martials start at 120 HP and 30/3 mana.
 - Hybrids start at 110 HP and 70/10 mana.
 
-The current sample playtest sheets use 75/10 mana for Hybrids in some cases.
-
-TODO: confirm the final Hybrid mana values.
+TODO: confirm Hybrid mana. Jacob believes 70/10 is correct; if 75/10 appears more often in playtest sheets, that is the final number.
 
 ### Step 5: Choose Your Skills
 
 Record your skill choices and their secondary attribute options.
 
+Skills work like Skill Gems in Path of Exile 2: they are the active abilities your character uses (attacks, spells, buffs, debuffs). Support Skills socket into your Skills and augment them (reduced cooldown, extended range, changed shape, and more). Support Skills are what make two characters who share the same base Skill play differently.
+
+TODO: define when Support Skill slots first become available and the full Support Skill list.
+
 ### Step 6: Record Fixed And Changeable Traits
 
-The following parts of a character are fixed at creation or by level.
+Solus has no character levels. Your skills grow through play (via XP or usage), not through leveling up.
+
+The following parts of a character are fixed at creation:
 
 - Race
 - Racial bonuses
 - Ability scores
-- Skill modifiers
-- Mastery at the level it unlocks
 - Base movement speed
 - Background
 - Character name
@@ -146,14 +140,12 @@ The following parts of a character are fixed at creation or by level.
 - Max mana pool
 - Character size
 
-The following parts can change between sessions or through play.
+The following parts can change between sessions or through play:
 
 - Skills
-- Mastery skills inside a chosen Mastery
-- Armor damage resistance
+- Support Skills
+- Masteries
 - Weapons
-- Level
-- Spells
 - Money
 - General resources
 - Equipment
@@ -183,46 +175,27 @@ TODO: add starting equipment rules.
 
 ## Attributes and Skills
 
-Characters have five attributes. Each one defines a different part of action resolution.
+Characters have five attributes. Each one governs a different part of action resolution.
 
 ### Body
 
-Body measures physical prowess.
-
-- Physical attacks and damage
-- Defense and mobility
-- Durability
+Body represents all physicality, whether strength or dexterity. Body is used for physical and martial attacks, physical defense, and contributes to Physical AC. Body is also one of the two Initiative options.
 
 ### Mind
 
-Mind measures learned and worldly knowledge.
-
-- Knowledge and skills
-- Perception and awareness
-- Mental saves that do not rely on emotion
+Mind represents intellect and emotional state. It covers knowledge, perception, awareness, and mental resilience against non-magical effects. Mind is the combined equivalent of Wisdom and Intelligence in other systems.
 
 ### Social
 
-Social measures communicative prowess.
-
-- Social influence
-- Leadership and morale
-- Social defenses
+Social represents how you come across to others, for good or ill. It governs persuasion, deception, intimidation, performance, leadership, and social defense. Social has no magical tie-in.
 
 ### Magic
 
-Magic measures magical aptitude.
-
-- Spellcasting effectiveness
-- Magical control
+Magic represents magical aptitude. All spellcasting uses Magic, regardless of spell category. The type of magic you specialize in is handled through Masteries, not through the Magic attribute itself. Magic contributes to Magical AC and is one of the two Initiative options.
 
 ### Sanity
 
-Sanity measures mental fortitude.
-
-- Fear and madness saves
-- Stress tolerance
-- Mental break thresholds
+Sanity represents mental fortitude. A lower Sanity does not make you unstable; it reveals more of the world's hidden truths, letting you perceive what others cannot. Sanity governs fear saves, stress tolerance, mental break thresholds, and is the attribute tied to any Madness system.
 
 ### Skills
 
@@ -244,7 +217,16 @@ Each skill uses one fixed primary attribute and one player-chosen secondary attr
 
 ## Equipment, Armor, and Weapons
 
-Armor splits protection between physical damage and magic damage. Each armor tier carries a damage reduction value for each side, and that same split also feeds into Armor AC. To calculate Armor AC, add Physical DR to Body for physical defense, and add Magic DR to Magic for magical defense. DR reduces damage after a hit lands.
+Armor splits protection between physical damage and magic damage. Each armor tier has a Physical DR and a Magic DR. These feed into two separate Armor Class values:
+
+- **Physical AC** = Physical DR + Body
+- **Magical AC** = Magic DR + Magic
+
+AC is the target number an attacker must meet or beat to deal damage. DR is fixed per armor tier and reduces damage after a hit lands. AC and DR are separate: AC determines whether you get hit, DR determines how much damage gets through.
+
+The maximum DR per damage type is 4 (Enchanted armor gets 3/3 for a total of 6). The maximum possible AC is 9 (DR 4 + stat modifier +5).
+
+> **Example:** You wear Light Armor (Physical DR 1, Magic DR 3). Your Body is +3 and your Magic is +1. Your Physical AC is 4 (1 + 3). Your Magical AC is 4 (3 + 1). An attacker swinging a sword must beat 4 to hit you physically. A caster throwing a spell must beat 4 to hit you magically. If either hits, the relevant DR (1 or 3) reduces the damage dealt.
 
 | Armor Tier | Physical DR | Magic DR | Total DR |
 | --- | --- | --- | --- |
@@ -270,6 +252,8 @@ Weapons are organized by category, tag set, and damage format. Base weapon damag
 Weapon tags define how a weapon behaves in play. Current tags include combinations such as Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed. Many weapons also carry custom traits that apply stacks, move targets, alter terrain, or unlock finishers once a target reaches the right setup.
 
 TODO: insert the full weapon-by-weapon trait list after the equipment chapter is locked.
+
+TODO: confirm whether shields are missing from the equipment list and need to be added.
 
 ## Magic and Spellcasting
 
@@ -298,26 +282,69 @@ Current function costs are:
 
 If a spell does more than one thing, add both function costs.
 
-Current framework values are:
+Each spell parameter has a mana cost (shown in parentheses) and falls into an action cost column based on its position in the spell framework. The framework has four columns:
 
-- Range: Self to 25 ft. (1), 30 to 60 ft. (2), 65 to 120 ft. (3), 125 to 200 ft. (4), Sight (5), Global (6)
-- Size: 5 to 15 ft. (1), 20 to 30 ft. (2), 35 to 60 ft. (3)
-- Shape: point or none (1), sphere/cube/line/wall/cylinder (2), freeform or custom (3)
-- Duration: Instant (1), Round (2), Minute (3), Hours (4), Permanent (5)
-- Target Count: Single (1), Multi (2+), AOE (3)
-- Accuracy Type: Attack Roll (1), Save (1), Auto-Hit (4)
-- Effect Tier: T1 (3), T2 (6), T3 (12), T4 (17)
+- **1 Action:** the parameter's lowest cost values
+- **2 Actions:** the parameter's mid-range values
+- **3 Actions:** the parameter's highest standard values
+- **4+ Actions or Ritual:** extreme values (Sight range, Permanent duration, etc.)
 
-Damage comes from three spell parameters: range, target count, and size. Each one contributes one damage die. Raising those parameters raises die size. Mixed dice are allowed. Attack roll spells can add one floating damage die, and the caster's casting stat always adds a flat bonus from -5 to +5.
+A parameter's position in the table determines both its action cost and its mana cost. The values below show mana cost in parentheses.
 
-Current die scaling by mana is:
+| Parameter | 1 Action | 2 Actions | 3 Actions | 4+ Actions / Ritual |
+| --- | --- | --- | --- | --- |
+| Range* | Self-25 ft. (1) | 30-60 ft. (2) | 65-120 ft. (3) | 125-200 ft. (4), Sight (5), Global (6) |
+| Size* | 5-15 ft. (1) | 20-30 ft. (2) | 35-60 ft. (3) | |
+| Shape | point or none (1) | sphere/cube/line/wall/cylinder (2) | freeform or custom (3) | |
+| Duration | Instant (1) | Round (2) | Minute (3) | Hours (4), Permanent (5) |
+| Target Count* | Single (1) | Multi 2+ (2) | AOE (3) | |
+| Accuracy Type* | Attack Roll (1) | Save (1) | Auto-Hit (4) | |
+| Effect Tier | T1 (3) | T2 (6) | T3 (12) | T4 (17) |
 
-- d6 for +1
-- d8 for +2
-- d10 for +3
-- d12 for +5
+Parameters marked with * contribute to spell damage.
 
-Magic also uses a main and sub category model. Players choose their main and sub lists at character build. Main category spells pay normal cost. Sub category spells pay double cost.
+Duration applies to spell effects as well as casting time. If a spell effect lasts longer than the casting time chosen, you pay the higher duration's mana cost. Example: casting at Instant speed but with a Minute-long effect costs the Minute mana price.
+
+Effect Tier covers the mana cost of applying Tags at different tiers. Multiple tags of the same tier stack cost: two T2 Tags cost 12 mana total (6 + 6).
+
+### Damage Dice
+
+Three parameters contribute damage dice: Range, Target Count, and Size. Each contributes one die. Die size is determined by the parameter's mana cost:
+
+| Mana Cost | Die |
+| --- | --- |
+| +1 | d6 |
+| +2 | d8 |
+| +3 | d10 |
+| +5 | d12 |
+
+Die size is capped by the parameter's mana cost. If a parameter maxes at +3 mana, its damage die caps at d10.
+
+Attack Roll accuracy type grants one additional damage die (d6 to d12), with mana cost increasing with die size.
+
+Multi targets: 2 targets = +2 mana, 3 targets = +3 mana, 4 targets = +4 mana (maximum 4 targets).
+
+The caster's casting stat modifier (-5 to +5) always applies as a flat damage bonus.
+
+> **Example:** Range Self-15 ft. +1 (d6), Target Count Single +1 (d6), Size 20-30 ft. +2 (d8), Attack Roll +5 (d12), Stat Modifier +5. Total damage = 1d6 + 1d6 + 1d8 + 1d12 + 5.
+
+### Known Mana Cost Anchors
+
+| Type | Mana |
+| --- | --- |
+| Minimum spell cost | 8 |
+| Maximum 1-action spell | 44 |
+| Maximum 3-action spell | 132 |
+
+These anchors are the basis for max mana pools and regeneration rates per background.
+
+### Main and Sub Categories
+
+Magic uses a main and sub category model. Players choose their main and sub lists at character build. Main category spells pay normal cost (x1). Sub category spells pay double cost (x2).
+
+TODO: confirm whether the Main/Sub category system adds enough value to keep, or whether it should be cut to reduce cognitive load.
+
+### Tags
 
 Tags sit under the spell framework and define what an effect actually does. Tags are not spells. They are mechanical identifiers that any source can apply, including magic, weapons, potions, creature abilities, terrain, and hazards.
 
@@ -380,7 +407,7 @@ Armor damage reduction applies after a hit lands. Split physical and magical pro
 
 If a character reaches 0 HP, that character becomes incapacitated and follows the injury or death rules.
 
-TODO: add the full attack, hit, save, and damage-resolution sequence once the combat core is finalized.
+TODO: add the full attack, hit, and damage-resolution sequence (roll vs. Physical AC or Magical AC, apply DR, apply tags/stacks).
 
 ## Conditions, Injuries, and Death
 
@@ -391,11 +418,13 @@ Many conditions begin as stacks.
 - Each stack lasts 2 full rounds from the turn it was applied.
 - Reapplying a stack resets that stack's duration.
 - Each stack type tracks its own current count, damage per round, and decay.
-- Most tracked elemental stacks cap at 5.
+- All stacks cap at 5. No exceptions.
 - Ongoing status effects resolve at the start of the affected creature's turn unless a rule says otherwise.
 - Stack damage triggers when applied and again at the start of the target's turn.
 
 Burn and Chilled oppose each other. When one would be gained, it removes one stack of the other on a 1:1 basis. Magic DR reduces damage from elemental stacks, but it does not block the stack itself or stop escalation into a higher condition.
+
+Tags are system-wide mechanical identifiers. They are not limited to spells. Weapons, potions, creature abilities, terrain, and hazards can all apply tags and trigger conditions.
 
 The current tag system confirms these conditions and effects.
 
@@ -426,9 +455,17 @@ Death effects also exist as tags.
 - Reanimate restores temporary motion to lifeless matter.
 - Vivify tethers spirit or essence to a vessel beyond natural death.
 
-Madness also has a working threshold rule. At 100 Madness, a creature must use its Action to attack a random nearby target, cannot target itself, lasts `1d4 + 1` rounds in that state, and takes 1 psychic damage at the start of each turn. The condition can end early if time expires, a calming charm hits, an ally succeeds on the stated check against DC 15, magic removes Madness, or the target takes `5 + Vital` damage in one hit.
+**PLAYTEST DRAFT (NOT FINAL):** Madness has a working threshold rule that is still under development. The current version draws inspiration from Elden Ring's Scarlet Rot and Madness mechanics and should not be treated as locked or integrated into other systems until a final version is approved.
+
+At 100 Madness, a creature must use its Action to attack a random nearby target, cannot target itself, lasts `1d4 + 1` rounds in that state, and takes 1 psychic damage at the start of each turn. The condition can end early if time expires, a calming charm hits, an ally succeeds on the stated check against DC 15, magic removes Madness, or the target takes `5 + Vital` damage in one hit.
+
+TODO: redesign Madness system for final version.
+
+TODO: several key stack logic consistency rules are missing from this section. These need to be surfaced in conversation with Jacob before the Conditions chapter can be finalized.
 
 ### Dying
+
+**PLAYTEST DRAFT (NOT FINAL):** The following dying system is a concept under discussion. An alternative proposal exists and both are on the table for further development.
 
 When a character starts their turn at 0 HP, that character enters the dying state. Place a `d10` death counter on 10.
 
@@ -449,6 +486,8 @@ If the character receives healing that restores them to at least 1 HP, remove th
 
 ### Playtest Variant: Repeated Knockdowns
 
+**PLAYTEST DRAFT (NOT FINAL):** This variant is under discussion alongside the base dying system.
+
 Use this variant if you want dropping to 0 HP multiple times in quick succession to be more punishing.
 
 If a character leaves the dying state through healing and drops to 0 HP again before 1 full round passes, the death counter resumes at its previous value instead of resetting to 10.
@@ -459,25 +498,25 @@ TODO: add a consolidated condition glossary with stack thresholds and removal ru
 
 ## NPCs, Enemies, and Encounters
 
-NPCs use a modified player-character stat block. The lower an NPC's rank, the less health, fewer actions, less power, and less equipment that NPC brings into play. A GM should run each NPC from a stat block built from one of the rank templates below.
+All NPCs use the same action economy, equipment, skill system, and spell system as player characters. NPCs are competent. The only differences between NPC ranks are stat modifiers, HP, and mana pools. Minions and Bosses are exceptions to this baseline in specific ways noted below.
 
 NPCs sit inside the core play loop. They can cause problems in the world, keep those problems in motion, appear as consequences for player action, or hand out rewards after the group resolves a situation. Allies follow the same framework as enemies, but they help the characters instead of hindering them.
 
-All NPCs use the same action economy, equipment, skill system, and spell system as player characters. Minions and Bosses break that baseline in specific ways.
+Each NPC rank also has martial, caster, and hybrid variants. The stat numbers define the rank; the background type determines the NPC's capability profile.
 
 | Rank | HP | Mana | Armor | Stat Modifiers | Use in Play |
 | --- | --- | --- | --- | --- | --- |
 | Minion | 1 to 5 | 30/3 | None, Phys 0, Magi 0 | Body +0, Mind +0, Social +0, Magic +0, Sanity +0 | Use Minions for swarms and hordes. One Minion is weak. A crowd of them becomes dangerous. |
 | Regular | 75 | 30/3 | None, Phys 1, Magi 1 | Body +1, Mind +1, Social +1, Magic +1, Sanity +1 | Use Regular NPCs for townsfolk, shopkeepers, low-ranked guards, and other ordinary people. |
-| Enemy or Ally | 100 | 100/15 | Medium, Phys 7, Magi -2 | Body +4, Mind +1, Social +3, Magic -3, Sanity +0 | Use this rank for the most common competent foe or helper. These NPCs should feel close to player characters in capability. |
+| Enemy or Ally | 100 | 100/15 | Medium, Phys 7, Magi -2 | Body +4, Mind +1, Social +3, Magic -3, Sanity +0 | Use this rank for the most common competent foe or helper. These NPCs are on par with player characters in capability. |
 | Mini Boss | 120 | 100/15 | Heavy, Phys 9, Magi 0 | Body +5, Mind +4, Social -3, Magic +0, Sanity -2 | Use a Mini Boss for a foe who stands above a player character in health, gear, and skill investment. |
 | Boss | 175 | 100/20 | Enchanted, Phys 8, Magi 8 | Body +5, Mind +3, Social +0, Magic +5, Sanity -5 | Use a Boss for a major threat that demands planning and strong tactics. |
 
-Minions break the normal NPC baseline on the low end. They always have +0 in every stat. They die fast, deal little damage, and work best in numbers.
+Minions break the normal NPC baseline on the low end. They have +0 in every stat and die fast (1-5 HP). They use the same equipment and spells as player characters. With +0 modifiers their odds are lower, but the danger is real. A crowd of Minions is lethal.
 
 Regular NPCs represent average people. They are sturdier than Minions, but they do not stand on equal footing with player characters.
 
-Enemy and Ally NPCs form the standard challenge template. Build them as near-mirrors of player characters, then shift health, equipment, and skills to fit the role.
+Enemy and Ally NPCs are the standard challenge template. They are on par with player characters: same action economy, same equipment access, same spell system. Your enemies are competent and can kill you as fast as you can kill them.
 
 Mini Bosses push above that line. Give them stronger gear, higher durability, and deeper skill investment than a standard Enemy or Ally.
 
@@ -497,9 +536,11 @@ Support Skill Slots open as a skill improves. A Rank 1 skill starts with 1 Suppo
 
 Mastery opens from total XP, not from a single skill. After your character reaches certain total XP thresholds, you unlock Mastery Skills and gain a set number of Mastery points to spend on them. Mastery points are finite, and you have fewer Mastery points than total Mastery Skills.
 
+**DESIGN NOTE (IN DEVELOPMENT):** Masteries currently read like classes, but that is not the intent. They should function in the same manner as Skills. This system may be restructured or folded entirely into regular Skills in a future revision. Do not treat Masteries as a locked system.
+
 You can own as many skills as you can afford, but you can only keep 10 skills active at one time.
 
-Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap skills with GM confirmation. Your Mastery stays fixed, but you can change the skills inside that Mastery the same way you change normal skills. You can also change weapons within your inventory, adjust spells, update equipment, spend or gain money and resources, and record new languages as your character learns them.
+Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap skills with GM confirmation. You can change Masteries the same way you change normal skills. You can also change weapons within your inventory, update equipment, spend or gain money and resources, and record new languages as your character learns them.
 
 TODO: add the full XP cost tables, the XP thresholds for Mastery, and the exact XP awards for combat, exploration, and conversation encounters.
 
