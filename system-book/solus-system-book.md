@@ -1,66 +1,183 @@
 # Solus System Book
 
-## Introduction and Design Goals
+## Welcome to Solus
 
-Solus is a game of heroic gritty realism. Your character can become legendary, but the system makes you earn that power through risk. The world does not grow safer as you improve. Threats keep pace, and victory stays costly.
+Solus is a tabletop roleplaying game for three to six people. One person runs the world as the Game Master. Everyone else plays a character inside it. You describe what your character does, roll dice when the outcome is uncertain, and discover the consequences together. The system rewards tactical choices and punishes carelessness. Your character can grow powerful, but the world grows dangerous to match.
 
-The system lets you define a character through the skills, magic, and weapons you choose. You can build for optimization or build to concept. The rules test both the same way. When you ask whether a character can do something, the system answers through shared mechanics instead of handing that answer to GM judgment alone.
+### What You Need
 
-Those shared mechanics apply across spells, weapons, and influence. The game uses one rules language for action resolution, whether you are playing a character or running the table. The same approach also supports play with or without a GM.
+**Two ten-sided dice (2d10).** Each die is numbered 1 through 10. You add the two dice together for a single total. A roll of 7 and 5 gives you 12. Solus does not use percentile dice, twenty-sided dice, or any other die type for core rolls.
+
+**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Sanity), your skills, your equipment, your health, and your mana. Chapter 4 walks you through filling one out.
+
+**Friends.** Solus works best with three to five players and one GM. It also supports GM-less play using the procedures in Chapter 10.
+
+**Pencils and scratch paper.** You will track health, mana, conditions, and initiative during play.
+
+### Roles at the Table
+
+**The Game Master (GM)** describes the world, controls all non-player characters (NPCs), sets target numbers for uncertain actions, and adjudicates the rules. The GM does not play against you. The GM plays the world around you.
+
+**Players** each control one character. You decide what your character attempts, roll dice when the rules call for it, and describe how your character reacts to what happens. Your character sheet tells you what your character is good at. The dice tell you whether it works.
+
+### How a Session Plays
+
+The best way to learn Solus is to watch a round of play. The scene below uses real rules. Every roll, modifier, and target number works the way the full chapters describe. Read it once to see how the pieces fit. Come back to it after reading the rules to see why each number lands where it does.
+
+#### The Setup
+
+Three players sit at a table with their GM.
+
+**Kael** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (2d6 damage, Reach tag) and wears Medium armor (Physical DR 3, Magic DR 1).
+
+**Senna** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
+
+**Torek** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. He carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
+
+#### Scene: The Collapsed Bridge
+
+The GM speaks: *"You've been tracking a stolen shipment through the forest for two days. The trail leads to a stone bridge over a ravine. The bridge is half-collapsed. The far side still holds, but the gap is twelve feet wide. You can hear voices on the other side."*
+
+Torek's player says: "I want to listen and figure out how many people are over there."
+
+The GM calls for a **Skill Check**. The skill is **Perception**. Perception's primary attribute is Mind. Torek chose Body as his secondary attribute for Perception at character creation. His Mind is +3 and his Body is +1, so his Perception modifier is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
+
+Torek's player rolls 2d10: **6 + 9 = 15**, plus his modifier of +4 = **19**. He beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
+
+The GM says: *"You count three distinct voices. One sounds frustrated, barking orders. You also catch the glint of a fourth figure crouched behind a rock. Four enemies total."*
+
+If Torek had rolled a 4 + 3 = 7, plus 4 = 11, he would have missed the DC by 3. The GM might say: *"You hear voices, but the wind carries the words away. At least two people are over there. Maybe more."*
+
+#### Crossing the Gap
+
+Kael's player says: "I want to jump the gap."
+
+Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Kael chose Mind as his secondary. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
+
+Kael rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
+
+Senna follows. Same DC, but her Athletics modifier is lower (Body +2, secondary Mind +0 = **+2**). She rolls: **5 + 6 = 11**, plus 2 = **13**. She meets the DC exactly. She makes it across, but stumbles on the landing. The enemies hear the noise.
+
+#### Combat Begins
+
+The GM says: *"A bandit with a crossbow shouts an alarm. Roll initiative."*
+
+**Initiative** uses a d10 (one die, not two) plus Body or Magic, your choice per character.
+
+| Character | Roll | Modifier | Total |
+| --- | --- | --- | --- |
+| Kael | 7 | +4 (Body) | 11 |
+| Senna | 5 | +3 (Magic) | 8 |
+| Bandit Leader | 8 | +2 (Body) | 10 |
+| Bandit Archer | 4 | +1 (Body) | 5 |
+
+Turn order: Kael (11), Bandit Leader (10), Senna (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
+
+#### Kael's Turn: Three Actions
+
+Each character gets **3 actions** per turn. Common actions: Move, Attack, Defend, Use Item, Cast Spell.
+
+Kael's player says: "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
+
+**First Attack.** Kael rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Kael's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
+
+**Second Attack.** Kael rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
+
+#### Senna's Turn: Sword and Spell
+
+Senna's player says: "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
+
+**Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
+
+**Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 3 (Light armor) + Magic -1 = **2**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 3 = **8 damage**. The bandit leader drops to 0 HP.
+
+When a character drops to 0 HP, the **Dying** rules take over (see Chapter 8).
+
+#### What Just Happened
+
+In a few minutes of play, the group used three systems:
+
+**Skill Checks** resolved Torek's Perception (hearing enemies) and Kael's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set.
+
+**Combat Rolls** resolved Kael's greatsword swings and Senna's shortsword strike using `2d10 + Body`, and Senna's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
+
+**Action Economy** gave each character 3 actions per turn, spent on movement, attacks, and spells in any combination.
+
+These three systems carry the game. The chapters that follow teach each one in full.
+
+### Where to Find Things
+
+| If you want to... | Go to... |
+| --- | --- |
+| Learn how dice and target numbers work | Chapter 2: Core Mechanics |
+| Understand your five attributes and eleven skills | Chapter 3: Attributes and Skills |
+| Build a character from scratch | Chapter 4: Character Creation |
+| Choose armor and weapons | Chapter 5: Equipment, Armor, and Weapons |
+| Learn how spells are built and cast | Chapter 6: Magic and Spellcasting |
+| Run a full combat encounter | Chapter 7: Combat |
+| Look up a condition or the dying rules | Chapter 8: Conditions, Injuries, and Death |
+| Run the game as a GM | Chapter 9: Running the Game |
+| Understand how sessions and downtime flow | Chapter 10: The Gameplay Loop |
+| Build or reference NPCs and encounters | Chapter 11: NPCs and Encounters |
+| Advance your character between sessions | Chapter 12: Advancement and Between Sessions |
+| Quick-reference sheets, sample characters, glossary | Appendices A through F |
 
 ## Core Mechanics
 
-Roll dice to resolve anything that might fail.
+Solus is played by a group sitting around a table. One person, the **Game Master** (GM), describes the world and controls its inhabitants. Everyone else plays a single character. When your character attempts something and the outcome is uncertain, you roll dice to find out what happens.
 
-### The Base Roll
+### How Dice Work
 
-Roll two ten-sided dice (2d10) and add them together. Add a modifier from your character sheet. That total is your result.
+Solus uses two ten-sided dice, written as **2d10**. Each die is numbered 1 through 10. Roll both and add the numbers together to get a single total.
 
-> **Example:** You roll a 6 and a 4. Your modifier is +3. Your result is 13.
+After adding the dice, add a number from your character sheet called a **modifier**. Modifiers range from -5 to +5. The final number is your **result**.
 
-Read 2d10 as a sum. A 10 and a 4 is 14, not 104. These are not percentile dice.
+> **Example:** You roll a 7 and a 5. That's 12. Your modifier is +3. Your result is 15.
 
-The GM names a target number. Meet or beat it to succeed.
+The two dice are added, not read side by side. A roll of 10 and 4 is 14, not 104. Solus does not use percentile dice.
 
-### When to Roll
+The GM sets a **target number**. If your result meets or beats the target, you succeed. If it falls short, you fail.
 
-Roll only when the outcome is uncertain. If a task is routine for your character, describe the success without rolling. If a task is beyond them, describe the failure. Roll when the answer could go either way.
+### When You Roll
+
+You roll only when the outcome is uncertain. If your character is trained at a task and nothing complicates it, the GM describes the success without dice. If the task is beyond your character entirely, the GM describes the failure. Dice come out when the answer could go either way.
 
 ### Critical Results
 
-Two 10s is a critical success. The effect hits at its best outcome.
+If both dice show 10 (a natural 20), you score a **critical success**. The effect lands at its best possible outcome.
 
-Two 1s is a critical failure. The effect misfires or backfires.
+If both dice show 1 (a natural 2), you score a **critical failure**. The effect backfires or misfires.
 
-Criticals apply to any 2d10 roll unless a specific rule says otherwise.
+Critical results apply to any 2d10 roll unless a specific rule says otherwise.
 
 ### The Two Roll Types
 
-Every Solus roll is one of two types. Both share the 2d10 base. They differ in the modifier you add and the target you compare against.
+Solus has two kinds of rolls. Both use 2d10 plus a modifier. The difference is which modifier you add and what target number you compare against.
 
 #### Combat Roll
 
-Use this when you attack a target with a weapon or a spell.
+Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 
-- **Roll:** `2d10 + Body` (for physical/martial attacks) or `2d10 + Magic` (for magical attacks)
-- **Target:** the defender's Physical AC (for physical attacks) or Magical AC (for magical attacks)
-- **Result:** meet or beat the AC to hit, then apply damage (see Combat)
+1. Choose your attack. Physical and martial attacks (a sword swing, a punch, an arrow) add your **Body** modifier. Spells add your **Magic** modifier.
+2. Roll `2d10 + Body` or `2d10 + Magic`.
+3. Compare your result to the defender's **Armor Class** (AC). Physical attacks target **Physical AC**. Spells target **Magical AC**. (See Equipment, Armor, and Weapons for how AC is calculated.)
+4. If your result meets or beats the AC, you hit. Roll damage. The defender's **Damage Reduction** (DR) subtracts from the damage dealt.
+5. If your result falls short, you miss.
 
-Physical AC = Physical DR + Body. Magical AC = Magic DR + Magic. See Equipment, Armor, and Weapons for the full AC and DR rules.
-
-> **Example:** You swing a sword at a guard. Your Body is +4, so you roll `2d10 + 4`. The guard wears medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You roll 9, total 13. You beat 4 and hit. You roll damage, then the guard's Physical DR (3) reduces the damage dealt.
+> **Example:** You swing a greatsword at a bandit. Your Body is +4. You roll 2d10 and get 6 + 8 = 14, plus 4 = 18. The bandit wears Medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You beat 4, so you hit. You roll 1d8 + 4 for damage and deal 10. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes 7 damage.
 
 #### Skill Check
 
-Use this when your character tries something uncertain that is not a combat attack.
+Roll a Skill Check when your character attempts something uncertain that is not a combat attack. Picking a lock, tracking footprints, persuading a guard, recalling a piece of lore, treating a wound: these are Skill Checks.
 
-- **Roll:** `2d10 + Skill Modifier`
-- **Target:** a Difficulty Class (DC) set by the GM
-- **Result:** read on the Degree of 5 scale (see Running the Game)
+1. The GM names the relevant skill and sets a **Difficulty Class** (DC), a target number reflecting how hard the task is.
+2. Roll `2d10 + your Skill Modifier`.
+3. Compare your result to the DC.
+4. The GM reads the outcome using the **Degree of 5** scale (see Running the Game). Beating the DC by 5 or more earns a bonus. Missing the DC by 5 or more adds a setback. The wider the gap, the bigger the swing.
 
-Your skill modifier comes from two attributes. The primary is fixed per skill. The secondary is one of two listed options, picked at character creation. The pick stays fixed. See Attributes and Skills for the list.
+Your **Skill Modifier** is the sum of two attributes: a fixed **primary** attribute and a **secondary** attribute you chose at character creation. See Attributes and Skills for the full list and how this math works.
 
-> **Example:** The GM sets a DC of 10 to pick a lock. Your Stealth modifier is +4. You roll 8, total 12. You beat the DC by 2 and open the lock. If you had rolled 14 for a total of 18, you would beat the DC by 8 and earn a Degree of 5 bonus on top of the success.
+> **Example:** You try to calm a spooked horse. The GM calls for Animal Handling against DC 12. Animal Handling uses Social as its primary. Your secondary choice is Mind. Your Social is +3 and your Mind is +4, so your modifier is +7. You roll 2d10 and get 4 + 5 = 9, plus 7 = 16. You beat DC 12 by 4 and the horse calms down. If you had rolled 3 + 2 = 5, plus 7 = 12, you would meet the DC exactly: a bare success with no bonus or setback.
 
 ## Character Creation
 
@@ -175,60 +292,121 @@ TODO: add starting equipment rules.
 
 ## Attributes and Skills
 
-Characters have five attributes. Each one governs a different part of action resolution.
+Your character has five **attributes**. Each attribute is a number from -5 to +5 that measures a broad area of capability. Attributes feed into combat rolls, Armor Class, initiative, and your skill modifiers. Every attribute matters; there are no dump stats.
 
-### Body
+### The Five Attributes
 
-Body represents all physicality, whether strength or dexterity. Body is used for physical and martial attacks, physical defense, and contributes to Physical AC. Body is also one of the two Initiative options.
+#### Body
 
-### Mind
+Body covers all physical capability: strength, speed, endurance, coordination. Whether you swing a hammer, dodge a falling boulder, or sprint across a battlefield, Body is the attribute that matters.
 
-Mind represents intellect and emotional state. It covers knowledge, perception, awareness, and mental resilience against non-magical effects. Mind is the combined equivalent of Wisdom and Intelligence in other systems.
+Body is added to physical and martial combat rolls and contributes to **Physical AC** (see Equipment, Armor, and Weapons). Body is one of the two attributes you can choose for **initiative** at the start of combat.
 
-### Social
+A character with high Body hits hard with weapons, resists physical attacks, and endures punishment. A character with low Body is fragile, inaccurate with weapons, and easy to hit with physical force.
 
-Social represents how you come across to others, for good or ill. It governs persuasion, deception, intimidation, performance, leadership, and social defense. Social has no magical tie-in.
+#### Mind
 
-### Magic
+Mind covers intellect, reasoning, perception, and emotional awareness. It governs what you know, what you notice, and how well you process information under pressure.
 
-Magic represents magical aptitude. All spellcasting uses Magic, regardless of spell category. The type of magic you specialize in is handled through Masteries, not through the Magic attribute itself. Magic contributes to Magical AC and is one of the two Initiative options.
+A character with high Mind spots hidden details, recalls useful lore, and resists tricks that target reasoning. A character with low Mind overlooks clues, forgets critical knowledge, and falls for deceptions.
 
-### Sanity
+#### Social
 
-Sanity represents mental fortitude. A lower Sanity does not make you unstable; it reveals more of the world's hidden truths, letting you perceive what others cannot. Sanity governs fear saves, stress tolerance, mental break thresholds, and is the attribute tied to any Madness system.
+Social covers how you present yourself. It governs persuasion, deception, intimidation, performance, leadership, and your ability to resist social manipulation. Social has no connection to magic.
+
+A character with high Social commands attention, reads a room, and turns conversations in their favor. A character with low Social struggles to lie, inspire, or talk their way past obstacles.
+
+#### Magic
+
+Magic covers all spellcasting. Every spell you cast uses Magic, regardless of its category (elemental, death, summoning, or otherwise). The type of magic you specialize in is handled through Masteries, not through this attribute.
+
+Magic is added to magical combat rolls and contributes to **Magical AC**. Magic is the other attribute you can choose for **initiative**.
+
+A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
+
+#### Sanity
+
+Sanity covers mental fortitude and perception of hidden truths. In Solus, lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, truths that erode the mind.
+
+Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
 
 ### Skills
 
-Each skill uses one fixed primary attribute and one player-chosen secondary attribute from the listed pair.
+A **skill** is a trained capability your character has. Skills cover everything outside of direct combat attacks: climbing a wall, picking a lock, persuading a merchant, identifying a spell, treating a wound, tracking an animal through snow. When you attempt one of these actions and the outcome is uncertain, the GM calls for a **Skill Check** (see Core Mechanics) using the relevant skill.
 
-| Skill | Primary | Use | Secondary |
+Your character does not start with every skill. You choose which skills to take during character creation, and you can gain or swap skills between sessions. You can own as many skills as you can afford, but only 10 can be **active** at any time. Skills you are not carrying cannot be used.
+
+Skills grow through play. As you earn XP and spend it, your skills advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked skills also unlock **Support Skill Slots**, which let you attach augments that change how the skill behaves (see Advancement and Between Sessions).
+
+### How Skill Modifiers Work
+
+When you make a Skill Check, you roll `2d10` and add your **Skill Modifier**. That modifier comes from two of your attributes added together.
+
+Every skill has a **primary** attribute and a **secondary** attribute.
+
+The **primary** is fixed. It never changes for that skill. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the skill draws on.
+
+The **secondary** is your choice. Each skill lists two options. You pick one when you create your character, and that pick is permanent. The secondary represents how your character approaches that skill: do you climb walls through trained technique (Mind) or through sheer refusal to let go (Sanity)?
+
+**Skill Modifier** = primary attribute + secondary attribute.
+
+> **Example:** You are building a character with Body +4, Mind +1, and Sanity -2. You take Athletics, which uses Body as its primary. The secondary options are Mind or Sanity.
+>
+> If you pick Mind: Athletics = +4 + 1 = **+5**. Your character climbs with practiced efficiency.
+>
+> If you pick Sanity: Athletics = +4 + (-2) = **+2**. Your character is strong but panics under pressure.
+>
+> The choice is permanent. Pick the secondary that fits the character you want to play.
+
+This system means every attribute contributes to multiple skills. A character who invests heavily in one attribute will be strong in some skills and dangerously weak in others. Two characters with the same skill can have different modifiers because they chose different secondaries. That means two fighters or two healers can feel meaningfully different from each other at the table.
+
+### Skill List
+
+The table below shows all 11 skills. When you make a Skill Check, find the skill, add the primary and your chosen secondary together, and that is the modifier you roll with.
+
+| Skill | Primary | Secondary (pick one) | What it covers |
 | --- | --- | --- | --- |
-| Athletics | Body | Used to overcome physical challenges through strength, endurance, speed, or bodily control. | Mind<br>Sanity |
-| Stealth | Body | Used to move, act, or remain unnoticed by others. | Mind<br>Sanity |
-| Investigation | Mind | Used to actively search for, analyze, and piece together clues or hidden details. | Body<br>Sanity |
-| Knowledge | Mind | Used to recall, understand, or contextualize learned information about the world. | Social<br>Sanity |
-| Medicine | Mind | Used to assess health, diagnose conditions, treat injuries, or stabilize the wounded. | Body<br>Sanity |
-| Survival | Mind | Used to endure, navigate, track, hunt, or live off the land in hostile or natural environments. | Body<br>Sanity |
-| Animal Handling | Social | Used to calm, train, control, or intuit the behavior of animals or similar creatures. | Body<br>Mind |
-| Performance | Social | Used to entertain, inspire, distract, or convey emotion through artistic or dramatic expression. | Body<br>Sanity |
-| Speech | Social | Used to persuade, deceive, negotiate, command, or otherwise influence others through words. | Body<br>Mind |
-| Arcana | Magic | Used to identify, understand, manipulate, or reason about magical, supernatural forces. | Mind<br>Sanity |
-| Insight | Sanity | Used to uncover and comprehend hidden cosmic, occult, eldritch, or existential truths revealed through fractured perception or loss of mental stability. | Body<br>Mind |
+| Athletics | Body | Mind or Sanity | Climbing, jumping, sprinting, swimming, feats of strength or endurance |
+| Stealth | Body | Mind or Sanity | Moving unseen, hiding, acting without drawing attention |
+| Investigation | Mind | Body or Sanity | Searching for clues, analyzing evidence, piecing together hidden details |
+| Knowledge | Mind | Social or Sanity | Recalling lore, history, culture, religion, or technical information |
+| Medicine | Mind | Body or Sanity | Diagnosing conditions, treating wounds, stabilizing the dying |
+| Survival | Mind | Body or Sanity | Tracking, hunting, navigating, enduring harsh environments |
+| Animal Handling | Social | Body or Mind | Calming, training, controlling, or reading the behavior of animals |
+| Performance | Social | Body or Sanity | Entertaining, inspiring, distracting through art, music, or drama |
+| Speech | Social | Body or Mind | Persuading, deceiving, negotiating, intimidating, commanding |
+| Arcana | Magic | Mind or Sanity | Identifying, understanding, or manipulating magical and supernatural forces |
+| Insight | Sanity | Body or Mind | Perceiving hidden truths, eldritch knowledge, cosmic or occult comprehension |
 
 ## Equipment, Armor, and Weapons
 
-Armor splits protection between physical damage and magic damage. Each armor tier has a Physical DR and a Magic DR. These feed into two separate Armor Class values:
+### How Armor Works
 
-- **Physical AC** = Physical DR + Body
-- **Magical AC** = Magic DR + Magic
+Armor in Solus does two things: it makes you harder to hit, and it absorbs damage when you do get hit. These are two separate systems, and understanding the difference is critical.
 
-AC is the target number an attacker must meet or beat to deal damage. DR is fixed per armor tier and reduces damage after a hit lands. AC and DR are separate: AC determines whether you get hit, DR determines how much damage gets through.
+#### Armor Class (AC): Can They Hit You?
 
-The maximum DR per damage type is 4 (Enchanted armor gets 3/3 for a total of 6). The maximum possible AC is 9 (DR 4 + stat modifier +5).
+Every character has two **Armor Class** values:
 
-> **Example:** You wear Light Armor (Physical DR 1, Magic DR 3). Your Body is +3 and your Magic is +1. Your Physical AC is 4 (1 + 3). Your Magical AC is 4 (3 + 1). An attacker swinging a sword must beat 4 to hit you physically. A caster throwing a spell must beat 4 to hit you magically. If either hits, the relevant DR (1 or 3) reduces the damage dealt.
+- **Physical AC** = your armor's Physical DR + your Body modifier
+- **Magical AC** = your armor's Magic DR + your Magic modifier
 
-| Armor Tier | Physical DR | Magic DR | Total DR |
+When someone attacks you, they roll `2d10 + their attack modifier` and compare the result to your AC. If they meet or beat your AC, the attack hits. If they fall short, it misses.
+
+Physical attacks (swords, arrows, fists) target your Physical AC. Spells target your Magical AC. Because you have two separate ACs, a character can be tough against swords but vulnerable to spells, or the reverse. Your armor choice and attribute spread determine where your defenses are strong and where they are weak.
+
+#### Damage Reduction (DR): How Much Gets Through?
+
+When an attack lands, your armor's **Damage Reduction** absorbs part of the blow. DR is a flat number subtracted from the damage dealt.
+
+- **Physical DR** reduces damage from weapons, unarmed strikes, falls, and other physical sources.
+- **Magic DR** reduces damage from spells and elemental status effects. Magic DR does not stop status effects from applying or escalating; it only reduces the damage those effects deal.
+
+DR is fixed per armor tier. Your attributes do not change it.
+
+#### Armor Tiers
+
+| Tier | Physical DR | Magic DR | Total DR |
 | --- | --- | --- | --- |
 | Cloth | 0 | 4 | 4 |
 | Light | 1 | 3 | 4 |
@@ -236,20 +414,43 @@ The maximum DR per damage type is 4 (Enchanted armor gets 3/3 for a total of 6).
 | Heavy | 4 | 0 | 4 |
 | Enchanted | 3 | 3 | 6 |
 
-Magic DR reduces damage from elemental status effects, but it does not stop those effects from applying or escalating. A target can still build stacks and reach a higher condition even while armor cuts the damage from those stacks.
+Every standard tier provides 4 total DR, split between physical and magical protection. The split forces a tradeoff: Cloth gives maximum magical protection and zero physical. Heavy gives maximum physical and zero magical. Enchanted armor is the exception, providing 6 total DR with an even split.
 
-Weapons are organized by category, tag set, and damage format. Base weapon damage uses Body across the current weapon tables, including ranged weapons and firearms.
+The maximum DR on a single damage type is 4. The maximum possible AC is 9 (DR 4 + attribute modifier +5).
 
-| Category | Example Weapons | Core Damage |
+#### What Happens When You Get Hit
+
+When an attack targets you, resolve it in two steps:
+
+1. **Compare the attack roll to your AC.** If the attacker's result meets or beats your Physical AC (for weapons) or Magical AC (for spells), the attack lands. Otherwise it misses, and no damage is dealt.
+2. **Subtract your DR from the damage.** The attacker rolls damage. Your relevant DR (Physical or Magic) subtracts from the total. You take the remainder.
+
+> **Example:** A mage casts a fire bolt at you. You wear Light Armor (Magic DR 3) and have Magic +2, so your Magical AC is 5. The mage rolls `2d10 + 4` and gets 16. That beats your Magical AC of 5, so the spell hits. The mage rolls 8 damage. Your Magic DR of 3 reduces it to 5. You take 5 damage.
+
+> **Example:** You wear Heavy Armor (Physical DR 4, Magic DR 0) with Body +3 and Magic +0. Your Physical AC is 7. Your Magical AC is 0. A sword fighter rolls 11 against your Physical AC of 7, hits, and deals 9 damage. Your Physical DR of 4 absorbs 4, leaving 5 damage. A caster rolls the same 11 against your Magical AC of 0, also hits, and deals 9 damage. With Magic DR 0, nothing absorbs. You take the full 9. Heavy armor makes you a fortress against blades and a glass window against magic.
+
+### Weapons
+
+All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories by fighting style.
+
+| Category | Examples | Damage |
 | --- | --- | --- |
-| Light Melee | Dagger, Claw Gauntlet, Short Sword, Chain Blade, Bare Hands | 1d4 + Body to 1d6 + Body |
+| Light Melee | Dagger, Short Sword, Claw Gauntlet, Bare Hands | 1d4 + Body to 1d6 + Body |
 | Medium Melee | Rapier, Katana, Curved Sword | 1d8 + Body |
 | Heavy Melee | Greatsword, Greathammer, Great Axe | 1d8 + Body |
-| Reach Weapons | Halberd, Scythe, Whip | 1d6 + Body to 1d10 + Body |
+| Reach | Halberd, Scythe, Whip | 1d6 + Body to 1d10 + Body |
 | Ranged / Thrown | Bow, Bomb Flask | 1d6 + Body to 1d8 + Body |
 | Firearms | Revolver, Rifle, Shotgun, Sniper Rifle | 1d8 + Body to 1d12 + Body |
 
-Weapon tags define how a weapon behaves in play. Current tags include combinations such as Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed. Many weapons also carry custom traits that apply stacks, move targets, alter terrain, or unlock finishers once a target reaches the right setup.
+Light weapons deal less damage per hit but can be dual-wielded and strike fast. Heavy weapons share a base die with medium weapons but carry traits that offer crowd control, knockback, or finisher effects. Reach weapons let you strike from further away. Firearms deal the highest base damage but carry their own resource costs. The choice between categories is about how you want to fight, not just how hard you want to hit.
+
+#### Weapon Tags
+
+Every weapon carries one or more **tags**: short labels that describe how the weapon behaves. The core tags are Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed.
+
+Tags matter because other rules reference them. A Support Skill that triggers "on a Heavy weapon hit" only fires when you swing a weapon tagged Heavy. A condition that says "Melee attacks are at disadvantage" applies to any weapon tagged Melee. Tags connect your weapon to the rest of the system.
+
+Many weapons also carry unique **traits**: special effects that apply condition stacks, move targets, alter terrain, or unlock finisher attacks once a target has the right conditions applied to them. The difference between two swords in the same weight class is often their traits.
 
 TODO: insert the full weapon-by-weapon trait list after the equipment chapter is locked.
 
@@ -605,15 +806,4 @@ The current playtest checklist asks the table to verify these points.
 - Can you give the character a name?
 - Can you distribute ability scores?
 - Can you fill out skill checks?
-- Can you give the character a background?
-- Can you give the character equipment, weapons, and armor?
-- Can you give the character skills?
-- Can you tell enemy ranks apart at a glance?
-- Can you read an enemy's HP, stats, equipment, weapons, and armor from the block?
-- Can you run the NPC with the information given?
-- Can you roll initiative and create a turn order?
-- Can you use skills, weapons, and the DR system cleanly?
-- Can you track HP, mana, and mana regeneration during play?
-
-TODO: finalize the reference appendix.
-TODO: reconcile playtest-sheet values against the core rules where they disagree.
+- C
