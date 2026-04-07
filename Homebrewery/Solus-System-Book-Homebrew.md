@@ -522,7 +522,6 @@ theme: 5ePHB
 
 ![Solus Cover](https://github.com/EleibelIU/Solus-Prerelease/blob/main/Homebrewery/Assets/Solus%20Cover.png?raw=true){right:0px,bottom:0px,top:unset,height:100%}
 
-}}
 
 \page
 
@@ -607,6 +606,9 @@ Solus is a tabletop roleplaying game for three to six people. One person runs th
 
 **Players** each control one character. You decide what your character attempts, roll dice when the rules call for it, and describe how your character reacts to what happens. Your character sheet tells you what your character is good at. The dice tell you whether it works.
 
+{{footnote Welcome to Solus}}
+{{pageNumber,auto}}
+
 \page
 
 ## How a Session Plays
@@ -686,6 +688,9 @@ Each character gets **3 actions** per turn. The most common actions for a player
 
 - **Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
 
+{{footnote Welcome to Solus}}
+{{pageNumber,auto}}
+
 \page
 {{descriptive
 **Chris's player says:** "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
@@ -713,6 +718,9 @@ Each character had 3 **actions** per turn, spent on movement, attacks, and spell
 
 These three systems carry the game. The chapters that follow teach each one in full.
 
+{{footnote Welcome to Solus}}
+{{pageNumber,auto}}
+
 \page
 
 # How to use this book
@@ -733,6 +741,8 @@ These three systems carry the game. The chapters that follow teach each one in f
 | Run the game as a GM | Running the Game (Ch. 12) |
 | Quick-reference tables, playtest checklist, glossary | Reference and Playtest Tools (Ch. 13) |
 }}
+
+{{pageNumber,auto}}
 
 \page
 
@@ -921,6 +931,9 @@ Pick whether your character uses **Body** or **Magic** for initiative rolls. Thi
 
 Martial fighters and physical brawlers pick Body. Dedicated casters pick Magic. Hybrids pick whichever is higher.
 
+{{footnote Character Creation}}
+{{pageNumber,auto}}
+
 \page
 
 ### Step 6: Choose Your Disciplines
@@ -981,6 +994,10 @@ Check your sheet against this reference. If anything is blank, go back to the st
 
 Solus has no character levels. Your character grows by earning XP and spending it on skill ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
+{{descriptive
+**TODO:** Jacob, need sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.
+}}
+
 {{footnote Character Creation}}
 {{pageNumber,auto}}
 
@@ -1027,6 +1044,10 @@ Sanity covers mental fortitude and perception of hidden truths.
 - Lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, and truths that erode the mind.
 - Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
 }}
+
+{{footnote Attributes and Skills}}
+{{pageNumber,auto}}
+
 \page
 
 ## Skills
@@ -1152,6 +1173,9 @@ When an attack targets you, resolve it in two steps:
 **Example:** You wear Heavy Armor (Physical DR 4, Magic DR 0) with Body +3 and Magic +0. Your Physical AC is 7. Your Magical AC is 0. A sword fighter rolls 11 against your Physical AC of 7, hits, and deals 9 damage. Your Physical DR of 4 absorbs 4, leaving 5 damage. A caster rolls the same 11 against your Magical AC of 0, also hits, and deals 9 damage. With Magic DR 0, nothing absorbs. You take the full 9. Heavy armor makes you a fortress against blades and a glass window against magic.
 }}
 
+{{footnote Equipment, Armor, and Weapons}}
+{{pageNumber,auto}}
+
 \page
 
 ## Weapons
@@ -1249,8 +1273,10 @@ Each parameter has a **mana cost** and an **action cost**. Add up the mana costs
 
   **Total action cost** = the highest action value among your parameters.
 }}
-\page
-{{wide
+
+{{footnote Magic and Spellcasting}}
+{{pageNumber,auto}}
+
 ## Spell Disciplines
 
 Discipline determines which **tags** your spell applies on hit. Tags are labels on the source. When a tag lands on a target, it creates **stacks** that build up, deal damage over time, and trigger **escalated conditions** at 5 stacks (see Conditions, Injuries, and Death).
@@ -1409,17 +1435,18 @@ When combat breaks out, every combatant rolls for **initiative**. Roll **1d10** 
 
 The GM ranks everyone from highest to lowest. That is the turn order for the entire encounter unless a rule changes it.
 
+{{note 
 **Tie-breaking.** If two combatants roll the same total:
 
 1. The higher modifier goes first.
 2. If still tied, roll another d10 between the tied combatants.
 3. Players and their allies may choose to act simultaneously if both are willing. Enemies cannot share a simultaneous turn and must use option 1 or 2.
 
+}}
+
 **Round length.** Each full **round** of combat represents 3 seconds of in-world time. A round includes one **turn** for every combatant. Your turn is the part of the round where you act. When every combatant has taken a turn, the round ends and a new one begins.
 
-\column
-
-### Your Turn: Three Actions
+### Your Turn
 
 On your turn, you get **3 actions**. Spend them in any order. Finish resolving one action before starting the next. You can repeat an action (attack three times, move three times) unless a specific ability, spell, or item says otherwise.
 
@@ -1434,11 +1461,6 @@ On your turn, you get **3 actions**. Spend them in any order. Finish resolving o
 | Use a Skill | Attempt a Skill Check during combat (Medicine to stabilize, Athletics to grapple). |
 
 **Multi-action abilities.** Some spells and skills cost 2 or 3 actions. You can spend those actions on the same turn or split them across consecutive turns. If you are interrupted (stunned, knocked unconscious, forced to move) before completing all required actions, the ability fails and any spent actions are lost. Mana spent on a failed spell is not refunded.
-
-{{footnote Combat}}
-{{pageNumber,auto}}
-
-\page
 
 ### Reactions
 
@@ -1461,7 +1483,7 @@ Each Move action lets you travel up to your **movement speed** in feet. You can 
 
 **Opportunity attacks.** A creature's **melee reach** is 5 feet unless a weapon or ability says otherwise (Reach-tagged weapons extend this). When you move out of a hostile creature's melee reach, that creature can spend its reaction to make a single melee attack against you. This happens before you leave the threatened space. If you do not leave a creature's reach, no opportunity attack triggers.
 
-\column
+
 
 ### Resolving an Attack
 
@@ -1471,6 +1493,12 @@ When you attack, follow these steps:
 2. **Determine your modifier.** Physical and martial attacks (swords, fists, bows, firearms) use **Body**. Spells use **Magic**.
 3. **Roll the Combat Roll.** Roll `2d10 + Body` (physical) or `2d10 + Magic` (spell).
 4. **Compare to the target's AC.** Physical attacks compare against **Physical AC**. Spells compare against **Magical AC**. If your result meets or beats the AC, the attack hits. If it falls short, it misses.
+
+{{footnote Combat}}
+{{pageNumber,auto}}
+
+\page
+
 5. **Roll damage.** Roll your weapon's damage dice + Body, or your spell's damage dice + Magic. The target's **DR** (Physical DR for weapon hits, Magic DR for spell hits) subtracts from the total. The target takes the remainder as damage. Damage cannot go below 0.
 6. **Apply tags and stacks.** If the attack carries a tag that inflicts a condition (Burn, Chilled, Bleed, Force, etc.), apply 1 stack of that condition to the target. Stacks follow the rules in Conditions, Injuries, and Death.
 7. **Check for 0 HP.** If the target drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death: Dropping to 0 HP).
@@ -1478,11 +1506,6 @@ When you attack, follow these steps:
 {{note
 **Example:** You swing a greathammer at an enemy wearing Light armor (Physical DR 1, Body +2, Physical AC 3). Your Body is +4. You roll 2d10: 5 + 9 = 14, plus 4 = 18. That beats AC 3. You roll damage: 1d8 + 4 = 11. The enemy's Physical DR 1 absorbs 1. They take 10 damage. Your greathammer carries the Force tag, so the enemy gains 1 Force stack.
 }}
-
-{{footnote Combat}}
-{{pageNumber,auto}}
-
-\page
 
 ### Tags in Combat
 
@@ -1492,30 +1515,29 @@ Tags are system-wide. The same Burn stack works the same way whether it came fro
 
 **Stack escalation.** Some conditions escalate when they reach 5 stacks. Five Acid stacks trigger Corroded (-2 DR). Five Bleed stacks trigger Shredded. Five Force stacks trigger Concussed. Your weapon and spell choices determine which escalation paths you threaten.
 
-### Worked Example: A Full Round
+## Worked Example
 
 Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor), **Chris** (hybrid, Body +2, Magic +3, shortsword 1d6+Body, Light armor), and a **Bandit Sergeant** (Enemy rank, Body +3, Magic -1, mace 1d8+Body, Medium armor, 100 HP).
 
 **Initiative.** Jake rolls d10: 8, plus Body +4 = 12. Chris rolls d10: 6, plus Magic +3 = 9. Bandit Sergeant rolls d10: 7, plus Body +3 = 10. Turn order: Jake (12), Bandit Sergeant (10), Chris (9).
 
-\column
-
-**Jake's turn (3 actions).**
+#### Jake's turn (3 actions)
 - Action 1: Move. Jake closes 25 feet to reach the Bandit Sergeant.
 - Action 2: Attack with greatsword. Roll `2d10 + 4` = 7 + 6 + 4 = **17**. Bandit's Physical AC = Physical DR 3 + Body 3 = **6**. Hit. Damage: `1d8 + 4` = 5 + 4 = **9**, minus DR 3 = **6 damage**. Bandit is at 94 HP.
 - Action 3: Attack again. Roll `2d10 + 4` = 3 + 8 + 4 = **15**. Beats AC 6. Damage: `1d8 + 4` = 7 + 4 = **11**, minus 3 = **8 damage**. Bandit at 86 HP.
 
-**Bandit Sergeant's turn (3 actions).**
+#### Bandit Sergeant's turn 
 - Action 1: Attack Jake with mace (Force tag). Roll `2d10 + 3` = 9 + 4 + 3 = **16**. Jake's Physical AC = DR 3 + Body 4 = **7**. Hit. Damage: `1d8 + 3` = 6 + 3 = **9**, minus 3 DR = **6 damage**. Jake gains 1 Force stack.
 - Action 2: Attack again. Roll `2d10 + 3` = 2 + 5 + 3 = **10**. Beats AC 7. Damage: `1d8 + 3` = 3 + 3 = **6**, minus 3 = **3 damage**. Jake gains a second Force stack (now 2 Force, dealing 2 damage at start of his next turn).
 - Action 3: Move. The Bandit steps 10 feet to put Jake between himself and Chris.
 
-**Chris's turn (3 actions).**
+#### Chris's turn (3 actions)
 - Action 1: Move 25 feet to reach the Bandit. This takes her through Jake's space (allies can pass through each other's spaces).
 - Action 2: Attack with shortsword. Roll `2d10 + 2` = 8 + 7 + 2 = **17**. Beats Bandit's Physical AC of 6. Damage: `1d6 + 2` = 4 + 2 = **6**, minus 3 DR = **3 damage**. Bandit at 83 HP.
 - Action 3: Cast a frost bolt (spell, Chilled tag). Roll `2d10 + 3` (Magic) = 6 + 5 + 3 = **14**. Bandit's Magical AC = Magic DR 1 + Magic -1 = **0**. Hit. Spell damage: `1d6 + 1d8 + 3` = 3 + 6 + 3 = **12**, minus Magic DR 1 = **11 damage**. Bandit at 72 HP and gains 1 Chilled stack.
 
-**End of round.** Turn order resets to the top. Jake takes 2 damage from his 2 Force stacks at the start of his next turn. The Bandit's Chilled stack will deal 1 damage at the start of the Bandit's next turn and lasts 2 rounds unless reapplied.
+#### End of Round
+ Turn order resets to the top. Jake takes 2 damage from his 2 Force stacks at the start of his next turn. The Bandit's Chilled stack will deal 1 damage at the start of the Bandit's next turn and lasts 2 rounds unless reapplied.
 
 {{footnote Combat}}
 {{pageNumber,auto}}
@@ -1523,30 +1545,37 @@ Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor)
 \page
 
 <!-- CHAPTER 9: CONDITIONS, INJURIES, AND DEATH -->
-
+{{wide 
 # Conditions, Injuries, and Death
 
 This chapter explains how lasting effects work in Solus: what causes them, how they build, what happens when they get worse, and how to get rid of them. It also covers what happens when a character drops to 0 HP.
 
 Every rule in this chapter applies the same way regardless of where the effect comes from. A Burn stack from a fire spell works the same as a Burn stack from a flaming sword or a pool of lava. The source does not change the rules.
 
-### Before You Read: Tracking Conditions at the Table
+
+
+## Tracking Conditions at the Table
 
 The stack and condition system is the densest part of Solus. It has more moving parts than any other chapter. Read it once to understand the logic. You do not need to memorize it. The system caps at 5 stacks per type, and nothing goes past an escalated condition. Once you reach 5 stacks and trigger the escalation, that is the worst it gets. The math stays bounded.
 
 At the table, you have three options for tracking stacks:
 
-**Paper character sheets.** The Solus character sheet includes a row of five boxes for each stack type. Fill in a box when you gain a stack. Erase it when the stack expires or is removed. Write the round number next to each box so you know when it decays. This works, but it requires attention from every player.
+- **Paper character sheets.** The Solus character sheet includes a row of five boxes for each stack type. Fill in a box when you gain a stack. Erase it when the stack expires or is removed. Write the round number next to each box so you know when it decays. This works, but it requires attention from every player.
 
-**Condition Tracker app.** A dedicated Solus Condition Tracker (planned for iOS and Android) handles stack counts, decay timers, escalation triggers, elemental interactions, and damage calculations automatically. If your group plays at a physical table and wants to offload the bookkeeping, this is the recommended tool.
+- **Condition Tracker app.** A dedicated Solus Condition Tracker (planned for iOS and Android) handles stack counts, decay timers, escalation triggers, elemental interactions, and damage calculations automatically. If your group plays at a physical table and wants to offload the bookkeeping, this is the recommended tool.
 
-\column
+- **Virtual tabletop.** Solus has native support for FoundryVTT. The Foundry module tracks all tag applications, stack counts, decay rounds, escalation thresholds, opposing stack cancellation, and condition damage per round. The GM and players see stack states update in real time. If your group plays online, this is the smoothest way to run the system.
 
-**Virtual tabletop.** Solus has native support for FoundryVTT. The Foundry module tracks all tag applications, stack counts, decay rounds, escalation thresholds, opposing stack cancellation, and condition damage per round. The GM and players see stack states update in real time. If your group plays online, this is the smoothest way to run the system.
+You do not need digital tools to play Solus. The paper sheet works. But the condition system rewards groups that use tracking tools, because those tools let you focus on tactics.
 
-You do not need digital tools to play Solus. The paper sheet works. But the condition system rewards groups that use tracking tools, because those tools let you focus on tactics instead of arithmetic.
+}}
 
-### Tags and Stacks: The Two-Part System
+{{footnote Conditions, Injuries, and Death}}
+{{pageNumber,auto}}
+
+\page
+
+## Tags and Stacks: The Two-Part System
 
 Solus tracks lasting effects through two linked pieces: **tags** and **stacks**.
 
@@ -1556,36 +1585,33 @@ A **stack** is what a tag creates when it lands on a target. Each time a tagged 
 
 Tags are on the source. Stacks are on the target.
 
-{{note
-**Example:** A mage casts a fire bolt tagged with Burn. The spell hits you. You now have 1 Burn stack. Next round, the mage hits you again. You now have 2 Burn stacks. The tag (Burn) lives on the spell. The stacks (1, then 2) live on you.
-}}
-
-{{footnote Conditions, Injuries, and Death}}
-{{pageNumber,auto}}
-
-\page
-
 ### How Stacks Work
 
-When a tagged effect hits a target, follow these rules:
+Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.**
 
-1. **Apply 1 stack.** Each hit adds exactly 1 stack of the tag's type. A sword tagged with Bleed adds 1 Bleed stack per hit. A spell tagged with Burn adds 1 Burn stack per hit.
+1. **Hit.** A tagged attack lands. The target gains 1 stack of that tag's type.
+2. **Stack.** The stack count goes up. Damage dealt by stacks equals the current count.
+3. **Hurt.** Stack damage hits twice: once on application, once at the start of the target's next turn.
+4. **Fade.** Each stack decays after 2 rounds. Purging, spending, and elemental counters can remove stacks faster. At 5 stacks, an escalated condition triggers.
 
-2. **One tag per hit.** If an attack carries two tags (a weapon with both Burn and Bleed), you choose which one to apply. A single hit never applies two different stack types.
+##### Stack Rules
+| Rule | Detail |
+|:---|:---|
+| Stacks per hit | 1 per hit. Always. |
+| One tag per hit | Multi-tag attacks: choose one. A single hit never applies two stack types. |
+| Damage per tick | Equal to the current stack count. 3 stacks = 3 damage. |
+| Damage timing | On application (immediate) and at the start of the target's next turn. |
+| Cap | 5 stacks per type. No exceptions. |
+| Independence | Different types stack separately. 3 Burn + 2 Bleed = both tracked, both deal damage. |
+| DR | Elemental stacks (Burn, Chilled, Volt, Acid): reduced by Magic DR. Physical stacks (Bleed, Force): reduced by Physical DR. DR does not prevent stacks from applying or escalating. |
 
-3. **Stack damage equals the stack count.** A target with 2 Burn stacks takes 2 fire damage. A target with 4 Acid stacks takes 4 acid damage. The more stacks, the more damage.
+| **Removal** | |
+|:---|:---|
+| Decay | Each stack expires 2 rounds after application. New stacks get fresh timers. Old stacks keep theirs. |
+| Purge | Full purge (2 actions): remove all elemental stacks. Partial purge (1 action): remove 1 stack per elemental type. Some purge abilities target specific elements. |
+| Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. |
+| Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). See Condition Profiles for each type's counter. |
 
-4. **Stack damage triggers twice.** The target takes stack damage once when the stack is applied (immediately on the hit), and again at the **start of the target's next turn**. This means even if you lose the stacks before your turn, the damage from the initial hit already landed.
-
-5. **Each stack lasts 2 rounds.** Count from the turn the stack was applied. After 2 full rounds pass, that stack expires and is removed.
-
-6. **Reapplying resets the timer.** If a target already has 3 Burn stacks and you hit them with another Burn attack, the new stack resets to a fresh 2-round duration. The older stacks keep their own timers. Track each stack's decay separately.
-
-7. **All stacks cap at 5.** No target can have more than 5 stacks of any single type. No spell, ability, item, or combination of effects can push a stack count above 5.
-
-8. **Different stack types are independent.** A creature can have 3 Burn stacks and 2 Bleed stacks at the same time. Each type tracks its own count, deals its own damage, and decays on its own timers.
-
-\column
 
 {{note
 **Example: Tracking stacks across two rounds.**
@@ -1601,28 +1627,34 @@ Round 2, enemy's turn: At the start of the enemy's turn, 2 Bleed stacks deal 2 d
 Round 3, enemy's turn: The first stack expires (2 rounds have passed since it was applied). The enemy is back to 1 Bleed stack and takes 1 damage.
 }}
 
-### Armor and Stack Damage
 
-**Magic DR reduces stack damage** from elemental and magical sources (Burn, Chilled, Volt, Acid). If you have Magic DR 3 and take 4 Burn stack damage, you take 1 damage instead of 4. Magic DR does not prevent the stack from being applied. It does not stop stacks from building toward escalation. It only reduces the damage the stacks deal each round.
+### Escalation
 
-Physical DR does not reduce elemental stack damage. Bleed and Force stacks deal physical damage and are reduced by Physical DR.
+When a stack type reaches 5, it triggers an **escalated condition** (also called a **Tier 2 condition** or **T2 condition**). This is a stronger, named effect on top of the ongoing stack damage. For the purposes of the playtest, escalation is the ceiling. The stacks stay at 5 and the condition persists until the stacks decay or are removed. T3 and T4 condition effects may be added in a future version.
+
+##### Escalated Conditions at a Glance
+| Stack Type | At 5: Escalated Condition | Short Effect |
+|:---|:---|:---|
+| Burn | Ignited | Burn damage each turn. No healing. |
+| Chilled | Frozen | Movement 0. Costs 1 action to break free. |
+| Volt | Shocked | Disadvantage on all actions. Half movement. |
+| Acid | Corroded | DR reduced by 2. Corrosion countdown on flesh. |
+| Poison | Venomous | Lose 1 action. Self-accelerating stacks. |
+| Bleed | Shredded | TODO |
+| Force | Concussed | TODO |
+
+{{note
+**Example: Burn to Ignited.** You get hit by a fire spell three rounds in a row. Round 1: 1 Burn stack, 1 fire damage. Round 2: 2 Burn stacks, 2 fire damage. Round 3: 3 stacks, 3 damage. Two more hits and you reach 5 Burn stacks. At 5, you become Ignited: you take Burn damage every turn and cannot receive healing. Your ally hits you with an ice spell (Chilled tag). The Chilled cancels 1 Burn stack, dropping you to 4. Ignited ends. Another ice hit drops you to 3. The fire is coming under control.
+}}
 
 {{footnote Conditions, Injuries, and Death}}
 {{pageNumber,auto}}
 
 \page
 
-### Escalation and Interactions
+## Condition Profiles
 
-When a stack type reaches 5, it triggers an **escalated condition**: a stronger, named effect on top of the ongoing stack damage. Escalation is the ceiling. Nothing goes past it. The stacks stay at 5 and the condition persists until the stacks decay or are removed.
-
-The profiles below cover every element and magic type in the game. Each profile tells you four things: what the tag does on hit, what happens as stacks build, what the escalation does at 5, and how to counter or remove it.
-
-{{note
-**Example: Burn to Ignited.** You get hit by a fire spell three rounds in a row. Round 1: 1 Burn stack, 1 fire damage. Round 2: 2 Burn stacks, 2 fire damage. Round 3: 3 stacks, 3 damage. Two more hits and you reach 5 Burn stacks. At 5, you become Ignited: you take Burn damage every turn and cannot receive healing. Your ally hits you with an ice spell (Chilled tag). The Chilled cancels 1 Burn stack, dropping you to 4. Ignited ends. Another ice hit drops you to 3. The fire is coming under control.
-}}
-
-\column
+Each profile covers one tag type: what it does on hit, what happens as stacks build, what the T2 condition does at 5, and how to counter or remove it.
 
 #### Fire / Burn
 
@@ -1662,7 +1694,6 @@ Lightning attackers can set up the Stunned combo by applying Wet first (water sp
 {{footnote Conditions, Injuries, and Death}}
 {{pageNumber,auto}}
 
-\page
 
 #### Acid
 
@@ -1690,7 +1721,6 @@ Lightning attackers can set up the Stunned combo by applying Wet first (water sp
 
 Venomous is the most dangerous escalation in the game. It accelerates on its own once triggered. Act fast.
 
-\column
 
 #### Bleed
 
@@ -1724,49 +1754,6 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 **Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering Concussed.
 }}
 
-{{footnote Conditions, Injuries, and Death}}
-{{pageNumber,auto}}
-
-\page
-
-#### Water / Wet
-
-| | |
-|:---|:---|
-| **Tag** | Water, Wet |
-| **Stack** | Wet is a condition, not a damage stack. It does not deal damage or escalate through stacking. |
-| **Effect** | Extinguishes fire on terrain and objects. Enables the Shocked to Stunned upgrade. |
-| **T2 spell: Drown** | A T2 Water spell applies Drown directly. You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
-
-Wet is a setup condition. On its own it does nothing harmful. Combined with Volt stacks, it turns Shocked into Stunned.
-
-#### Life Magic
-
-Life magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Life discipline.
-
-| Tag | What It Does |
-|:---|:---|
-| Restore | Repairs recent damage. Stabilizes injuries not yet permanent. |
-| Regenerate | Restores lost body parts and reverses severe trauma while the spell is active. |
-| Radiant | Damages corrupted or organic targets. Removes Venomous at 10 or fewer stacks. |
-| Purge | Removes or suppresses one active biological condition. The only way to remove Venomous at 15+. |
-| Rouse | Returns a recently deceased target to life (body intact, death recent). |
-| Revive | Returns a long-dead target to life at extreme cost or risk. |
-
-Radiant and Purge are the primary healing-side answers to Poison. Restore and Regenerate handle physical damage. Rouse and Revive handle death.
-
-\column
-
-#### Death Magic
-
-Death magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Death discipline.
-
-| Tag | What It Does |
-|:---|:---|
-| Pyroptosis | Target detonates with necrotic energy in a 5 ft. radius. |
-| Apoptosis | Target dies immediately. |
-| Reanimate | Restores temporary motion to lifeless matter. |
-| Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
 
 #### Reap (Weapon-Specific)
 
@@ -1776,15 +1763,7 @@ Death magic tags do not create stacks. They produce immediate effects. These tag
 | **Stack** | Reap. Unique stack type with its own rules. |
 | **Countered by** | Any healing removes all Reap stacks. If the attacker misses the target for 2 consecutive rounds, Reap stacks are removed. |
 
-### General Stack Removal
 
-These removal methods apply to all stack types, not just one element.
-
-**Decay.** Every stack expires 2 rounds after it was applied. Automatic.
-
-**Purging.** A full purge (2 actions) removes all elemental stacks from you. A partial purge (1 action) removes 1 stack of each elemental type. Some purge abilities target a narrower set (Acid and Poison only, for example).
-
-**Spending.** Some weapon traits and abilities let you spend your accumulated stacks to power an effect instead of letting them escalate. Spent stacks are removed immediately and do not count toward escalation. If you lack the required stacks, the ability fails.
 
 {{footnote Conditions, Injuries, and Death}}
 {{pageNumber,auto}}
@@ -1817,8 +1796,33 @@ These conditions do not come from stacks. They are applied directly by abilities
 | Stunned | Disadvantage on all actions. You lose your reaction for the round. (Usually from Shocked + Wet.) |
 | Unconscious | You are unresponsive and cannot act until awakened or the effect ends. |
 | Weaken | |
+| Wet | No damage. Extinguishes fire on terrain and objects. Enables the Shocked → Stunned upgrade. |
+| Drown | Applied by T2 Water spells. You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
 
-\column
+##### Life Magic Tags
+
+These tags do not create stacks. They produce immediate effects from spells built with the Life discipline.
+
+| Tag | Effect |
+|:---|:---|
+| Restore | Repairs recent damage. Stabilizes injuries not yet permanent. |
+| Regenerate | Restores lost body parts and reverses severe trauma while the spell is active. |
+| Radiant | Damages corrupted or organic targets. Removes Venomous at 10 or fewer stacks. |
+| Purge | Removes or suppresses one active biological condition. The only way to remove Venomous at 15+. |
+| Rouse | Returns a recently deceased target to life (body intact, death recent). |
+| Revive | Returns a long-dead target to life at extreme cost or risk. |
+
+##### Death Magic Tags
+
+These tags do not create stacks. They produce immediate effects from spells built with the Death discipline.
+
+| Tag | Effect |
+|:---|:---|
+| Pyroptosis | Target detonates with necrotic energy in a 5 ft. radius. |
+| Apoptosis | Target dies immediately. |
+| Reanimate | Restores temporary motion to lifeless matter. |
+| Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
+
 
 {{descriptive
 **TODO:** Jacob, Shredded, Concussed, Poisoned, and Weaken still need full definitions from you.
@@ -1978,8 +1982,6 @@ Raise the DC if the character lacks relevant context: they have never seen this 
 
 A roll is only needed when the outcome is uncertain. If the task is trivial for the character, describe the success. If the task is impossible, describe the failure.
 
-\column
-
 ### The Degree of 5
 
 After a Skill Check, read the result using the **Degree of 5** scale. The gap between the result and the DC determines how much the outcome swings beyond a basic success or failure.
@@ -2002,7 +2004,6 @@ The Degree of 5 applies to all Skill Checks. It does not apply to Combat Rolls (
 {{footnote Running the Game}}
 {{pageNumber,auto}}
 
-\page
 
 ### Player Control vs. GM Control
 
@@ -2033,9 +2034,9 @@ Use NPCs to drive the gameplay loop. Every NPC should have a goal: protect the g
 
 # Reference and Playtest Tools
 
-This chapter collects quick-reference tables and playtest materials. Use these at the table when you need to look something up without flipping through the full chapters.
+This chapter collects reference tables and playtest materials. Use these at the table when you need to look something up without flipping through the full chapters.
 
-### Quick Reference: Core Rolls
+### Core Rolls
 
 | Roll Type | Formula | Compare Against |
 |:---|:---|:---|
@@ -2044,7 +2045,7 @@ This chapter collects quick-reference tables and playtest materials. Use these a
 | Skill Check | 2d10 + Skill Modifier | DC set by GM |
 | Initiative | 1d10 + Body or Magic | Ranked highest to lowest |
 
-### Quick Reference: Armor Tiers
+### Armor Tiers
 
 | Tier | Physical DR | Magic DR | Total DR |
 |:---|:---:|:---:|:---:|
@@ -2056,7 +2057,7 @@ This chapter collects quick-reference tables and playtest materials. Use these a
 
 **Physical AC** = Physical DR + Body. **Magical AC** = Magic DR + Magic. Max DR per type: 4. Max AC: 9.
 
-### Quick Reference: Backgrounds
+### Backgrounds
 
 | Background | HP | Max Mana | Mana Regen / Round |
 |:---|:---:|:---:|:---:|
@@ -2064,36 +2065,7 @@ This chapter collects quick-reference tables and playtest materials. Use these a
 | Martial | 120 | 30 | 3 |
 | Hybrid | 110 | 70 | 10 |
 
-\column
-
-### Quick Reference: NPC Tiers
-
-| Tier | HP | Mana (Max / Regen) |
-|:---|:---:|:---|
-| Minion | 1-5 | 30 / 3 |
-| Regular | 75 | 30 / 3 |
-| Enemy / Ally | 100 | 100 / 15 |
-| Mini Boss | 120 | 100 / 15 |
-| Boss | 175 | 100 / 20 |
-
-### Quick Reference: Mana Cost Anchors
-
-| Benchmark | Mana |
-|:---|:---:|
-| Cheapest spell | 8 |
-| Most expensive 1-action spell | 44 |
-| Most expensive 3-action spell | 132 |
-
-### Quick Reference: Damage Dice by Mana Cost
-
-| Mana Cost | Die |
-|:---:|:---:|
-| 1 | d6 |
-| 2 | d8 |
-| 3 | d10 |
-| 5 | d12 |
-
-### Quick Reference: Degree of 5
+### Degree of 5
 
 | Gap | Outcome |
 |:---|:---|
@@ -2103,97 +2075,167 @@ This chapter collects quick-reference tables and playtest materials. Use these a
 | Miss DC by 5-9 | Failure, minor setback |
 | Miss DC by 10+ | Failure, major setback |
 
+\column
+
+### Actions
+
+| Action | What It Does |
+|:---|:---|
+| Attack | Strike with a weapon. Roll a Combat Roll. |
+| Cast a Spell | Cast a spell using 1+ actions. Multi-action spells can span turns. |
+| Move | Move up to your full movement speed. |
+| Drink a Potion | Consume a potion or similar item. |
+| Interact | Open a door, draw a weapon, pick up an object, pull a lever. |
+| Use a Skill | Attempt a Skill Check during combat. |
+
+3 actions per turn. 1 reaction per round (refreshes at start of your turn).
+
+### Attack Sequence
+
+1. Choose your attack (weapon or spell).
+2. Roll `2d10 + Body` (physical) or `2d10 + Magic` (spell).
+3. Compare to Physical AC or Magical AC. Meet or beat = hit.
+4. Roll damage dice + modifier. Subtract target's DR.
+5. Apply tags. 1 stack per hit. One tag per hit.
+6. Check for 0 HP.
+
+### NPC Tiers
+
+| Tier | HP | Mana (Max / Regen) |
+|:---|:---:|:---|
+| Minion | 1-5 | 30 / 3 |
+| Regular | 75 | 30 / 3 |
+| Enemy / Ally | 100 | 100 / 15 |
+| Mini Boss | 120 | 100 / 15 |
+| Boss | 175 | 100 / 20 |
+
+### Mana and Damage
+
+| Benchmark | Mana |
+|:---|:---:|
+| Cheapest spell | 8 |
+| Most expensive 1-action spell | 44 |
+| Most expensive 3-action spell | 132 |
+
+| Mana Cost | Damage Die |
+|:---:|:---:|
+| 1 | d6 |
+| 2 | d8 |
+| 3 | d10 |
+| 5 | d12 |
+
 {{footnote Reference and Playtest Tools}}
 {{pageNumber,auto}}
 
 \page
 
-### Playtest Checklist
+### Stack Cycle: Hit → Stack → Hurt → Fade
 
-Use this checklist to verify a session covers the core systems.
+| Beat | Rule |
+|:---|:---|
+| Hit | A tagged attack lands. Target gains 1 stack. |
+| Stack | Stack count goes up. Damage = current count. |
+| Hurt | Damage ticks twice: on application and at start of target's next turn. |
+| Fade | Each stack decays after 2 rounds. At 5 stacks, escalated condition triggers. |
 
-**Character creation:**
+### Escalated Conditions
 
-- Can you assign a race and record racial traits?
-- Can you distribute 5 attribute points with zero remaining?
-- Can you choose a background and record HP and mana?
-- Can you select skills and choose secondary attributes?
-- Can you equip armor and weapons?
+| Stack Type | At 5 | Short Effect |
+|:---|:---|:---|
+| Burn | Ignited | Burn damage each turn. No healing. |
+| Chilled | Frozen | Movement 0. Costs 1 action to break free. |
+| Volt | Shocked | Disadvantage on all actions. Half movement. |
+| Acid | Corroded | DR reduced by 2. Corrosion countdown. |
+| Poison | Venomous | Lose 1 action. Self-accelerating stacks. |
+| Bleed | Shredded | TODO |
+| Force | Concussed | TODO |
 
-**Combat:**
+### Stack Removal
 
-- Does initiative produce a clear turn order?
-- Can each character take 3 actions per turn?
-- Does the attack sequence (roll vs. AC, damage minus DR, apply tags) resolve cleanly?
-- Do stacks track, damage, and decay correctly?
-- Does the dying system produce the expected tension?
-
-**Spellcasting:**
-
-- Can a caster build a spell by filling all 9 parameters?
-- Does the action cost (highest column) calculate correctly?
-- Does the total mana cost match the sum of all parameters plus function?
-- Do damage dice match the mana-to-die table?
-
-**Social and exploration:**
-
-- Can the GM set a DC and interpret results using the Degree of 5?
-- Do exploration and social encounters award XP?
+| Method | Rule |
+|:---|:---|
+| Decay | Each stack expires 2 rounds after application. |
+| Purge (full) | 2 actions. Removes all elemental stacks. |
+| Purge (partial) | 1 action. Removes 1 stack per elemental type. |
+| Spend | Some abilities consume stacks to power effects. |
+| Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). |
 
 \column
 
-### Glossary of Game Terms
+### Discipline Multipliers
 
-| Term | Definition |
-|:---|:---|
-| AC (Armor Class) | The target number an attacker must meet or beat to land a hit. Physical AC and Magical AC are calculated separately. |
-| Action | One of 3 things you do on your turn: Attack, Cast a Spell, Move, Drink a Potion, Interact, or Use a Skill. |
-| Advantage | Roll 3d10 instead of 2d10 and drop the lowest die. |
-| AOE (Area of Effect) | A spell targeting an area rather than specific creatures. All creatures in the area are affected. |
-| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Sanity) ranging from -5 to +5. |
-| Background | Caster, Martial, or Hybrid. Sets starting HP, max mana, and mana regeneration rate. |
-| Combat Roll | 2d10 + Body (physical/martial) or 2d10 + Magic (spells) compared against the target's AC. |
-| Condition | An ongoing effect applied by tags. Conditions use stacks that build and decay over time. |
-| Critical Failure | Both dice show 1 (natural 2). The effect backfires or misfires. |
-| Critical Success | Both dice show 10 (natural 20). The effect lands at its best possible outcome. |
-| DC (Difficulty Class) | The target number for a Skill Check, set by the GM based on the task's difficulty. |
-| Degree of 5 | The scale measuring how far above or below the DC a Skill Check lands. Gaps of 5 or 10 add bonuses or setbacks. |
-| Disadvantage | Roll 3d10 instead of 2d10 and drop the highest die. |
-| DR (Damage Reduction) | A flat number subtracted from damage after a hit lands. Physical DR and Magic DR are separate. |
+| Relationship | Mana Multiplier |
+|:---|:---:|
+| Main Discipline | ×1 |
+| Sub Discipline | ×2 |
+| Tertiary Discipline | ×3 |
+| Locked Discipline | Cannot cast |
+
+### Character Creation Steps
+
+1. Choose a race.
+2. Distribute 5 attribute points (Body, Mind, Social, Magic, Sanity).
+3. Choose a background (Caster, Martial, Hybrid).
+4. Choose and configure skills.
+5. Choose your initiative modifier (Body or Magic).
+6. Choose your disciplines (Main and Sub).
+7. Choose secondary attributes.
+8. Equip armor and weapons.
+9. Record everything on your character sheet.
 
 {{footnote Reference and Playtest Tools}}
 {{pageNumber,auto}}
 
 \page
 
-##### Glossary (continued)
+{{wide
+### Glossary
 
-| Term | Definition |
-|:---|:---|
-| Escalation | When a stack type reaches 5, it triggers a stronger escalated condition (e.g., 5 Acid stacks trigger Corroded). |
-| GM (Game Master) | The player who describes the world, controls NPCs, sets DCs, and adjudicates the rules. |
-| HP (Hit Points) | How much damage a character can absorb. At 0 HP, the character is incapacitated. |
-| Incapacitated | A character at 0 HP who cannot take actions, move, or use reactions. |
-| Initiative | 1d10 + Body or Magic. Determines turn order at the start of combat. |
-| Mana | The resource spent to cast spells. Regenerates at the start of your turn each round. |
-| Mastery | A specialization unlocked by total XP thresholds. Grants Mastery points spent on Mastery Skills. |
-| Melee Reach | The distance (default 5 feet) within which a creature can make melee attacks and trigger opportunity attacks. |
-| Modifier | A number from -5 to +5 added to a dice roll to produce a result. |
-| NPC (Non-Player Character) | Any character controlled by the GM. Uses the same rules as player characters. |
-| Opportunity Attack | A reaction triggered when a creature leaves an enemy's melee reach. |
-| Reaction | 1 per round. An action taken in response to another creature's action. Refreshes at the start of your turn. |
-| Round | One full cycle of turns for all combatants. Represents 3 seconds of in-world time. |
-| Skill | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. |
-| Skill Check | 2d10 + Skill Modifier vs. DC. Used when an uncertain non-combat action is attempted. |
-| Skill Modifier | Primary attribute + chosen secondary attribute for a given skill. Permanent once set. |
-| Stack | A condition counter. 1 per hit, +1 damage per stack per round, 2-round decay, caps at 5. |
-| Support Skill | An augment socketed into a skill that modifies its behavior. Slots unlock as skill rank increases. |
-| Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. |
-| Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. |
-| XP (Experience Points) | Earned from encounters, spent between sessions to buy skills and raise skill ranks. |
-
-{{descriptive
-**TODO:** Jacob, need sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.
+| Term | Definition | Pages |
+|:---|:---|:---|
+| AC (Armor Class) | The target number an attacker must meet or beat to land a hit. Physical AC = Physical DR + Body. Magical AC = Magic DR + Magic. | 7, 13, 18 |
+| Action | One of 3 things you do on your turn: Attack, Cast a Spell, Move, Drink a Potion, Interact, or Use a Skill. | 17, 18 |
+| Advantage | Roll 3d10 instead of 2d10 and drop the lowest die. | 7 |
+| AOE (Area of Effect) | A spell targeting an area rather than specific creatures. All creatures in the area are affected. | 15 |
+| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Sanity) ranging from -5 to +5. | 9, 11 |
+| Background | Caster, Martial, or Hybrid. Sets starting HP, max mana, and mana regeneration rate. | 9 |
+| Combat Roll | 2d10 + Body (physical/martial) or 2d10 + Magic (spells) compared against the target's AC. | 7, 18 |
+| Condition | An ongoing effect applied by tags. Conditions use stacks that build and decay over time. | 20, 21 |
+| Counter | Opposing elements cancel stacks 1:1 (Burn ↔ Chilled). See Condition Profiles for each type. | 21, 22 |
+| Critical Failure | Both dice show 1 (natural 2). The effect backfires or misfires. | 7 |
+| Critical Success | Both dice show 10 (natural 20). The effect lands at its best possible outcome. | 7 |
+| DC (Difficulty Class) | The target number for a Skill Check, set by the GM based on the task's difficulty. | 7, 8 |
+| Decay | Each stack expires 2 rounds after it was applied. Automatic removal. | 21 |
+| Degree of 5 | The scale measuring how far above or below the DC a Skill Check lands. Gaps of 5 or 10 add bonuses or setbacks. | 8 |
+| Disadvantage | Roll 3d10 instead of 2d10 and drop the highest die. | 7 |
+| Discipline | One of 10 spell schools (Fire, Ice, Lightning, Acid, Poison, Water, Life, Death, Force, Bleed). Determines tags a spell applies. | 10, 15, 16 |
+| DR (Damage Reduction) | A flat number subtracted from damage after a hit lands. Physical DR and Magic DR are separate. | 7, 13, 21 |
+| Escalated Condition | A stronger effect triggered when a stack type reaches 5 (e.g., 5 Burn = Ignited). Also called a T2 condition. | 21 |
+| GM (Game Master) | The player who describes the world, controls NPCs, sets DCs, and adjudicates the rules. | 3 |
+| HP (Hit Points) | How much damage a character can absorb. At 0 HP, the character is incapacitated. | 9, 23 |
+| Incapacitated | A character at 0 HP who cannot take actions, move, or use reactions. | 23 |
+| Initiative | 1d10 + Body or Magic (chosen at character creation, permanent). Determines turn order at the start of combat. | 9, 17 |
+| Mana | The resource spent to cast spells. Regenerates at the start of your turn each round. | 9, 15 |
+| Mana Regen | Mana recovered per round. Caster: 15. Hybrid: 10. Martial: 3. | 9, 15 |
+| Mastery | A specialization unlocked by total XP thresholds. Grants Mastery points spent on Mastery Skills. | 25 |
+| Melee Reach | The distance (default 5 feet) within which a creature can make melee attacks and trigger opportunity attacks. | 18 |
+| Modifier | A number from -5 to +5 added to a dice roll to produce a result. | 7, 12 |
+| NPC (Non-Player Character) | Any character controlled by the GM. Uses the same rules as player characters. Tier determines stats. | 24 |
+| Opportunity Attack | A reaction triggered when a creature leaves an enemy's melee reach. | 18 |
+| Purge | Full purge (2 actions): remove all elemental stacks. Partial purge (1 action): remove 1 stack per elemental type. | 21 |
+| Reaction | 1 per round. An action taken in response to another creature's action. Refreshes at the start of your turn. | 18 |
+| Round | One full cycle of turns for all combatants. Represents 3 seconds of in-world time. | 17 |
+| Secondary Attribute | The second attribute added to a Skill Modifier. Chosen once per skill, permanent. | 8, 12 |
+| Skill | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. | 12 |
+| Skill Check | 2d10 + Skill Modifier vs. DC. Used when an uncertain non-combat action is attempted. | 8, 12 |
+| Skill Modifier | Primary attribute + chosen secondary attribute for a given skill. Permanent once set. | 8, 12 |
+| Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. | 21 |
+| Stack | A condition counter. 1 per hit, damage equals current count, ticks twice per round, 2-round decay, caps at 5. | 20, 21 |
+| Support Skill | An augment socketed into a skill that modifies its behavior. Slots unlock as skill rank increases. | 12, 25 |
+| Sustained | A spell maintained over multiple rounds. 3 actions to begin, 1 action per turn to maintain. Interruption ends it. | 15 |
+| Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. | 19, 20 |
+| Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. | 17 |
+| XP (Experience Points) | Earned from encounters, spent between sessions to buy skills and raise skill ranks. | 25 |
 }}
 
 {{footnote Reference and Playtest Tools}}
