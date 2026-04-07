@@ -897,7 +897,7 @@ Your race sets your base movement speed, character size, and one or more racial 
 | Humans | |
 
 {{descriptive
-**TODO:** Define racial traits for each race (speed, size, unique mechanical trait). A custom race option is under consideration where you select from preset racial trait lists instead of picking a named race.
+**TODO:** Jacob, define racial traits for each race (speed, size, unique mechanical trait). Are we still considering the custom race option where players select from preset racial trait lists instead of picking a named race?
 }}
 
 ### Step 4: Choose Your Background
@@ -915,34 +915,51 @@ The first number after mana is your **maximum mana**. The second is your **mana 
 
 A Caster has the deepest mana pool and fastest regeneration but the lowest health. A Martial has the most health but barely enough mana for basic utility spells. A Hybrid splits the difference.
 
-### Step 5: Choose Your Skills
+### Step 5: Choose Your Initiative Modifier
+
+Pick whether your character uses **Body** or **Magic** for initiative rolls. This choice is permanent. When combat starts, you roll 1d10 + your chosen modifier to determine turn order (see Combat: Starting Combat).
+
+Martial fighters and physical brawlers pick Body. Dedicated casters pick Magic. Hybrids pick whichever is higher.
+
+\page
+
+### Step 6: Choose Your Disciplines
+
+Pick two spell disciplines from the ten listed in Magic and Spellcasting.
+
+- Your **Main discipline (×1)** has no mana cost penalty.
+- Your **Sub discipline (×2)** doubles the mana cost of any spell using it.
+
+All other disciplines are locked or tertiary (see Magic and Spellcasting: Spell Disciplines for full rules). If your character does not cast spells, you still pick two disciplines. They define what magical knowledge your character has access to if circumstances change.
+
+### Step 7: Choose Your Skills
 
 Pick skills from the skill list in the Attributes and Skills chapter. For each skill you take, choose its **secondary attribute** from the two options listed. This choice is permanent and determines your skill modifier (see Attributes and Skills: How Skill Modifiers Work).
 
 You start with a limited set of skills and can gain more through play. Only **10 skills** can be active at any time (see Attributes and Skills for full rules on active and inactive skills).
 
-\page
+
 
 As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a skill and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base skill can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how skills rank up and unlock slots.
 
 {{descriptive
-**TODO:** Define when Support Skill slots first become available and the full Support Skill list.
+**TODO:** Jacob, when do Support Skill slots first become available? Need the full Support Skill list.
 }}
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
 
-### Step 6: Choose Equipment
+### Step 8: Choose Equipment
 
 Pick weapons and armor from the tables in Equipment, Armor, and Weapons. Your background does not restrict your choices. A Caster can wear Heavy armor. A Martial can carry a staff.
 
 Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Equipment, Armor, and Weapons: How Armor Works). Your weapon determines your damage dice, tags, and traits.
 
 {{descriptive
-**TODO:** Add starting equipment budget or package rules.
+**TODO:** Jacob, need starting equipment budget or package rules.
 }}
 
-### Step 7: Review Your Sheet
+### Step 9: Review Your Sheet
 
 Check your sheet against this reference. If anything is blank, go back to the step that fills it in.
 
@@ -953,13 +970,14 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Race | Race, size, speed, racial traits | Fixed |
 | Background | Caster, Martial, or Hybrid | Fixed |
 | Attributes | Body, Mind, Social, Magic, Sanity | Fixed |
+| Initiative | Body or Magic modifier | Fixed |
+| Disciplines | Main discipline, Sub discipline | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
 | Skills | Active skills (up to 10), secondary picks | Skills can be swapped between sessions; secondary picks are permanent |
 | Support Skills | Socketed augments per skill | Changeable between sessions |
 | Equipment | Weapons, armor, gear | Changeable |
 | Masteries | Mastery skills (if any unlocked) | Changeable between sessions |
 
-\column
 
 Solus has no character levels. Your character grows by earning XP and spending it on skill ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
@@ -1161,9 +1179,9 @@ Tags matter because other rules reference them. A Support Skill that triggers "o
 Many weapons also carry unique **traits**: special effects that apply condition stacks, move targets, alter terrain, or unlock finisher attacks once a target has the right conditions applied to them.
 
 {{descriptive
-**TODO:** Insert the full weapon-by-weapon trait list after the equipment chapter is locked.
+**TODO:** Jacob, need the full weapon-by-weapon trait list. I'll insert it once the equipment chapter is locked.
 
-**TODO:** Confirm whether shields are missing from the equipment list and need to be added.
+**TODO:** Jacob, are shields missing from the equipment list? Do they need to be added?
 }}
 
 {{footnote Equipment, Armor, and Weapons}}
@@ -1177,9 +1195,11 @@ Many weapons also carry unique **traits**: special effects that apply condition 
 
 {{wide
 
-Solus has no spell list. You build every spell from scratch by setting nine **parameters**: what discipline of magic it belongs to, what it does, how far it reaches, how big the area is, what shape it takes, how long it lasts, how many targets it hits, how it connects with those targets, and how powerful its lasting effect is.
+Solus has no spell list. You build every spell from scratch by setting ten **parameters**: what discipline of magic it belongs to, what it does, how far it reaches, how big the area is, what shape it takes, how long it lasts, how many targets it hits, how it connects with those targets, how much damage it deals, and how powerful its lasting effect is.
 
-Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 9 to get the spell's base mana cost, then multiply by your Discipline's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
+Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 10 to get the spell's base mana cost, then multiply by your Discipline's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
+
+**Sustained spells.** Some parameter options show **S** in the Actions column instead of a number. Picking any S option makes the spell **sustained**: it cannot be cast in a single turn. A sustained spell costs all 3 actions on the turn you begin casting, then 1 action each subsequent turn to maintain. If you skip the maintenance action or get interrupted (knocked unconscious, silenced, stunned), the spell ends and mana already spent is lost. You can release a sustained spell voluntarily at the start of your turn for free.
 
 ##### Spell Parameter Table
 | Parameter | Option | Actions | Mana | Notes |
@@ -1195,32 +1215,37 @@ Each parameter has a **mana cost** and an **action cost**. Add up the mana costs
 | **Range** | Self–25 ft. | 1 | 1 | Contributes 1 damage die. |
 | | 30–60 ft. | 2 | 2 | |
 | | 65–120 ft. | 3 | 3 | |
-| | 125–200 ft. | 4+ | 4 | |
-| | Sight | 4+ | 5 | |
-| | Global | 4+ | 6 | |
+| | 125–200 ft. | S | 4 | Sustained. |
+| | Sight | S | 5 | Sustained. |
+| | Global | S | 6 | Sustained. |
 | **Size** | 5–15 ft. | 1 | 1 | Contributes 1 damage die. |
 | | 20–30 ft. | 2 | 2 | |
 | | 35–60 ft. | 3 | 3 | |
 | **Shape** | Point / none | 1 | 1 | |
 | | Sphere / Cube / Line / Wall / Cylinder | 2 | 2 | |
 | | Freeform / custom | 3 | 3 | |
-| **Duration** | Instant | 1 | 1 | |
+| **Duration** | Instant | 1 | 1 | If effect outlasts casting, pay the longer duration's cost. |
 | | 1 Round | 2 | 2 | |
 | | 1 Minute | 3 | 3 | |
-| | Hours | 4+ | 4 | |
-| | Permanent | 4+ | 5 | |
+| | Hours | S | 4 | Sustained. |
+| | Permanent | S | 5 | Sustained. |
 | **Target Count** | Single | 1 | 1 | Contributes 1 damage die. |
 | | Multi 2+ | 2 | 2 | +1 mana per extra target (max 4). |
 | | AOE | 3 | 3 | |
-| **Accuracy** | Attack Roll | 1 | 1 | Adds a bonus damage die (you choose size, pay the mana). |
+| **Accuracy** | Attack Roll | 1 | 1 | Adds a bonus damage die (sized by Damage parameter). |
 | | Save | 1 | 1 | |
-| | Auto-Hit | 4+ | 4 | |
-| **Effect Tier** | T1 | 1 | 3 | T1 applies the base tag. T2+ applies the escalated condition directly. |
+| | Auto-Hit | S | 4 | Sustained. |
+| **Damage** | None | — | 0 | Non-offensive spells. |
+| | d6 per die | — | 1 | Dice count = Range + Size + Target Count (1 each) + Attack Roll bonus (From Accuracy). Magic modifier = flat bonus. |
+| | d8 per die | — | 2 | |
+| | d10 per die | — | 3 | |
+| | d12 per die | — | 5 | |
+| **Effect Tier** | T1 | 1 | 3 | Applies the base tag. T2+ applies the escalated condition. Two tags at same tier = pay cost twice. |
 | | T2 | 2 | 6 | |
 | | T3 | 3 | 12 | |
-| | T4 | 4+ | 17 | |
+| | T4 | S | 17 | Sustained. |
 
-**Total mana cost** = (sum of parameters 2–9) × discipline multiplier. 
+**Total mana cost** = (sum of parameters 2–10) × discipline multiplier. 
 
   **Total action cost** = the highest action value among your parameters.
 }}
@@ -1254,8 +1279,15 @@ All other disciplines are **tertiary** or **locked**:
 | Death | Necrotic damage, reanimation, decay. | [Necrosis] → [Necroptosis], [Decay] → [Wither] |
 | Corruption | Chaotic instability, wild magic. | [Instability] → [Wild Magic] |
 
+#### Mana Pools
+| Background | Max Mana | Regen per Round |
+|:---|:---:|:---:|
+| Caster | 100 | 15 |
+| Hybrid | 70 | 10 |
+| Martial | 30 | 3 |
+
 {{descriptive
-**TODO:** LIZ NOTE I'm aware that you didn't create Tertiary. I did. I think it should be a variant rule. You can either choose to play Solus with Tertiary Disciplines and avoid going through the Mastery system. Or the default of locked where you must use a mastery to gain access
+**TODO:** Jacob, I'm aware you didn't create Tertiary. I did. I think it should be a variant rule: either play with Tertiary Disciplines and skip the Mastery system, or use the default where locked disciplines require a Mastery to access. Let me know which direction you want.
 }}
 }}
 {{footnote Magic and Spellcasting}}
@@ -1265,7 +1297,7 @@ All other disciplines are **tertiary** or **locked**:
 {{wide
 ## Building a Spell: Fire Bolt
 
-You want a fire attack that hits one enemy at close range. Pick one option for each of the nine parameters, record the mana and action costs, then total them up.
+You want a fire attack that hits one enemy at close range. Pick one option for each of the ten parameters, record the mana and action costs, then total them up.
 
 | # | Parameter | Your Pick | Actions | Mana | Why |
 |:---:|:---|:---|:---:|:---:|:---|
@@ -1277,12 +1309,23 @@ You want a fire attack that hits one enemy at close range. Pick one option for e
 | 6 | Duration | Instant | 1 | 1 | Hits and ends. |
 | 7 | Target Count | Single | 1 | 1 | One target. Contributes 1 damage die. |
 | 8 | Accuracy | Attack Roll | 1 | 1 | Roll to hit. Adds a bonus damage die. |
-| | | + d6 bonus die | | +1 | You choose the bonus die size and pay its mana. |
-| 9 | Effect Tier | T1 (Burn) | 1 | 3 | Applies 1 Burn stack on hit. |
+| 9 | Damage | d6 per die | — | 1 | Sets die size for all 4 damage dice. |
+| 10 | Effect Tier | T1 (Burn) | 1 | 3 | Applies 1 Burn stack on hit. |
 }}
+
+
+#### Damage
+
+Range, Size, and Target Count each contribute one die. Attack Roll adds a bonus die. All four use the size from the Damage parameter: d6 in this build. Your Magic modifier applies as a flat bonus.
+
+**Fire Bolt:** 4d6 + Magic modifier
+
+#### Effect
+
+T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the stack count and build toward the Ignited escalated condition at 5 stacks (see Conditions, Injuries, and Death). T2 would skip the buildup and apply Ignited directly.
 #### Totals
 
-**Base mana** (parameters 2–9): 2 + 1 + 2 + 1 + 1 + 1 + 2 + 3 = **13**
+**Base mana** (parameters 2–10): 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 3 = **13**
 
 **Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26. As a Tertiary (×3), 39.
 
@@ -1290,23 +1333,25 @@ You want a fire attack that hits one enemy at close range. Pick one option for e
 
 \column
 
-#### Damage
+#### Casting Fire Bolt
 
-Three parameters contribute damage dice: Range, Size, and Target Count. Each die scales with the mana you spent on that parameter (see Damage Dice table). Attack Roll adds a bonus die you sized and paid for. Your Magic modifier applies as a flat bonus.
+1. **Check mana.** You need 13 mana in your pool. Mana regenerates at the start of your turn each round.
+2. **Spend 2 actions and 13 mana.**
+3. **Roll to hit.** Roll 2d10 + Magic against the target's Magical AC.
+4. **On hit, roll damage.** Roll 4d6 + Magic modifier. Subtract the target's Magic DR.
+5. **Apply the tag.** The target gains 1 Burn stack.
 
-**Fire Bolt:** 1d6 (Range) + 1d6 (Target Count) + 1d8 (Size) + 1d6 (Attack Roll bonus) + Magic modifier
-
-#### Effect
-
-T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the stack count and build toward the Ignited escalated condition at 5 stacks (see Conditions, Injuries, and Death). T2 would skip the buildup and apply Ignited directly.
+{{note
+**Example:** Your Magic is +3. The target has Magical AC 5 (Magic DR 4, Magic +1). You roll 2d10: 7 + 8 = 15, plus 3 = 18. That beats 5. Damage: 4d6 + 3 = 4 + 2 + 5 + 3 + 3 = 17, minus Magic DR 4 = **13 damage**. The target gains 1 Burn stack.
+}}
 
 {{wide 
 {{descriptive
-**TODO:** Save resolution needs definition now that Resist Rolls have been removed.
+**TODO:** Jacob, save resolution needs a definition now that Resist Rolls have been removed. How should saves work?
 }}
 
 {{descriptive
-**TODO:** Define T3 and T4 mechanically.
+**TODO:** Jacob, I created "Sustained" as a stand-in for T3 and T4 based on what you told me in Discord DMs about concentration-style spells and multi-round effects. Review this and let me know if the mechanic fits what you had in mind or if it needs rework.
 }}
 
 }}
@@ -1314,57 +1359,6 @@ T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the s
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
-\page
-
-#### Casting Fire Bolt
-
-1. **Check mana.** You need 13 mana in your pool. Mana regenerates at the start of your turn each round.
-2. **Spend 2 actions and 13 mana.**
-3. **Roll to hit.** Roll 2d10 + Magic against the target's Magical AC.
-4. **On hit, roll damage.** Roll 1d6 + 1d6 + 1d8 + 1d6 + Magic modifier. Subtract the target's Magic DR.
-5. **Apply the tag.** The target gains 1 Burn stack.
-
-{{note
-**Example:** Your Magic is +3. The target has Magical AC 5 (Magic DR 4, Magic +1). You roll 2d10: 7 + 8 = 15, plus 3 = 18. That beats 5. Damage: 1d6 + 1d6 + 1d8 + 1d6 + 3 = 4 + 2 + 6 + 3 + 3 = 18, minus Magic DR 4 = **14 damage**. The target gains 1 Burn stack.
-}}
-
-\column
-
-### Spell Reference
-
-#### Damage Dice
-
-Range, Size, and Target Count each contribute one die. Attack Roll adds a bonus die (you choose size, pay the mana). A parameter's die caps at its maximum mana cost (Size maxes at 3, so its die caps at d10).
-
-##### Damage Die by Mana Spent
-| Mana Spent | Die |
-|:---:|:---:|
-| 1 | d6 |
-| 2 | d8 |
-| 3 | d10 |
-| 5 | d12 |
-
-Your Magic modifier applies as a flat bonus to all offensive spell damage.
-
-#### Mana Pools
-
-| Background | Max Mana | Regen per Round |
-|:---|:---:|:---:|
-| Caster | 100 | 15 |
-| Hybrid | 70 | 10 |
-| Martial | 30 | 3 |
-
-The cheapest spell costs 8 mana. The most expensive 1-action spell costs 44. The most expensive 3-action spell costs 132.
-
-#### Additional Rules
-
-**Duration override.** If the effect outlasts the casting time, pay the higher duration's mana cost.
-
-**Two tags at the same tier.** Pay the tier cost twice. Two T2 tags = 12 mana.
-
-**Multi-target scaling.** Targeting specific creatures (not AOE) adds mana: 2 targets = +2, 3 = +3, 4 = +4. Maximum 4.
-
-**Split casting.** 2- or 3-action spells can split across consecutive turns. Interruption = failure. Mana not refunded.
 
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
@@ -1409,9 +1403,9 @@ The GM builds encounters from three modes. Most sessions mix all three.
 
 Combat begins when negotiation, stealth, or avoidance fails and violence starts. This chapter covers the full sequence: who goes first, what you can do on your turn, how attacks land, and what happens when someone drops.
 
-### Starting Combat: Initiative
+### Starting Combat
 
-When combat breaks out, every combatant rolls for initiative. Roll **1d10** (one die, not two) and add either your **Body** or your **Magic** modifier. You choose which modifier to use. This choice is per character, not per encounter. A martial fighter adds Body. A caster adds Magic. A hybrid picks whichever is higher.
+When combat breaks out, every combatant rolls for **initiative**. Roll **1d10** and add either your **Body** or your **Magic** modifier. You choose which modifier to use. This choice is per character, not per encounter. A martial fighter adds Body. A caster adds Magic. A hybrid picks whichever is higher.
 
 The GM ranks everyone from highest to lowest. That is the turn order for the entire encounter unless a rule changes it.
 
@@ -1691,7 +1685,7 @@ Lightning attackers can set up the Stunned combo by applying Wet first (water sp
 | **DR type** | Magic DR reduces Poison stack damage. |
 
 {{descriptive
-**TODO:** Define Poisoned mechanical effect (distinct from Venomous).
+**TODO:** Jacob, need the mechanical effect for Poisoned (distinct from Venomous).
 }}
 
 Venomous is the most dangerous escalation in the game. It accelerates on its own once triggered. Act fast.
@@ -1709,7 +1703,7 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 | **DR type** | Physical DR reduces Bleed stack damage. |
 
 {{descriptive
-**TODO:** Define Shredded effect.
+**TODO:** Jacob, need the Shredded effect definition.
 }}
 
 #### Force
@@ -1723,7 +1717,7 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 | **DR type** | Physical DR reduces Force stack damage. |
 
 {{descriptive
-**TODO:** Define Concussed effect.
+**TODO:** Jacob, need the Concussed effect definition.
 }}
 
 {{note
@@ -1827,7 +1821,7 @@ These conditions do not come from stacks. They are applied directly by abilities
 \column
 
 {{descriptive
-**TODO:** Shredded, Concussed, Poisoned, and Weaken still need full definitions from Jacob.
+**TODO:** Jacob, Shredded, Concussed, Poisoned, and Weaken still need full definitions from you.
 }}
 
 ### Dropping to 0 HP
@@ -1839,7 +1833,7 @@ If an ally heals you to 1 HP or more before your next turn ends, you are no long
 If no healing reaches you, your character dies at the end of your next turn.
 
 {{descriptive
-**TODO:** The dying system, repeated knockdown rules, and Madness thresholds are under active design review. The final versions will replace this section when approved.
+**TODO:** Jacob, the dying system, repeated knockdown rules, and Madness thresholds are still under review. Send me the final versions and I'll replace this section.
 }}
 
 {{footnote Conditions, Injuries, and Death}}
@@ -1894,7 +1888,7 @@ The only differences between NPC tiers are stat modifiers, HP, and mana pools. E
 NPCs are not only combat pieces. An NPC can create a problem (a corrupt magistrate closes the trade route), sustain a problem (a necromancer keeps raising the dead), appear as a consequence (the bandit you spared returns with reinforcements), or deliver a reward (the merchant pays for the rescued caravan). Allies and enemies follow the same framework. Build them from the tier table, give them a goal, and place them in the scene.
 
 {{descriptive
-**TODO:** Add encounter-building procedure, XP awards by enemy tier, and guidance for mixing tiers in one encounter.
+**TODO:** Jacob, need the encounter-building procedure, XP awards by enemy tier, and guidance for mixing tiers in one encounter.
 }}
 
 {{footnote NPCs, Enemies, and Encounters}}
@@ -1929,7 +1923,7 @@ You spend XP **between sessions**. XP buys two things: new skills and skill rank
 **Support Skill Slots** unlock as a skill's rank increases. A Rank 1 skill has 1 slot. Every other rank after that (Rank 2, 4, 6, 8, 10) opens another, to a maximum of 5 slots per skill.
 
 {{descriptive
-**TODO:** Add the full XP cost table (acquisition cost + rank 1-10 costs) and XP awards per enemy tier, exploration, and social encounters.
+**TODO:** Jacob, need the full XP cost table (acquisition cost + rank 1-10 costs) and XP awards per enemy tier, exploration, and social encounters.
 }}
 
 \column
@@ -1941,7 +1935,7 @@ Masteries are specializations that unlock when your **total lifetime XP** reache
 Masteries function like skills, not classes. They define a specialization (a school of magic, a combat discipline, a social archetype) through mechanics, not through role restrictions.
 
 {{descriptive
-**TODO:** Add Mastery XP thresholds, Mastery point budget, and the Mastery Skill list.
+**TODO:** Jacob, need Mastery XP thresholds, Mastery point budget, and the Mastery Skill list.
 }}
 
 ### Between Sessions
@@ -2027,7 +2021,7 @@ Pick an NPC tier from the table in NPCs, Enemies, and Encounters. Choose martial
 Use NPCs to drive the gameplay loop. Every NPC should have a goal: protect the gate, steal the shipment, negotiate the treaty, survive the night. The goal tells you how the NPC acts on its turn and what it does between encounters.
 
 {{descriptive
-**TODO:** Add encounter pacing guidance, DC calibration examples across tiers, and adjudication advice for edge cases.
+**TODO:** Jacob, need encounter pacing guidance, DC calibration examples across tiers, and adjudication advice for edge cases.
 }}
 
 {{footnote Running the Game}}
@@ -2199,7 +2193,7 @@ Use this checklist to verify a session covers the core systems.
 | XP (Experience Points) | Earned from encounters, spent between sessions to buy skills and raise skill ranks. |
 
 {{descriptive
-**TODO:** Add sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.
+**TODO:** Jacob, need sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.
 }}
 
 {{footnote Reference and Playtest Tools}}
