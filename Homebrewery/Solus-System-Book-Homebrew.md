@@ -1273,6 +1273,9 @@ Each parameter has a **mana cost** and an **action cost**. Add up the mana costs
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
+\page
+
+{{wide
 ## Spell Disciplines
 
 Discipline determines which **tags** your spell applies on hit. Tags are labels on the source. When a tag lands on a target, it creates **stacks** that build up, deal damage over time, and trigger **escalated conditions** at 5 stacks (see Conditions, Injuries, and Death).
