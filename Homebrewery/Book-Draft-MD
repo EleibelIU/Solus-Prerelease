@@ -1,0 +1,809 @@
+```metadata
+title: Solus Frostmaiden Theme
+description: 'Frostmaiden-style theme for Solus rulebook'
+tags:
+- meta:Theme
+systems:
+- 5e
+renderer: V3
+theme: 5ePHB
+```
+
+```css
+@import url('https://rawcdn.githack.com/Kaiburr-kath-hound/HomebreweryStyles/be88dc909ce74e765dc546aed91b1499fa5d6e7b/FrostmaidenFonts.css');
+
+.page {
+	background-image	: url(https://i.imgur.com/9uez4Wb.jpg);
+	background-size		: cover;
+}
+.page:nth-of-type(odd) {
+	background-image	: url(https://i.imgur.com/mGKSuw3.jpg);
+}
+
+.page h1, 
+.page h2, 
+.page h3, 
+.page h4, 
+.page h5 {
+	letter-spacing    : 1px;
+  font-weight       : normal;
+}
+
+.page h1 {
+  padding-bottom      :10px;
+}
+.page h1+p::first-letter,
+.page h1+.quote::first-letter {
+	font-size           : 12.5em;
+  padding-right       : 4px;
+  margin-top          : -20px;
+  margin-left         : -30px;
+	color               : black;
+}
+.page:has(h1):not(.page:has(.none),
+                  .page:has(.toc),
+                  .page:has(.credits),
+                  .page:has(.insideCover))::before {
+	content						: '';
+	position					: absolute;
+	width							: 280px;
+	height						: 280px;
+	top								: 10px;
+	left							: 0;
+	z-index						: -2;
+	background-image	: url(https://i.imgur.com/g7RTsXo.png);
+	background-size		: cover;
+}
+
+.page h5 {   
+  font-weight       : bold;
+  text-shadow	      : #000 0 0 0.1px; 
+}
+
+.page .note {
+	background-color		: #d2d6db;
+}
+.page .note { 
+	border-image				: url(https://i.imgur.com/KtrHa62.png) 14 stretch;
+	border-image-outset	: 6px 0px;
+	border-image-width  : 11px;
+}
+
+.page img:not(.logo img):not(.frontcredit img) {
+	position		: absolute;
+	z-index			: -2;
+	user-select	: none;
+}
+.page .emblem img {
+	z-index			: 1!important;
+}
+
+.page .descriptive {
+	background-color		: #e7e8eb;
+}
+.page .descriptive {
+	border-image				: url(https://i.imgur.com/cfyTOm4.png) 12 stretch;
+	border-image-outset : 4px;
+}
+
+.page table tr:nth-child(odd) td {
+	background-color		: #dbdee2;
+}
+
+.page .monster.frame {
+	background-color		: #f9ecbd;
+}
+.page .monster table tr:nth-child(odd) td {
+	background-color		: transparent;
+}
+
+.page .note { 
+	margin-top : 5mm; 
+}
+.page .note + .note { 
+	margin-top : 2.5em; 
+}
+
+.page .note ol > li {
+	padding: 0 0 0 0.4em;
+	text-indent: -1.5em;
+	list-style-type: none;
+	counter-increment: item;
+}
+.page .note ul {
+	margin-top: 0.6em;
+}
+
+.page ol {
+	margin: 0.4em 0 0.5em;
+	padding: 0;
+}
+.page ol > li {
+	padding: 0 0 0 1.3em;
+	text-indent: -1.5em;
+	list-style-type: none;
+	counter-increment: item;
+}
+.page ol > li:before {
+	display: inline-block;
+	width: 1em;
+	padding-right: 0.5em;
+	font-weight: bold;
+	text-align: right;
+	content: counter(item) '.';
+}
+
+.page .artist {
+  position          : absolute !important;
+	bottom						: 100px;
+	left							: 60px;
+	transform					: rotate(-90deg);
+	transform-origin	: bottom left;
+  text-align        : left;
+	font-family			  : ScalySansSmallCapsRemake;
+	font-size				  : 13px;
+  text-transform    : lowercase;
+	color							: #818892;
+}
+.page:nth-of-type(even):not(:has(.insideCover)) .artist {
+	left						  : unset;
+	right						  : 60px;
+	transform					: rotate(90deg);
+	transform-origin	: bottom right;
+}
+
+.page caps {
+	font-variant	: small-caps;
+}
+.page .backcover caps {
+	font-size			: 120%;
+}
+
+.page [class*="watercolor"] {
+	background-color	: #7a0000;
+}
+
+.page:after {
+	bottom						: -10px;
+	height						: 70px;
+	background-image	: url(https://i.imgur.com/c8LZtAy.png);
+}
+
+.page:not(:has(.frontCover),:has(.credits)) .footnote {
+	left						: 90px;
+	bottom					: 45px;
+	font-size				: 11px;
+	color						: #818892;
+	text-transform	: uppercase;
+	text-align			: left;
+	width						: 400px;
+	font-weight			: 800;
+	font-family			: Marco Polo;
+	letter-spacing	: 1.2px;
+	z-index					: -3;	
+	--shadow-x0			: #fcfcfc 0 0 5px;
+	--shadow-x1	: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
+	text-shadow	: var(--shadow-x1), var(--shadow-x1), var(--shadow-x0);
+}
+
+.page:nth-of-type(even):not(:has(.frontCover),:has(.credits)) .footnote {
+  left            : unset;
+  right           : 90px;
+  text-align      : right;
+}
+
+.page .pageNumber {
+	left 				    : 15px;
+	bottom					: 34px;
+	font-size				: 16px;
+	color						: #818892;
+	text-align			: center;
+	font-family			: Marco Polo;
+	font-weight			: 100;
+	--shadow-x0			: #fcfcfc 0 0 3px;
+	--shadow-x1	: var(--shadow-x0), var(--shadow-x0), var(--shadow-x0);
+	text-shadow	: var(--shadow-x1), var(--shadow-x1), var(--shadow-x1);
+}
+
+.page:nth-of-type(even) .pageNumber {
+  left            : unset;
+  right           : 15px;
+}
+
+.page a {
+	color						: inherit;
+	text-decoration	: none;
+	font-weight			: inherit;
+}
+.page a:hover{
+	text-decoration	: underline;
+}
+
+.page .quote {
+	font-family 		: Cormorant;
+	font-size				: 15px;
+	line-height			: 1em;
+	margin-top			: 0;
+	padding-bottom	: 4px;
+}
+
+.page .quote.author p:last-child {
+	font-family 		: BookInsanityRemake;
+	font-size				: 0.34cm;
+	margin-top			: 4px;
+	text-align			: right;
+}
+
+.page:has(.frontCover) .logo {
+  top             : 23px;
+}
+.page:has(.frontCover) {
+  padding-top     : 78px;
+}
+.page:has(.frontCover) h1 {
+  margin-top      : 12px;
+  text-transform  : none;
+  font-size       : 98px;
+}
+
+.page:has(.frontCover) hr {
+  width           : 10cm;
+}
+
+.page:has(.frontCover) h2,
+.page:has(.frontCover) h3 {
+  filter          : drop-shadow(0 0 1.3px black) drop-shadow(0 0 0 black)
+                    drop-shadow(0 0 0 black)  drop-shadow(0 0 0 black)
+                    drop-shadow(0 0 0 black)  drop-shadow(0 0 0 black)
+                    drop-shadow(0 0 0 black)  drop-shadow(0 0 0 black);
+	font-family     : 'Modesto Expanded';
+  font-size       : 0.8cm;
+  letter-spacing  : 0.1cm;
+  margin-top      : 10px;
+  transform       : ScaleX(0.9);
+}
+
+.page:has(.frontCover) h3 {
+  color           : white;
+  border-bottom   : none;
+  font-size       : 0.64cm;
+}
+
+.page:has(.frontCover) .footnote {
+	font-family		  : VeraCruz;
+  letter-spacing  : 1px;
+  z-index         : 1;
+	width						: fit-content;
+}
+
+.page small {
+  position			  : relative;
+  text-transform  : lowercase;
+  bottom				  : 10px;
+  font-size			  : 90%;
+}
+      
+.page:has(.frontCover) .emblem,
+.page:has(.frontCover) .color {
+  position					  : absolute;
+  top								  : 0; 
+  left							  : 0;
+  background-size		  : 100% 100%;
+  background-repeat	  : no-repeat;
+}
+.page:has(.frontCover) .color {
+  height						  : 19px;
+  width							  : 650px;
+  background-color	  : black;
+  opacity						  : 75%;
+  z-index						  : -1;
+  -webkit-mask-image  : url(https://i.imgur.com/bURATrX.png);
+  -webkit-mask-size	  : 100% 100%;   
+}
+.page:has(.frontCover) .emblem {
+  height						  : 80px;
+  width							  : 340px;
+  z-index						  : 0;
+  background-image	  : url(https://i.imgur.com/y2xctk4.png);
+}
+.page:has(.frontCover) .emblem img {
+  left							  : 20px;
+  top								  : 0;
+  min-width					  : unset;
+  max-width					  : 50%;
+  max-height				  : 100%;
+  z-index						  : 1;
+}
+
+.page:has(.insideCover) h1 {
+	font-size				: 88px;
+}
+
+.page:has(.insideCover) h2 {
+	font-family			: Nodesto;
+	font-size				: 3em;
+	letter-spacing	: 0.8px;
+}
+
+.page:has(.insideCover) h3 {
+	font-family     : 'Modesto Expanded';
+	font-weight     : normal;
+	font-size       : 31px;
+	letter-spacing  : 1px;
+ 	border-bottom   : unset;
+  margin          : 10px -80px 20px;
+  width           : 816px;
+}
+
+.page:has(.credits) h1+p::first-letter, 
+.page:has(.credits) h1+p::first-line,
+.page:has(.credits)::after {
+	all	: unset;
+}
+
+.page:has(.credits) h1 {
+	font-size	: 40px;
+}
+
+.page:has(.credits h2), 
+.page:has(.credits h5) {
+	margin-bottom	:14px;
+}
+
+.page:has(.credits) p {
+	font-family	: Martel_SansRegular;
+	font-style	: normal;
+	font-size		: 0.83em;
+	line-height	: 1.5em;
+	text-indent	: -1em; 
+	margin-left	: 1em;
+}
+
+.page:has(.credits) strong {
+	font-family	: Martel_SansExtraBold;
+}
+
+.credits a {
+	color				: #6c0007;
+	font-weight	: bold;
+}
+
+.page .frontcredit {
+	position						: relative;
+	right								: 10px;
+	width               : 340px;
+	height              : 240px;
+	margin-top					: 15px;
+	margin-bottom				: 110px;
+}
+
+.frontcredit::before {
+	content							: '';
+	position						: absolute;
+	top									: 4px;
+	left								: -20px;
+	height							: 98%;
+	width								: 109.2%;
+	background-image		: url(https://i.imgur.com/VToJGxP.png);
+	background-size			: 100% 100%;
+  z-index             : 1;
+}
+
+.frontcredit img {
+	position							: relative;
+	top										: 5px;
+	left									: -18px;
+	width									: 108.5%;
+	height								: 234px;
+	-webkit-mask-image		: url(https://i.imgur.com/PN6zgvK.png);
+	-webkit-mask-position	: top;
+	-webkit-mask-size			: 100% 234px;
+	-webkit-mask-repeat		: no-repeat;
+}
+
+.frontcredit h5 {
+	margin-top		: 10px;
+	margin-bottom	: -2px;
+	text-shadow		: #000 0px 0px 0.1px;
+}
+
+.page .frontcredit p {
+	text-indent	: 0em; 
+	margin-left	: 0em;
+}
+
+.credits .footnote {
+	bottom					: 20px;
+	left						: 0;
+	width						: 100%;
+	font-size				: 1em;
+	text-transform	: none;
+	text-align			: left;
+	color						: black;
+}
+
+.credits .footnote p {
+	padding			    : 4.5em;
+	text-indent	    : 0;
+}
+
+.page:has(.toc) h1 {
+	text-align			: left;
+}
+	
+.page .toc h3,
+.page .toc h4 {
+	font-family			: BookInsanityRemake;
+	font-size				: 12px;
+	letter-spacing	: 0;
+}
+  
+.page .toc h3 {
+	font-weight			: bold;
+	border-bottom		: unset;
+}
+
+.page .toc h4 {
+	margin-top			: 2px;
+	color						: black;
+}
+
+.page .toc ul h3 span:first-child::after {
+	border-bottom   : 0.05cm dotted #000;
+}
+	
+.page .toc ul li + li h3 {
+	margin-top	    : 8px;
+}
+
+.page .toc.wide {
+	columns			    : 3;
+  column-gap      : 16px;
+}
+
+.page .tome {
+	position						: relative;
+	border-width        : 1px;
+	border-image				: url(https://i.imgur.com/YLID50W.png) 38 27;
+	border-image-outset	: 22px 10px;
+	border-image-width	: 19px;
+	padding             : 0.13cm 0.16cm;
+	margin					    : 16px 0 46px;
+}
+
+.tome p {
+  padding         : 0 14px;
+}
+
+.quote.tome p::first-line {
+	font-variant 		: small-caps;
+	font-family 		: BookInsanityRemake;
+	font-size				: 15px;
+	text-transform	: lowercase;
+	line-height			: 14px;
+}
+
+.quote.tome p + p::first-line {
+	font-variant 		: unset;
+	font-family 		: inherit;
+	font-size				: inherit;
+	text-transform	: inherit;
+	line-height			: inherit;
+}
+
+.tome.quote.author p:last-child {
+	font-family 		: Cormorant;
+	font-size				: 0.4cm;
+	margin-top			: 4px;
+	text-align			: right;
+}
+
+.page:has(.backCover)	.backCover {
+	filter			: drop-shadow(0 0 30px rgba(237, 31, 36, 0));
+}
+
+.page:has(.backCover) h1 {
+	font-size		: 58px;
+}
+
+.page:has(.backCover) p {
+	font-family	: martel_sanssemibold;
+	font-size		: 11.7px;
+	line-height	: 1.6em;
+	text-indent	: 0em;
+}
+
+.page:has(.backCover) caps {
+	font-size		: 125%;
+}
+```
+
+
+SOLUS
+
+<!---
+Here is a link to all my other Homebrewery templates, if you're interested:
+
+https://homebrewery.naturalcrit.com/user/KaiburrKathHound?sort=alpha&dir=asc
+
+Also, IF you want to buy me a coffee (or something), here's my Ko-fi page:
+https://ko-fi.com/kaiburrkathhound
+--->
+
+{{frontCover}}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+{{emblem
+![image](https://i.imgur.com/Nfw1Mpq.png) {opacity:70%}
+}}
+
+{{color,background-color:#9c9c9c,opacity:100%}}
+
+<!---
+You can use the following "small" class to make some of the little text you see in some titles. You have to use this format though, the usual "{{small }}" format won't work.
+--->
+# CURSE <small>of</small> RAD
+___
+
+{{banner HOMEBREW}}
+
+{{footnote
+Unveil the mysterious style of Ravenloft in this template <br> made for the world's greatest roleplaying game
+}}
+
+![image](https://i.imgur.com/pFI5iBb.jpg) {right:0px,bottom:0px,top:unset,height:100%}
+
+\page
+
+{{insideCover}}
+
+# Curse <small>of</small> Rad
+___
+
+{{artist
+[Ben Oliver](https://www.instagram.com/benoliverart/?hl=en)
+}}
+
+![raven](https://i.imgur.com/I78Gtcn.png){width:400px,left:200px,bottom:315px,z-index:1}
+
+![splash](https://i.imgur.com/Zaq44gs.png){width:535px,left:100px,bottom:235px}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+\page
+
+
+{{credits,wide
+
+{{columns:2
+
+# Credits
+**Template Designers:** [u/Kaiburr_Kath-Hound](https://www.reddit.com/user/Kaiburr_Kath-Hound/)
+
+:::::::
+
+##### Artist Credits
+**Front Cover:** *Strahd von Zarovich* by [Ben Oliver](https://www.instagram.com/benoliverart/?hl=en), @Wizards of the Coast
+
+**Inside Cover:** *Strahd von Zarovich* by [Ben Oliver](https://www.instagram.com/benoliverart/?hl=en), @Wizards of the Coast
+
+}}
+
+
+{{frontcredit
+
+<!--- 
+Replace the url below with whatever image you use for the front cover; the image will automatically arrange itself inside the display box 
+--->
+![image](https://i.imgur.com/pFI5iBb.jpg) {}
+
+##### On the Cover
+The master of Ravenloft is having guests for dinner, and you are invited. [Ben Oliver](https://www.instagram.com/benoliverart/?hl=en) sheds light on the vampire Strahd von Zarovich, whose dark past is a tale to be told., and whose evil knows no bounds.
+
+}}
+
+
+{{footnote
+The contents of this document is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+}}
+
+}}
+
+<!--- The line below removes the footer image, as before. --->
+<style> .page#p3:after {all: unset} </style>
+
+
+\page
+
+{{toc,wide
+# Contents
+- ### [{{ Foreword}}{{ 5}}](#p5)
+- ### [{{ Ch. 1: Into the Mists}}{{ 6}}](#p6)
+- ### [{{ App. D: Monsters and NPCs}}{{ 7}}](#p7)
+  - #### [{{ Anime Sphinx}}{{ 7}}](#p7)
+    - [{{ Actions}}{{ 7}}](#p7)
+}}
+
+<!--- The line below removes the footer image on this page. --->
+<style> .page#p4:after {all: unset} </style>
+
+
+\page
+
+
+# Foreword: Ravenloft Revisited
+
+We turned the corner, there was a vampire.
+
+I groaned and rolled my eyes. 
+
+It was 1978, and I was playing in one of my first dungeon adventures. It was being run by a friend I had known in high school, John Scott Clegg, and it was typical of the type of adventure that people plaved in those days. It was all about exploring a hodgepodge collection of rooms connected by dungeon corridors, beating up the monsters that we encountered searching for treasure, and gaining experience points.
+
+::
+
+<!--
+The Curse of Strahd book has a few exerpts from Strahd's tome, formatted in this VERY gothically-styled frame. Most of these excerpts are also in the typical quote format, so adding the "quote" and "author" tags will give you the *exact* formatting from the book. 
+
+Otherwise, just use the tome class by itself to add some fun razzle dazzle.
+-->
+
+{{tome,quote,author
+My army settled in the valley of Borovia and took power over the people in the name of a just god, but with none of a god's grace or justice. And also the thing thing thing.
+
+Just to be clear, this is still working
+
+— Tome of Strahd
+}}
+
+<!--
+As an example, here is a tome class without any quote-like additions. 
+
+Please excuse the MS Office '97 joke. RIP Clippy.
+-->
+
+{{tome
+Hi, my name is Tomey. It looks like you're writing a tome. 
+
+:
+
+Would you like help?
+
+:
+
+❍&nbsp;Get help writing a Tome with a quote
+
+:
+
+❍&nbsp;Get help writing a Tome *without* a quote
+
+:
+
+⦿&nbsp;Buzz off Tomey, I don't need help
+
+:::
+
+▣&nbsp;Don't show me this tip again
+
+}}
+
+<!--
+For watercolor splashes, if you delete the color specification, there is a default stain color that matches the template. 
+
+I used dark red here, partly because blood and horror, but also to give this template a little more color. ALmost all the assets are grayscale, so throwing in some of these (lovely) watercolor presets as blood-red highlights really adds to the atmosphere.
+-->
+{{watercolor8,top:150px,right:-20px,width:330px}}
+
+{{pageNumber,auto}}
+{{footnote Foreword}}
+\page
+
+
+# Chapter 1: Into the Mists
+
+Eerie mists surround Barovia and bind its inhabitants there. This chapter gives you the information you need to prepare for the adventurers' journey into those mists. The chapter first outlines the history and goals of Count Strahd von Zarovich so that you are prepared for what awaits the characters. In the "Fortunes of Ravenloft" section, the chapter walks you through the tarokka card reading that helps set the stage for the adventure's action, and the chapter closes with adventure hooks that you can use to draw the characters into the horror of Barovia.
+
+\column
+
+{{note
+##### Time to Drop Knowledge
+Use notes to point out some interesting information.
+
+**Tables and lists** both work within a note.
+}}
+
+{{descriptive
+##### Time to Drop Knowledge
+Use descriptive boxes to highlight text that should be read aloud.
+
+**Tables and lists** both work within a descriptive box.
+}}
+
+##### Character Advancement
+| Experience Points | Level | Proficiency Bonus |
+|:------------------|:-----:|:-----------------:|
+| 0                 | 1     | +2                |
+| 300               | 2     | +2                |
+| 900               | 3     | +2                |
+| 2,700             | 4     | +2                |
+| 6,500             | 5     | +3                |
+| 14,000            | 6     | +3                |
+
+{{pageNumber,auto}}
+{{footnote Chapter 1 | Into the Mists}}
+\page
+
+# Appendix D: Monsters and NPCs
+
+<!---
+Now that there is no "Chapter" class, this new method just negates the drop cap (the giant first letter of the paragraph) and also gets rid of the background graphic. All you need to do is include the "none" class right after an h1 header, like so!
+--->
+{{none}}
+
+Barovia is a land of vampires, ghosts, and werewolves. In addition, adventurers who explore this unholy realm encounter other things that go bump in the night, including creatures born out of Strahd's evil. The new monsters that appear in this adventure are described below, along with several of the vampire's allies and enemies-souls whose fates are entwined with those of the adventurers. Strahd himself appears here as well.
+
+The monsters and NPCs are presented in alphabetical order.
+
+:
+
+{{monster,frame
+## Anime Sphinx
+*Tiny beast, manic-depressive evil*
+___
+**Armor Class** :: 19 (chain mail, shield)
+**Hit Points**  :: 100(1d4 + 5)
+**Speed**       :: 30ft.
+___
+|  STR  |  DEX  |  CON  |  INT  |  WIS  |  CHA  |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|14 (+2)|2 (-4)|1 (-4)|13 (+2)|3 (-3)|1 (-4)|
+___
+**Condition Immunities** :: melancholy, drunk
+**Senses**               :: darkvision 60 ft., passive Perception 16
+**Languages**            :: Pottymouth
+**Challenge**            :: 10 (8682 XP)
+___
+***Onion Stench.*** Any creatures within 5 feet of this thing develops an irrational craving for onion rings.
+:
+***Hangriness.*** This creature is angry, and hungry. It will refuse to do anything with you until its hunger is satisfied.
+
+When in visual contact with this creature, you must purchase an extra order of fries, even if they say they aren't hungry.
+### Actions
+***Bulldog Rake.*** *Melee Weapon Attack:* +4 to hit, reach 5ft., one target. *Hit* 5 (1d6 + 2) 
+:
+***Team Foot.*** *Melee Weapon Attack:* +4 to hit, reach 5ft., one target. *Hit* 5 (1d6 + 2) 
+:
+***Turnbuckle Roll.*** *Melee Weapon Attack:* +4 to hit, reach 5ft., one target. *Hit* 5 (1d6 + 2) 
+:
+***Dual Throw.*** *Melee Weapon Attack:* +4 to hit, reach 5ft., one target. *Hit* 5 (1d6 + 2) 
+}}
+
+
+{{watercolor10,top:500px,right:60px,width:450px,opacity:70%}}
+
+
+{{pageNumber,auto}}
+{{footnote Appendix D | Monsters and NPCs}}
+\page
+
+{{backCover}}
+
+![background](https://i.imgur.com/pFI5iBb.jpg) {left:0,bottom:0px,top:unset,height:107%}
+
+# Bound by Fate
+
+Under raging storm clouds, the vampire Count Strand von Zarovich stands silhouetted against the ancient walls of Castle Ravenloft. Rumbling thunder pounds the castle spires. The wind's howling increases as he turns his gaze down toward the village of Barovia. 
+:
+Far below, yet not beyond his keen eyesight, a party of adventurers has just entered his domain. Strand's face forms the barest hint of a smile as his dark plan unfolds. He knew they were coming, and he knows why they came—all according to his plan. 
+:
+A lightning flash rips through the darkness, but Strand is gone. Only the howling of the wind fills the midnight air. The master of Castle Ravenloft is having guests for dinner. And you are invited. 
+
+___
+
+For use with the fifth edition <br> [*Player's Hand Book*](https://homebrewery.naturalcrit.com/share/1gJtTm4frFs0kb9fD9jGO5I4rLipDzLFpRq-hmiZmTQZz), *Monster's Manual*, <br> and *Dungeon's Masterguide*.
+
+{{logo
+![](/assets/naturalCritLogoWhite.svg)
+
+[homebrewery.naturalcrit.com](https://homebrewery.naturalcrit.com)
+}}
