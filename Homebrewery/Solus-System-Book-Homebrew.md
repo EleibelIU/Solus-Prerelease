@@ -520,8 +520,7 @@ theme: 5ePHB
 
 <!-- COVER PAGE -->
 
-{{frontCover
-![Solus Cover](Homebrewery\Assets\Solus Cover.png) {position:absolute,top:0,left:0,width:100%,height:100%}
+![Solus Cover](https://github.com/EleibelIU/Solus-Prerelease/blob/main/Homebrewery/Assets/Solus%20Cover.png?raw=true){right:0px,bottom:0px,top:unset,height:100%}
 
 }}
 
@@ -608,7 +607,9 @@ Solus is a tabletop roleplaying game for three to six people. One person runs th
 
 **Players** each control one character. You decide what your character attempts, roll dice when the rules call for it, and describe how your character reacts to what happens. Your character sheet tells you what your character is good at. The dice tell you whether it works.
 
-### How a Session Plays
+\page
+
+## How a Session Plays
 
 The best way to learn Solus is to watch a round of play. The scene below uses real rules. Every roll, modifier, and target number works the way the full chapters describe. You do not need to memorize the math yet. Read it once to see how the pieces fit. Come back after reading the rules to see why each number lands where it does.
 
@@ -617,79 +618,79 @@ Terms used in this scene are defined in the chapters that follow. If you see a b
 {{footnote Welcome to Solus}}
 {{pageNumber,auto}}
 
-\page
 
-#### The Setup
+### The Setup
 
 Three players sit at a table with their GM.
 
-**Kael** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (2d6 damage, Reach tag) and wears Medium armor (Physical DR 3, Magic DR 1).
+- **Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (2d6 damage, Reach tag) and wears Medium armor (Physical DR 3, Magic DR 1).
 
-**Senna** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
+- **Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. He carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
 
-**Torek** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. He carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
+- **Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. She carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
 
 #### Scene: The Collapsed Bridge
 
-The GM speaks: *"You've been tracking a stolen shipment through the forest for two days. The trail leads to a stone bridge over a ravine. The bridge is half-collapsed. The far side still holds, but the gap is twelve feet wide. You can hear voices on the other side."*
+{{descriptive
+**The GM speaks:** "You've been tracking a stolen shipment through the forest for two days. The trail leads to a stone bridge over a ravine. The bridge is half-collapsed. The far side still holds, but the gap is twelve feet wide. You can hear voices on the other side."
 
-Torek's player says: "I want to listen and figure out how many people are over there."
+**Liz's player says:** "I want to listen and figure out how many people are over there."
+}}
 
-The GM calls for a **Skill Check**. The skill is **Perception**. Perception's primary attribute is Mind. Torek chose Body as his secondary attribute for Perception at character creation. His Mind is +3 and his Body is +1, so his Perception modifier is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
+The GM calls for a **Skill Check**. The skill is **Perception**. Perception's primary attribute is Mind. Liz chose Body as her secondary attribute for Perception at character creation. Her Mind is +3 and his Body is +1, so his Perception modifier is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
 
-Torek's player rolls 2d10: **6 + 9 = 15**, plus his modifier of +4 = **19**. He beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
+Liz's player rolls 2d10: **6 + 9 = 15**, plus her modifier of +4 = **19**. He beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
 
-\column
+{{descriptive
+**The GM says:**
+"You count three distinct voices. One sounds frustrated, barking orders. You also catch the glint of a fourth figure crouched behind a rock. Four enemies total."
+}}
 
-The GM says: *"You count three distinct voices. One sounds frustrated, barking orders. You also catch the glint of a fourth figure crouched behind a rock. Four enemies total."*
 
-If Torek had rolled a 4 + 3 = 7, plus 4 = 11, he would have missed the DC by 3. The GM might say: *"You hear voices, but the wind carries the words away. At least two people are over there. Maybe more."*
+If Liz had rolled a 4 + 3 = 7, plus 4 = 11, she would have missed the DC by 3. 
 
-#### Crossing the Gap
+{{descriptive
+**Jake's player says:** "I want to jump the gap."
+}}
 
-Kael's player says: "I want to jump the gap."
+Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake chose Mind as his secondary. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
 
-Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Kael chose Mind as his secondary. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
+Jake rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
 
-Kael rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
-
-Senna follows. Same DC, but her Athletics modifier is lower (Body +2, secondary Mind +0 = **+2**). She rolls: **5 + 6 = 11**, plus 2 = **13**. She meets the DC exactly. She makes it across, but stumbles on the landing. The enemies hear the noise.
-
-{{footnote Welcome to Solus}}
-{{pageNumber,auto}}
-
-\page
+Chris follows. Same DC, but his Athletics modifier is lower (Body +2, secondary Mind +0 = **+2**). Hee rolls: **5 + 6 = 11**, plus 2 = **13**. Hee meets the DC exactly. Hee makes it across, but stumbles on the landing. The enemies hear the noise.
 
 #### Combat Begins
 
-The GM says: *"A bandit with a crossbow shouts an alarm. Roll initiative."*
+{{descriptive
+**The GM says:** "A bandit with a crossbow shouts an alarm. Roll initiative."
+}}
 
-**Initiative** uses a d10 (one die, not two) plus Body or Magic, your choice per character.
+**Initiative** uses a d10 (one ten-sided die) plus Body or Magic, your choice per character.
 
 | Character | Roll | Modifier | Total |
 |:---|:---:|:---:|:---:|
-| Kael | 7 | +4 (Body) | 11 |
-| Senna | 5 | +3 (Magic) | 8 |
+| Jake | 7 | +4 (Body) | 11 |
+| Chris | 5 | +3 (Magic) | 8 |
 | Bandit Leader | 8 | +2 (Body) | 10 |
 | Bandit Archer | 4 | +1 (Body) | 5 |
 
-Turn order: Kael (11), Bandit Leader (10), Senna (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
+Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
 
-#### Kael's Turn: Three Actions
+#### Jake's Turn: Three Actions
 
-Each character gets **3 actions** per turn. Common actions: Move, Attack, Defend, Use Item, Cast Spell.
+Each character gets **3 actions** per turn. The most common actions for a player to use are *Move*, *Attack*, *Defend*, *Use Item*, and *Cast Spell*.
 
-Kael's player says: "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
+{{descriptive
+Jake's player says: "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
+}}
 
-**First Attack.** Kael rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Kael's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
+**First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Jake's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
 
-\column
+**Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
 
-**Second Attack.** Kael rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
+#### Chris's Turn: Sword and Spell
 
-#### Senna's Turn: Sword and Spell
-
-Senna's player says: "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
+Chris's player says: "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
 
 **Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
 
@@ -706,9 +707,9 @@ When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries
 
 In a few minutes of play, the group used three systems:
 
-**Skill Checks** resolved Torek's Perception (hearing enemies) and Kael's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set.
+**Skill Checks** resolved Liz's Perception (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set.
 
-**Combat Rolls** resolved Kael's greatsword swings and Senna's shortsword strike using `2d10 + Body`, and Senna's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
+**Combat Rolls** resolved Jake's greatsword swings and Chris's shortsword strike using `2d10 + Body`, and Chris's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
 
 **Action Economy** gave each character 3 actions per turn, spent on movement, attacks, and spells in any combination.
 
@@ -1529,28 +1530,28 @@ Tags are system-wide. The same Burn stack works the same way whether it came fro
 
 ### Worked Example: A Full Round
 
-Three combatants: **Kael** (martial, Body +4, greatsword 1d8+Body, Medium armor), **Senna** (hybrid, Body +2, Magic +3, shortsword 1d6+Body, Light armor), and a **Bandit Sergeant** (Enemy rank, Body +3, Magic -1, mace 1d8+Body, Medium armor, 100 HP).
+Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor), **Chris** (hybrid, Body +2, Magic +3, shortsword 1d6+Body, Light armor), and a **Bandit Sergeant** (Enemy rank, Body +3, Magic -1, mace 1d8+Body, Medium armor, 100 HP).
 
-**Initiative.** Kael rolls d10: 8, plus Body +4 = 12. Senna rolls d10: 6, plus Magic +3 = 9. Bandit Sergeant rolls d10: 7, plus Body +3 = 10. Turn order: Kael (12), Bandit Sergeant (10), Senna (9).
+**Initiative.** Jake rolls d10: 8, plus Body +4 = 12. Chris rolls d10: 6, plus Magic +3 = 9. Bandit Sergeant rolls d10: 7, plus Body +3 = 10. Turn order: Jake (12), Bandit Sergeant (10), Chris (9).
 
 \column
 
-**Kael's turn (3 actions).**
-- Action 1: Move. Kael closes 25 feet to reach the Bandit Sergeant.
+**Jake's turn (3 actions).**
+- Action 1: Move. Jake closes 25 feet to reach the Bandit Sergeant.
 - Action 2: Attack with greatsword. Roll `2d10 + 4` = 7 + 6 + 4 = **17**. Bandit's Physical AC = Physical DR 3 + Body 3 = **6**. Hit. Damage: `1d8 + 4` = 5 + 4 = **9**, minus DR 3 = **6 damage**. Bandit is at 94 HP.
 - Action 3: Attack again. Roll `2d10 + 4` = 3 + 8 + 4 = **15**. Beats AC 6. Damage: `1d8 + 4` = 7 + 4 = **11**, minus 3 = **8 damage**. Bandit at 86 HP.
 
 **Bandit Sergeant's turn (3 actions).**
-- Action 1: Attack Kael with mace (Force tag). Roll `2d10 + 3` = 9 + 4 + 3 = **16**. Kael's Physical AC = DR 3 + Body 4 = **7**. Hit. Damage: `1d8 + 3` = 6 + 3 = **9**, minus 3 DR = **6 damage**. Kael gains 1 Force stack.
-- Action 2: Attack again. Roll `2d10 + 3` = 2 + 5 + 3 = **10**. Beats AC 7. Damage: `1d8 + 3` = 3 + 3 = **6**, minus 3 = **3 damage**. Kael gains a second Force stack (now 2 Force, dealing 2 damage at start of his next turn).
-- Action 3: Move. The Bandit steps 10 feet to put Kael between himself and Senna.
+- Action 1: Attack Jake with mace (Force tag). Roll `2d10 + 3` = 9 + 4 + 3 = **16**. Jake's Physical AC = DR 3 + Body 4 = **7**. Hit. Damage: `1d8 + 3` = 6 + 3 = **9**, minus 3 DR = **6 damage**. Jake gains 1 Force stack.
+- Action 2: Attack again. Roll `2d10 + 3` = 2 + 5 + 3 = **10**. Beats AC 7. Damage: `1d8 + 3` = 3 + 3 = **6**, minus 3 = **3 damage**. Jake gains a second Force stack (now 2 Force, dealing 2 damage at start of his next turn).
+- Action 3: Move. The Bandit steps 10 feet to put Jake between himself and Chris.
 
-**Senna's turn (3 actions).**
-- Action 1: Move 25 feet to reach the Bandit. This takes her through Kael's space (allies can pass through each other's spaces).
+**Chris's turn (3 actions).**
+- Action 1: Move 25 feet to reach the Bandit. This takes her through Jake's space (allies can pass through each other's spaces).
 - Action 2: Attack with shortsword. Roll `2d10 + 2` = 8 + 7 + 2 = **17**. Beats Bandit's Physical AC of 6. Damage: `1d6 + 2` = 4 + 2 = **6**, minus 3 DR = **3 damage**. Bandit at 83 HP.
 - Action 3: Cast a frost bolt (spell, Chilled tag). Roll `2d10 + 3` (Magic) = 6 + 5 + 3 = **14**. Bandit's Magical AC = Magic DR 1 + Magic -1 = **0**. Hit. Spell damage: `1d6 + 1d8 + 3` = 3 + 6 + 3 = **12**, minus Magic DR 1 = **11 damage**. Bandit at 72 HP and gains 1 Chilled stack.
 
-**End of round.** Turn order resets to the top. Kael takes 2 damage from his 2 Force stacks at the start of his next turn. The Bandit's Chilled stack will deal 1 damage at the start of the Bandit's next turn and lasts 2 rounds unless reapplied.
+**End of round.** Turn order resets to the top. Jake takes 2 damage from his 2 Force stacks at the start of his next turn. The Bandit's Chilled stack will deal 1 damage at the start of the Bandit's next turn and lasts 2 rounds unless reapplied.
 
 {{footnote Combat}}
 {{pageNumber,auto}}
