@@ -676,32 +676,30 @@ Chris follows. Same DC, but his Athletics modifier is lower (Body +2, secondary 
 
 Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
 
-#### Jake's Turn: Three Actions
-
 Each character gets **3 actions** per turn. The most common actions for a player to use are *Move*, *Attack*, *Defend*, *Use Item*, and *Cast Spell*.
 
 {{descriptive
-Jake's player says: "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
+**Jake's player says:** "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
 }}
 
-**First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Jake's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
+- **First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Jake's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
 
-**Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
+- **Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
 
-#### Chris's Turn: Sword and Spell
+\page
+{{descriptive
+**Chris's player says:** "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
+}}
 
-Chris's player says: "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
+- **Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
 
-**Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
-
-**Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 3 (Light armor) + Magic -1 = **2**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 3 = **8 damage**. The bandit leader drops to 0 HP.
+- **Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 3 (Light armor) + Magic -1 = **2**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 3 = **8 damage**. The bandit leader drops to 0 HP.
 
 When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death).
 
 {{footnote Welcome to Solus}}
 {{pageNumber,auto}}
 
-\page
 
 #### What Just Happened
 
@@ -711,14 +709,15 @@ In a few minutes of play, the group used three systems:
 
 **Combat Rolls** resolved Jake's greatsword swings and Chris's shortsword strike using `2d10 + Body`, and Chris's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
 
-**Action Economy** gave each character 3 actions per turn, spent on movement, attacks, and spells in any combination.
+Each character had 3 **actions** per turn, spent on movement, attacks, and spells in any combination.
 
 These three systems carry the game. The chapters that follow teach each one in full.
 
-\column
+\page
 
-### Where to Find Things
+# How to use this book
 
+{{wide 
 | If you want to... | Go to... |
 |:---|:---|
 | Learn how dice, rolls, and target numbers work | Core Mechanics (Ch. 2) |
@@ -733,9 +732,7 @@ These three systems carry the game. The chapters that follow teach each one in f
 | Advance your character between sessions | Advancement and Between Sessions (Ch. 11) |
 | Run the game as a GM | Running the Game (Ch. 12) |
 | Quick-reference tables, playtest checklist, glossary | Reference and Playtest Tools (Ch. 13) |
-
-{{footnote Welcome to Solus}}
-{{pageNumber,auto}}
+}}
 
 \page
 
@@ -745,7 +742,7 @@ These three systems carry the game. The chapters that follow teach each one in f
 
 This chapter covers the rules that every other chapter builds on: how dice work, what the numbers on your sheet mean, and the two types of rolls you will make during play.
 
-### Key Terms
+## Key Terms
 
 Before you read further, here are four numbers you will see on every character sheet:
 
@@ -757,9 +754,7 @@ Before you read further, here are four numbers you will see on every character s
 
 **Modifiers** are numbers from -5 to +5 that represent how good or bad your character is at something. You add a modifier to your dice roll. Higher is better.
 
-\column
-
-### How Dice Work
+## How Dice Work
 
 Solus uses two ten-sided dice, written as **2d10**. Each die is numbered 1 through 10. Roll both and add the numbers together to get a single total.
 
@@ -777,10 +772,6 @@ The GM sets a **target number**. If your result meets or beats the target, you s
 
 You roll only when the outcome is uncertain. If your character is trained at a task and nothing complicates it, the GM describes the success without dice. If the task is beyond your character entirely, the GM describes the failure. Dice come out when the answer could go either way.
 
-{{footnote Core Mechanics}}
-{{pageNumber,auto}}
-
-\page
 
 ### Critical Results
 
@@ -804,7 +795,6 @@ If you have both advantage and disadvantage at the same time, they cancel out. R
 **Example:** You attack while Stunned (disadvantage). You roll 3d10: 8, 3, 6. Drop the highest (8). Your roll is 3 + 6 = 9, plus your modifier.
 }}
 
-\column
 
 ### The Two Roll Types
 
@@ -867,8 +857,6 @@ You have five attributes: Body, Mind, Social, Magic, and Sanity. Each gets a mod
 
 You have **5 points** to spend across all five attributes. Higher modifiers cost more points. Negative modifiers refund points. You must spend all 5 points, with zero remaining.
 
-\column
-
 ##### Attribute Point Costs
 | Modifier | Point Cost |
 |:---:|:---:|
@@ -892,8 +880,6 @@ Notice that +5 costs 6 points, more than the full budget. You can reach +5 in on
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
-
-\page
 
 ### Step 3: Choose Your Race
 
@@ -920,8 +906,6 @@ Your background sets your starting hit points (HP), maximum mana pool, and mana 
 
 The first number after mana is your **maximum mana**. The second is your **mana regeneration per round**.
 
-\column
-
 ##### Backgrounds
 | Background | HP | Max Mana | Mana Regen / Round |
 |:---|:---:|:---:|:---:|
@@ -931,15 +915,13 @@ The first number after mana is your **maximum mana**. The second is your **mana 
 
 A Caster has the deepest mana pool and fastest regeneration but the lowest health. A Martial has the most health but barely enough mana for basic utility spells. A Hybrid splits the difference.
 
-{{descriptive
-**TODO:** Confirm Hybrid mana. Jacob believes 70/10 is correct; if 75/10 appears more often in playtest sheets, that is the final number.
-}}
-
 ### Step 5: Choose Your Skills
 
 Pick skills from the skill list in the Attributes and Skills chapter. For each skill you take, choose its **secondary attribute** from the two options listed. This choice is permanent and determines your skill modifier (see Attributes and Skills: How Skill Modifiers Work).
 
 You start with a limited set of skills and can gain more through play. Only **10 skills** can be active at any time (see Attributes and Skills for full rules on active and inactive skills).
+
+\page
 
 As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a skill and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base skill can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how skills rank up and unlock slots.
 
@@ -949,8 +931,6 @@ As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
-
-\page
 
 ### Step 6: Choose Equipment
 
@@ -989,61 +969,57 @@ Solus has no character levels. Your character grows by earning XP and spending i
 \page
 
 <!-- CHAPTER 4: ATTRIBUTES AND SKILLS -->
-
+{{wide
 # Attributes and Skills
 
 Your character has five **attributes**. Each attribute is a number from -5 to +5 that measures a broad area of capability. Attributes feed into combat rolls, Armor Class, initiative, and your skill modifiers. Every attribute matters; there are no dump stats.
 
-### The Five Attributes
+## The Five Attributes
 
 #### Body
 
-Body covers all physical capability: strength, speed, endurance, coordination. Whether you swing a hammer, dodge a falling boulder, or sprint across a battlefield, Body is the attribute that matters.
+Body covers all physical capability: strength, speed, endurance, coordination. 
 
-Body is added to physical and martial combat rolls and contributes to **Physical AC** (see Equipment, Armor, and Weapons). Body is one of the two attributes you can choose for **initiative** at the start of combat.
+- Body is added to physical and martial combat rolls and contributes to **Physical AC** (see Equipment, Armor, and Weapons). Body is one of the two attributes you can choose for **initiative** at the start of combat.
 
-A character with high Body hits hard with weapons, resists physical attacks, and endures punishment. A character with low Body is fragile, inaccurate with weapons, and easy to hit with physical force.
+- A character with high Body hits harder with weapons, resists physical attacks, and endures punishment. A character with low Body is fragile, inaccurate with weapons, and easy to hit with physical force.
 
 #### Mind
 
-Mind covers intellect, reasoning, perception, and emotional awareness. It governs what you know, what you notice, and how well you process information under pressure.
-
-A character with high Mind spots hidden details, recalls useful lore, and resists tricks that target reasoning. A character with low Mind overlooks clues, forgets critical knowledge, and falls for deceptions.
-
-\column
+Mind covers intellect, reasoning, perception, and emotional awareness. A character with high Mind spots hidden details, recalls useful lore, and resists tricks that target reasoning. A character with low Mind overlooks clues, forgets critical knowledge, and falls for deceptions.
 
 #### Social
 
-Social covers how you present yourself. It governs persuasion, deception, intimidation, performance, leadership, and your ability to resist social manipulation. Social has no connection to magic.
-
-A character with high Social commands attention, reads a room, and turns conversations in their favor. A character with low Social struggles to lie, inspire, or talk their way past obstacles.
+Social covers how you present yourself. It governs persuasion, deception, intimidation, performance, leadership, and your ability to resist social manipulation. A character with high Social commands attention, reads a room, and turns conversations in their favor. A character with low Social struggles to lie, inspire, or talk their way past obstacles.
 
 #### Magic
 
-Magic covers all spellcasting. Every spell you cast uses Magic, regardless of its category (elemental, death, summoning, or otherwise). The type of magic you specialize in is handled through Masteries, not through this attribute.
+Magic covers all spellcasting. Every spell you cast uses Magic, regardless of its discipline (elemental, death, summoning, or otherwise). 
 
-Magic is added to magical combat rolls and contributes to **Magical AC**. Magic is the other attribute you can choose for **initiative**.
+- Magic is added to magical combat rolls and contributes to **Magical AC**. Magic is the other attribute you can choose for **initiative**.
 
-A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
+- The type of magic you specialize in is handled through Masteries, not through this attribute.
+
+- A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
 
 #### Sanity
 
-Sanity covers mental fortitude and perception of hidden truths. In Solus, lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, truths that erode the mind.
+Sanity covers mental fortitude and perception of hidden truths. 
 
-Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
-
-{{footnote Attributes and Skills}}
-{{pageNumber,auto}}
-
+- Lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, and truths that erode the mind.
+- Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
+}}
 \page
 
-### Skills
+## Skills
 
 A **skill** is a trained capability your character has. Skills cover everything outside of direct combat attacks: climbing a wall, picking a lock, persuading a merchant, identifying a spell, treating a wound, tracking an animal through snow. When you attempt one of these actions and the outcome is uncertain, the GM calls for a **Skill Check** (see Core Mechanics) using the relevant skill.
 
 Your character does not start with every skill. You choose which skills to take during character creation, and you can gain or swap skills between sessions. You can own as many skills as you can afford, but only 10 can be **active** at any time. Skills you are not carrying cannot be used.
 
 Skills grow through play. As you earn XP and spend it, your skills advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked skills also unlock **Support Skill Slots**, which let you attach augments that change how the skill behaves (see Advancement and Between Sessions).
+
+\column
 
 ### How Skill Modifiers Work
 
@@ -1053,8 +1029,6 @@ Every skill has a **primary** attribute and a **secondary** attribute.
 
 The **primary** is fixed. It never changes for that skill. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the skill draws on.
 
-\column
-
 The **secondary** is your choice. Each skill lists two options. You pick one when you create your character, and that pick is permanent. The secondary represents how your character approaches that skill: do you climb walls through trained technique (Mind) or through sheer refusal to let go (Sanity)?
 
 **Skill Modifier** = primary attribute + secondary attribute.
@@ -1062,25 +1036,22 @@ The **secondary** is your choice. Each skill lists two options. You pick one whe
 {{note
 **Example:** You are building a character with Body +4, Mind +1, and Sanity -2. You take Athletics, which uses Body as its primary. The secondary options are Mind or Sanity.
 
-If you pick Mind: Athletics = +4 + 1 = **+5**. Your character climbs with practiced efficiency.
-
-If you pick Sanity: Athletics = +4 + (-2) = **+2**. Your character is strong but panics under pressure.
+- If you pick Mind: Athletics = +4 + 1 = **+5**.
+- If you pick Sanity: Athletics = +4 + (-2) = **+2**. 
 
 The choice is permanent. Pick the secondary that fits the character you want to play.
 }}
 
 This system means every attribute contributes to multiple skills. A character who invests heavily in one attribute will be strong in some skills and dangerously weak in others. Two characters with the same skill can have different modifiers because they chose different secondaries.
 
-{{footnote Attributes and Skills}}
-{{pageNumber,auto}}
 
-\page
+{{wide 
 
-### Skill List
+## Skill List
 
 The table below shows all 11 skills. When you make a Skill Check, find the skill, add the primary and your chosen secondary together, and that is the modifier you roll with.
 
-{{wide
+
 
 ##### Skills
 | Skill | Primary | Secondary (pick one) | What it covers |
@@ -1108,11 +1079,11 @@ The table below shows all 11 skills. When you make a Skill Check, find the skill
 
 # Equipment, Armor, and Weapons
 
-### How Armor Works
+## Armor
 
 Armor in Solus does two things: it makes you harder to hit, and it absorbs damage when you do get hit. These are two separate systems, and understanding the difference is critical.
 
-#### Armor Class (AC): Can They Hit You?
+##### Armor Class (AC)
 
 Every character has two **Armor Class** values:
 
@@ -1123,9 +1094,7 @@ When someone attacks you, they roll `2d10 + their attack modifier` and compare t
 
 Physical attacks (swords, arrows, fists) target your Physical AC. Spells target your Magical AC. Because you have two separate ACs, a character can be tough against swords but vulnerable to spells, or the reverse. Your armor choice and attribute spread determine where your defenses are strong and where they are weak.
 
-\column
-
-#### Damage Reduction (DR): How Much Gets Through?
+##### Damage Reduction (DR)
 
 When an attack lands, your armor's **Damage Reduction** absorbs part of the blow. DR is a flat number subtracted from the damage dealt.
 
@@ -1134,7 +1103,7 @@ When an attack lands, your armor's **Damage Reduction** absorbs part of the blow
 
 DR is fixed per armor tier. Your attributes do not change it.
 
-##### Armor Tiers
+### Armor Tiers
 | Tier | Physical DR | Magic DR | Total DR |
 |:---|:---:|:---:|:---:|
 | Cloth | 0 | 4 | 4 |
@@ -1150,9 +1119,7 @@ The maximum DR on a single damage type is 4. The maximum possible AC is 9 (DR 4 
 {{footnote Equipment, Armor, and Weapons}}
 {{pageNumber,auto}}
 
-\page
-
-#### What Happens When You Get Hit
+### Taking Hits
 
 When an attack targets you, resolve it in two steps:
 
@@ -1167,11 +1134,11 @@ When an attack targets you, resolve it in two steps:
 **Example:** You wear Heavy Armor (Physical DR 4, Magic DR 0) with Body +3 and Magic +0. Your Physical AC is 7. Your Magical AC is 0. A sword fighter rolls 11 against your Physical AC of 7, hits, and deals 9 damage. Your Physical DR of 4 absorbs 4, leaving 5 damage. A caster rolls the same 11 against your Magical AC of 0, also hits, and deals 9 damage. With Magic DR 0, nothing absorbs. You take the full 9. Heavy armor makes you a fortress against blades and a glass window against magic.
 }}
 
-\column
+\page
 
-### Weapons
+## Weapons
 
-All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories by fighting style.
+All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories by fighting style:
 
 ##### Weapon Categories
 | Category | Examples | Damage |
@@ -1208,153 +1175,161 @@ Many weapons also carry unique **traits**: special effects that apply condition 
 
 # Magic and Spellcasting
 
-In many games, you pick spells from a list. Solus works differently. You build every spell yourself by making nine choices about what the magic does. Your choices control how far it reaches, how big it is, how long it lasts, and how hard it hits. Two players who both want to throw fire will end up with different spells depending on the choices they make.
+{{wide
 
-### How Spells Work
+Solus has no spell list. You build every spell from scratch by setting nine **parameters**: what discipline of magic it belongs to, what it does, how far it reaches, how big the area is, what shape it takes, how long it lasts, how many targets it hits, how it connects with those targets, and how powerful its lasting effect is.
 
-To cast a spell, you spend **mana** (magical energy) and **actions** (time on your turn). Every spell is defined by nine choices. Each choice has a mana cost. Several choices also fall into an **action column** (1 Action, 2 Actions, 3 Actions, or 4+). The highest action column among your nine choices sets the spell's total action cost.
+Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 9 to get the spell's base mana cost, then multiply by your Discipline's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
 
-##### The Nine Spell Choices
-| Choice | What You Are Deciding |
-|:---|:---|
-| Category | The school of magic (Elemental, Force, Mind, Life, Death, etc.) |
-| Function | The spell's purpose: Offensive, Defensive, Movement, or Utility |
-| Range | How far the spell can reach |
-| Size | How large the affected area is |
-| Shape | The geometric form: point, sphere, cube, line, wall, or freeform |
-| Duration | How long the effect lasts |
-| Target Count | How many creatures or objects it affects |
-| Accuracy Type | How the spell determines whether it hits |
-| Effect Tier | How powerful the spell's lasting effects are |
+##### Spell Parameter Table
+| Parameter | Option | Actions | Mana | Notes |
+|:---|:---|:---:|:---:|:---|
+| **Discipline** | Main | — | ×1 | Multiplier applied to the total of all other parameters. See Disciplines. |
+| | Sub | — | ×2 | |
+| | Tertiary | — | ×3 | Requires GM approval. |
+| | Locked | — | — | Cannot cast unless a Mastery grants access. |
+| **Function** | Utility | — | 0 | Dual-function spells add both costs. |
+| | Movement | — | 1 | |
+| | Defensive | — | 1 | |
+| | Offensive | — | 2 | |
+| **Range** | Self–25 ft. | 1 | 1 | Contributes 1 damage die. |
+| | 30–60 ft. | 2 | 2 | |
+| | 65–120 ft. | 3 | 3 | |
+| | 125–200 ft. | 4+ | 4 | |
+| | Sight | 4+ | 5 | |
+| | Global | 4+ | 6 | |
+| **Size** | 5–15 ft. | 1 | 1 | Contributes 1 damage die. |
+| | 20–30 ft. | 2 | 2 | |
+| | 35–60 ft. | 3 | 3 | |
+| **Shape** | Point / none | 1 | 1 | |
+| | Sphere / Cube / Line / Wall / Cylinder | 2 | 2 | |
+| | Freeform / custom | 3 | 3 | |
+| **Duration** | Instant | 1 | 1 | |
+| | 1 Round | 2 | 2 | |
+| | 1 Minute | 3 | 3 | |
+| | Hours | 4+ | 4 | |
+| | Permanent | 4+ | 5 | |
+| **Target Count** | Single | 1 | 1 | Contributes 1 damage die. |
+| | Multi 2+ | 2 | 2 | +1 mana per extra target (max 4). |
+| | AOE | 3 | 3 | |
+| **Accuracy** | Attack Roll | 1 | 1 | Adds a bonus damage die (you choose size, pay the mana). |
+| | Save | 1 | 1 | |
+| | Auto-Hit | 4+ | 4 | |
+| **Effect Tier** | T1 | 1 | 3 | T1 applies the base tag. T2+ applies the escalated condition directly. |
+| | T2 | 2 | 6 | |
+| | T3 | 3 | 12 | |
+| | T4 | 4+ | 17 | |
 
-The first seven choices are intuitive. You pick a school, a purpose, a range, a size, a shape, a duration, and a target count. The last two need more context, so they are explained inside the walkthrough below when you encounter them.
+**Total mana cost** = (sum of parameters 2–9) × discipline multiplier. 
 
-\column
+  **Total action cost** = the highest action value among your parameters.
+}}
+\page
+{{wide
+## Spell Disciplines
 
-### Building and Casting Your First Spell
+Discipline determines which **tags** your spell applies on hit. Tags are labels on the source. When a tag lands on a target, it creates **stacks** that build up, deal damage over time, and trigger **escalated conditions** at 5 stacks (see Conditions, Injuries, and Death).
 
-You want to create a fire attack that hits one enemy at close range. Walk through each choice, then cast it.
+Discipline also sets the spell's **cost multiplier**. At character creation you pick two disciplines:
 
-**Step 1: Category.** Every spell belongs to a school of magic. You are throwing fire: pick **Elemental**. No mana cost. Ten categories exist: Elemental, Force, Mind/Psychological, Temporal, Creation/Transmutation, Order/Binding, Summoning, Life, Death, Corruption/Chaos.
+- **Main discipline (×1).** Your primary school. All parameter costs stay at face value.
+- **Sub discipline (×2).** Your secondary school. The total mana cost of any spell using this discipline is doubled.
 
-**Step 2: Function.** This spell attacks an enemy: pick **Offensive**. Costs +2 mana. (Defensive and Movement cost +1. Utility costs +0. If a spell serves two functions, add both.)
+All other disciplines are **tertiary** or **locked**:
 
-**Step 3: Range.** Close range: **Self to 15 ft.** Costs +1 mana. Action column 1.
+- **Tertiary (×3).** Any discipline outside your Main and Sub. You can attempt spells from a tertiary discipline, but the total mana cost is tripled. Requires GM approval each time.
+- **Locked.** You cannot cast spells from a locked discipline unless a Mastery grants access.
 
-**Step 4: Size.** Medium blast: **20-30 ft.** Costs +2 mana. Action column 2.
+##### Spell Disciplines Table
+| Discipline | What It Does | Tag → Escalation |
+|:---|:---|:---|
+| Elemental | Fire, ice, lightning, water, earth, air, acid, poison. Stack-based damage and control. | [Burn] → [Ignited], [Chilled] → [Frozen], [Volt] → [Shocked] |
+| Force | Kinetic impact, barriers, gravity manipulation. | [Force] → [Stunned], [Restrained] → [Crush] |
+| Mind | Psychic damage, illusions, charms, fear, sleep. | [Influence] → [Override], [Drowsy] → [Unconscious] |
+| Temporal | Speed alteration, time shifts, teleportation. | [Slow] → [Stasis], [Blink] → [Teleport] |
+| Creation | Transmutation, shaping matter, size changes. | [Harden] → [Reinforce], [Enlarge] → [Overgrow] |
+| Order | Divine strikes, wards, truth compulsion, suppression. | [Strike] → [Judgement], [Suppression] → [Nullify] |
+| Summoning | Drawing or binding entities. | [Invite] → [Summon] |
+| Life | Healing, revival, radiant damage, purification. | [Restore] → [Regenerate], [Radiant] → [Purge] |
+| Death | Necrotic damage, reanimation, decay. | [Necrosis] → [Necroptosis], [Decay] → [Wither] |
+| Corruption | Chaotic instability, wild magic. | [Instability] → [Wild Magic] |
 
-**Step 5: Shape.** A bolt hits a single point: **Point**. Costs +1 mana. Column 1.
-
-**Step 6: Duration.** Hits and ends: **Instant**. Costs +1 mana. Column 1.
-
-**Step 7: Target Count.** One target: **Single**. Costs +1 mana. Column 1.
-
+{{descriptive
+**TODO:** Confirm final Main/Sub/Tertiary/Locked boundaries (D-06). Define which disciplines start locked vs. tertiary.
+}}
+}}
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
 \page
 
-**Step 8: Accuracy Type.** This choice determines how the spell connects with its target.
+## Building a Spell: Fire Bolt
 
-- **Attack Roll (1 mana base):** You roll 2d10 + Magic against the target's Magical AC. If you meet or beat the defense, the spell hits. You also get to add a bonus damage die (explained below).
-- **Save (1 mana):** The target rolls to resist instead of you rolling to hit. No bonus die.
-- **Auto-Hit (4 mana):** The spell connects automatically. No roll. Reliable, but expensive.
+You want a fire attack that hits one enemy at close range. Pick one option for each of the nine parameters, record the mana and action costs, then total them up.
 
-You want to roll to hit and deal damage: pick **Attack Roll**. Base cost +1 mana. You also add a d6 bonus damage die (+1 mana). Total for this choice: +2 mana. Column 1.
+| # | Parameter | Your Pick | Actions | Mana | Why |
+|:---:|:---|:---|:---:|:---:|:---|
+| 1 | Discipline | Elemental (Main) | — | ×1 | Fire tags. Main = no multiplier penalty. |
+| 2 | Function | Offensive | — | 2 | You are attacking. |
+| 3 | Range | Self–25 ft. | 1 | 1 | Close range. Contributes 1 damage die. |
+| 4 | Size | 20–30 ft. | 2 | 2 | Medium blast. Contributes 1 damage die. |
+| 5 | Shape | Point | 1 | 1 | Single impact point. |
+| 6 | Duration | Instant | 1 | 1 | Hits and ends. |
+| 7 | Target Count | Single | 1 | 1 | One target. Contributes 1 damage die. |
+| 8 | Accuracy | Attack Roll | 1 | 1 | Roll to hit. Adds a bonus damage die. |
+| | | + d6 bonus die | | +1 | You choose the bonus die size and pay its mana. |
+| 9 | Effect Tier | T1 (Burn) | 1 | 3 | Applies 1 Burn stack on hit. |
+
+#### Totals
+
+**Base mana** (parameters 2–9): 2 + 1 + 2 + 1 + 1 + 1 + 2 + 3 = **13**
+
+**Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26. As a Tertiary (×3), 39.
+
+**Action cost:** The highest action value is 2 (Size). The spell costs **2 of your 3 actions**.
+
+#### Damage
+
+Three parameters contribute damage dice: Range, Size, and Target Count. Each die scales with the mana you spent on that parameter (see Damage Dice table). Attack Roll adds a bonus die you sized and paid for. Your Magic modifier applies as a flat bonus.
+
+**Fire Bolt:** 1d6 (Range) + 1d6 (Target Count) + 1d8 (Size) + 1d6 (Attack Roll bonus) + Magic modifier
+
+#### Effect
+
+T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the stack count and build toward the Ignited escalated condition at 5 stacks (see Conditions, Injuries, and Death). T2 would skip the buildup and apply Ignited directly.
 
 {{descriptive
 **TODO:** Save resolution needs definition now that Resist Rolls have been removed.
 }}
 
-**Step 9: Effect Tier.** When a spell hits, it applies a **tag** to the target. Tags are lasting effects like Burn, Chilled, or Acid that create conditions over time (see Conditions, Injuries, and Death). Effect Tier determines which version of the tag your spell applies.
-
-- **Tier 1 (T1, 3 mana):** Applies the foundational tag. A T1 Fire spell applies [Burn], which builds 1 stack per hit. At 5 stacks, it escalates to Ignited. T1 terrain effects last 2 rounds.
-- **Tier 2 (T2, 6 mana):** Applies the escalated version directly. A T2 Fire spell applies [Ignited], skipping the stack buildup. T2 terrain effects last 4 rounds.
-- **T3 (12 mana) and T4 (17 mana)** exist at higher power.
-
 {{descriptive
 **TODO:** Define T3 and T4 mechanically.
 }}
-
-You want basic fire: pick **T1 (Burn)**. Costs +3 mana. Column 1. On hit, the target gains 1 Burn stack.
-
-\column
-
-#### The Finished Spell
-
-##### Fire Bolt Breakdown
-| Choice | Option | Column | Mana |
-|:---|:---|:---:|:---:|
-| Category | Elemental | — | 0 |
-| Function | Offensive | — | +2 |
-| Range | Self to 15 ft. | 1 | +1 |
-| Size | 20-30 ft. | 2 | +2 |
-| Shape | Point | 1 | +1 |
-| Duration | Instant | 1 | +1 |
-| Target Count | Single | 1 | +1 |
-| Accuracy Type | Attack Roll + d6 bonus | 1 | +2 |
-| Effect Tier | T1 (Burn) | 1 | +3 |
-
-**Action cost: 2.** The highest column is 2 (Size). The spell costs 2 of your 3 actions.
-
-**Mana cost: 13.** Add every value: 0 + 2 + 1 + 2 + 1 + 1 + 1 + 2 + 3 = 13.
-
-**Damage.** Three choices (Range, Size, Target Count) each contribute one damage die. The die size scales with how much mana you spent on that choice. Attack Roll adds a bonus die you sized and paid for. Your Magic attribute applies as a flat bonus.
-
-**Fire Bolt damage:** Range (1 mana) d6 + Target Count (1 mana) d6 + Size (2 mana) d8 + Attack Roll bonus d6 + Magic modifier.
 
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
 \page
 
-#### Casting It
+#### Casting Fire Bolt
 
 1. **Check mana.** You need 13 mana in your pool. Mana regenerates at the start of your turn each round.
 2. **Spend 2 actions and 13 mana.**
-3. **Roll to hit.** Roll 2d10 + Magic against the target's Magical AC (Magic DR + Magic modifier).
-4. **On hit, roll damage.** Roll 1d6 + 1d6 + 1d8 + 1d6 + Magic modifier. Subtract the target's Magic DR from the total.
+3. **Roll to hit.** Roll 2d10 + Magic against the target's Magical AC.
+4. **On hit, roll damage.** Roll 1d6 + 1d6 + 1d8 + 1d6 + Magic modifier. Subtract the target's Magic DR.
 5. **Apply the tag.** The target gains 1 Burn stack.
 
 {{note
-**Example:** You cast Fire Bolt. Your Magic is +3. The target has Magical AC 5 (Magic DR 4, Magic +1). You roll 2d10: 7 + 8 = 15, plus 3 = 18. That beats 5. Damage: 1d6 + 1d6 + 1d8 + 1d6 + 3 = 4 + 2 + 6 + 3 + 3 = 18, minus Magic DR 4 = 14 damage. The target gains 1 Burn stack.
+**Example:** Your Magic is +3. The target has Magical AC 5 (Magic DR 4, Magic +1). You roll 2d10: 7 + 8 = 15, plus 3 = 18. That beats 5. Damage: 1d6 + 1d6 + 1d8 + 1d6 + 3 = 4 + 2 + 6 + 3 + 3 = 18, minus Magic DR 4 = **14 damage**. The target gains 1 Burn stack.
 }}
 
 \column
 
 ### Spell Reference
 
-#### Spell Framework
-
-The number in parentheses is the mana cost for that option.
-
-##### Spell Options by Action Column
-| Choice | 1 Action | 2 Actions | 3 Actions | 4+ / Ritual |
-|:---|:---|:---|:---|:---|
-| Range | Self to 25 ft. (1) | 30-60 ft. (2) | 65-120 ft. (3) | 125-200 ft. (4), Sight (5), Global (6) |
-| Size | 5-15 ft. (1) | 20-30 ft. (2) | 35-60 ft. (3) | |
-| Shape | Point or none (1) | Sphere / Cube / Line / Wall / Cylinder (2) | Freeform or custom (3) | |
-| Duration | Instant (1) | 1 Round (2) | 1 Minute (3) | Hours (4), Permanent (5) |
-| Target Count | Single (1) | Multi 2+ (2) | AOE / Area of Effect (3) | |
-| Accuracy Type | Attack Roll (1) | Save (1) | | Auto-Hit (4) |
-| Effect Tier | T1 (3) | T2 (6) | T3 (12) | T4 (17) |
-
-##### Function Costs
-| Function | Mana |
-|:---|:---:|
-| Utility | +0 |
-| Movement | +1 |
-| Defensive | +1 |
-| Offensive | +2 |
-
-{{footnote Magic and Spellcasting}}
-{{pageNumber,auto}}
-
-\page
-
 #### Damage Dice
 
-Range, Size, and Target Count each contribute one die. Attack Roll adds a bonus die (you choose size, pay the mana). A choice's die caps at its maximum mana cost (Size maxes at 3, so its die caps at d10).
+Range, Size, and Target Count each contribute one die. Attack Roll adds a bonus die (you choose size, pay the mana). A parameter's die caps at its maximum mana cost (Size maxes at 3, so its die caps at d10).
 
 ##### Damage Die by Mana Spent
 | Mana Spent | Die |
@@ -1375,16 +1350,6 @@ Your Magic modifier applies as a flat bonus to all offensive spell damage.
 | Martial | 30 | 3 |
 
 The cheapest spell costs 8 mana. The most expensive 1-action spell costs 44. The most expensive 3-action spell costs 132.
-
-#### Main and Sub Categories
-
-At character creation, you choose a **Main** and a **Sub** category. Main costs normal mana. Sub costs double. All other categories are locked unless a Mastery grants access.
-
-{{descriptive
-**TODO:** Confirm whether the Main/Sub system should be kept or cut (D-06).
-}}
-
-\column
 
 #### Additional Rules
 
@@ -1770,15 +1735,15 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 | | |
 |:---|:---|
 | **Tag** | Water, Wet |
-| **Stack** | Wet is a condition, not a damage stack. It does not deal damage or escalate. |
+| **Stack** | Wet is a condition, not a damage stack. It does not deal damage or escalate through stacking. |
 | **Effect** | Extinguishes fire on terrain and objects. Enables the Shocked to Stunned upgrade. |
-| **At Tier 2: Drown** | You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
+| **T2 spell: Drown** | A T2 Water spell applies Drown directly. You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
 
 Wet is a setup condition. On its own it does nothing harmful. Combined with Volt stacks, it turns Shocked into Stunned.
 
 #### Life Magic
 
-Life magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Life category.
+Life magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Life discipline.
 
 | Tag | What It Does |
 |:---|:---|
@@ -1795,7 +1760,7 @@ Radiant and Purge are the primary healing-side answers to Poison. Restore and Re
 
 #### Death Magic
 
-Death magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Death category.
+Death magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Death discipline.
 
 | Tag | What It Does |
 |:---|:---|
@@ -1829,7 +1794,7 @@ These removal methods apply to all stack types, not just one element.
 
 ### Tags on Terrain and Objects
 
-When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a frozen floor), the tagged area persists for the spell's duration. If no duration is specified, Tier 1 effects last 2 rounds and Tier 2 effects last 4 rounds.
+When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a frozen floor), the tagged area persists for the spell's duration. If no duration is specified, T1 effects last 2 rounds and T2 effects last 4 rounds.
 
 A creature that enters tagged terrain or starts its turn there gains 1 stack of the linked type. The same stack rules apply: damage on application, damage at start of turn, 2-round decay, cap at 5.
 
