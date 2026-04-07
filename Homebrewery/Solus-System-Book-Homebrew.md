@@ -1,3 +1,4 @@
+
 ```metadata
 title: Solus Frostmaiden Theme
 description: 'Frostmaiden-style theme for Solus rulebook'
@@ -520,8 +521,7 @@ theme: 5ePHB
 
 <!-- COVER PAGE -->
 
-{{frontCover
-![Solus Cover](Homebrewery\Assets\Solus Cover.png) {position:absolute,top:0,left:0,width:100%,height:100%}
+![Solus Cover](https://github.com/EleibelIU/Solus-Prerelease/blob/main/Homebrewery/Assets/Solus%20Cover.png?raw=true){right:0px,bottom:0px,top:unset,height:100%}
 
 }}
 
