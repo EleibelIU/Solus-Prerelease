@@ -475,138 +475,153 @@ TODO: confirm whether shields are missing from the equipment list and need to be
 
 ## Magic and Spellcasting
 
-Solus does not use a fixed spell list. You build every spell from a framework of nine parameters. Each parameter has a mana cost and falls into an action cost tier. The result is a custom spell with a total mana cost and a total action cost. Two casters who both throw fire can throw it at different ranges, sizes, speeds, and intensities depending on how they fill out the framework.
+In many games, you pick spells from a list. Solus works differently. You build every spell yourself by making nine choices about what the magic does. Your choices control how far it reaches, how big it is, how long it lasts, and how hard it hits. Two players who both want to throw fire will end up with different spells depending on the choices they make.
 
-### The Spell Framework
+### How Spells Work
 
-Every spell must define all nine parameters. No field can be left empty. The parameters are:
+To cast a spell, you spend **mana** (magical energy) and **actions** (time on your turn). Every spell is defined by nine choices. Each choice has a mana cost. Several choices also fall into an **action column** (1 Action, 2 Actions, 3 Actions, or 4+). The highest action column among your nine choices sets the spell's total action cost.
 
-1. **Category** — what school of magic the spell belongs to.
-2. **Function** — whether the spell is utility, movement, defensive, or offensive.
-3. **Range** — how far the spell reaches.
-4. **Size** — the area the spell covers.
-5. **Shape** — the geometric form of the effect (point, sphere, line, etc.).
-6. **Duration** — how long the spell lasts.
-7. **Target Count** — how many creatures or objects the spell affects.
-8. **Accuracy Type** — how the spell determines whether it hits (attack roll, save, or auto-hit).
-9. **Effect Tier** — the power of the tags the spell applies.
+| Choice | What You Are Deciding |
+| --- | --- |
+| Category | The school of magic (Elemental, Force, Mind, Life, Death, etc.) |
+| Function | The spell's purpose: Offensive, Defensive, Movement, or Utility |
+| Range | How far the spell can reach |
+| Size | How large the affected area is |
+| Shape | The geometric form: point, sphere, cube, line, wall, or freeform |
+| Duration | How long the effect lasts |
+| Target Count | How many creatures or objects it affects |
+| Accuracy Type | How the spell determines whether it hits |
+| Effect Tier | How powerful the spell's lasting effects are |
 
-### How Action Cost Works
+The first seven choices are intuitive. You pick a school, a purpose, a range, a size, a shape, a duration, and a target count. The last two need more context, so they are explained inside the walkthrough below when you encounter them.
 
-Each parameter has multiple options organized into four columns. The column a parameter falls into determines how many actions that parameter requires:
+### Building and Casting Your First Spell
 
-- **1 Action** — the cheapest, shortest-range, smallest options.
-- **2 Actions** — mid-range options.
-- **3 Actions** — powerful, long-range, or wide-area options.
-- **4+ Actions / Ritual** — extreme values like Sight range or Permanent duration.
+You want to create a fire attack that hits one enemy at close range. Walk through each choice, then cast it.
 
-**The spell's total action cost equals the highest column any single parameter falls into.** If every parameter sits in the 1 Action column, the spell costs 1 action to cast. If one parameter reaches the 3 Action column and everything else is at 1, the spell costs 3 actions.
+**Step 1: Category.** Every spell belongs to a school of magic. You are throwing fire: pick **Elemental**. No mana cost. Ten categories exist: Elemental, Force, Mind/Psychological, Temporal, Creation/Transmutation, Order/Binding, Summoning, Life, Death, Corruption/Chaos.
 
-### Mana Costs by Parameter
+**Step 2: Function.** This spell attacks an enemy: pick **Offensive**. Costs +2 mana. (Defensive and Movement cost +1. Utility costs +0. If a spell serves two functions, add both.)
 
-The number in parentheses is the mana cost for that option. Add the mana costs of all nine parameters together for the spell's total mana cost.
+**Step 3: Range.** Close range: **Self to 15 ft.** Costs +1 mana. Action column 1.
 
-| Parameter | 1 Action | 2 Actions | 3 Actions | 4+ / Ritual |
+**Step 4: Size.** Medium blast: **20-30 ft.** Costs +2 mana. Action column 2.
+
+**Step 5: Shape.** A bolt hits a single point: **Point**. Costs +1 mana. Column 1.
+
+**Step 6: Duration.** Hits and ends: **Instant**. Costs +1 mana. Column 1.
+
+**Step 7: Target Count.** One target: **Single**. Costs +1 mana. Column 1.
+
+**Step 8: Accuracy Type.** This choice determines how the spell connects with its target.
+
+- **Attack Roll (1 mana base):** You roll 2d10 + Magic against the target's Magical AC. If you meet or beat the defense, the spell hits. You also get to add a bonus damage die (explained below).
+- **Save (1 mana):** The target rolls to resist instead of you rolling to hit. No bonus die. TODO: Save resolution needs definition now that Resist Rolls have been removed.
+- **Auto-Hit (4 mana):** The spell connects automatically. No roll. Reliable, but expensive.
+
+You want to roll to hit and deal damage: pick **Attack Roll**. Base cost +1 mana. You also add a d6 bonus damage die (+1 mana). Total for this choice: +2 mana. Column 1.
+
+**Step 9: Effect Tier.** When a spell hits, it applies a **tag** to the target. Tags are lasting effects like Burn, Chilled, or Acid that create conditions over time (see Conditions, Injuries, and Death). Effect Tier determines which version of the tag your spell applies.
+
+- **Tier 1 (T1, 3 mana):** Applies the foundational tag. A T1 Fire spell applies [Burn], which builds 1 stack per hit. At 5 stacks, it escalates to Ignited. T1 terrain effects last 2 rounds.
+- **Tier 2 (T2, 6 mana):** Applies the escalated version directly. A T2 Fire spell applies [Ignited], skipping the stack buildup. T2 terrain effects last 4 rounds.
+- **T3 (12 mana) and T4 (17 mana)** exist at higher power. TODO: define T3 and T4 mechanically.
+
+You want basic fire: pick **T1 (Burn)**. Costs +3 mana. Column 1. On hit, the target gains 1 Burn stack.
+
+#### The Finished Spell
+
+| Choice | Option | Column | Mana |
+| --- | --- | --- | --- |
+| Category | Elemental | — | 0 |
+| Function | Offensive | — | +2 |
+| Range | Self to 15 ft. | 1 | +1 |
+| Size | 20-30 ft. | 2 | +2 |
+| Shape | Point | 1 | +1 |
+| Duration | Instant | 1 | +1 |
+| Target Count | Single | 1 | +1 |
+| Accuracy Type | Attack Roll + d6 bonus | 1 | +2 |
+| Effect Tier | T1 (Burn) | 1 | +3 |
+
+**Action cost: 2.** The highest column is 2 (Size). The spell costs 2 of your 3 actions.
+
+**Mana cost: 13.** Add every value: 0 + 2 + 1 + 2 + 1 + 1 + 1 + 2 + 3 = 13.
+
+**Damage.** Three choices (Range, Size, Target Count) each contribute one damage die. The die size scales with how much mana you spent on that choice. Attack Roll adds a bonus die you sized and paid for. Your Magic attribute applies as a flat bonus.
+
+**Fire Bolt damage:** Range (1 mana) d6 + Target Count (1 mana) d6 + Size (2 mana) d8 + Attack Roll bonus d6 + Magic modifier.
+
+#### Casting It
+
+1. **Check mana.** You need 13 mana in your pool. Mana regenerates at the start of your turn each round.
+2. **Spend 2 actions and 13 mana.**
+3. **Roll to hit.** Roll 2d10 + Magic against the target's Magical AC (Magic DR + Magic modifier).
+4. **On hit, roll damage.** Roll 1d6 + 1d6 + 1d8 + 1d6 + Magic modifier. Subtract the target's Magic DR from the total.
+5. **Apply the tag.** The target gains 1 Burn stack.
+
+> **Example:** You cast Fire Bolt. Your Magic is +3. The target has Magical AC 5 (Magic DR 4, Magic +1). You roll 2d10: 7 + 8 = 15, plus 3 = 18. That beats 5. Damage: 1d6 + 1d6 + 1d8 + 1d6 + 3 = 4 + 2 + 6 + 3 + 3 = 18, minus Magic DR 4 = 14 damage. The target gains 1 Burn stack.
+
+### Spell Reference
+
+#### Spell Framework
+
+The number in parentheses is the mana cost for that option.
+
+| Choice | 1 Action | 2 Actions | 3 Actions | 4+ / Ritual |
 | --- | --- | --- | --- | --- |
-| Range* | Self to 25 ft. (1) | 30-60 ft. (2) | 65-120 ft. (3) | 125-200 ft. (4), Sight (5), Global (6) |
-| Size* | 5-15 ft. (1) | 20-30 ft. (2) | 35-60 ft. (3) | |
+| Range | Self to 25 ft. (1) | 30-60 ft. (2) | 65-120 ft. (3) | 125-200 ft. (4), Sight (5), Global (6) |
+| Size | 5-15 ft. (1) | 20-30 ft. (2) | 35-60 ft. (3) | |
 | Shape | Point or none (1) | Sphere / Cube / Line / Wall / Cylinder (2) | Freeform or custom (3) | |
 | Duration | Instant (1) | 1 Round (2) | 1 Minute (3) | Hours (4), Permanent (5) |
-| Target Count* | Single (1) | Multi 2+ (2) | AOE / Area of Effect (3) | |
-| Accuracy Type* | Attack Roll (1) | Save (1) | Auto-Hit (4) | |
+| Target Count | Single (1) | Multi 2+ (2) | AOE / Area of Effect (3) | |
+| Accuracy Type | Attack Roll (1) | Save (1) | | Auto-Hit (4) |
 | Effect Tier | T1 (3) | T2 (6) | T3 (12) | T4 (17) |
 
-Parameters marked with **\*** contribute to spell damage (see Damage Dice below).
-
-### Categories
-
-Spells belong to one of ten categories. Category does not change mana cost. It determines which magical tradition the spell falls under.
-
-Elemental, Force, Mind/Psychological, Temporal, Creation/Transmutation, Order/Binding, Summoning, Life, Death, Corruption/Chaos.
-
-### Function Cost
-
-Every spell has a function type that adds a flat mana cost:
-
-| Function | Mana Cost |
+| Function | Mana |
 | --- | --- |
 | Utility | +0 |
 | Movement | +1 |
 | Defensive | +1 |
 | Offensive | +2 |
 
-If a spell serves two functions (an offensive spell that also moves you), add both costs.
+#### Damage Dice
 
-### Special Rules
+Range, Size, and Target Count each contribute one die. Attack Roll adds a bonus die (you choose size, pay the mana). A choice's die caps at its maximum mana cost (Size maxes at 3, so its die caps at d10).
 
-**Duration override.** If the spell's effect lasts longer than its casting time, you pay the higher duration's mana cost. A spell cast at Instant speed with an effect that persists for a Minute pays the Minute cost (3 mana), not the Instant cost (1 mana).
-
-**Effect Tier and Tags.** Effect Tier determines the power of the tags a spell applies. Tags are conditions like Burn, Chilled, or Force (see Conditions, Injuries, and Death). Higher tiers apply stronger effects and cost more mana. If a spell applies two tags at the same tier, pay the tier cost twice: two T2 tags cost 12 mana (6 + 6).
-
-**Multi-target scaling.** When targeting multiple specific creatures (not AOE), each additional target costs extra mana: 2 targets = +2, 3 targets = +3, 4 targets = +4. Maximum 4 individual targets.
-
-### Damage Dice
-
-Three parameters contribute damage dice: **Range**, **Target Count**, and **Size**. Each contributes one die. The die size depends on the parameter's mana cost:
-
-| Mana Cost | Die Size |
+| Mana Spent | Die |
 | --- | --- |
 | 1 | d6 |
 | 2 | d8 |
 | 3 | d10 |
 | 5 | d12 |
 
-A parameter's die size is capped by its maximum mana cost. Size maxes at 3 mana, so its damage die caps at d10.
+Your Magic modifier applies as a flat bonus to all offensive spell damage.
 
-**Attack Roll bonus.** If the spell uses the Attack Roll accuracy type, it grants one additional damage die (d6 through d12). The mana cost increases with die size.
+#### Mana Pools
 
-**Casting stat bonus.** Your Magic modifier (-5 to +5) always applies as a flat damage bonus to every offensive spell.
+| Background | Max Mana | Regen per Round |
+| --- | --- | --- |
+| Caster | 100 | 15 |
+| Hybrid | 70 | 10 |
+| Martial | 30 | 3 |
 
-**Total damage formula:** one die from Range + one die from Target Count + one die from Size + one die from Attack Roll (if applicable) + Magic modifier.
+The cheapest spell costs 8 mana. The most expensive 1-action spell costs 44. The most expensive 3-action spell costs 132.
 
-> **Example: Building a Fire Bolt**
->
-> You want a quick single-target fire spell.
->
-> | Parameter | Choice | Column | Mana |
-> | --- | --- | --- | --- |
-> | Category | Elemental | — | 0 |
-> | Function | Offensive | — | +2 |
-> | Range | Self to 15 ft. | 1 Action | +1 |
-> | Size | 20-30 ft. | 2 Actions | +2 |
-> | Shape | Point | 1 Action | +1 |
-> | Duration | Instant | 1 Action | +1 |
-> | Target Count | Single | 1 Action | +1 |
-> | Accuracy Type | Attack Roll | 1 Action | +1 |
-> | Effect Tier | T1 (Burn) | 1 Action | +3 |
->
-> **Action cost:** The highest column is 2 Actions (Size). This spell costs **2 actions** to cast.
->
-> **Mana cost:** 0 + 2 + 1 + 2 + 1 + 1 + 1 + 1 + 3 = **12 mana**.
->
-> **Damage dice:** Range +1 (d6) + Target Count +1 (d6) + Size +2 (d8) + Attack Roll (d12). Your Magic is +5.
->
-> **Total damage: 1d6 + 1d6 + 1d8 + 1d12 + 5.**
->
-> To cast, you roll `2d10 + Magic` against the target's Magical AC. On hit, roll the damage dice.
+#### Main and Sub Categories
 
-### Mana Cost Anchors
+At character creation, you choose a **Main** and a **Sub** category. Main costs normal mana. Sub costs double. All other categories are locked unless a Mastery grants access.
 
-These reference points set the boundaries of the mana economy:
+TODO: confirm whether the Main/Sub system should be kept or cut (D-06).
 
-| Benchmark | Mana Cost |
-| --- | --- |
-| Cheapest possible spell | 8 |
-| Most expensive 1-action spell | 44 |
-| Most expensive 3-action spell | 132 |
+#### Additional Rules
 
-Background mana pools are built around these anchors. A Caster (100 max mana, 15 regen/round) can cast several mid-range spells per encounter. A Martial (30 max mana, 3 regen/round) has enough for a handful of utility or movement spells. A Hybrid (70 max mana, 10 regen/round) falls between.
+**Duration override.** If the effect outlasts the casting time, pay the higher duration's mana cost.
 
-### Main and Sub Categories
+**Two tags at the same tier.** Pay the tier cost twice. Two T2 tags = 12 mana.
 
-You choose a **Main** and a **Sub** category at character creation. Spells from your Main category cost their normal mana. Spells from your Sub category cost **double** mana. Spells from any other category are unavailable unless a Mastery or special rule grants access.
+**Multi-target scaling.** Targeting specific creatures (not AOE) adds mana: 2 targets = +2, 3 = +3, 4 = +4. Maximum 4.
 
-TODO: confirm whether the Main/Sub category system adds enough value to keep, or whether it should be cut to reduce cognitive load (D-06).
+**Split casting.** 2- or 3-action spells can split across consecutive turns. Interruption = failure. Mana not refunded.
 
 ## Core Gameplay Loop
 
@@ -800,121 +815,122 @@ When a tagged effect hits a target, follow these rules:
 
 Physical DR does not reduce elemental stack damage. Bleed and Force stacks deal physical damage and are reduced by Physical DR.
 
-### Escalation: What Happens at 5 Stacks
+### Escalation and Interactions: How to Read This Section
 
-When a stack type hits 5, the target gains an **escalated condition**. This is a named, stronger effect that adds a penalty on top of the ongoing stack damage. The stacks stay at 5 (they cannot go higher). The escalated condition persists as long as the stacks do.
+When a stack type reaches 5, it triggers an **escalated condition**: a stronger, named effect on top of the ongoing stack damage. Escalation is the ceiling. Nothing goes past it. The stacks stay at 5 and the condition persists until the stacks decay or are removed.
 
-| Stack Type | Escalated Condition | What It Does |
-| --- | --- | --- |
-| Acid | Corroded | DR reduced by 2. Armor degrades. Starts a 3-round corrosion countdown on exposed body locations. |
-| Bleed | Shredded | TODO: define Shredded effect. |
-| Force | Concussed | TODO: define Concussed effect. |
-| Volt | Shocked | Disadvantage on all actions. Movement speed halved. |
-| Burn | Ignited | Burn damage each turn. Cannot receive healing from any source. |
-| Chilled | Frozen | Movement becomes 0. Must spend 1 action to break free. |
+The profiles below cover every element and magic type in the game. Each profile tells you four things: what the tag does on hit, what happens as stacks build, what the escalation does at 5, and how to counter or remove it. If you need to look something up mid-session, find the element's profile.
 
-**Shocked + Wet = Stunned.** If a Shocked creature is also Wet, Shocked upgrades to **Stunned**: disadvantage on all actions and loss of your reaction for the round.
+> **Example: Burn → Ignited.** You get hit by a fire spell three rounds in a row. Round 1: 1 Burn stack, 1 fire damage. Round 2: 2 Burn stacks, 2 fire damage. Round 3: 3 stacks, 3 damage. Two more hits and you reach 5 Burn stacks. At 5, you become Ignited: you take Burn damage every turn and cannot receive healing. Your ally hits you with an ice spell (Chilled tag). The Chilled cancels 1 Burn stack, dropping you to 4. Ignited ends. Another ice hit drops you to 3. The fire is coming under control.
 
-### Elemental Interactions and Removing Stacks
+#### Fire / Burn
 
-Stacks are not permanent. They go away through decay, opposition, purging, spending, and elemental counters. This section covers all of them.
+| | |
+| --- | --- |
+| **Tag** | Fire, Burn |
+| **Stack** | Burn. Deals fire damage equal to stack count. |
+| **At 5: Ignited** | Burn damage each turn. Cannot receive healing from any source. |
+| **Countered by** | Chilled (cancels 1:1). Wet extinguishes fire on terrain and objects. Air/Wind extinguishes open flames. |
+| **DR type** | Magic DR reduces Burn stack damage. |
 
-**Decay.** Every stack expires 2 rounds after it was applied. No action required.
+Burn and Chilled are direct opposites. When you would gain a Burn stack, it removes 1 Chilled stack instead (and vice versa). If there is no opposing stack to cancel, the new stack applies normally.
 
-**Opposition: Burn and Chilled.** Burn and Chilled cancel each other 1:1. When a creature would gain a stack of one, it removes one stack of the other instead. A creature with 3 Burn stacks hit by a Chilled effect loses 1 Burn stack (ending at 2 Burn, 0 Chilled). If there are no opposing stacks to cancel, the new stack applies normally.
+#### Ice / Chilled
 
-**Wet extinguishes fire.** Applying Wet to a burning target, terrain, or object extinguishes the fire source. Wet does not cancel Burn stacks 1:1 the way Chilled does. It puts out the fire (the terrain, the flask, the environmental effect). To strip Burn stacks off a creature, use Chilled.
+| | |
+| --- | --- |
+| **Tag** | Ice, Chilled |
+| **Stack** | Chilled. Deals cold damage equal to stack count. |
+| **At 5: Frozen** | Movement becomes 0. Must spend 1 action to break free. |
+| **Countered by** | Burn (cancels 1:1). |
+| **DR type** | Magic DR reduces Chilled stack damage. |
 
-**Air extinguishes fire.** Tier 1 Air puts out small flames (candles, torches). Tier 2 Wind puts out large fires (campfires, pyres, bonfires). Like Wet, this targets the fire source, not the creature's Burn stacks.
+#### Lightning / Volt
 
-**Chill or Burn neutralizes Acid.** Spend 2 actions to apply Chilled or Burn to a target or terrain affected by Acid. The Acid stacks are removed and the dissolving stops. You take damage from both the Acid and the applied element that round. This is the only way to interrupt Corroded's 3-round corrosion countdown.
+| | |
+| --- | --- |
+| **Tag** | Electric, Volt |
+| **Stack** | Volt. Deals electric damage equal to stack count. |
+| **At 5: Shocked** | Disadvantage on all actions. Movement speed halved. |
+| **Combo: Shocked + Wet = Stunned** | If a Shocked creature is also Wet, Shocked upgrades to Stunned: disadvantage on all actions and loss of reaction. |
+| **Countered by** | Decay (2 rounds) or purging. No direct elemental opposite. |
+| **DR type** | Magic DR reduces Volt stack damage. |
 
-**Wet upgrades Shocked to Stunned.** A Shocked creature that is also Wet becomes Stunned (disadvantage on all actions, loses reaction). Lightning attackers can set this up by applying Wet first, then building Volt stacks.
+Lightning attackers can set up the Stunned combo by applying Wet first (water spell, rain, water terrain) and then building Volt stacks.
 
-**Purging.** Some abilities remove stacks directly. A full purge (2 actions) removes all elemental stacks from you. A partial purge (1 action) removes 1 stack of each elemental type. Some purge abilities target a narrower set (Acid and Poison only, for example).
+#### Acid
 
-**Spending.** Some weapon traits let you spend your own stacks to power an effect instead of letting them escalate. Spent stacks are removed immediately and do not count toward escalation. If you lack the required stacks, the ability fails.
+| | |
+| --- | --- |
+| **Tag** | Acid |
+| **Stack** | Acid. Deals acid damage equal to stack count. |
+| **At 5: Corroded** | DR reduced by 2. Acid burns through terrain at 5 ft. per round. Direct contact with exposed flesh starts a 3-round corrosion countdown; if not removed, you lose the limb or suffer permanent impairment. |
+| **Countered by** | Apply Chilled or Burn (costs 2 actions). Removes Acid stacks and stops corrosion. You take damage from both the Acid and the applied element that round. |
+| **DR type** | Magic DR reduces Acid stack damage. |
 
-> **Example:** You have 4 Force stacks from your unarmed fighting style. Your next punch lets you spend all 4 for +4 bonus damage. Your Force count drops to 0, and you avoid reaching 5 and triggering Concussed.
+#### Poison
 
-**Radiant cures Venomous (early).** The Life magic tag Radiant removes Venomous at 10 or fewer stacks.
+| | |
+| --- | --- |
+| **Tag** | Poison |
+| **Stack** | Poisoned. TODO: define Poisoned mechanical effect (distinct from Venomous). |
+| **At escalation: Venomous** | You lose 1 action. Stacks increase by 1 per round, accelerating to +5 per round at 10 stacks. At 15 stacks, lose a second action. At 20, lose your third. At 35, permanently lose 1 action. |
+| **Countered by** | Radiant removes Venomous at 10 or fewer stacks. Purge removes Venomous at 15+. Purge cannot restore an action permanently lost at 35. |
+| **DR type** | Magic DR reduces Poison stack damage. |
 
-**Purge cures Venomous (late).** At 15+ Venomous stacks, only the Purge tag can remove the poison. Even Purge cannot restore an action permanently lost at 35 stacks.
+Venomous is the most dangerous escalation in the game. It accelerates on its own once triggered. Act fast.
 
-**Healing removes Reap.** Reap (a Scythe-specific stack type) is removed if the target receives any healing, or if the attacker misses the target for 2 consecutive rounds.
+#### Bleed
 
-#### Quick Reference: Elemental Interactions
+| | |
+| --- | --- |
+| **Tag** | Bleed (from Smite-type effects and weapon traits) |
+| **Stack** | Bleed. Deals physical bleed damage equal to stack count. |
+| **At 5: Shredded** | TODO: define Shredded effect. |
+| **Countered by** | Decay (2 rounds) or purging. No direct elemental opposite. |
+| **DR type** | Physical DR reduces Bleed stack damage. |
 
-| Situation | Counter | Result |
-| --- | --- | --- |
-| Burn stacks on a creature | Hit with Chilled | Cancel 1:1 (remove 1 Burn per Chilled applied) |
-| Chilled stacks on a creature | Hit with Burn | Cancel 1:1 (remove 1 Chilled per Burn applied) |
-| Fire on terrain or objects | Apply Wet | Extinguish fire source |
-| Fire on terrain or objects | Apply Air / Wind | Extinguish fire source |
-| Acid stacks on creature or terrain | Apply Chilled or Burn (2 actions) | Remove Acid; take damage from both elements |
-| Venomous at 10 or fewer stacks | Apply Radiant | Remove Venomous |
-| Venomous at 15+ stacks | Apply Purge | Remove Venomous (Radiant fails) |
-| Reap stacks | Any healing | Remove Reap |
-| Shocked creature | Apply Wet | Upgrade Shocked → Stunned |
-| Any elemental stacks | Full purge (2 actions) | Remove all elemental stacks |
-| Any elemental stacks | Partial purge (1 action) | Remove 1 of each elemental type |
+#### Force
 
-If a stack type is not listed in this table, it has no special interaction. Bleed and Force, Acid and Volt, Burn and Bleed all coexist on the same target without affecting each other.
+| | |
+| --- | --- |
+| **Tag** | Force (from Impact, Blast, Slam, Repulse effects) |
+| **Stack** | Force. Deals physical force damage equal to stack count. |
+| **At 5: Concussed** | TODO: define Concussed effect. |
+| **Countered by** | Decay, purging, or spending. Some weapon traits let you spend Force stacks for bonus damage or special effects before reaching 5. Spent stacks are removed immediately. |
+| **DR type** | Physical DR reduces Force stack damage. |
 
-### Tags on Terrain and Objects
+> **Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering Concussed.
 
-When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a frozen floor), the tagged area persists for the spell's duration. If no duration is specified, Tier 1 effects last 2 rounds and Tier 2 effects last 4 rounds.
+#### Water / Wet
 
-A creature that enters tagged terrain or starts its turn there gains 1 stack of the linked type. The same stack rules apply: damage on application, damage at the start of the creature's turn, 2-round decay, cap at 5.
+| | |
+| --- | --- |
+| **Tag** | Water, Wet |
+| **Stack** | Wet is a condition, not a damage stack. It does not deal damage or escalate. |
+| **Effect** | Extinguishes fire on terrain and objects. Enables the Shocked → Stunned upgrade. |
+| **At Tier 2: Drown** | You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
 
-### Condition Reference
+Wet is a setup condition. On its own it does nothing harmful. Combined with Volt stacks, it turns Shocked into Stunned.
 
-This table lists every condition in Solus. The **Source** column tells you whether the condition comes from reaching 5 stacks of a type (escalated) or from a direct ability, spell, or hazard.
+#### Life Magic
 
-| Condition | Source | Effect |
-| --- | --- | --- |
-| Anchored | Direct (abilities, terrain) | You cannot move from your current position. You can still take other actions. |
-| Blind | Direct (abilities) | You lose visual perception. Attacks against targets you cannot see are at disadvantage. |
-| Charmed | Direct (Mind magic) | You cannot target the charmer with hostile actions. The charmer gains advantage on social checks against you. You can still act freely otherwise. |
-| Concussed | Escalated (5 Force stacks) | TODO: define Concussed effect. |
-| Confused | Direct (Mind magic) | At the start of your turn, roll: 1-2 move randomly, 3-4 attack nearest creature, 5-6 act normally. You cannot take reactions while Confused. |
-| Corroded | Escalated (5 Acid stacks) | Your DR is reduced by 2. Acid burns through terrain at 5 ft. per round. Direct contact with exposed flesh starts a 3-round corrosion countdown; if not removed, you lose the affected limb or suffer permanent impairment. |
-| Crush | Direct (grapple abilities) | Maintained pressure on a Restrained target. Applies 1 Force stack per round while active. |
-| Dominated | Direct (Mind magic, Tier 2) | The controller chooses your actions each round. You retain awareness but cannot refuse. |
-| Drown | Direct / Escalated (Water, Tier 2) | You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
-| Drowsy | Direct (Sleep magic, Tier 1) | Your perception is dulled. You lose your reaction. |
-| Frightened | Direct (Mind magic) | You cannot willingly move closer to the fear source. Disadvantage on attacks and checks against the source. |
-| Frozen | Escalated (5 Chilled stacks) | Movement becomes 0. You must spend 1 action to break free before you can move. |
-| Ignited | Escalated (5 Burn stacks) | You take Burn damage each turn. You cannot receive healing from any source while Ignited. |
-| Incapacitated | Dropping to 0 HP | You cannot take actions, move, or use reactions. You remain on the battlefield. |
-| Poisoned | Direct (Poison, Tier 1) | TODO: define Poisoned mechanical effect (distinct from Venomous). |
-| Restrained | Direct (grapple, Hold magic, terrain) | Your movement is physically limited. You cannot move freely. Some abilities require the target to be Restrained first. |
-| Shocked | Escalated (5 Volt stacks) | Disadvantage on all actions. Movement speed halved. Upgrades to Stunned if you are also Wet. |
-| Shredded | Escalated (5 Bleed stacks) | TODO: define Shredded effect. |
-| Stunned | Shocked + Wet | Disadvantage on all actions. You lose your reaction for the round. |
-| Unconscious | Direct (Sleep magic, Tier 2) | You are unresponsive and cannot act until awakened or the effect ends. |
-| Venomous | Escalated (Poison, Tier 2) | You lose 1 action. Stacks increase by 1 per round after activation, accelerating to +5 per round at 10 stacks. At 15 stacks, you lose a second action. At 20, you lose your third. At 35, you permanently lose 1 action. Radiant removes Venomous at 10 or fewer stacks. At 15+, only Purge works. Purge does not restore an action lost at 35. |
-| Weaken | Direct (abilities) | TODO: define Weaken effect. |
-| Wet | Direct (water, rain, Water magic) | No direct penalty. Enables Shocked → Stunned upgrade. Fire sources are extinguished. |
-
-TODO: Shredded, Concussed, Poisoned, and Weaken still need full definitions from Jacob.
-
-### Life and Death Magic Tags
-
-Life and Death magic use special tags that do not create stacks. They produce immediate effects.
-
-**Life Tags** (from the Life spell category):
+Life magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Life category.
 
 | Tag | What It Does |
 | --- | --- |
 | Restore | Repairs recent damage. Stabilizes injuries not yet permanent. |
-| Regenerate | Restores lost body parts and reverses severe trauma while active. |
+| Regenerate | Restores lost body parts and reverses severe trauma while the spell is active. |
 | Radiant | Damages corrupted or organic targets. Removes Venomous at 10 or fewer stacks. |
-| Purge | Removes or suppresses one active biological condition. Only way to remove Venomous at 15+. |
-| Rouse | Returns a recently deceased target to life (body must be intact, death must be recent). |
+| Purge | Removes or suppresses one active biological condition. The only way to remove Venomous at 15+. |
+| Rouse | Returns a recently deceased target to life (body intact, death recent). |
 | Revive | Returns a long-dead target to life at extreme cost or risk. |
 
-**Death Tags** (from the Death spell category):
+Radiant and Purge are the primary healing-side answers to Poison. Restore and Regenerate handle physical damage. Rouse and Revive handle death.
+
+#### Death Magic
+
+Death magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Death category.
 
 | Tag | What It Does |
 | --- | --- |
@@ -922,6 +938,52 @@ Life and Death magic use special tags that do not create stacks. They produce im
 | Apoptosis | Target dies immediately. |
 | Reanimate | Restores temporary motion to lifeless matter. |
 | Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
+
+#### Reap (Weapon-Specific)
+
+| | |
+| --- | --- |
+| **Source** | Scythe weapon trait |
+| **Stack** | Reap. Unique stack type with its own rules. |
+| **Countered by** | Any healing removes all Reap stacks. If the attacker misses the target for 2 consecutive rounds, Reap stacks are removed. |
+
+### General Stack Removal
+
+These removal methods apply to all stack types, not just one element.
+
+**Decay.** Every stack expires 2 rounds after it was applied. Automatic.
+
+**Purging.** A full purge (2 actions) removes all elemental stacks from you. A partial purge (1 action) removes 1 stack of each elemental type. Some purge abilities target a narrower set (Acid and Poison only, for example).
+
+**Spending.** Some weapon traits and abilities let you spend your accumulated stacks to power an effect instead of letting them escalate. Spent stacks are removed immediately and do not count toward escalation. If you lack the required stacks, the ability fails.
+
+### Tags on Terrain and Objects
+
+When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a frozen floor), the tagged area persists for the spell's duration. If no duration is specified, Tier 1 effects last 2 rounds and Tier 2 effects last 4 rounds.
+
+A creature that enters tagged terrain or starts its turn there gains 1 stack of the linked type. The same stack rules apply: damage on application, damage at start of turn, 2-round decay, cap at 5.
+
+### Other Conditions
+
+These conditions do not come from stacks. They are applied directly by abilities, spells, or hazards.
+
+| Condition | Effect |
+| --- | --- |
+| Anchored | You cannot move from your current position. You can still take other actions. |
+| Blind | You lose visual perception. Attacks against unseen targets are at disadvantage. |
+| Charmed | You cannot target the charmer with hostile actions. The charmer gains advantage on social checks against you. |
+| Confused | Start of turn, roll: 1-2 move randomly, 3-4 attack nearest creature, 5-6 act normally. No reactions while Confused. |
+| Crush | Maintained pressure on a Restrained target. Applies 1 Force stack per round while active. |
+| Dominated | The controller chooses your actions each round. You retain awareness but cannot refuse. |
+| Drowsy | Perception dulled. You lose your reaction. |
+| Frightened | You cannot willingly move closer to the fear source. Disadvantage on attacks and checks against the source. |
+| Incapacitated | You cannot take actions, move, or use reactions. You remain on the battlefield. (See Dropping to 0 HP.) |
+| Restrained | Your movement is physically limited. You cannot move freely. Some abilities require the target to be Restrained. |
+| Stunned | Disadvantage on all actions. You lose your reaction for the round. (Usually from Shocked + Wet.) |
+| Unconscious | You are unresponsive and cannot act until awakened or the effect ends. |
+| Weaken | TODO: define Weaken effect. |
+
+TODO: Shredded, Concussed, Poisoned, and Weaken still need full definitions from Jacob.
 
 ### Dropping to 0 HP
 
@@ -959,7 +1021,7 @@ The only differences between NPC tiers are stat modifiers, HP, and mana pools. E
 
 ### How Each Tier Works
 
-**Minions** are fodder. One Minion is a speed bump. Six Minions in a room are a threat. They have +0 in every stat, 1-5 HP, and access to the same equipment and spells you do. Their low modifiers mean they miss less often, but they swing the same weapons and cast the same spells you do. A single Minion is a speed bump. Six of them eat your actions, trigger your reactions, and crowd the battlefield until the math catches up with you.
+**Minions** are fodder. They have +0 in every stat, 1-5 HP, and access to the same equipment and spells you do. Their low modifiers mean they miss more often, but they swing the same weapons and cast the same spells. One Minion is a speed bump. Six of them eat your actions, trigger your reactions, and crowd the battlefield until the math catches up with you.
 
 **Regular NPCs** represent ordinary people: shopkeepers, townsfolk, low-ranked guards. They are sturdier than Minions but cannot match a player character in a fight.
 
