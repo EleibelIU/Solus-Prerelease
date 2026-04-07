@@ -1255,14 +1255,14 @@ All other disciplines are **tertiary** or **locked**:
 | Corruption | Chaotic instability, wild magic. | [Instability] → [Wild Magic] |
 
 {{descriptive
-**TODO:** Confirm final Main/Sub/Tertiary/Locked boundaries (D-06). Define which disciplines start locked vs. tertiary.
+**TODO:** LIZ NOTE I'm aware that you didn't create Tertiary. I did. I think it should be a variant rule. You can either choose to play Solus with Tertiary Disciplines and avoid going through the Mastery system. Or the default of locked where you must use a mastery to gain access
 }}
 }}
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
 \page
-
+{{wide
 ## Building a Spell: Fire Bolt
 
 You want a fire attack that hits one enemy at close range. Pick one option for each of the nine parameters, record the mana and action costs, then total them up.
@@ -1279,7 +1279,7 @@ You want a fire attack that hits one enemy at close range. Pick one option for e
 | 8 | Accuracy | Attack Roll | 1 | 1 | Roll to hit. Adds a bonus damage die. |
 | | | + d6 bonus die | | +1 | You choose the bonus die size and pay its mana. |
 | 9 | Effect Tier | T1 (Burn) | 1 | 3 | Applies 1 Burn stack on hit. |
-
+}}
 #### Totals
 
 **Base mana** (parameters 2–9): 2 + 1 + 2 + 1 + 1 + 1 + 2 + 3 = **13**
@@ -1287,6 +1287,8 @@ You want a fire attack that hits one enemy at close range. Pick one option for e
 **Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26. As a Tertiary (×3), 39.
 
 **Action cost:** The highest action value is 2 (Size). The spell costs **2 of your 3 actions**.
+
+\column
 
 #### Damage
 
@@ -1298,12 +1300,15 @@ Three parameters contribute damage dice: Range, Size, and Target Count. Each die
 
 T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the stack count and build toward the Ignited escalated condition at 5 stacks (see Conditions, Injuries, and Death). T2 would skip the buildup and apply Ignited directly.
 
+{{wide 
 {{descriptive
 **TODO:** Save resolution needs definition now that Resist Rolls have been removed.
 }}
 
 {{descriptive
 **TODO:** Define T3 and T4 mechanically.
+}}
+
 }}
 
 {{footnote Magic and Spellcasting}}
