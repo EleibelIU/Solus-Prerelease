@@ -542,7 +542,7 @@ theme: 5ePHB
   - #### [{{ The Two Roll Types}}{{ 7}}](#p7)
 - ### [{{ Ch. 3: Character Creation}}{{ 9}}](#p9)
   - #### [{{ Steps 1–4: Concept, Attributes, Race, Background}}{{ 9}}](#p9)
-  - #### [{{ Steps 5–6: Initiative Modifier, Disciplines}}{{ 9}}](#p9)
+  - #### [{{ Steps 5–6: Initiative Modifier, Tag Affinities}}{{ 9}}](#p9)
   - #### [{{ Steps 7–9: Skills, Equipment, Review}}{{ 10}}](#p10)
 - ### [{{ Ch. 4: Attributes and Skills}}{{ 11}}](#p11)
   - #### [{{ The Five Attributes}}{{ 11}}](#p11)
@@ -552,7 +552,7 @@ theme: 5ePHB
   - #### [{{ Armor}}{{ 13}}](#p13)
   - #### [{{ Weapons}}{{ 14}}](#p14)
 - ### [{{ Ch. 6: Magic and Spellcasting}}{{ 15}}](#p15)
-  - #### [{{ Spell Disciplines}}{{ 15}}](#p15)
+  - #### [{{ Tag Affinities}}{{ 15}}](#p15)
   - #### [{{ Building a Spell: Fire Bolt}}{{ 16}}](#p16)
 - ### [{{ Ch. 7: Core Gameplay Loop}}{{ 17}}](#p17)
 - ### [{{ Ch. 8: Combat}}{{ 18}}](#p18)
@@ -588,7 +588,7 @@ Solus is a tabletop roleplaying game for three to six people. One person runs th
 
 **Two ten-sided dice (2d10).** Each die is numbered 1 through 10. You add the two dice together for a single total. A roll of 7 and 5 gives you 12. Solus does not use percentile dice, twenty-sided dice, or any other die type for core rolls.
 
-**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Atraxia), your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
+**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Atraxia), your Atraxia Pool, your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
 
 **Friends.** Solus works best with three to five players and one GM.
 
@@ -755,6 +755,8 @@ Before you read further, here are four numbers you will see on every character s
 **Hit Points (HP)** measure how much damage your character can take. When your HP reaches 0, your character is incapacitated (see Conditions, Injuries, and Death). Your maximum HP is set by your background during character creation and does not change.
 
 **Mana** is the resource you spend to use skills and cast spells. Your mana pool starts full at the beginning of each session. During combat, mana regenerates at the start of each of your turns by an amount set by your background (see Character Creation, Step 4). Outside of combat, mana refills between encounters.
+
+**Atraxia Pool** is a tracked number generated at character creation that represents your long-term tolerance for punishment. It drains when you enter the dying state and does not regenerate on its own. When it reaches 0, your character is permanently dead. (See Attributes and Skills: The Atraxia Pool, and Conditions, Injuries, and Death: Dropping to 0 HP.)
 
 **Experience Points (XP)** are the currency of character growth. You earn XP from combat, exploration, and social encounters. You spend XP between sessions to buy new skills and raise existing ones (see Advancement, Mastery, and Between-Session Play).
 
@@ -931,24 +933,23 @@ A Caster has the deepest mana pool and fastest regeneration but the lowest healt
 
 At the start of each combat, choose whether to roll initiative with **Body** or **Magic**. Roll 1d10 + the chosen modifier to determine turn order (see Combat: Starting Combat). You can pick a different modifier each fight.
 
+### Step 5.5: Roll Your Atraxia Pool
+
+Your GM chose a Campaign Tone at session zero. That tone sets the number of dice and the die type. Roll that many dice, add your Atraxia modifier to each one (minimum 1 per die). The total is your **Atraxia Pool**. Write it on your sheet. This number tracks how many times you can cheat death across your career. (See Attributes and Skills: The Atraxia Pool for the full table and examples.)
+
 {{footnote Character Creation}}
 {{pageNumber,auto}}
 
 \page
 
-### Step 6: Choose Your Disciplines
+### Step 6: Choose Your Tag Affinities
 
-Pick two spell disciplines from the ten listed in Magic and Spellcasting.
+Pick two tag affinities from the ten listed in Magic and Spellcasting.
 
-- Your **Main discipline (×1)** has no mana cost penalty.
-- Your **Sub discipline (×2)** doubles the mana cost of any spell using it.
+- Your **Main affinity (×1)** has no mana cost penalty.
+- Your **Sub affinity (×2)** doubles the mana cost of any spell using it.
 
-If your character does not cast spells, you still pick two disciplines . They define what magical knowledge your character can draw on if circumstances change.
-
-{{descriptive
-**TODO**: This was originally written to tie into the tag system, ergo we should change the name to better reflect that this system (as in all systems) is designed to synergize with the tag CATEGORIES thus you are gaining *proficiency* in a tag category. Do a find/replace on this specific "Discipline" context -> "Choose your Tag Category Proficiency" or something like this. 
-
-}}
+If your character does not cast spells, you still pick two affinities. They define what tag categories your character can draw on if circumstances change.
 
 ### Step 7: Choose Your Skills
 
@@ -986,8 +987,9 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Background | Caster, Martial, or Hybrid | Fixed |
 | Attributes | Body, Mind, Social, Magic, Atraxia | Fixed |
 | Initiative | Body or Magic modifier | Chosen each combat |
-| Disciplines | Main discipline, Sub discipline | Fixed |
+| Tag Affinities | Main affinity, Sub affinity | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
+| Atraxia Pool | Rolled at creation (Campaign Tone dice + modifier) | Permanent; drains during dying |
 | Skills | Active skills (up to 10) | Skills can be swapped between sessions |
 | Support Skills | Socketed augments per skill | Changeable between sessions |
 | Equipment | Weapons, armor, gear | Changeable |
@@ -1031,7 +1033,7 @@ Social covers how you present yourself. It governs persuasion, deception, intimi
 
 #### Magic
 
-Magic covers all spellcasting. Every spell you cast uses Magic, regardless of its discipline (elemental, death, summoning, or otherwise). 
+Magic covers all spellcasting. Every spell you cast uses Magic, regardless of its tag affinity (elemental, death, summoning, or otherwise). 
 
 - Magic is added to magical combat rolls and contributes to **Magical AC**. Magic is the other attribute you can choose for **initiative**.
 
@@ -1049,8 +1051,39 @@ Atraxia measures how deeply your character perceives the true nature of the worl
 - Once your Atraxia drops past a threshold, the awareness is permanent. Raising Atraxia back up restores your composure but does not erase what you have seen.
 
 Characters choose low Atraxia to access hidden knowledge and interact with forces invisible to others. Those forces can reach back.
+
+#### The Atraxia Pool
+
+Your **Atraxia Modifier** (-5 to +5) governs skill checks, the same as any other attribute. Your **Atraxia Pool** is a separate resource that represents how much punishment your body and mind can absorb before they give out for good. When your Pool hits 0, you are dead. 
+
+You generate your Atraxia Pool at character creation. You and the GM collaborate to choose a **Campaign Tone** that sets the number of dice and the die type. You roll that many dice, adding your Atraxia modifier to each roll (minimum 1 per die, even if your modifier would drag it lower). The total is your starting Atraxia Pool.
+
+##### Atraxia Pool by Campaign Tone
+| Campaign Tone | Dice | Die Type | Description |
+|:---|:---:|:---:|:---|
+| Brutal | 4 | d4 | Short runs. Death is the expected outcome. |
+| Gritty | 6 | d6 | Survival matters. Every hit leaves a mark. |
+| Standard | 8 | d6 | A full campaign with real stakes and room to breathe. |
+| Heroic | 10 | d8 | Long arcs. Characters die from accumulated recklessness, not one bad night. |
+
+{{note
+**Example:** The GM declares a Standard campaign (8d6). Your Atraxia modifier is +2. You roll 8d6: 3, 5, 1, 4, 6, 2, 5, 3. Add +2 to each: 5, 7, 3, 6, 8, 4, 7, 5. Your starting Atraxia Pool is **45**.
+
+Another player has Atraxia -2. They roll the same 8d6: 4, 1, 3, 6, 2, 5, 1, 4. Add -2 to each (minimum 1): 2, 1, 1, 4, 1, 3, 1, 2. Their starting Atraxia Pool is **15**.
+
+Both players rolled the same number of dice. The modifier shaped the outcome. The character who sees beyond the veil paid for it in resilience.
 }}
 
+Your Atraxia Pool does not regenerate between encounters nor sessions. Entering the "Dying" condition reduces the maximum value of your Atraxia pool. Atraxia can be gained and lost by other means at the GM's discretion, and it is encouraged to play off the mechanic and consult various tables as to what characters may see or experience (TODO). 
+
+{{descriptive
+**TODO:** Jacob — define Atraxia Pool restoration mechanics. Can Life magic (Restoration) restore Pool points? Can rest? NPC services? Quest rewards? Or is this a one-way drain? The answer reshapes how the pool feels across a campaign.
+}}
+
+{{descriptive
+**TODO:** Jacob — define Atraxia modifier thresholds and perception consequences. At what modifier values does the world change around the character? (e.g., at -2 you start seeing echoes of things that aren't there; at -4 those things see you back.) This is where the Bloodborne Insight influence lives. Needs a threshold table and descriptions of what each tier of awareness looks and feels like in play.
+}}
+}}
 {{footnote Attributes and Skills}}
 {{pageNumber,auto}}
 
@@ -1231,9 +1264,9 @@ Many weapons also carry unique **traits**: special effects that apply condition 
 
 {{wide
 
-Solus has no spell list. You build every spell from scratch by setting ten **parameters**: what discipline of magic it belongs to, what it does, how far it reaches, how big the area is, what shape it takes, how long it lasts, how many targets it hits, how it connects with those targets, how much damage it deals, and how powerful its lasting effect is.
+Solus has no spell list, no grimoire, and no preparation phase. You build every spell by setting ten **parameters**: what tag affinity it belongs to, what it does, how far it reaches, how big the area is, what shape it takes, how long it lasts, how many targets it hits, how it connects with those targets, how much damage it deals, and how powerful its lasting effect is. If you have the mana, you can cast it. Use the tables below as reference during play.
 
-Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 10 to get the spell's base mana cost, then multiply by your Discipline's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
+Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 10 to get the spell's base mana cost, then multiply by your affinity's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
 
 Your mana pool starts full at the beginning of each encounter. Mana regenerates at the start of your turn each round.
 
@@ -1242,7 +1275,7 @@ Your mana pool starts full at the beginning of each encounter. Mana regenerates 
 ##### Spell Parameter Table
 | Parameter | Option | Actions | Mana | Notes |
 |:---|:---|:---:|:---:|:---|
-| **Discipline** | Main | — | ×1 | Multiplier applied to the total of all other parameters. See Disciplines. |
+| **Tag Affinity** | Main | — | ×1 | Multiplier applied to the total of all other parameters. See Tag Affinities. |
 | | Sub | — | ×2 | |
 | | Locked | — | — | Cannot cast unless a Mastery grants access. |
 | **Function** | Utility | — | 0 | Dual-function spells add both costs. |
@@ -1282,7 +1315,7 @@ Your mana pool starts full at the beginning of each encounter. Mana regenerates 
 | | T3 | 3 | 12 | |
 | | T4 | S | 17 | Sustained. |
 
-**Total mana cost** = (sum of parameters 2–10) × discipline multiplier. 
+**Total mana cost** = (sum of parameters 2–10) × affinity multiplier. 
 
   **Total action cost** = the highest action value among your parameters.
 
@@ -1297,19 +1330,19 @@ Your mana pool starts full at the beginning of each encounter. Mana regenerates 
 \page
 
 {{wide
-## Spell Disciplines
+## Tag Affinities
 
-Discipline determines which **tags** your spell applies on hit. Tags are labels on the source. When a tag lands on a target, it creates **stacks** that build up, deal damage over time, and trigger **escalated conditions** at 5 stacks (see Conditions, Injuries, and Death).
+Your tag affinity determines which **tags** your spell applies on hit. Tags are labels on the source. When a tag lands on a target, it creates **stacks** that build up, deal damage over time, and trigger **escalated conditions** at 5 stacks (see Conditions, Injuries, and Death).
 
-Discipline also sets the spell's **cost multiplier**. At character creation you pick two disciplines:
+Your affinity also sets the spell's **cost multiplier**. At character creation you pick two tag affinities:
 
-- **Main discipline (×1).** Your primary school. All parameter costs stay at face value.
-- **Sub discipline (×2).** Your secondary school. The total mana cost of any spell using this discipline is doubled.
+- **Main affinity (×1).** Your primary school. All parameter costs stay at face value.
+- **Sub affinity (×2).** Your secondary school. The total mana cost of any spell using this affinity is doubled.
 
-All other disciplines are **locked**. You cannot cast spells from a locked discipline unless a Mastery grants access (see Advancement, Mastery, and Between-Session Play).
+All other affinities are **locked**. You cannot cast spells from a locked affinity unless a Mastery grants access (see Advancement, Mastery, and Between-Session Play).
 
-##### Spell Disciplines Table
-| Discipline | What It Does | Tag → Escalation |
+##### Tag Affinities Table
+| Tag Affinity | What It Does | Tag → Escalation |
 |:---|:---|:---|
 | Elemental | Fire, ice, lightning, water, earth, air, acid, poison. Stack-based damage and control. | [Burn] → [Ignited], [Chilled] → [Frozen], [Volt] → [Shocked] |
 | Force | Kinetic impact, barriers, gravity manipulation. | [Force] → [Stunned], [Restrained] → [Crush] |
@@ -1318,8 +1351,8 @@ All other disciplines are **locked**. You cannot cast spells from a locked disci
 | Creation | Transmutation, shaping matter, size changes. | [Harden] → [Reinforce], [Enlarge] → [Overgrow] |
 | Order | Divine strikes, wards, truth compulsion, suppression. | [Strike] → [Judgement], [Suppression] → [Nullify] |
 | Summoning | Drawing or binding entities. | [Invite] → [Summon] |
-| Life | Healing, revival, radiant damage, purification. | [Restore] → [Regenerate], [Radiant] → [Purge] |
-| Death | Necrotic damage, reanimation, decay. | [Necrosis] → [Necroptosis], [Decay] → [Wither] |
+| Life | Healing, revival, radiant damage, purification, light. | [Restore] → [Regenerate], [Rouse] → [Revive], [Radiant] → [Purge], [Illuminate] → [Blind] |
+| Death | Necrotic damage, death effects, reanimation, decay. | [Necrosis] → [Necroptosis], [Pyroptosis] → [Apoptosis], [Reanimate] → [Vivify], [Decay] → [Wither] |
 | Corruption | Chaotic instability, wild magic. | [Instability] → [Wild Magic] |
 
 #### Mana Pools
@@ -1329,9 +1362,6 @@ All other disciplines are **locked**. You cannot cast spells from a locked disci
 | Hybrid | 70 | 10 |
 | Martial | 30 | 3 |
 
-{{descriptive
-**TODO:** Change the name of Spell Disciplines to allude how it interacts with Categories/Tags. Spell Categories/Tags is halfway to a good name; We need something better that *implies* a link to teh tag system, as every system in Solus should link into the Stacks/Tags/Categories. 
-}}
 }}
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
@@ -1344,7 +1374,7 @@ You want a fire attack that hits one enemy at close range. Pick one option for e
 
 | # | Parameter | Your Pick | Actions | Mana | Why |
 |:---:|:---|:---|:---:|:---:|:---|
-| 1 | Discipline | Elemental (Main) | — | ×1 | Fire tags. Main = no multiplier penalty. |
+| 1 | Tag Affinity | Elemental (Main) | — | ×1 | Fire tags. Main = no multiplier penalty. |
 | 2 | Function | Offensive | — | 2 | You are attacking. |
 | 3 | Range | Self–25 ft. | 1 | 1 | Close range. Contributes 1 damage die. |
 | 4 | Size | 20–30 ft. | 2 | 2 | Medium blast. Contributes 1 damage die. |
@@ -1370,7 +1400,7 @@ T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the s
 
 **Base mana** (parameters 2–10): 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 3 = **13**
 
-**Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26.
+**Affinity multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26.
 
 **Action cost:** The highest action value is 2 (Size). The spell costs **2 of your 3 actions**.
 
@@ -1390,18 +1420,95 @@ T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the s
 
 {{wide 
 {{descriptive
-**TODO:** CREATE MORE SPELLS , especially emphasizing the combinatric possibilities and also the "Distintegration" equivalents at *level one*. 
-}}
-
-{{descriptive
-**TODO:** Liz expand on the sustained system to not be retarded as you know its exposited POORLY and needs to be clarified esp on how the DURATIONS are achieved kthxbye
-}}
-
 }}
 
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
 
+\page
+
+{{wide
+## More Spell Builds
+
+The spell builder creates anything from a close-range nuke to a sustained healing field. These three builds show the range.
+
+### Disintegration Ray
+
+A single-target Force blast at maximum die size. This is the "kill it now" option. Every caster can build this on day one.
+
+| # | Parameter | Your Pick | Actions | Mana | Why |
+|:---:|:---|:---|:---:|:---:|:---|
+| 1 | Tag Affinity | Force (Main) | — | ×1 | Force tags. Main = no multiplier penalty. |
+| 2 | Function | Offensive | — | 2 | You are attacking. |
+| 3 | Range | Self–25 ft. | 1 | 1 | Close range. Contributes 1 damage die. |
+| 4 | Size | 5–15 ft. | 1 | 1 | Tight blast. Contributes 1 damage die. |
+| 5 | Shape | Point | 1 | 1 | Single impact point. |
+| 6 | Duration | Instant | 1 | 1 | Hits and ends. |
+| 7 | Target Count | Single | 1 | 1 | One target. Contributes 1 damage die. |
+| 8 | Accuracy | Attack Roll | 1 | 1 | Roll to hit. Adds a bonus damage die. |
+| 9 | Damage | d12 per die | — | 5 | Maximum die size for all 4 damage dice. |
+| 10 | Effect Tier | T2 | 2 | 6 | Skips T1 stacks. Applies Force escalation directly. |
+
+**Damage:** 4d12 + Magic modifier (average ~30 + Magic)
+
+**Base mana:** 2 + 1 + 1 + 1 + 1 + 1 + 1 + 5 + 6 = **19**. Affinity multiplier: ×1. Final cost: **19 mana**.
+
+**Action cost:** Highest action value is 2 (Effect Tier T2). Costs **2 of your 3 actions**.
+
+A Caster (100 mana, 15 regen) can fire this 5 times before running dry. T2 means Physical DR does not reduce the damage. If the target survives, the Force escalation condition is already applied. Pair it with a 1-action follow-up (weapon swing, quick spell) to make full use of your turn.
+
+### Frost Nova
+
+An area burst that locks down a group. Lower damage, high control.
+
+| # | Parameter | Your Pick | Actions | Mana | Why |
+|:---:|:---|:---|:---:|:---:|:---|
+| 1 | Tag Affinity | Elemental (Main) | — | ×1 | Ice tags. Main = no penalty. |
+| 2 | Function | Offensive | — | 2 | Damage + Chilled stacks. |
+| 3 | Range | Self–25 ft. | 1 | 1 | Centered on you. Contributes 1 damage die. |
+| 4 | Size | 20–30 ft. | 2 | 2 | 30 ft. radius burst. Contributes 1 damage die. |
+| 5 | Shape | Sphere | 2 | 2 | Radiates outward from your position. |
+| 6 | Duration | Instant | 1 | 1 | One burst. |
+| 7 | Target Count | AOE | 3 | 3 | Hits all creatures in the sphere. |
+| 8 | Accuracy | Save | 1 | 1 | Targets roll to resist. No bonus die. |
+| 9 | Damage | d6 per die | — | 1 | Smaller dice. Control is the point. |
+| 10 | Effect Tier | T1 (Chilled) | 1 | 3 | Applies 1 Chilled stack to every target hit. |
+
+**Damage:** 2d6 + Magic modifier per target (Range + Size contribute dice; AOE and Save do not add bonus dice)
+
+**Base mana:** 2 + 1 + 2 + 2 + 1 + 3 + 1 + 1 + 3 = **16**. Affinity multiplier: ×1. Final cost: **16 mana**.
+
+**Action cost:** Highest action value is 3 (AOE). Costs **all 3 actions**.
+
+Every enemy in 30 ft. takes cold damage and gains a Chilled stack. Three hits reach 3 stacks. Two more reach Frozen (movement 0, costs 1 action to break free). This spell sets up the Frozen lockdown. A teammate who follows up with Volt stacks on a Frozen target triggers the Shocked → Stunned combo if the target is also Wet.
+
+### Mending Light (Sustained Healing Field)
+
+A sustained Life spell. Costs all 3 actions on the first turn and 1 action each turn after to maintain.
+
+| # | Parameter | Your Pick | Actions | Mana | Why |
+|:---:|:---|:---|:---:|:---:|:---|
+| 1 | Tag Affinity | Life (Main) | — | ×1 | Restore tags. Main = no penalty. |
+| 2 | Function | Defensive | — | 1 | Healing allies. |
+| 3 | Range | Self–25 ft. | 1 | 1 | Centered on you. |
+| 4 | Size | 20–30 ft. | 2 | 2 | 30 ft. radius field. |
+| 5 | Shape | Sphere | 2 | 2 | Covers the party's position. |
+| 6 | Duration | Hours | S | 4 | Sustained. |
+| 7 | Target Count | AOE | 3 | 3 | All allies in the sphere. |
+| 8 | Accuracy | Auto-Hit | S | 4 | Sustained. No roll required for healing. |
+| 9 | Damage | None | — | 0 | Non-offensive. |
+| 10 | Effect Tier | T1 (Restore) | 1 | 3 | Applies Restore each round. |
+
+**Base mana:** 1 + 1 + 2 + 2 + 4 + 3 + 4 + 0 + 3 = **20**. Affinity multiplier: ×1. Final cost: **20 mana**.
+
+**Action cost:** Two parameters have **S** (Duration and Accuracy), which makes this a sustained spell. Turn 1: spend all 3 actions and 20 mana to begin casting. Each turn after: spend 1 action to maintain the field. If you skip maintenance, get knocked unconscious, or get stunned, the spell ends and the mana is lost.
+
+While sustained, every ally in 30 ft. gains the Restore tag each round: recent damage is repaired and injuries not yet permanent are stabilized. The field moves with you. Drop it when the party is safe or when you need your actions back.
+
+{{note
+**Sustained spells in practice.** Any parameter with an **S** action cost makes the spell sustained. You pay mana up front. On the casting turn, all 3 actions go to the spell. Every turn after, 1 action maintains it. Interruption (unconscious, stunned, silenced, voluntary release) ends the spell immediately. You do not recover the mana.
+}}
+}}
 
 {{footnote Magic and Spellcasting}}
 {{pageNumber,auto}}
@@ -1569,8 +1676,6 @@ This chapter explains how lasting effects work in Solus: what causes them, how t
 
 Every rule in this chapter applies the same way regardless of where the effect comes from. A Burn stack from a fire spell works the same as a Burn stack from a flaming sword or a pool of lava. The source does not change the rules.
 
-<!-- TODO: DYING SHOULD BE A COPY OF SHADOWDARK'S SYSTEM BUT WITHOUT USING ONLY INT - CREATE A FLEXIBLE FRAMEWORK THAT PLAYERS CAN ARGUE   -->
-
 ## Tracking Conditions at the Table
 
 The stack and condition system is the densest part of Solus. It has more moving parts than any other chapter. Read it once to understand the logic. You do not need to memorize it. The system caps at 5 stacks per type, and nothing goes past an escalated condition. Once you reach 5 stacks and trigger the escalation, that is the worst it gets. The math stays bounded.
@@ -1621,20 +1726,15 @@ Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.
 | Damage timing | On application (immediate) and at the start of the target's next turn. |
 | Cap | 5 stacks per type. No exceptions. |
 | Independence | Different types stack separately. 3 Burn + 2 Bleed = both tracked, both deal damage. |
-| DR | Elemental stacks (Burn, Chilled, Volt, Acid): reduced by Magic DR. Physical stacks (Bleed, Force): reduced by Physical DR. DR does not prevent stacks from applying or escalating. |
-
-{{descriptive
-**TODO:** JACOB CONFIRMS THAT DR REDUCES STACK DAMAGE UNTIL T2
-}}
+| DR | Elemental stacks (Burn, Chilled, Volt, Acid): reduced by Magic DR. Physical stacks (Bleed, Force): reduced by Physical DR. DR reduces stack damage at T1 but does **not** reduce damage from T2 escalated conditions. DR does not prevent stacks from applying or escalating. |
 
 | **Removal** | |
 |:---|:---|
 | Decay | Each stack type has one shared timer that lasts 2 rounds. A new hit of the same type resets the timer. When the timer expires, all stacks of that type are removed at once. |
-| Purge | Full purge (2 actions): remove all elemental stacks from yourself. Partial purge (1 action): remove 1 stack per elemental type from yourself. Purge abilities come from specific weapons and skills; not every character has access. |
+| Healing Magic | Healing spells with the appropriate tags can remove stacks. This is the primary way to clear stacks during combat. |
+| Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). See Condition Profiles for each type's counter. Unless a tag says otherwise, countering and healing magic are the only removal methods. |
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. |
-| Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). See Condition Profiles for each type's counter. |
-
-<!--TODO: PURGE IS UNIQUE TO WEAPONS , IT IS NOT AN ACTUAL REMOVAL METHODOLOGY. THE ONLY WAY TO REMOVE STACKS IS HEALING MAGIC AND OPPOSITE STACKS/TAGS UNLESS THE TAG SAYS OTHERWISE -->
+| Purge (Weapon Trait) | Purge is a weapon-specific trait, not a general action. Only weapons and skills with the Purge trait can remove stacks this way. Full purge (2 actions): remove all elemental stacks from yourself. Partial purge (1 action): remove 1 stack per elemental type. |
 
 {{note
 **Example: Tracking stacks across two rounds.**
@@ -1665,6 +1765,9 @@ When a stack type reaches 5, it triggers an **escalated condition** (also called
 | Poison | Venomous | Lose 1 action. Self-accelerating stacks. |
 | Bleed | Shredded | TODO |
 | Force | TODO | "Concussed" was replaced. Awaiting new name/effect. |
+| Necrotic | Necroptosis | Lethal cascade. Target tears itself apart. |
+| Decay | Wither | Structural breakdown. Applies Vulnerable. |
+| Radiant | Purge | Removes one active biological condition. |
 
 {{note
 **Example: Burn to Ignited.** You get hit by a fire spell three rounds in a row. Round 1: 1 Burn stack, 1 fire damage. Round 2: 2 Burn stacks, 2 fire damage. Round 3: 3 stacks, 3 damage. Two more hits and you reach 5 Burn stacks. At 5, you become Ignited: you take Burn damage every turn and cannot receive healing. Your ally hits you with an ice spell (Chilled tag). The Chilled cancels 1 Burn stack, dropping you to 4. Ignited ends. Another ice hit drops you to 3. The fire is coming under control.
@@ -1782,6 +1885,91 @@ Poison at T1 has no special effect beyond dealing stack damage. It serves as a p
 | **Stack** | Reap. Unique stack type with its own rules. |
 | **Countered by** | Any healing removes all Reap stacks. If the attacker misses the target for 2 consecutive rounds, Reap stacks are removed. |
 
+#### Life: Restoration
+
+| | |
+|:---|:---|
+| **Tag** | Life, Restoration |
+| **T1: Restore** | Repairs recent damage to a living target. Restores lost health. Stabilizes injuries that have not yet become permanent. |
+| **T2: Regenerate** | Restores lost body parts and reverses severe physical trauma. Provides ongoing recovery while active. |
+| **Countered by** | Necrosis (Death domain). |
+| **DR type** | Magic DR reduces Restoration stack damage when used offensively against undead. |
+
+#### Life: Resurrect
+
+| | |
+|:---|:---|
+| **Tag** | Life, Resurrect |
+| **T1: Rouse** | Returns a recently deceased target to life. The body must be intact and death must have occurred within a limited timeframe. |
+| **T2: Revive** | Returns a long-dead target to life by reuniting body and soul, even after extended separation or decay. Subject to extreme cost or risk. |
+
+Resurrect tags have no stack escalation. They produce immediate effects.
+
+#### Life: Radiance
+
+| | |
+|:---|:---|
+| **Tag** | Life, Radiance |
+| **T1: Radiant** | Emits concentrated light-infused energy that damages or disrupts organic or corrupted targets. Applies Radiant stacks. Removes Venomous at 10 or fewer stacks. |
+| **T2: Purge** | Removes or suppresses one active biological condition or effect within a target or area. Covers Elemental, Mind, and Life domains. The only way to remove Venomous at 15+. Cannot restore an action permanently lost at 35. |
+| **Countered by** | Necrosis (Death domain). |
+| **DR type** | Magic DR reduces Radiant stack damage. |
+
+#### Life: Light
+
+| | |
+|:---|:---|
+| **Tag** | Life, Light |
+| **T1: Illuminate** | Creates light within a defined area or on a target. Removes darkness and enables normal visual perception. |
+| **T2: Blind** | Removes a target's ability to perceive visually while the effect persists. |
+
+Light tags produce binary conditions, not scaling stack damage.
+
+{{footnote Conditions, Injuries, and Death}}
+{{pageNumber,auto}}
+
+\page
+
+#### Death: Necrotic
+
+| | |
+|:---|:---|
+| **Tag** | Death, Necrotic |
+| **T1: Necrosis** | Dark energy destabilizes living material and siphons vitality from a target. Applies Necrotic stacks. |
+| **T2: Necroptosis** | A lethal internal cascade that forces the body to tear itself apart, fully absorbing the vitality of the target. |
+| **Countered by** | Radiant (Life domain). |
+| **DR type** | Magic DR reduces Necrotic stack damage. |
+
+#### Death: Death
+
+| | |
+|:---|:---|
+| **Tag** | Death |
+| **T1: Pyroptosis** | The target detonates with necrotic energy in a 5 ft. radius. Creatures in the radius gain Necrotic stacks. |
+| **T2: Apoptosis** | A terminal effect. The target dies immediately. |
+
+Death tags produce immediate effects. Pyroptosis has an area component; Apoptosis has no counter once applied.
+
+#### Death: Undeath
+
+| | |
+|:---|:---|
+| **Tag** | Death, Undeath |
+| **T1: Reanimate** | Restores temporary motion to lifeless matter. The target gains no will or awareness. |
+| **T2: Vivify** | Forces the tethering of a spirit or essence to a vessel beyond natural death. |
+
+Undeath tags produce immediate effects, not scaling stacks.
+
+#### Death: Rot
+
+| | |
+|:---|:---|
+| **Tag** | Death, Rot |
+| **T1: Decay** | Slow weakening and deterioration of vitality or structure. Applies the Weaken condition. |
+| **T2: Wither** | Final failure of integrity resulting in structural or biological breakdown. Applies the Vulnerable condition. |
+| **Countered by** | Restore or Regenerate (Life domain). |
+| **DR type** | Magic DR reduces Decay stack damage. |
+
 
 
 {{footnote Conditions, Injuries, and Death}}
@@ -1795,12 +1983,11 @@ When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a f
 
 A creature that enters tagged terrain or starts its turn there gains 1 stack of the linked type. The same stack rules apply: damage on application, damage at start of turn, 2-round decay, cap at 5.
 
-### Other Conditions
+### Other Tag Conditions
 
-<!-- TODO: THIS IS FUCKING WRONG. ALL OF ITS WRONG. Everything applies stacks UNLESS stated specifically otherwise -->
-These conditions do not come from stacks. They are applied directly by abilities, spells, or hazards.
+Every effect in Solus works through tags and stacks. The conditions below follow the same system. They are applied by tags carried on spells, abilities, or hazards. The difference is that these tags produce binary conditions instead of scaling numeric damage. A creature either has the condition or does not. Unless a tag's description says otherwise, assume it applies through the stack framework.
 
-##### Non-Stack Conditions
+##### Tag-Applied Conditions
 | Condition | Effect |
 |:---|:---|
 | Anchored | You cannot move from your current position. You can still take other actions. |
@@ -1815,109 +2002,103 @@ These conditions do not come from stacks. They are applied directly by abilities
 | Restrained | Your movement is physically limited. You cannot move freely. Some abilities require the target to be Restrained. |
 | Stunned | Disadvantage on all actions. You lose your reaction for the round. (Usually from Shocked + Wet.) |
 | Unconscious | You are unresponsive and cannot act until awakened or the effect ends. |
-| Weaken | |
+| Weaken | Slow deterioration of vitality or structure. Applied by Decay (Death: Rot). Reduces damage dealt by 1. |
+| Vulnerable | Applied by Wither (Death: Rot T2). Incoming damage increased by 2. |
 | Wet | No damage. Extinguishes fire on terrain and objects. Enables the Shocked → Stunned upgrade. |
 | Drown | Applied by T2 Water spells. You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
-<!-- TODO: LIFE AND DEATH ARE NOT MAGIC. THEY ARE ONLY TAGS -->
-##### Life Magic Tags
-
-Life tags follow the same stack system as other tags, with T1 and T2 effects. They are not separate from the condition framework.
-
-| Tag | Effect |
-|:---|:---|
-| Restore | Repairs recent damage. Stabilizes injuries not yet permanent. |
-| Regenerate | Restores lost body parts and reverses severe trauma while the spell is active. |
-| Radiant | Damages corrupted or organic targets. Removes Venomous at 10 or fewer stacks. |
-| Purge | Removes or suppresses one active biological condition. The only way to remove Venomous at 15+. |
-| Rouse | Returns a recently deceased target to life (body intact, death recent). |
-| Revive | Returns a long-dead target to life at extreme cost or risk. |
 
 {{descriptive
-**TODO:** Jacob, Life tags need T1 and T2 breakdowns to match the stack system. Which tags are T1 primers and which are T2 escalations?
-}}
-
-##### Death Magic Tags
-
-Death tags follow the same stack system as other tags, with T1 and T2 effects.
-
-| Tag | Effect |
-|:---|:---|
-| Pyroptosis | Target detonates with necrotic energy in a 5 ft. radius. |
-| Apoptosis | Target dies immediately. |
-| Reanimate | Restores temporary motion to lifeless matter. |
-| Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
-
-{{descriptive
-**TODO:** Jacob, Death tags need T1 and T2 breakdowns to match the stack system. Which tags are T1 primers and which are T2 escalations?
-}}
-
-
-{{descriptive
-**TODO:** Jacob, Shredded and the Force escalation (formerly Concussed) still need full definitions. Weaken also needs a definition.
+**TODO:** Jacob, Shredded and the Force escalation (formerly Concussed) still need full definitions.
 }}
 
 ### Dropping to 0 HP
 
-When your HP reaches 0, you enter the **dying state**. You gain a **countdown** starting at 10 (track with a d10 or other marker). When the countdown reaches 0, you die.
+When your HP reaches 0, you enter the **dying state**. Your **Atraxia Pool** becomes your countdown. When the pool hits 0, you die.
 
-You remain conscious and can act, with these penalties:
+The pool does not reset between encounters or sessions. Whatever your pool reads at the end of a dying incident is your starting value for the next one. The pool tracks your character's total remaining tolerance for near-death across their entire career.
+
+#### While Dying
+
+You remain conscious and can act. The following penalties apply:
 
 - All attack rolls are made with **disadvantage**.
-- Your movement speed is **halved**.
-- Your mana regeneration rate is **halved** (rounded down).
+- Movement speed is **halved**.
+- Mana regeneration is **halved** (rounded down).
 
-#### Countdown on Your Turn
+#### Pool Drain on Your Turn
 
-You still get 3 actions. Each action you take costs the countdown:
+You still get 3 actions per turn. Each action drains your Atraxia Pool:
 
-- Each action you **use** (attack, move, cast, etc.) reduces the countdown by **2**.
-- Each action you **skip** (do nothing) reduces the countdown by **1**.
+- Each action you **use** (attack, move, cast, interact): pool **-2**
+- Each action you **skip** (do nothing): pool **-1**
 
-You can mix used and skipped actions in any order.
+You can mix used and skipped actions in any order. A turn where you do nothing costs 3 from the pool. A turn where you use all 3 actions costs 6.
 
 {{note
-**Example:** You enter dying at countdown 10.
+**Example:** First time dying. Your Atraxia Pool is 45.
 
-Your next turn: Action 1, you move (countdown -2 = 8). Action 2, you do nothing (-1 = 7). Action 3, you do nothing (-1 = 6).
+Your turn: Action 1, you move behind cover (pool -2 = 43). Action 2, you do nothing (-1 = 42). Action 3, you do nothing (-1 = 41).
+
+You end the turn at 41. If an ally heals you, your pool stays at 41. Next time you hit 0 HP, you resume from 41.
 }}
 
-#### Countdown from Enemy Attacks
+#### Pool Drain from Enemy Attacks
 
-When an enemy hits you with an attack, the countdown drops based on how many actions the attack cost:
+When an enemy hits you while you are dying, the pool drops based on the attack's action cost:
 
-- 1-action attack: countdown **-1**
-- 2-action attack: countdown **-3**
-- 3-action attack: countdown **-5**
+- 1-action attack: pool **-1**
+- 2-action attack: pool **-3**
+- 3-action attack: pool **-5**
 
-If the countdown reaches 0 from an enemy hit, you die immediately.
+If the pool reaches 0 from any source, you die immediately.
+
+#### Why You Stay Conscious
+
+Dying characters can still act because combat does not pause for you. You choose whether to spend pool faster by acting or conserve it by doing nothing. That choice matters because every point of pool you spend is gone permanently. An aggressive turn while dying costs twice as much pool as a passive one.
+
+Your allies also have a choice: heal you now or finish the fight first. The longer you stay in the dying state, the more pool and Atraxia modifier you lose.
 
 #### Leaving the Dying State
 
-If you receive healing that brings you to **1 HP or more**, you leave the dying state. If you remain above 0 HP until the **start of your next turn**, your countdown resets to 10.
+If you receive healing that brings you to **1 HP or more**, you leave the dying state. Leaving the dying state carries three consequences:
 
-{{footnote Conditions, Injuries, and Death}}
-{{pageNumber,auto}}
+- **Atraxia modifier loss.** Your Atraxia modifier permanently drops by 1 for each round you spent dying. Minimum loss is 1, even if you are healed on the same round you go down.
+- **Short-term injury.** Roll on the Short-Term Injury Table.
+- **Pool carries forward.** Whatever your Atraxia Pool reads when you leave dying is your new starting value for all future dying incidents.
 
-\page
-<!-- TODO DEATH. Everyone has a equal death counter. When you enter dying, you subtract EITHER (1 at the end of each turn ) OR ( Every action lowers it by one ) INACTION Is also ONE , you using your action is 2. As a consequence to survivng ( and lets be honest, magically healing out of this as thats the optimized move to do here) you are going to take Atraxia DAMAGE PERMANENTLY -1 PER ROUND you were in the dying state. You will ALWAYS lose minimum 1 entering Dying. You will roll on the short term injury table. You keep your death counter the entire game. This is our game's equivalent of tracking Ammo. WE JUST WANTED IT TO BE IMPORTANT MAN SO WE MADE IT YOUR LIFE. YOUR ARROWS OR YOUR LIFE. --->
+#### Long-Term Impact
+
+Each dying incident costs pool (the immediate countdown) and Atraxia modifier (long-term perception shift). The modifier loss means your character perceives more of the world's hidden layers after each brush with death. Because the modifier also affects future Atraxia Pool rolls if restoration mechanics allow it, repeated dying makes a character both more aware and more fragile.
+
+{{note
+**Example:** Your pool was at 41. You drop to 0 HP and spend 2 rounds dying. Between your actions and enemy hits, your pool drops to 29. An ally heals you.
+
+Your Atraxia modifier permanently drops by 2 (one per round in dying). You roll on the Short-Term Injury Table. Next time you hit 0 HP, your pool starts at 29 and your modifier is 2 points lower than at character creation.
+}}
+
+{{descriptive
+TODO: Short-Term Injury Table needs to be created. TODO: Jacob wants a Shadowdark-inspired survival check where the player can argue which attribute applies. The check mechanic and DC need definition.
+}}
 <!-- CHAPTER 10: NPCs, ENEMIES, AND ENCOUNTERS -->
 
 # NPCs, Enemies, and Encounters
 
 Every NPC in Solus uses the same action economy, equipment, skills, and spells as player characters. An enemy swings a sword the same way you do, casts spells from the same framework, and takes 3 actions on its turn. The GM does not run NPCs from a separate system. The GM runs them from the same rules you use.
 
-The only differences between NPC tiers are stat modifiers, HP, and mana pools. Each tier also supports martial, caster, and hybrid variants. An NPC's mana pool and regeneration rate depend on whether the GM builds them as a Martial (30 max, 3 regen), Caster (100 max, 15 regen), or Hybrid (70 max, 10 regen), just like player backgrounds. Most common NPCs use the Martial pool.
+NPCs also have Atraxia Pools. Most commoners, merchants, and low-tier guards rolled theirs from small dice with modest modifiers. A shopkeeper in a quiet town might carry a pool of 8. A veteran city guard might sit around 20. Your player characters, by the time they've survived their first real fight, have already outlasted most people they'll meet on the street. This is not because Solus treats player characters as heroes by default. It is because the kind of person who walks into a dungeon, picks a fight with something that has claws, and walks back out is statistically unusual.
+
+The differences between NPC tiers are stat modifiers, HP, mana pools, and Atraxia Pools. Each tier supports martial, caster, and hybrid variants. An NPC's mana pool and regeneration rate depend on whether the GM builds them as a Martial (30 max, 3 regen), Caster (100 max, 15 regen), or Hybrid (70 max, 10 regen), the same as player backgrounds. Most common NPCs use the Martial pool.
 
 ### NPC Tiers
 
 ##### NPC Resources by Tier
-| Tier | HP | Max Mana / Regen | Example Armor |
-|:---|:---:|:---|:---|
-| Minion | 1-5 | 30 / 3 | None (Phys DR 0, Magic DR 0) |
-| Regular | 75 | 30 / 3 | Cloth (Phys DR 0, Magic DR 4) or Light |
-| Enemy / Ally | 100 | 100 / 15 | Medium (Phys DR 3, Magic DR 1) |
-| Mini Boss | 120 | 100 / 15 | Heavy (Phys DR 4, Magic DR 0) |
-| Boss | 175 | 100 / 20 | Enchanted (Phys DR 3, Magic DR 3) |
+| Tier | HP | Max Mana / Regen | Atraxia Pool | Example Armor |
+|:---|:---:|:---|:---:|:---|
+| Minion | 1-5 | 30 / 3 | 4-8 | None (Phys DR 0, Magic DR 0) |
+| Regular | 75 | 30 / 3 | 10-20 | Cloth (Phys DR 0, Magic DR 4) or Light |
+| Enemy / Ally | 100 | 100 / 15 | 30-50 | Medium (Phys DR 3, Magic DR 1) |
+| Mini Boss | 120 | 100 / 15 | 50-70 | Heavy (Phys DR 4, Magic DR 0) |
+| Boss | 175 | 100 / 20 | 80+ | Enchanted (Phys DR 3, Magic DR 3) |
 
 ##### NPC Attributes by Tier
 | Tier | Body | Mind | Social | Magic | Atraxia |
@@ -2126,6 +2307,17 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Martial | 120 | 30 | 3 |
 | Hybrid | 110 | 70 | 10 |
 
+### Atraxia Pool by Campaign Tone
+
+| Tone | Dice | Die Type |
+|:---|:---:|:---:|
+| Brutal | 4 | d4 |
+| Gritty | 6 | d6 |
+| Standard | 8 | d6 |
+| Heroic | 10 | d8 |
+
+Roll dice = Campaign Tone. Add Atraxia modifier to each die (minimum 1 per die). Total = starting Atraxia Pool.
+
 ### Degree of 5
 
 | Gap | Outcome |
@@ -2157,18 +2349,18 @@ This chapter collects reference tables and playtest materials. Use these at the 
 2. Roll `2d10 + Body` (physical) or `2d10 + Magic` (spell).
 3. Compare to Physical AC or Magical AC. Meet or beat = hit.
 4. Roll damage dice + modifier. Subtract target's DR.
-5. Apply tags. 1 stack per hit. Weapons: one tag per hit; spells can apply multiple.
+5. Apply tags. 1 stack per hit. Weapons: one tag per hit; spells can apply multiple. 
 6. Check for 0 HP.
 
 ### NPC Tiers
 
-| Tier | HP | Mana (Max / Regen) |
-|:---|:---:|:---|
-| Minion | 1-5 | 30 / 3 |
-| Regular | 75 | 30 / 3 |
-| Enemy / Ally | 100 | 100 / 15 |
-| Mini Boss | 120 | 100 / 15 |
-| Boss | 175 | 100 / 20 |
+| Tier | HP | Mana (Max / Regen) | Atraxia Pool |
+|:---|:---:|:---|:---:|
+| Minion | 1-5 | 30 / 3 | 4-8 |
+| Regular | 75 | 30 / 3 | 10-20 |
+| Enemy / Ally | 100 | 100 / 15 | 30-50 |
+| Mini Boss | 120 | 100 / 15 | 50-70 |
+| Boss | 175 | 100 / 20 | 80+ |
 
 ### Mana and Damage
 
@@ -2209,27 +2401,30 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Acid | Corroded | DR reduced by 2. Corrosion countdown. |
 | Poison | Venomous | Lose 1 action. Self-accelerating stacks. |
 | Bleed | Shredded | TODO |
-| Force | Concussed | TODO |
+| Force | TODO | "Concussed" was replaced. Awaiting new name/effect. |
+| Necrotic | Necroptosis | Lethal cascade. Target tears itself apart. |
+| Decay | Wither | Structural breakdown. Applies Vulnerable. |
+| Radiant | Purge | Removes one active biological condition. |
 
 ### Stack Removal
 
 | Method | Rule |
 |:---|:---|
 | Decay | One timer per stack type (2 rounds). Resets on new hit. All stacks removed when timer expires. |
-| Purge (full) | 2 actions. Removes all elemental stacks from yourself. |
-| Purge (partial) | 1 action. Removes 1 stack per elemental type from yourself. |
-| Spend | Some abilities consume stacks to power effects. |
+| Healing Magic | Healing spells with appropriate tags remove stacks. Primary removal method. |
 | Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). |
+| Spend | Some abilities consume stacks to power effects. |
+| Purge (weapon trait) | Full purge (2 actions): remove all elemental stacks. Partial (1 action): remove 1 per type. Weapon-specific. |
 
 \column
 
-### Discipline Multipliers
+### Affinity Multipliers
 
 | Relationship | Mana Multiplier |
 |:---|:---:|
-| Main Discipline | ×1 |
-| Sub Discipline | ×2 |
-| Locked Discipline | Cannot cast |
+| Main Affinity | ×1 |
+| Sub Affinity | ×2 |
+| Locked Affinity | Cannot cast |
 
 ### Character Creation Steps
 
@@ -2238,10 +2433,60 @@ This chapter collects reference tables and playtest materials. Use these at the 
 3. Choose a background (Caster, Martial, Hybrid).
 4. Choose and configure skills.
 5. Choose your initiative modifier (Body or Magic).
-6. Choose your disciplines (Main and Sub).
+6. Choose your tag affinities (Main and Sub).
 7. Choose secondary attributes.
 8. Equip armor and weapons.
 9. Record everything on your character sheet.
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+{{wide
+### Spellcasting Quick Reference — By Mana Cost
+
+Look up how much mana each option costs. Add parameters 2–10, then multiply by affinity (Main ×1, Sub ×2).
+
+| Parameter | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 12 | 17 |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Function** | Utility | Mvmt / Def | Offensive | — | — | — | — | — | — |
+| **Range** | — | Self–25 ft. | 30–60 ft. | 65–120 ft. | 125–200 ft. | Sight | Global | — | — |
+| **Size** | — | 5–15 ft. | 20–30 ft. | 35–60 ft. | — | — | — | — | — |
+| **Shape** | — | Point | Standard | Freeform | — | — | — | — | — |
+| **Duration** | — | Instant | 1 Round | 1 Minute | Hours | Permanent | — | — | — |
+| **Target Count** | — | Single | Multi 2+ | AOE | — | — | — | — | — |
+| **Accuracy** | — | Roll / Save | — | — | Auto-Hit | — | — | — | — |
+| **Damage Die** | None | d6 | d8 | d10 | — | d12 | — | — | — |
+| **Effect Tier** | — | — | — | T1 | — | — | T2 | T3 | T4 |
+
+Standard shapes: Sphere, Cube, Line, Wall, Cylinder. Multi targets: +1 mana per extra target after 2 (max 4). Damage dice count = Range + Size + Target Count (1 each) + Attack Roll bonus die. Flat bonus = casting stat modifier.
+}}
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+{{wide
+### Spellcasting Quick Reference — By Action Cost
+
+Look up how many actions each option costs. The highest action value among your parameters sets the spell's total action cost.
+
+| Parameter | 1 Action | 2 Actions | 3 Actions | Sustained |
+|:---|:---|:---|:---|:---|
+| **Range** | Self–25 ft. (1) | 30–60 ft. (2) | 65–120 ft. (3) | 125–200 ft. (4), Sight (5), Global (6) |
+| **Size** | 5–15 ft. (1) | 20–30 ft. (2) | 35–60 ft. (3) | — |
+| **Shape** | Point (1) | Standard (2) | Freeform (3) | — |
+| **Duration** | Instant (1) | 1 Round (2) | 1 Minute (3) | Hours (4), Permanent (5) |
+| **Target Count** | Single (1) | Multi 2+ (2) | AOE (3) | — |
+| **Accuracy** | Roll (1) / Save (1) | — | — | Auto-Hit (4) |
+| **Effect Tier** | T1 (3) | T2 (6) | T3 (12) | T4 (17) |
+
+Mana costs in parentheses. Sustained spells cost 3 actions to begin, 1 action per turn to maintain.
+
+**Mana-only parameters** (no action cost): Function (Utility 0, Movement 1, Defensive 1, Offensive 2), Damage Die (d6 = 1, d8 = 2, d10 = 3, d12 = 5), Tag Affinity (Main ×1, Sub ×2).
+}}
 
 {{footnote Reference and Playtest Tools}}
 {{pageNumber,auto}}
@@ -2268,10 +2513,11 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Decay | One timer per stack type. Lasts 2 rounds, resets on new hit. When it expires, all stacks of that type are removed. | 21 |
 | Degree of 5 | The scale measuring how far above or below the DC a Skill Check lands. Gaps of 5 or 10 add bonuses or setbacks. | 8 |
 | Disadvantage | Roll 3d10 instead of 2d10 and drop the highest die. | 7 |
-| Discipline | One of 10 spell schools (Fire, Ice, Lightning, Acid, Poison, Water, Life, Death, Force, Bleed). Determines tags a spell applies. | 10, 15, 16 |
+| Tag Affinity | One of 10 spell schools (Fire, Ice, Lightning, Acid, Poison, Water, Life, Death, Force, Bleed). Determines tags a spell applies. | 10, 15, 16 |
 | DR (Damage Reduction) | A flat number subtracted from damage after a hit lands. Physical DR and Magic DR are separate. | 7, 13, 21 |
 | Escalated Condition | A stronger effect triggered when a stack type reaches 5 (e.g., 5 Burn = Ignited). Also called a T2 condition. | 21 |
 | GM (Game Master) | The player who describes the world, controls NPCs, sets DCs, and adjudicates the rules. | 3 |
+| Atraxia Pool | Long-term survival reserve rolled at character creation. Drains during the dying state. At 0, the character is permanently dead. | 11, 23 |
 | HP (Hit Points) | How much damage a character can absorb. At 0 HP, the character enters the dying state (see Dropping to 0 HP). | 9, 23 |
 | Incapacitated | A character rendered unable to act by a condition or effect. Distinct from the dying state at 0 HP. | 23 |
 | Initiative | 1d10 + Body or Magic (chosen each combat). Determines turn order at the start of combat. | 9, 17 |

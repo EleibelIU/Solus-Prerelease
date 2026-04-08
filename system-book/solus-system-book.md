@@ -8,7 +8,7 @@ Solus is a tabletop roleplaying game for three to six people. One person runs th
 
 **Two ten-sided dice (2d10).** Each die is numbered 1 through 10. You add the two dice together for a single total. A roll of 7 and 5 gives you 12. Solus does not use percentile dice, twenty-sided dice, or any other die type for core rolls.
 
-**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Sanity), your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
+**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Atraxia), your Atraxia Pool, your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
 
 **Friends.** Solus works best with three to five players and one GM.
 
@@ -30,11 +30,11 @@ Terms used in this scene are defined in the chapters that follow. If you see a b
 
 Three players sit at a table with their GM.
 
-**Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (2d6 damage, Reach tag) and wears Medium armor (Physical DR 3, Magic DR 1).
+**Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Atraxia +2. He carries a greatsword (1d8 damage, Heavy tag) and wears Medium armor (Physical DR 3, Magic DR 1).
 
-**Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
+**Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Atraxia -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
 
-**Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. He carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
+**Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Atraxia -2. She carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
 
 #### Scene: The Collapsed Bridge
 
@@ -42,19 +42,19 @@ The GM speaks: *"You've been tracking a stolen shipment through the forest for t
 
 Liz's player says: "I want to listen and figure out how many people are over there."
 
-The GM calls for a **Skill Check**. The skill is **Perception**. Perception's primary attribute is Mind. Liz chose Body as his secondary attribute for Perception at character creation. His Mind is +3 and his Body is +1, so his Perception modifier is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
+The GM calls for a **Skill Check**. The skill is **Investigation**. Investigation's primary attribute is Mind. Liz's player picks Body as her secondary for this check. Her Mind is +3 and her Body is +1, so her Investigation modifier for this roll is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
 
-Liz's player rolls 2d10: **6 + 9 = 15**, plus his modifier of +4 = **19**. He beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
+Liz's player rolls 2d10: **6 + 9 = 15**, plus her modifier of +4 = **19**. She beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
 
 The GM says: *"You count three distinct voices. One sounds frustrated, barking orders. You also catch the glint of a fourth figure crouched behind a rock. Four enemies total."*
 
-If Liz had rolled a 4 + 3 = 7, plus 4 = 11, he would have missed the DC by 3. The GM might say: *"You hear voices, but the wind carries the words away. At least two people are over there. Maybe more."*
+If Liz had rolled a 4 + 3 = 7, plus 4 = 11, she would have missed the DC by 3.
 
 #### Crossing the Gap
 
 Jake's player says: "I want to jump the gap."
 
-Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake chose Mind as his secondary. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
+Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake's player picks Mind as his secondary for this check. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
 
 Jake rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
 
@@ -70,10 +70,10 @@ The GM says: *"A bandit with a crossbow shouts an alarm. Roll initiative."*
 | --- | --- | --- | --- |
 | Jake | 7 | +4 (Body) | 11 |
 | Chris | 5 | +3 (Magic) | 8 |
-| Bandit Leader | 8 | +2 (Body) | 10 |
-| Bandit Archer | 4 | +1 (Body) | 5 |
+| Bandit Leader | 7 | +3 (Body) | 10 |
+| Bandit Archer | 4 | +0 (Body) | 4 |
 
-Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
+Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (4). Ties go to the higher modifier. If still tied, the GM decides.
 
 #### Jake's Turn: Three Actions
 
@@ -81,25 +81,23 @@ Each character gets **3 actions** per turn. Common actions: Move, Attack, Defend
 
 Jake's player says: "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
 
-**First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Jake's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
+**First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader (100 HP) wears Medium armor (Physical DR 3) and has Body +3, giving a **Physical AC of 6** (DR 3 + Body 3). Jake's 18 beats 6, so he hits. He rolls greatsword damage: **1d8 = 5**, plus Body +4 = **9**. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes **6 damage** and drops to 94 HP.
 
-**Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
+**Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 6. Damage: **1d8 = 7**, plus 4 = **11**, minus 3 DR = **8 damage**. The bandit leader drops to 86 HP.
 
 #### Chris's Turn: Sword and Spell
 
 Chris's player says: "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
 
-**Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
+**Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer is a Minion (5 HP, Cloth armor, Physical DR 0, Body +0), so Physical AC is **0**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**. The archer had 5 HP and drops to 0. When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death).
 
-**Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 3 (Light armor) + Magic -1 = **2**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 3 = **8 damage**. The bandit leader drops to 0 HP.
-
-When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death).
+**Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 1 (Medium armor) + Magic -1 = **0**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 1 = **10 damage**. The bandit leader drops to 76 HP. The fight continues.
 
 #### What Just Happened
 
 In a few minutes of play, the group used three systems:
 
-**Skill Checks** resolved Liz's Perception (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set.
+**Skill Checks** resolved Liz's Investigation (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set. Each player chose which secondary attribute to add for that specific roll.
 
 **Combat Rolls** resolved Jake's greatsword swings and Chris's shortsword strike using `2d10 + Body`, and Chris's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
 
@@ -341,11 +339,36 @@ Magic is added to magical combat rolls and contributes to **Magical AC**. Magic 
 
 A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
 
-#### Sanity
+#### Atraxia (formerly Sanity)
 
-Sanity covers mental fortitude and perception of hidden truths. In Solus, lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, truths that erode the mind.
+Atraxia measures how deeply your character perceives the true nature of the world. Every other attribute stays locked at character creation. Atraxia moves.
 
-Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
+- A character with low Atraxia sees things others cannot: hidden layers of reality, presences beyond normal perception, truths the world tries to keep buried. They can interact with those things. Those things can interact with them.
+- A character with high Atraxia is grounded. Stable. They perceive the surface and nothing past it.
+- Once your Atraxia drops past a threshold, the awareness is permanent. You can raise your modifier back up and steady your nerves, but you cannot unsee what you have seen.
+
+You choose low Atraxia because you want to perceive what others can't. The cost is that those forces notice you back.
+
+#### The Atraxia Pool
+
+Your **Atraxia Modifier** (-5 to +5) governs skill checks and perception, the same as any other attribute. Your **Atraxia Pool** is a separate tracked number that represents how much punishment your body and mind can absorb before they give out for good. When your Pool hits 0, you are dead. No saves. No last words. Gone.
+
+You generate your Atraxia Pool at character creation. The GM chooses a **Campaign Tone** that sets the number of dice and the die type. You roll that many dice, adding your Atraxia modifier to each roll (minimum 1 per die). The total is your starting Atraxia Pool.
+
+| Campaign Tone | Dice | Die Type | Description |
+| --- | --- | --- | --- |
+| Brutal | 4 | d4 | Short runs. Death is the expected outcome. |
+| Gritty | 6 | d6 | Survival matters. Every hit leaves a mark. |
+| Standard | 8 | d6 | A full campaign with real stakes and room to breathe. |
+| Heroic | 10 | d8 | Long arcs. Characters die from accumulated recklessness, not one bad night. |
+
+> **Example:** The GM declares a Standard campaign (8d6). Your Atraxia modifier is +2. You roll 8d6: 3, 5, 1, 4, 6, 2, 5, 3. Add +2 to each: 5, 7, 3, 6, 8, 4, 7, 5. Your starting Atraxia Pool is **45**.
+
+Your Atraxia Pool does not regenerate between encounters or sessions. The number you have is the number you carry until something restores it or it runs out.
+
+TODO: Jacob — define Atraxia Pool restoration mechanics. Can Life magic (Restoration) restore Pool points? Can rest? NPC services? Quest rewards? Or is this a one-way drain?
+
+TODO: Jacob — define Atraxia modifier thresholds and perception consequences. At what modifier values does the world change around the character? Needs a threshold table and descriptions of what each tier of awareness looks and feels like in play.
 
 ### Skills
 
@@ -475,7 +498,9 @@ TODO: confirm whether shields are missing from the equipment list and need to be
 
 ## Magic and Spellcasting
 
-In many games, you pick spells from a list. Solus works differently. You build every spell yourself by making nine choices about what the magic does. Your choices control how far it reaches, how big it is, how long it lasts, and how hard it hits. Two players who both want to throw fire will end up with different spells depending on the choices they make.
+Solus has no spell list, no grimoire, and no preparation phase. You build every spell by making nine choices about what the magic does. Your choices control how far it reaches, how big it is, how long it lasts, and how hard it hits. If you have the mana, you can cast it. Use the tables below as reference during play.
+
+Two players who both want to throw fire will end up with different spells depending on the choices they make.
 
 ### How Spells Work
 
@@ -811,9 +836,9 @@ When a tagged effect hits a target, follow these rules:
 
 ### Armor and Stack Damage
 
-**Magic DR reduces stack damage** from elemental and magical sources (Burn, Chilled, Volt, Acid). If you have Magic DR 3 and take 4 Burn stack damage, you take 1 damage instead of 4. Magic DR does not prevent the stack from being applied. It does not stop stacks from building toward escalation. It only reduces the damage the stacks deal each round.
+**Magic DR reduces stack damage at T1** from elemental and magical sources (Burn, Chilled, Volt, Acid). If you have Magic DR 3 and take 4 Burn stack damage, you take 1 damage instead of 4. Magic DR does not prevent the stack from being applied. It does not stop stacks from building toward escalation. It only reduces the damage the stacks deal each round. DR does **not** reduce damage from T2 escalated conditions.
 
-Physical DR does not reduce elemental stack damage. Bleed and Force stacks deal physical damage and are reduced by Physical DR.
+Physical DR does not reduce elemental stack damage. Bleed and Force stacks deal physical damage and are reduced by Physical DR at T1.
 
 ### Escalation and Interactions: How to Read This Section
 
@@ -913,31 +938,95 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 
 Wet is a setup condition. On its own it does nothing harmful. Combined with Volt stacks, it turns Shocked into Stunned.
 
-#### Life Magic
+#### Life Tags
 
-Life magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Life category.
+Life and Death are tags, not magic types. They follow the same stack system as every other tag in Solus, with T1 and T2 effects. Life tags appear on spells built from the Life affinity and are organized into four subcategories.
 
-| Tag | What It Does |
+##### Life: Restoration
+
+| | |
 | --- | --- |
-| Restore | Repairs recent damage. Stabilizes injuries not yet permanent. |
-| Regenerate | Restores lost body parts and reverses severe trauma while the spell is active. |
-| Radiant | Damages corrupted or organic targets. Removes Venomous at 10 or fewer stacks. |
-| Purge | Removes or suppresses one active biological condition. The only way to remove Venomous at 15+. |
-| Rouse | Returns a recently deceased target to life (body intact, death recent). |
-| Revive | Returns a long-dead target to life at extreme cost or risk. |
+| **Tag** | Life, Restoration |
+| **T1: Restore** | Repairs recent damage to a living target. Restores lost health. Stabilizes injuries that have not yet become permanent. |
+| **T2: Regenerate** | Restores lost body parts and reverses severe physical trauma. Provides ongoing recovery while active. |
+| **Countered by** | Necrosis (Death domain). |
+| **DR type** | Magic DR reduces Restoration stack damage when used offensively against undead. |
+
+##### Life: Resurrect
+
+| | |
+| --- | --- |
+| **Tag** | Life, Resurrect |
+| **T1: Rouse** | Returns a recently deceased target to life. The body must be intact and death must have occurred within a limited timeframe. |
+| **T2: Revive** | Returns a long-dead target to life by reuniting body and soul, even after extended separation or decay. Subject to extreme cost or risk. |
+
+Resurrect tags produce immediate effects, not scaling stacks.
+
+##### Life: Radiance
+
+| | |
+| --- | --- |
+| **Tag** | Life, Radiance |
+| **T1: Radiant** | Emits concentrated light-infused energy that damages or disrupts organic or corrupted targets. Applies Radiant stacks. Removes Venomous at 10 or fewer stacks. |
+| **T2: Purge** | Removes or suppresses one active biological condition or effect within a target or area. Covers Elemental, Mind, and Life domains. The only way to remove Venomous at 15+. Cannot restore an action permanently lost at 35. |
+| **Countered by** | Necrosis (Death domain). |
+| **DR type** | Magic DR reduces Radiant stack damage. |
 
 Radiant and Purge are the primary healing-side answers to Poison. Restore and Regenerate handle physical damage. Rouse and Revive handle death.
 
-#### Death Magic
+##### Life: Light
 
-Death magic tags do not create stacks. They produce immediate effects. These tags appear on spells built from the Death category.
-
-| Tag | What It Does |
+| | |
 | --- | --- |
-| Pyroptosis | Target detonates with necrotic energy in a 5 ft. radius. |
-| Apoptosis | Target dies immediately. |
-| Reanimate | Restores temporary motion to lifeless matter. |
-| Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
+| **Tag** | Life, Light |
+| **T1: Illuminate** | Creates light within a defined area or on a target. Removes darkness and enables normal visual perception. |
+| **T2: Blind** | Removes a target's ability to perceive visually while the effect persists. |
+
+Light tags produce binary conditions, not scaling stack damage.
+
+#### Death Tags
+
+Death tags follow the same stack system as every other tag, with T1 and T2 effects. These tags appear on spells built from the Death affinity and are organized into four subcategories.
+
+##### Death: Necrotic
+
+| | |
+| --- | --- |
+| **Tag** | Death, Necrotic |
+| **T1: Necrosis** | Dark energy destabilizes living material and siphons vitality from a target. Applies Necrotic stacks. |
+| **T2: Necroptosis** | A lethal internal cascade that forces the body to tear itself apart, fully absorbing the vitality of the target. |
+| **Countered by** | Radiant (Life domain). |
+| **DR type** | Magic DR reduces Necrotic stack damage. |
+
+##### Death: Death
+
+| | |
+| --- | --- |
+| **Tag** | Death |
+| **T1: Pyroptosis** | The target detonates with necrotic energy in a 5 ft. radius. Creatures in the radius gain Necrotic stacks. |
+| **T2: Apoptosis** | A terminal effect. The target dies immediately. |
+
+Death tags produce immediate effects. Pyroptosis has an area component; Apoptosis has no counter once applied.
+
+##### Death: Undeath
+
+| | |
+| --- | --- |
+| **Tag** | Death, Undeath |
+| **T1: Reanimate** | Restores temporary motion to lifeless matter. The target gains no will or awareness. |
+| **T2: Vivify** | Forces the tethering of a spirit or essence to a vessel beyond natural death. |
+
+Undeath tags produce immediate effects, not scaling stacks.
+
+##### Death: Rot
+
+| | |
+| --- | --- |
+| **Tag** | Death, Rot |
+| **T1: Decay** | Slow weakening and deterioration of vitality or structure. Applies the Weaken condition. |
+| **T2: Wither** | Final failure of integrity resulting in structural or biological breakdown. Applies the Vulnerable condition. |
+| **Countered by** | Restore or Regenerate (Life domain). |
+| **DR type** | Magic DR reduces Decay stack damage. |
 
 #### Reap (Weapon-Specific)
 
@@ -953,9 +1042,13 @@ These removal methods apply to all stack types, not just one element.
 
 **Decay.** Every stack expires 2 rounds after it was applied. Automatic.
 
-**Purging.** A full purge (2 actions) removes all elemental stacks from you. A partial purge (1 action) removes 1 stack of each elemental type. Some purge abilities target a narrower set (Acid and Poison only, for example).
+**Healing Magic.** Healing spells with the appropriate tags can remove stacks. This is the primary way to clear stacks during combat.
+
+**Countering.** Opposing elements cancel stacks 1:1 (Burn ↔ Chilled). Unless a tag says otherwise, countering and healing magic are the only removal methods.
 
 **Spending.** Some weapon traits and abilities let you spend your accumulated stacks to power an effect instead of letting them escalate. Spent stacks are removed immediately and do not count toward escalation. If you lack the required stacks, the ability fails.
+
+**Purging (Weapon Trait).** Purge is a weapon-specific trait, not a general action. Only weapons and skills with the Purge trait can remove stacks this way. A full purge (2 actions) removes all elemental stacks from you. A partial purge (1 action) removes 1 stack of each elemental type.
 
 ### Tags on Terrain and Objects
 
@@ -963,9 +1056,9 @@ When a spell or effect applies a tag to terrain (a fire patch, an acid pool, a f
 
 A creature that enters tagged terrain or starts its turn there gains 1 stack of the linked type. The same stack rules apply: damage on application, damage at start of turn, 2-round decay, cap at 5.
 
-### Other Conditions
+### Other Tag Conditions
 
-These conditions do not come from stacks. They are applied directly by abilities, spells, or hazards.
+Every effect in Solus works through tags and stacks. The conditions below follow the same system. They are applied by tags carried on spells, abilities, or hazards. The difference is that these tags produce binary conditions instead of scaling numeric damage. A creature either has the condition or does not. Unless a tag's description says otherwise, assume it applies through the stack framework.
 
 | Condition | Effect |
 | --- | --- |
@@ -981,37 +1074,87 @@ These conditions do not come from stacks. They are applied directly by abilities
 | Restrained | Your movement is physically limited. You cannot move freely. Some abilities require the target to be Restrained. |
 | Stunned | Disadvantage on all actions. You lose your reaction for the round. (Usually from Shocked + Wet.) |
 | Unconscious | You are unresponsive and cannot act until awakened or the effect ends. |
-| Weaken | TODO: define Weaken effect. |
+| Weaken | Slow deterioration of vitality or structure. Applied by Decay (Death: Rot). Reduces damage dealt by 1. |
+| Vulnerable | Applied by Wither (Death: Rot T2). Incoming damage increased by 2. |
 
-TODO: Shredded, Concussed, Poisoned, and Weaken still need full definitions from Jacob.
+TODO: Shredded and the Force escalation (formerly Concussed) still need full definitions from Jacob.
 
 ### Dropping to 0 HP
 
-When your HP reaches 0, you are **incapacitated**. You fall where you stand. You cannot take actions, move, or use reactions. You remain on the battlefield, and other creatures can still target you with attacks, abilities, or healing.
+When your HP reaches 0, you enter the **dying state**. Your **Atraxia Pool** becomes your countdown. When the pool hits 0, you die.
 
-If an ally heals you to 1 HP or more before your next turn ends, you are no longer incapacitated. You can act on your following turn.
+The pool does not reset between encounters or sessions. Whatever your pool reads at the end of a dying incident is your starting value for the next one. The pool tracks your character's total remaining tolerance for near-death across their entire career.
 
-If no healing reaches you, your character dies at the end of your next turn.
+#### While Dying
 
-TODO: the dying system, repeated knockdown rules, and Madness thresholds are under active design review. The final versions will replace this section when approved.
+You remain conscious and can act. The following penalties apply:
+
+- All attack rolls are made with **disadvantage**.
+- Movement speed is **halved**.
+- Mana regeneration is **halved** (rounded down).
+
+#### Pool Drain on Your Turn
+
+You still get 3 actions per turn. Each action drains your Atraxia Pool:
+
+- Each action you **use** (attack, move, cast, interact): pool **-2**
+- Each action you **skip** (do nothing): pool **-1**
+
+You can mix used and skipped actions in any order. A turn where you do nothing costs 3 from the pool. A turn where you use all 3 actions costs 6.
+
+> **Example:** First time dying. Your Atraxia Pool is 45. Your turn: Action 1, you move behind cover (pool -2 = 43). Action 2, you do nothing (-1 = 42). Action 3, you do nothing (-1 = 41). You end the turn at 41. If an ally heals you, your pool stays at 41. Next time you hit 0 HP, you resume from 41.
+
+#### Pool Drain from Enemy Attacks
+
+When an enemy hits you while you are dying, the pool drops based on the attack's action cost:
+
+- 1-action attack: pool **-1**
+- 2-action attack: pool **-3**
+- 3-action attack: pool **-5**
+
+If the pool reaches 0 from any source, you die immediately.
+
+#### Why You Stay Conscious
+
+Dying characters can still act because combat does not pause for you. You choose whether to spend pool faster by acting or conserve it by doing nothing. That choice matters because every point of pool you spend is gone permanently. An aggressive turn while dying costs twice as much pool as a passive one.
+
+Your allies also have a choice: heal you now or finish the fight first. The longer you stay in the dying state, the more pool and Atraxia modifier you lose.
+
+#### Leaving the Dying State
+
+If you receive healing that brings you to **1 HP or more**, you leave the dying state. Leaving the dying state carries three consequences:
+
+- **Atraxia modifier loss.** Your Atraxia modifier permanently drops by 1 for each round you spent dying. Minimum loss is 1, even if you are healed on the same round you go down.
+- **Short-term injury.** Roll on the Short-Term Injury Table.
+- **Pool carries forward.** Whatever your Atraxia Pool reads when you leave dying is your new starting value for all future dying incidents.
+
+#### Long-Term Impact
+
+Each dying incident costs pool (the immediate countdown) and Atraxia modifier (long-term perception shift). The modifier loss means your character perceives more of the world's hidden layers after each brush with death. Because the modifier also affects future Atraxia Pool rolls if restoration mechanics allow it, repeated dying makes a character both more aware and more fragile.
+
+> **Example:** Your pool was at 41. You drop to 0 HP and spend 2 rounds dying. Between your actions and enemy hits, your pool drops to 29. An ally heals you. Your Atraxia modifier permanently drops by 2 (one per round in dying). You roll on the Short-Term Injury Table. Next time you hit 0 HP, your pool starts at 29 and your modifier is 2 points lower than at character creation.
+
+TODO: Short-Term Injury Table needs to be created. TODO: Jacob wants a Shadowdark-inspired survival check where the player can argue which attribute applies. The check mechanic and DC need definition.
 
 ## NPCs, Enemies, and Encounters
 
 Every NPC in Solus uses the same action economy, equipment, skills, and spells as player characters. An enemy swings a sword the same way you do, casts spells from the same framework, and takes 3 actions on its turn. The GM does not run NPCs from a separate system. The GM runs them from the same rules you use.
 
-The only differences between NPC tiers are stat modifiers, HP, and mana pools. Each tier also supports martial, caster, and hybrid variants. The stat line defines the tier; the background type (Caster, Martial, Hybrid) determines the NPC's capability profile.
+NPCs also have Atraxia Pools. Most commoners, merchants, and low-tier guards rolled theirs from small dice with modest modifiers. A shopkeeper in a quiet town might carry a pool of 8. A veteran city guard might sit around 20. Your player characters, by the time they've survived their first real fight, have already outlasted most people they'll meet on the street. This is not because Solus treats player characters as heroes by default. It is because the kind of person who walks into a dungeon, picks a fight with something that has claws, and walks back out is statistically unusual.
+
+The differences between NPC tiers are stat modifiers, HP, mana pools, and Atraxia Pools. Each tier supports martial, caster, and hybrid variants. The stat line defines the tier; the background type (Caster, Martial, Hybrid) determines the NPC's capability profile.
 
 ### NPC Tiers
 
-| Tier | HP | Max Mana / Regen | Example Armor |
-| --- | --- | --- | --- |
-| Minion | 1-5 | 30 / 3 | None (Phys DR 0, Magic DR 0) |
-| Regular | 75 | 30 / 3 | Cloth (Phys DR 0, Magic DR 4) or Light |
-| Enemy / Ally | 100 | 100 / 15 | Medium (Phys DR 3, Magic DR 1) |
-| Mini Boss | 120 | 100 / 15 | Heavy (Phys DR 4, Magic DR 0) |
-| Boss | 175 | 100 / 20 | Enchanted (Phys DR 3, Magic DR 3) |
+| Tier | HP | Max Mana / Regen | Atraxia Pool | Example Armor |
+| --- | --- | --- | --- | --- |
+| Minion | 1-5 | 30 / 3 | 4-8 | None (Phys DR 0, Magic DR 0) |
+| Regular | 75 | 30 / 3 | 10-20 | Cloth (Phys DR 0, Magic DR 4) or Light |
+| Enemy / Ally | 100 | 100 / 15 | 30-50 | Medium (Phys DR 3, Magic DR 1) |
+| Mini Boss | 120 | 100 / 15 | 50-70 | Heavy (Phys DR 4, Magic DR 0) |
+| Boss | 175 | 100 / 20 | 80+ | Enchanted (Phys DR 3, Magic DR 3) |
 
-| Tier | Body | Mind | Social | Magic | Sanity |
+| Tier | Body | Mind | Social | Magic | Atraxia |
 | --- | --- | --- | --- | --- | --- |
 | Minion | +0 | +0 | +0 | +0 | +0 |
 | Regular | +1 | +1 | +1 | +1 | +1 |
@@ -1238,6 +1381,48 @@ Use this checklist to verify a session covers the core systems.
 
 - Can the GM set a DC and interpret results using the Degree of 5?
 - Do exploration and social encounters award XP?
+
+---
+
+### Spellcasting Quick Reference — By Mana Cost
+
+Look up how much mana each option costs. Add parameters 2–10, then multiply by affinity (Main ×1, Sub ×2).
+
+| Parameter | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 12 | 17 |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Function** | Utility | Mvmt / Def | Offensive | — | — | — | — | — | — |
+| **Range** | — | Self–25 ft. | 30–60 ft. | 65–120 ft. | 125–200 ft. | Sight | Global | — | — |
+| **Size** | — | 5–15 ft. | 20–30 ft. | 35–60 ft. | — | — | — | — | — |
+| **Shape** | — | Point | Standard | Freeform | — | — | — | — | — |
+| **Duration** | — | Instant | 1 Round | 1 Minute | Hours | Permanent | — | — | — |
+| **Target Count** | — | Single | Multi 2+ | AOE | — | — | — | — | — |
+| **Accuracy** | — | Roll / Save | — | — | Auto-Hit | — | — | — | — |
+| **Damage Die** | None | d6 | d8 | d10 | — | d12 | — | — | — |
+| **Effect Tier** | — | — | — | T1 | — | — | T2 | T3 | T4 |
+
+Standard shapes: Sphere, Cube, Line, Wall, Cylinder. Multi targets: +1 mana per extra target after 2 (max 4). Damage dice count = Range + Size + Target Count (1 each) + Attack Roll bonus die. Flat bonus = casting stat modifier.
+
+---
+
+### Spellcasting Quick Reference — By Action Cost
+
+Look up how many actions each option costs. The highest action value among your parameters sets the spell's total action cost.
+
+| Parameter | 1 Action | 2 Actions | 3 Actions | Sustained |
+|:---|:---|:---|:---|:---|
+| **Range** | Self–25 ft. (1) | 30–60 ft. (2) | 65–120 ft. (3) | 125–200 ft. (4), Sight (5), Global (6) |
+| **Size** | 5–15 ft. (1) | 20–30 ft. (2) | 35–60 ft. (3) | — |
+| **Shape** | Point (1) | Standard (2) | Freeform (3) | — |
+| **Duration** | Instant (1) | 1 Round (2) | 1 Minute (3) | Hours (4), Permanent (5) |
+| **Target Count** | Single (1) | Multi 2+ (2) | AOE (3) | — |
+| **Accuracy** | Roll (1) / Save (1) | — | — | Auto-Hit (4) |
+| **Effect Tier** | T1 (3) | T2 (6) | T3 (12) | T4 (17) |
+
+Mana costs in parentheses. Sustained spells cost 3 actions to begin, 1 action per turn to maintain.
+
+**Mana-only parameters** (no action cost): Function (Utility 0, Movement 1, Defensive 1, Offensive 2), Damage Die (d6 = 1, d8 = 2, d10 = 3, d12 = 5), Tag Affinity (Main ×1, Sub ×2).
+
+---
 
 ### Glossary of Game Terms
 
