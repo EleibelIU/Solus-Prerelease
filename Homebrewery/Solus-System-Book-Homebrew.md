@@ -1670,6 +1670,7 @@ Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor)
 
 <!-- CHAPTER 9: CONDITIONS, INJURIES, AND DEATH -->
 {{wide 
+
 # Conditions, Injuries, and Death
 
 This chapter explains how lasting effects work in Solus: what causes them, how they build, what happens when they get worse, and how to get rid of them. It also covers what happens when a character drops to 0 HP.
