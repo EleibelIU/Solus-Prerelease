@@ -228,7 +228,7 @@ theme: 5ePHB
 }
 
 .page .quote.author p:last-child {
-	font-family 		: BookInAtraxiaRemake;
+	font-family 		: BookInsanityRemake;
 	font-size				: 0.34cm;
 	margin-top			: 4px;
 	text-align			: right;
@@ -433,7 +433,7 @@ theme: 5ePHB
 	
 .page .toc h3,
 .page .toc h4 {
-	font-family			: BookInAtraxiaRemake;
+	font-family			: BookInsanityRemake;
 	font-size				: 12px;
 	letter-spacing	: 0;
 }
@@ -477,7 +477,7 @@ theme: 5ePHB
 
 .quote.tome p::first-line {
 	font-variant 		: small-caps;
-	font-family 		: BookInAtraxiaRemake;
+	font-family 		: BookInsanityRemake;
 	font-size				: 15px;
 	text-transform	: lowercase;
 	line-height			: 14px;
