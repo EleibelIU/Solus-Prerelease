@@ -239,19 +239,67 @@ Notice that +5 costs 6 points, more than the full budget. You can reach +5 in on
 
 ### Step 3: Choose Your Race
 
-Your race sets your base movement speed, character size, and one or more racial traits (such as darkvision or a movement bonus). Record these on your sheet.
+Your race sets your base movement speed, character size, and racial traits. Record your speed, size, and all traits on your sheet.
 
-| Race | Notes |
-| --- | --- |
-| Elves | |
-| Dwarves | |
-| Orcs | |
-| Gnomes | |
-| Constructs | |
-| Half-Breeds | |
-| Humans | |
+| Race | Speed | Size | Traits |
+| --- | --- | --- | --- |
+| Humans | 30 ft. | Medium | Adaptable, Determined |
+| Elves | 35 ft. | Medium | Darkvision, Keen Senses, Trance |
+| Dwarves | 25 ft. | Medium | Darkvision, Hardy, Stone Steady |
+| Orcs | 30 ft. | Medium | Powerful Build, Aggressive |
+| Gnomes | 25 ft. | Small | Darkvision, Small Frame, Arcane Cunning |
+| Constructs | 30 ft. | Medium | Living Machine, No Rest Required |
+| Half-Breeds | 30 ft. | Medium or Small | Dual Heritage |
 
-TODO: define racial traits for each race (speed, size, unique mechanical trait). A custom race option is under consideration where you select from preset racial trait lists instead of picking a named race.
+#### Humans
+
+**Adaptable.** You start with one extra active skill slot (11 instead of 10).
+
+**Determined.** Once per encounter, reroll one failed Skill Check. Keep the new result.
+
+#### Elves
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Keen Senses.** Advantage on Investigation checks that rely on sight or hearing.
+
+**Trance.** 4 hours of rest counts as a full rest for you.
+
+#### Dwarves
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Hardy.** Immune to the Venomous escalated condition. Advantage on saves against Poison effects.
+
+**Stone Steady.** Heavy armor and stone or earth terrain do not reduce your speed.
+
+#### Orcs
+
+**Powerful Build.** Count as one size larger for grappling, shoving, and carrying capacity.
+
+**Aggressive.** On your turn, move up to your speed toward a visible hostile creature as part of another action. You must end closer to the target.
+
+#### Gnomes
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Small Frame.** Move through spaces occupied by Medium or larger creatures. Advantage on Stealth checks when using cover.
+
+**Arcane Cunning.** Advantage on Mind saves against spells and magical effects.
+
+#### Constructs
+
+**Living Machine.** Immune to Poison and Bleed tags. You cannot gain stacks or escalated conditions from either. Vulnerable to Acid: take +1 additional stack per Acid hit.
+
+**No Rest Required.** You do not sleep or eat. You remain alert during rest periods and cannot be caught off-guard while resting.
+
+#### Half-Breeds
+
+Choose your size: Medium or Small.
+
+**Dual Heritage.** Choose two other races. Gain one non-immunity trait from each. Record both source races on your sheet.
+
+> **Expanded Races:** Future supplements may add races such as Fey, Beastkin, and Drakari. GMs who want these races now can use Half-Breed as a template and assign two thematic traits.
 
 ### Step 4: Choose Your Background
 
@@ -304,6 +352,8 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Masteries | Mastery skills (if any unlocked) | Changeable between sessions |
 
 Solus has no character levels. Your character grows by earning XP and spending it on skill ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
+
+See Reference and Playtest Tools for nine sample character builds covering all three backgrounds.
 
 ## Attributes and Skills
 
@@ -1424,6 +1474,160 @@ Mana costs in parentheses. Sustained spells cost 3 actions to begin, 1 action pe
 
 ---
 
+## Sample Characters
+
+Nine prebuilt characters covering all three backgrounds. The first seven are balanced builds. The last two are optimized: pushed to the system ceiling on one axis to show what min-maxing looks like. All use Standard Campaign Tone (8d6 Atraxia Pool dice). All weapon damage adds Body.
+
+#### Soridormi — Elf Caster
+
+Elf · Speed 35 ft. · Medium · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -1 · **Mind** +2 · **Social** 0 · **Magic** +4 · **Atraxia** 0
+
+**Affinities:** Main Elemental · Sub Temporal
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -1 · **Magical AC** 8
+**Weapons:** Dagger (1d4), Bow (1d8)
+
+**Racial Traits:** Darkvision 60 ft., Keen Senses, Trance
+
+*Glass cannon. Deep mana pool for sustained elemental bombardment. Strong magical AC, zero physical protection. Stay at range.*
+
+#### Vaelith Sunplume — Gnome Caster
+
+Gnome · Speed 25 ft. · Small · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -2 · **Mind** +3 · **Social** 0 · **Magic** +3 · **Atraxia** +1
+
+**Affinities:** Main Mind · Sub Corruption
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -2 · **Magical AC** 7
+**Weapons:** Dagger (1d4), Bomb Flask (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Small Frame, Arcane Cunning
+
+*Controller. Mind spells for crowd control, Arcane Cunning resists hostile magic, Small Frame slips through enemy lines when positioning breaks down.*
+
+#### Gelvas Grimegate — Dwarf Martial
+
+Dwarf · Speed 25 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +4 · **Mind** 0 · **Social** -1 · **Magic** -1 · **Atraxia** +3
+
+**Affinities:** Main Force · Sub Life
+**Armor:** Heavy (Phys DR 4 / Magic DR 0)
+**Physical AC** 8 · **Magical AC** -1
+**Weapons:** Greathammer (1d8), Short Sword (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Hardy, Stone Steady
+
+*Frontline tank. Physical AC 8 stops most weapon attacks. Hardy blocks Venomous escalation. Stone Steady ignores Heavy armor speed penalties. Vulnerable to all magic.*
+
+#### Terrorfist — Orc Martial
+
+Orc · Speed 30 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +3 · **Mind** -1 · **Social** +1 · **Magic** -1 · **Atraxia** +3
+
+**Affinities:** Main Force · Sub Death
+**Armor:** Medium (Phys DR 3 / Magic DR 1)
+**Physical AC** 6 · **Magical AC** 0
+**Weapons:** Greatsword (1d8), Bow (1d8)
+
+**Racial Traits:** Powerful Build, Aggressive
+
+*Aggressive brawler. Closes distance fast with Aggressive, controls grapples through Powerful Build. High Atraxia Pool gives a wide death-cheating margin.*
+
+#### Astalor Bloodsworn — Half-Breed Martial
+
+Half-Breed (Elf/Orc) · Speed 30 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +3 · **Mind** +1 · **Social** 0 · **Magic** 0 · **Atraxia** +1
+
+**Affinities:** Main Death · Sub Force
+**Armor:** Medium (Phys DR 3 / Magic DR 1)
+**Physical AC** 6 · **Magical AC** 1
+**Weapons:** Curved Sword (1d8), Bow (1d8)
+
+**Dual Heritage:** Keen Senses (Elf), Powerful Build (Orc)
+
+*Disciplined skirmisher. Keen Senses spots threats at distance, Powerful Build wins contested grapples. Balanced attributes with no deep weaknesses.*
+
+#### Larisse Pembraux — Human Hybrid
+
+Human · Speed 30 ft. · Medium · Hybrid
+110 HP · 70 Mana · 10 Regen
+
+**Body** +1 · **Mind** +1 · **Social** +3 · **Magic** +2 · **Atraxia** -2
+
+**Affinities:** Main Mind · Sub Temporal
+**Armor:** Light (Phys DR 1 / Magic DR 3)
+**Physical AC** 2 · **Magical AC** 5
+**Weapons:** Rapier (1d8), Dagger (1d4)
+
+**Racial Traits:** Adaptable (11 skill slots), Determined
+
+*Social infiltrator with spell support. High Social dominates conversation. Mind and Temporal spells control the battlefield. Adaptable gives an extra skill slot for broader coverage.*
+
+#### Caydori Brighstar — Elf Hybrid
+
+Elf · Speed 35 ft. · Medium · Hybrid
+110 HP · 70 Mana · 10 Regen
+
+**Body** +2 · **Mind** 0 · **Social** 0 · **Magic** +3 · **Atraxia** 0
+
+**Affinities:** Main Life · Sub Elemental
+**Armor:** Light (Phys DR 1 / Magic DR 3)
+**Physical AC** 3 · **Magical AC** 6
+**Weapons:** Short Sword (1d6), Bow (1d8)
+
+**Racial Traits:** Darkvision 60 ft., Keen Senses, Trance
+
+*Spellblade healer. Life affinity for restoration, Elemental sub for burst damage. Body +2 keeps weapon attacks viable alongside spellcasting. Trance shortens rest downtime.*
+
+### Optimized Builds
+
+These two characters push a single axis to the system ceiling. They show the tradeoffs of going all-in on one role.
+
+#### Nyx — Gnome Caster (Optimized)
+
+Gnome · Speed 25 ft. · Small · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -3 · **Mind** +1 · **Social** 0 · **Magic** +5 · **Atraxia** +2
+
+**Affinities:** Main Elemental · Sub Corruption
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -3 · **Magical AC** 9
+**Weapons:** Dagger (1d4), Bomb Flask (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Small Frame, Arcane Cunning
+
+*Magical AC 9 is the system ceiling. Arcane Cunning stacks advantage on Mind saves against spells, making Nyx almost untouchable by magic. Physical AC -3 means a stiff breeze deals full damage. Small Frame is the only escape tool when enemies close to melee. Every point went to casting power and magical defense at the cost of all physical survivability.*
+
+#### Dothren Ironfold — Dwarf Martial (Optimized)
+
+Dwarf · Speed 25 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +5 · **Mind** -1 · **Social** -2 · **Magic** -1 · **Atraxia** +4
+
+**Affinities:** Main Force · Sub Life
+**Armor:** Heavy (Phys DR 4 / Magic DR 0)
+**Physical AC** 9 · **Magical AC** -1
+**Weapons:** Greathammer (1d8), Short Sword (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Hardy, Stone Steady
+
+*Physical AC 9 is the system ceiling. Stone Steady cancels the Heavy armor speed penalty, so Dothren moves at full 25 ft. in plate. Hardy blocks Venomous escalation. Atraxia +4 produces a large death-cheating pool. The tradeoff: Magical AC -1 means every spell lands and hits hard. Social -2 makes negotiation a lost cause. Keep mages away or die.*
+
+---
+
 ### Glossary of Game Terms
 
 | Term | Definition | Chapter |
@@ -1463,5 +1667,3 @@ Mana costs in parentheses. Sustained spells cost 3 actions to begin, 1 action pe
 | Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. | Ch. 5: Equipment, Armor, and Weapons |
 | Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. | Ch. 8: Combat |
 | XP (Experience Points) | Earned from encounters, spent between sessions to buy skills and raise skill ranks. | Ch. 2: Core Mechanics |
-
-TODO: add sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.

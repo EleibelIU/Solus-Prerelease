@@ -676,13 +676,14 @@ Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (4). Ties go
 
 Each character gets **3 actions** per turn. The most common actions for a player to use are *Move*, *Attack*, *Defend*, *Use Item*, and *Cast Spell*.
 
-\page
 
 {{descriptive
 **Jake's player says:** "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
 }}
 
 - **First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader (100 HP) wears Medium armor (Physical DR 3) and has Body +3, giving a **Physical AC of 6** (DR 3 + Body 3). Jake's 18 beats 6, so he hits. He rolls greatsword damage: **1d8 = 5**, plus Body +4 = **9**. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes **6 damage** and drops to 94 HP.
+
+\page
 
 - **Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 6. Damage: **1d8 = 7**, plus 4 = **11**, minus 3 DR = **8 damage**. The bandit leader drops to 86 HP.
 
@@ -814,11 +815,14 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 1. Choose your attack. Physical and martial attacks (a sword swing, a punch, an arrow) add your **Body** modifier. Spells add your **Magic** modifier.
 2. Roll `2d10 + Body` or `2d10 + Magic`.
 3. Compare your result to the defender's **Armor Class** (AC). Physical attacks target **Physical AC**. Spells target **Magical AC**. (See Equipment, Armor, and Weapons for how AC is calculated.)
-4. If your result meets or beats the AC, you hit. Roll damage. The defender's **Damage Reduction** (DR) subtracts from the damage dealt.
-5. If your result falls short, you miss.
+
+{{footnote Core Mechanics}}
+{{pageNumber,auto}}
 
 \page
 
+4. If your result meets or beats the AC, you hit. Roll damage. The defender's **Damage Reduction** (DR) subtracts from the damage dealt.
+5. If your result falls short, you miss.
 
 {{descriptive
 **TODO:** Jacob, how should spells that create physical projectiles (hurling a boulder, creating an earth spike) interact with AC? Does the target use Physical AC because the impact is physical, or Magical AC because a spell created it? This needs a ruling.
@@ -827,11 +831,6 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 {{note
 **Example:** You swing a greatsword at a bandit. Your Body is +4. You roll 2d10 and get 6 + 8 = 14, plus 4 = 18. The bandit wears Medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You beat 4, so you hit. You roll 1d8 + 4 for damage and deal 10. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes 7 damage.
 }}
-
-{{footnote Core Mechanics}}
-{{pageNumber,auto}}
-
-\page
 
 #### Skill Check
 
@@ -897,22 +896,80 @@ Notice that +5 costs 6 points, more than the full budget. You can reach +5 in on
 
 ### Step 3: Choose Your Race
 
-Your race sets your base movement speed, character size, and one or more racial traits (such as darkvision or a movement bonus). Record these on your sheet.
+Your race sets your base movement speed, character size, and racial traits. Record your speed, size, and all traits on your sheet.
 
-##### Races
-| Race | Notes |
-|:---|:---|
-| Elves | |
-| Dwarves | |
-| Orcs | |
-| Gnomes | |
-| Constructs | |
-| Half-Breeds | |
-| Humans | |
+##### Race Summary
+| Race | Speed | Size | Traits |
+|:---|:---:|:---:|:---|
+| Humans | 30 ft. | Medium | Adaptable, Determined |
+| Elves | 35 ft. | Medium | Darkvision, Keen Senses, Trance |
+| Dwarves | 25 ft. | Medium | Darkvision, Hardy, Stone Steady |
+| Orcs | 30 ft. | Medium | Powerful Build, Aggressive |
+| Gnomes | 25 ft. | Small | Darkvision, Small Frame, Arcane Cunning |
+| Constructs | 30 ft. | Medium | Living Machine, No Rest Required |
+| Half-Breeds | 30 ft. | Medium or Small | Dual Heritage |
 
-{{descriptive
-**TODO:** Jacob, define racial traits for each race (speed, size, unique mechanical trait). Are we still considering the custom race option where players select from preset racial trait lists instead of picking a named race?
+#### Humans
+
+**Adaptable.** You start with one extra active skill slot (11 instead of 10).
+
+**Determined.** Once per encounter, reroll one failed Skill Check. Keep the new result.
+
+#### Elves
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Keen Senses.** Advantage on Investigation checks that rely on sight or hearing.
+
+**Trance.** 4 hours of rest counts as a full rest for you.
+
+#### Dwarves
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Hardy.** Immune to the Venomous escalated condition. Advantage on saves against Poison effects.
+
+**Stone Steady.** Heavy armor and stone or earth terrain do not reduce your speed.
+
+#### Orcs
+
+**Powerful Build.** Count as one size larger for grappling, shoving, and carrying capacity.
+
+**Aggressive.** On your turn, move up to your speed toward a visible hostile creature as part of another action. You must end closer to the target.
+
+{{footnote Character Creation}}
+{{pageNumber,auto}}
+
+\page
+
+#### Gnomes
+
+**Darkvision.** See in darkness up to 60 ft.
+
+**Small Frame.** Move through spaces occupied by Medium or larger creatures. Advantage on Stealth checks when using cover.
+
+**Arcane Cunning.** Advantage on Mind saves against spells and magical effects.
+
+#### Constructs
+
+**Living Machine.** Immune to Poison and Bleed tags. You cannot gain stacks or escalated conditions from either. Vulnerable to Acid: take +1 additional stack per Acid hit.
+
+**No Rest Required.** You do not sleep or eat. You remain alert during rest periods and cannot be caught off-guard while resting.
+
+#### Half-Breeds
+
+Choose your size: Medium or Small.
+
+**Dual Heritage.** Choose two other races. Gain one non-immunity trait from each. Record both source races on your sheet.
+
+{{note
+**Expanded Races:** Future supplements may add races such as Fey, Beastkin, and Drakari. GMs who want these races now can use Half-Breed as a template and assign two thematic traits.
 }}
+
+{{footnote Character Creation}}
+{{pageNumber,auto}}
+
+\page
 
 ### Step 4: Choose Your Background
 
@@ -998,9 +1055,7 @@ Check your sheet against this reference. If anything is blank, go back to the st
 
 Solus has no character levels. Your character grows by earning XP and spending it on skill ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
-{{descriptive
-**TODO:** Jacob, need sample character builds (3 prebuilt characters: martial, caster, hybrid) with full sheets.
-}}
+See Reference and Playtest Tools for nine sample character builds covering all three backgrounds.
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
@@ -2488,6 +2543,195 @@ Mana costs in parentheses. Sustained spells cost 3 actions to begin, 1 action pe
 
 **Mana-only parameters** (no action cost): Function (Utility 0, Movement 1, Defensive 1, Offensive 2), Damage Die (d6 = 1, d8 = 2, d10 = 3, d12 = 5), Tag Affinity (Main ×1, Sub ×2).
 }}
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+{{wide
+## Sample Characters
+
+Nine prebuilt characters covering all three backgrounds. The first seven are balanced builds. The last two are optimized: pushed to the system ceiling on one axis to show what min-maxing looks like. All use Standard Campaign Tone (8d6 Atraxia Pool dice). All weapon damage adds Body.
+}}
+
+#### Soridormi — Elf Caster
+
+Elf · Speed 35 ft. · Medium · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -1 · **Mind** +2 · **Social** 0 · **Magic** +4 · **Atraxia** 0
+
+**Affinities:** Main Elemental · Sub Temporal
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -1 · **Magical AC** 8
+**Weapons:** Dagger (1d4), Bow (1d8)
+
+**Racial Traits:** Darkvision 60 ft., Keen Senses, Trance
+
+*Glass cannon. Deep mana pool for sustained elemental bombardment. Strong magical AC, zero physical protection. Stay at range.*
+
+\column
+
+#### Vaelith Sunplume — Gnome Caster
+
+Gnome · Speed 25 ft. · Small · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -2 · **Mind** +3 · **Social** 0 · **Magic** +3 · **Atraxia** +1
+
+**Affinities:** Main Mind · Sub Corruption
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -2 · **Magical AC** 7
+**Weapons:** Dagger (1d4), Bomb Flask (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Small Frame, Arcane Cunning
+
+*Controller. Mind spells for crowd control, Arcane Cunning resists hostile magic, Small Frame slips through enemy lines when positioning breaks down.*
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+#### Gelvas Grimegate — Dwarf Martial
+
+Dwarf · Speed 25 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +4 · **Mind** 0 · **Social** -1 · **Magic** -1 · **Atraxia** +3
+
+**Affinities:** Main Force · Sub Life
+**Armor:** Heavy (Phys DR 4 / Magic DR 0)
+**Physical AC** 8 · **Magical AC** -1
+**Weapons:** Greathammer (1d8), Short Sword (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Hardy, Stone Steady
+
+*Frontline tank. Physical AC 8 stops most weapon attacks. Hardy blocks Venomous escalation. Stone Steady ignores Heavy armor speed penalties. Vulnerable to all magic.*
+
+\column
+
+#### Terrorfist — Orc Martial
+
+Orc · Speed 30 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +3 · **Mind** -1 · **Social** +1 · **Magic** -1 · **Atraxia** +3
+
+**Affinities:** Main Force · Sub Death
+**Armor:** Medium (Phys DR 3 / Magic DR 1)
+**Physical AC** 6 · **Magical AC** 0
+**Weapons:** Greatsword (1d8), Bow (1d8)
+
+**Racial Traits:** Powerful Build, Aggressive
+
+*Aggressive brawler. Closes distance fast with Aggressive, controls grapples through Powerful Build. High Atraxia Pool gives a wide death-cheating margin.*
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+#### Astalor Bloodsworn — Half-Breed Martial
+
+Half-Breed (Elf/Orc) · Speed 30 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +3 · **Mind** +1 · **Social** 0 · **Magic** 0 · **Atraxia** +1
+
+**Affinities:** Main Death · Sub Force
+**Armor:** Medium (Phys DR 3 / Magic DR 1)
+**Physical AC** 6 · **Magical AC** 1
+**Weapons:** Curved Sword (1d8), Bow (1d8)
+
+**Dual Heritage:** Keen Senses (Elf), Powerful Build (Orc)
+
+*Disciplined skirmisher. Keen Senses spots threats at distance, Powerful Build wins contested grapples. Balanced attributes with no deep weaknesses.*
+
+\column
+
+#### Larisse Pembraux — Human Hybrid
+
+Human · Speed 30 ft. · Medium · Hybrid
+110 HP · 70 Mana · 10 Regen
+
+**Body** +1 · **Mind** +1 · **Social** +3 · **Magic** +2 · **Atraxia** -2
+
+**Affinities:** Main Mind · Sub Temporal
+**Armor:** Light (Phys DR 1 / Magic DR 3)
+**Physical AC** 2 · **Magical AC** 5
+**Weapons:** Rapier (1d8), Dagger (1d4)
+
+**Racial Traits:** Adaptable (11 skill slots), Determined
+
+*Social infiltrator with spell support. High Social dominates conversation. Mind and Temporal spells control the battlefield. Adaptable gives an extra skill slot for broader coverage.*
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+#### Caydori Brighstar — Elf Hybrid
+
+Elf · Speed 35 ft. · Medium · Hybrid
+110 HP · 70 Mana · 10 Regen
+
+**Body** +2 · **Mind** 0 · **Social** 0 · **Magic** +3 · **Atraxia** 0
+
+**Affinities:** Main Life · Sub Elemental
+**Armor:** Light (Phys DR 1 / Magic DR 3)
+**Physical AC** 3 · **Magical AC** 6
+**Weapons:** Short Sword (1d6), Bow (1d8)
+
+**Racial Traits:** Darkvision 60 ft., Keen Senses, Trance
+
+*Spellblade healer. Life affinity for restoration, Elemental sub for burst damage. Body +2 keeps weapon attacks viable alongside spellcasting. Trance shortens rest downtime.*
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+{{wide
+### Optimized Builds
+
+These two characters push a single axis to the system ceiling. They show the tradeoffs of going all-in on one role.
+}}
+
+#### Nyx — Gnome Caster (Optimized)
+
+Gnome · Speed 25 ft. · Small · Caster
+100 HP · 100 Mana · 15 Regen
+
+**Body** -3 · **Mind** +1 · **Social** 0 · **Magic** +5 · **Atraxia** +2
+
+**Affinities:** Main Elemental · Sub Corruption
+**Armor:** Cloth (Phys DR 0 / Magic DR 4)
+**Physical AC** -3 · **Magical AC** 9
+**Weapons:** Dagger (1d4), Bomb Flask (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Small Frame, Arcane Cunning
+
+*Magical AC 9 is the system ceiling. Arcane Cunning stacks advantage on Mind saves against spells, making Nyx almost untouchable by magic. Physical AC -3 means a stiff breeze deals full damage. Small Frame is the only escape tool when enemies close to melee. Every point went to casting power and magical defense at the cost of all physical survivability.*
+
+\column
+
+#### Dothren Ironfold — Dwarf Martial (Optimized)
+
+Dwarf · Speed 25 ft. · Medium · Martial
+120 HP · 30 Mana · 3 Regen
+
+**Body** +5 · **Mind** -1 · **Social** -2 · **Magic** -1 · **Atraxia** +4
+
+**Affinities:** Main Force · Sub Life
+**Armor:** Heavy (Phys DR 4 / Magic DR 0)
+**Physical AC** 9 · **Magical AC** -1
+**Weapons:** Greathammer (1d8), Short Sword (1d6)
+
+**Racial Traits:** Darkvision 60 ft., Hardy, Stone Steady
+
+*Physical AC 9 is the system ceiling. Stone Steady cancels the Heavy armor speed penalty, so Dothren moves at full 25 ft. in plate. Hardy blocks Venomous escalation. Atraxia +4 produces a large death-cheating pool. The tradeoff: Magical AC -1 means every spell lands and hits hard. Social -2 makes negotiation a lost cause. Keep mages away or die.*
 
 {{footnote Reference and Playtest Tools}}
 {{pageNumber,auto}}
