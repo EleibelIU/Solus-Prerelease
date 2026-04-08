@@ -228,7 +228,7 @@ theme: 5ePHB
 }
 
 .page .quote.author p:last-child {
-	font-family 		: BookInsanityRemake;
+	font-family 		: BookInAtraxiaRemake;
 	font-size				: 0.34cm;
 	margin-top			: 4px;
 	text-align			: right;
@@ -433,7 +433,7 @@ theme: 5ePHB
 	
 .page .toc h3,
 .page .toc h4 {
-	font-family			: BookInsanityRemake;
+	font-family			: BookInAtraxiaRemake;
 	font-size				: 12px;
 	letter-spacing	: 0;
 }
@@ -477,7 +477,7 @@ theme: 5ePHB
 
 .quote.tome p::first-line {
 	font-variant 		: small-caps;
-	font-family 		: BookInsanityRemake;
+	font-family 		: BookInAtraxiaRemake;
 	font-size				: 15px;
 	text-transform	: lowercase;
 	line-height			: 14px;
@@ -588,7 +588,7 @@ Solus is a tabletop roleplaying game for three to six people. One person runs th
 
 **Two ten-sided dice (2d10).** Each die is numbered 1 through 10. You add the two dice together for a single total. A roll of 7 and 5 gives you 12. Solus does not use percentile dice, twenty-sided dice, or any other die type for core rolls.
 
-**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Sanity), your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
+**A character sheet.** This records your five attributes (Body, Mind, Social, Magic, Atraxia), your skills, your equipment, your health, and your mana. The Character Creation chapter walks you through filling one out.
 
 **Friends.** Solus works best with three to five players and one GM.
 
@@ -621,11 +621,11 @@ Terms used in this scene are defined in the chapters that follow. If you see a b
 
 Three players sit at a table with their GM.
 
-- **Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (1d8 damage, Heavy tag) and wears Medium armor (Physical DR 3, Magic DR 1).
+- **Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Atraxia +2. He carries a greatsword (1d8 damage, Heavy tag) and wears Medium armor (Physical DR 3, Magic DR 1).
 
-- **Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
+- **Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Atraxia -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
 
-- **Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. She carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
+- **Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Atraxia -2. She carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
 
 #### Scene: The Collapsed Bridge
 
@@ -676,6 +676,8 @@ Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (4). Ties go
 
 Each character gets **3 actions** per turn. The most common actions for a player to use are *Move*, *Attack*, *Defend*, *Use Item*, and *Cast Spell*.
 
+\page
+
 {{descriptive
 **Jake's player says:** "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
 }}
@@ -687,7 +689,7 @@ Each character gets **3 actions** per turn. The most common actions for a player
 {{footnote Welcome to Solus}}
 {{pageNumber,auto}}
 
-\page
+
 {{descriptive
 **Chris's player says:** "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
 }}
@@ -756,7 +758,7 @@ Before you read further, here are four numbers you will see on every character s
 
 **Experience Points (XP)** are the currency of character growth. You earn XP from combat, exploration, and social encounters. You spend XP between sessions to buy new skills and raise existing ones (see Advancement, Mastery, and Between-Session Play).
 
-**Modifiers** are numbers from -5 to +5 that represent your character's capability in a given area. You add a modifier to your dice roll. For most attributes, a higher modifier produces stronger results. Sanity is the exception: low Sanity is not worse, it is different (see Attributes and Skills).
+**Modifiers** are numbers from -5 to +5 that represent your character's capability in a given area. You add a modifier to your dice roll. For most attributes, a higher modifier produces stronger results. Atraxia is the exception: low Atraxia is not worse, it is different (see Attributes and Skills).
 
 ## How Dice Work
 
@@ -799,7 +801,6 @@ If you have both advantage and disadvantage at the same time, they cancel out. R
 **Example:** You attack while Stunned (disadvantage). You roll 3d10: 8, 3, 6. Drop the highest (8). Your roll is 3 + 6 = 9, plus your modifier.
 }}
 
-
 ### The Two Roll Types
 
 Solus has two kinds of rolls. Both use 2d10 plus a modifier. The difference is which modifier you add and what target number you compare against.
@@ -813,6 +814,9 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 3. Compare your result to the defender's **Armor Class** (AC). Physical attacks target **Physical AC**. Spells target **Magical AC**. (See Equipment, Armor, and Weapons for how AC is calculated.)
 4. If your result meets or beats the AC, you hit. Roll damage. The defender's **Damage Reduction** (DR) subtracts from the damage dealt.
 5. If your result falls short, you miss.
+
+\page
+
 
 {{descriptive
 **TODO:** Jacob, how should spells that create physical projectiles (hurling a boulder, creating an earth spike) interact with AC? Does the target use Physical AC because the impact is physical, or Magical AC because a spell created it? This needs a ruling.
@@ -861,7 +865,7 @@ Solus does not restrict your choices by class or archetype. A character with hig
 
 ### Step 2: Distribute Attribute Scores
 
-You have five attributes: Body, Mind, Social, Magic, and Sanity. Each gets a modifier between -5 and +5. The Attributes and Skills chapter describes what each attribute does.
+You have five attributes: Body, Mind, Social, Magic, and Atraxia. Each gets a modifier between -5 and +5. The Attributes and Skills chapter describes what each attribute does.
 
 You have **5 points** to spend across all five attributes. Higher modifiers cost more points. Negative modifiers refund points. You must spend all 5 points, with zero remaining.
 
@@ -881,7 +885,7 @@ You have **5 points** to spend across all five attributes. Higher modifiers cost
 | -5 | -5 |
 
 {{note
-**Example:** You want a melee fighter who can take a hit. You set Body +4 (costs 4), Mind +1 (costs 1), Social +0 (costs 0), Magic -2 (refunds 2), Sanity +2 (costs 2). Total spent: 4 + 1 + 0 - 2 + 2 = **5**. All points used.
+**Example:** You want a melee fighter who can take a hit. You set Body +4 (costs 4), Mind +1 (costs 1), Social +0 (costs 0), Magic -2 (refunds 2), Atraxia +2 (costs 2). Total spent: 4 + 1 + 0 - 2 + 2 = **5**. All points used.
 }}
 
 Notice that +5 costs 6 points, more than the full budget. You can reach +5 in one attribute, but you will need deep negatives elsewhere to pay for it.
@@ -939,21 +943,25 @@ Pick two spell disciplines from the ten listed in Magic and Spellcasting.
 - Your **Main discipline (×1)** has no mana cost penalty.
 - Your **Sub discipline (×2)** doubles the mana cost of any spell using it.
 
-You cannot cast spells from disciplines outside your Main and Sub. If your character does not cast spells, you still pick two disciplines. They define what magical knowledge your character can draw on if circumstances change.
+If your character does not cast spells, you still pick two disciplines . They define what magical knowledge your character can draw on if circumstances change.
+
+{{descriptive
+**TODO**: This was originally written to tie into the tag system, ergo we should change the name to better reflect that this system (as in all systems) is designed to synergize with the tag CATEGORIES thus you are gaining *proficiency* in a tag category. Do a find/replace on this specific "Discipline" context -> "Choose your Tag Category Proficiency" or something like this. 
+
+}}
 
 ### Step 7: Choose Your Skills
 
 Pick skills from the skill list in the Attributes and Skills chapter. Each skill has a fixed primary attribute and two secondary attribute options. When you roll a skill check, you choose which secondary to use for that roll (see Attributes and Skills: How Skill Modifiers Work).
 
 You start with a limited set of skills and can gain more through play. Only **10 skills** can be active at any time (see Attributes and Skills for full rules on active and inactive skills).
+{{descriptive
+**TODO**: This is accidentally referring to two different systems and needs to be redone. https://poe2db.tw/us/Support_Gems is the actual system this is doing which is similar to Shadowrun's Mods but can be used for anything. This is a fault of naming; Not that I didn't grasp the system. 
 
-
+This needs to be its own ENTIRE CHAPTER divergent from skills. Let's rename it something that suggests combinatrics. 
+}}
 
 As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a skill and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base skill can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how skills rank up and unlock slots.
-
-{{descriptive
-**TODO:** Jacob, when do Support Skill slots first become available? Need the full Support Skill list.
-}}
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
@@ -976,7 +984,7 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Name | Character name | Fixed |
 | Race | Race, size, speed, racial traits | Fixed |
 | Background | Caster, Martial, or Hybrid | Fixed |
-| Attributes | Body, Mind, Social, Magic, Sanity | Fixed |
+| Attributes | Body, Mind, Social, Magic, Atraxia | Fixed |
 | Initiative | Body or Magic modifier | Chosen each combat |
 | Disciplines | Main discipline, Sub discipline | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
@@ -1031,16 +1039,16 @@ Magic covers all spellcasting. Every spell you cast uses Magic, regardless of it
 
 - A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
 
-#### Sanity
+#### Atraxia
 
-Sanity measures how deeply your character perceives the true nature of the world.
+Atraxia measures how deeply your character perceives the true nature of the world.
 
-- Sanity is the only attribute that can change during play. All other attributes stay fixed at creation.
-- A character with low Sanity sees things others cannot: hidden layers of reality, presences beyond normal perception, truths the world conceals. They can interact with these things, and those things can interact with them.
-- A character with high Sanity is grounded and stable but perceives only the surface.
-- Once your Sanity drops past a threshold, the awareness is permanent. Raising Sanity back up restores your composure but does not erase what you have seen.
+- Atraxia is the only attribute that can change during play. All other attributes stay fixed at creation.
+- A character with low Atraxia sees things others cannot: hidden layers of reality, presences beyond normal perception, truths the world conceals. They can interact with these things, and those things can interact with them.
+- A character with high Atraxia is grounded and stable but perceives only the surface.
+- Once your Atraxia drops past a threshold, the awareness is permanent. Raising Atraxia back up restores your composure but does not erase what you have seen.
 
-Characters choose low Sanity to access hidden knowledge and interact with forces invisible to others. Those forces can reach back.
+Characters choose low Atraxia to access hidden knowledge and interact with forces invisible to others. Those forces can reach back.
 }}
 
 {{footnote Attributes and Skills}}
@@ -1072,15 +1080,15 @@ Every skill has a **primary** attribute and a **secondary** attribute.
 
 The **primary** is fixed. It never changes for that skill. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the skill draws on.
 
-The **secondary** is your choice each time you roll. Every skill lists two options. When you make a check, you pick whichever secondary fits the situation. The secondary represents how your character approaches that skill in the moment: do you climb this wall through trained technique (Mind) or through sheer refusal to let go (Sanity)?
+The **secondary** is your choice each time you roll. Every skill lists two options. When you make a check, you pick whichever secondary fits the situation. The secondary represents how your character approaches that skill in the moment: do you climb this wall through trained technique (Mind) or through sheer refusal to let go (Atraxia)?
 
 **Skill Modifier** = primary attribute + secondary attribute.
 
 {{note
-**Example:** Your character has Body +4, Mind +1, and Sanity -2. Athletics uses Body as its primary. The secondary options are Mind or Sanity.
+**Example:** Your character has Body +4, Mind +1, and Atraxia -2. Athletics uses Body as its primary. The secondary options are Mind or Atraxia.
 
 - With Mind: Athletics = +4 + 1 = **+5**.
-- With Sanity: Athletics = +4 + (-2) = **+2**. 
+- With Atraxia: Athletics = +4 + (-2) = **+2**. 
 
 You choose which secondary to use each time you roll, based on how your character approaches the task.
 }}
@@ -1099,17 +1107,17 @@ The table below shows all 11 skills. When you make a Skill Check, find the skill
 ##### Skills
 | Skill | Primary | Secondary (pick one) | What it covers |
 |:---|:---:|:---:|:---|
-| Athletics | Body | Mind or Sanity | Climbing, jumping, sprinting, swimming, feats of strength or endurance |
-| Stealth | Body | Mind or Sanity | Moving unseen, hiding, acting without drawing attention |
-| Investigation | Mind | Body or Sanity | Searching for clues, analyzing evidence, piecing together hidden details |
-| Knowledge | Mind | Social or Sanity | Recalling lore, history, culture, religion, or technical information |
-| Medicine | Mind | Body or Sanity | Diagnosing conditions, treating wounds, stabilizing the dying |
-| Survival | Mind | Body or Sanity | Tracking, hunting, navigating, enduring harsh environments |
+| Athletics | Body | Mind or Atraxia | Climbing, jumping, sprinting, swimming, feats of strength or endurance |
+| Stealth | Body | Mind or Atraxia | Moving unseen, hiding, acting without drawing attention |
+| Investigation | Mind | Body or Atraxia | Searching for clues, analyzing evidence, piecing together hidden details |
+| Knowledge | Mind | Social or Atraxia | Recalling lore, history, culture, religion, or technical information |
+| Medicine | Mind | Body or Atraxia | Diagnosing conditions, treating wounds, stabilizing the dying |
+| Survival | Mind | Body or Atraxia | Tracking, hunting, navigating, enduring harsh environments |
 | Animal Handling | Social | Body or Mind | Calming, training, controlling, or reading the behavior of animals |
-| Performance | Social | Body or Sanity | Entertaining, inspiring, distracting through art, music, or drama |
+| Performance | Social | Body or Atraxia | Entertaining, inspiring, distracting through art, music, or drama |
 | Speech | Social | Body or Mind | Persuading, deceiving, negotiating, intimidating, commanding |
-| Arcana | Magic | Mind or Sanity | Identifying, understanding, or manipulating magical and supernatural forces |
-| Insight | Sanity | Body or Mind | Perceiving hidden truths, occult knowledge, cosmic or otherworldly comprehension |
+| Arcana | Magic | Mind or Atraxia | Identifying, understanding, or manipulating magical and supernatural forces |
+| Insight | Atraxia | Body or Mind | Perceiving hidden truths, occult knowledge, cosmic or otherworldly comprehension |
 
 }}
 
@@ -1322,7 +1330,7 @@ All other disciplines are **locked**. You cannot cast spells from a locked disci
 | Martial | 30 | 3 |
 
 {{descriptive
-**TODO:** Jacob, Tertiary Disciplines (×3 with GM approval) were cut from the default rules. If you want them back as a variant rule, let me know.
+**TODO:** Change the name of Spell Disciplines to allude how it interacts with Categories/Tags. Spell Categories/Tags is halfway to a good name; We need something better that *implies* a link to teh tag system, as every system in Solus should link into the Stacks/Tags/Categories. 
 }}
 }}
 {{footnote Magic and Spellcasting}}
@@ -1382,11 +1390,11 @@ T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the s
 
 {{wide 
 {{descriptive
-**TODO:** Jacob, save resolution needs a definition now that Resist Rolls have been removed. How should saves work?
+**TODO:** CREATE MORE SPELLS , especially emphasizing the combinatric possibilities and also the "Distintegration" equivalents at *level one*. 
 }}
 
 {{descriptive
-**TODO:** Jacob, I created "Sustained" as a stand-in for T3 and T4 based on what you told me in Discord DMs about concentration-style spells and multi-round effects. Review this and let me know if the mechanic fits what you had in mind or if it needs rework.
+**TODO:** Liz expand on the sustained system to not be retarded as you know its exposited POORLY and needs to be clarified esp on how the DURATIONS are achieved kthxbye
 }}
 
 }}
@@ -1561,7 +1569,7 @@ This chapter explains how lasting effects work in Solus: what causes them, how t
 
 Every rule in this chapter applies the same way regardless of where the effect comes from. A Burn stack from a fire spell works the same as a Burn stack from a flaming sword or a pool of lava. The source does not change the rules.
 
-
+<!-- TODO: DYING SHOULD BE A COPY OF SHADOWDARK'S SYSTEM BUT WITHOUT USING ONLY INT - CREATE A FLEXIBLE FRAMEWORK THAT PLAYERS CAN ARGUE   -->
 
 ## Tracking Conditions at the Table
 
@@ -1616,7 +1624,7 @@ Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.
 | DR | Elemental stacks (Burn, Chilled, Volt, Acid): reduced by Magic DR. Physical stacks (Bleed, Force): reduced by Physical DR. DR does not prevent stacks from applying or escalating. |
 
 {{descriptive
-**TODO:** Jacob has not confirmed whether DR should reduce stack damage. This rule is provisional.
+**TODO:** JACOB CONFIRMS THAT DR REDUCES STACK DAMAGE UNTIL T2
 }}
 
 | **Removal** | |
@@ -1626,6 +1634,7 @@ Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. |
 | Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). See Condition Profiles for each type's counter. |
 
+<!--TODO: PURGE IS UNIQUE TO WEAPONS , IT IS NOT AN ACTUAL REMOVAL METHODOLOGY. THE ONLY WAY TO REMOVE STACKS IS HEALING MAGIC AND OPPOSITE STACKS/TAGS UNLESS THE TAG SAYS OTHERWISE -->
 
 {{note
 **Example: Tracking stacks across two rounds.**
@@ -1788,6 +1797,7 @@ A creature that enters tagged terrain or starts its turn there gains 1 stack of 
 
 ### Other Conditions
 
+<!-- TODO: THIS IS FUCKING WRONG. ALL OF ITS WRONG. Everything applies stacks UNLESS stated specifically otherwise -->
 These conditions do not come from stacks. They are applied directly by abilities, spells, or hazards.
 
 ##### Non-Stack Conditions
@@ -1808,7 +1818,7 @@ These conditions do not come from stacks. They are applied directly by abilities
 | Weaken | |
 | Wet | No damage. Extinguishes fire on terrain and objects. Enables the Shocked → Stunned upgrade. |
 | Drown | Applied by T2 Water spells. You lose your reaction. You must spend 1 action each turn to avoid suffocating. Breath duration depends on Body. |
-
+<!-- TODO: LIFE AND DEATH ARE NOT MAGIC. THEY ARE ONLY TAGS -->
 ##### Life Magic Tags
 
 Life tags follow the same stack system as other tags, with T1 and T2 effects. They are not separate from the condition framework.
@@ -1889,7 +1899,7 @@ If you receive healing that brings you to **1 HP or more**, you leave the dying 
 {{pageNumber,auto}}
 
 \page
-
+<!-- TODO DEATH. Everyone has a equal death counter. When you enter dying, you subtract EITHER (1 at the end of each turn ) OR ( Every action lowers it by one ) INACTION Is also ONE , you using your action is 2. As a consequence to survivng ( and lets be honest, magically healing out of this as thats the optimized move to do here) you are going to take Atraxia DAMAGE PERMANENTLY -1 PER ROUND you were in the dying state. You will ALWAYS lose minimum 1 entering Dying. You will roll on the short term injury table. You keep your death counter the entire game. This is our game's equivalent of tracking Ammo. WE JUST WANTED IT TO BE IMPORTANT MAN SO WE MADE IT YOUR LIFE. YOUR ARROWS OR YOUR LIFE. --->
 <!-- CHAPTER 10: NPCs, ENEMIES, AND ENCOUNTERS -->
 
 # NPCs, Enemies, and Encounters
@@ -1910,7 +1920,7 @@ The only differences between NPC tiers are stat modifiers, HP, and mana pools. E
 | Boss | 175 | 100 / 20 | Enchanted (Phys DR 3, Magic DR 3) |
 
 ##### NPC Attributes by Tier
-| Tier | Body | Mind | Social | Magic | Sanity |
+| Tier | Body | Mind | Social | Magic | Atraxia |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Minion | +0 | +0 | +0 | +0 | +0 |
 | Regular | +1 | +1 | +1 | +1 | +1 |
@@ -2224,7 +2234,7 @@ This chapter collects reference tables and playtest materials. Use these at the 
 ### Character Creation Steps
 
 1. Choose a race.
-2. Distribute 5 attribute points (Body, Mind, Social, Magic, Sanity).
+2. Distribute 5 attribute points (Body, Mind, Social, Magic, Atraxia).
 3. Choose a background (Caster, Martial, Hybrid).
 4. Choose and configure skills.
 5. Choose your initiative modifier (Body or Magic).
@@ -2247,7 +2257,7 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Action | One of 3 things you do on your turn: Attack, Cast a Spell, Move, Drink a Potion, Interact, or Use a Skill. | 17, 18 |
 | Advantage | Roll 3d10 instead of 2d10 and drop the lowest die. | 7 |
 | AOE (Area of Effect) | A spell targeting an area rather than specific creatures. All creatures in the area are affected. | 15 |
-| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Sanity) ranging from -5 to +5. | 9, 11 |
+| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Atraxia) ranging from -5 to +5. | 9, 11 |
 | Background | Caster, Martial, or Hybrid. Sets starting HP, max mana, and mana regeneration rate. | 9 |
 | Combat Roll | 2d10 + Body (physical/martial) or 2d10 + Magic (spells) compared against the target's AC. | 7, 18 |
 | Condition | An ongoing effect applied by tags. Conditions use stacks that build and decay over time. | 20, 21 |
