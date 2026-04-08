@@ -621,9 +621,9 @@ Terms used in this scene are defined in the chapters that follow. If you see a b
 
 Three players sit at a table with their GM.
 
-- **Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (2d6 damage, Reach tag) and wears Medium armor (Physical DR 3, Magic DR 1).
+- **Jake** is a martial fighter. Body +4, Mind +1, Social +0, Magic -2, Sanity +2. He carries a greatsword (1d8 damage, Heavy tag) and wears Medium armor (Physical DR 3, Magic DR 1).
 
-- **Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. He carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
+- **Chris** is a hybrid spellblade. Body +2, Mind +0, Social +1, Magic +3, Sanity -1. She carries a shortsword (1d6 damage) and wears Light armor (Physical DR 1, Magic DR 3).
 
 - **Liz** is a social infiltrator. Body +1, Mind +3, Social +4, Magic -1, Sanity -2. She carries a dagger (1d4 damage) and wears Cloth armor (Physical DR 0, Magic DR 0).
 
@@ -635,9 +635,9 @@ Three players sit at a table with their GM.
 **Liz's player says:** "I want to listen and figure out how many people are over there."
 }}
 
-The GM calls for a **Skill Check**. The skill is **Perception**. Perception's primary attribute is Mind. Liz chose Body as her secondary attribute for Perception at character creation. Her Mind is +3 and his Body is +1, so his Perception modifier is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
+The GM calls for a **Skill Check**. The skill is **Investigation**. Investigation's primary attribute is Mind. Liz's player picks Body as her secondary for this check—she is pressing close to the ground, using her position to catch sound across the ravine. Her Mind is +3 and her Body is +1, so her Investigation modifier for this roll is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
 
-Liz's player rolls 2d10: **6 + 9 = 15**, plus her modifier of +4 = **19**. He beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
+Liz's player rolls 2d10: **6 + 9 = 15**, plus her modifier of +4 = **19**. She beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
 
 {{descriptive
 **The GM says:**
@@ -651,11 +651,11 @@ If Liz had rolled a 4 + 3 = 7, plus 4 = 11, she would have missed the DC by 3.
 **Jake's player says:** "I want to jump the gap."
 }}
 
-Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake chose Mind as his secondary. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
+Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake's player picks Mind as his secondary for this check—trained jumping technique over brute force. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
 
 Jake rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
 
-Chris follows. Same DC, but his Athletics modifier is lower (Body +2, secondary Mind +0 = **+2**). Hee rolls: **5 + 6 = 11**, plus 2 = **13**. Hee meets the DC exactly. Hee makes it across, but stumbles on the landing. The enemies hear the noise.
+Chris follows. Same DC, but her Athletics modifier is lower (Body +2, secondary Mind +0 = **+2**). She rolls: **5 + 6 = 11**, plus 2 = **13**. She meets the DC exactly. She makes it across, but stumbles on the landing. The enemies hear the noise.
 
 #### Combat Begins
 
@@ -669,10 +669,10 @@ Chris follows. Same DC, but his Athletics modifier is lower (Body +2, secondary 
 |:---|:---:|:---:|:---:|
 | Jake | 7 | +4 (Body) | 11 |
 | Chris | 5 | +3 (Magic) | 8 |
-| Bandit Leader | 8 | +2 (Body) | 10 |
-| Bandit Archer | 4 | +1 (Body) | 5 |
+| Bandit Leader | 7 | +3 (Body) | 10 |
+| Bandit Archer | 4 | +0 (Body) | 4 |
 
-Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (5). Ties go to the higher modifier. If still tied, the GM decides.
+Turn order: Jake (11), Bandit Leader (10), Chris (8), Bandit Archer (4). Ties go to the higher modifier. If still tied, the GM decides.
 
 Each character gets **3 actions** per turn. The most common actions for a player to use are *Move*, *Attack*, *Defend*, *Use Item*, and *Cast Spell*.
 
@@ -680,9 +680,9 @@ Each character gets **3 actions** per turn. The most common actions for a player
 **Jake's player says:** "I spend my first action to Move toward the bandit leader. Second action: Attack with my greatsword. Third action: Attack again."
 }}
 
-- **First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader wears Light armor (Physical DR 1) and has Body +2, giving a **Physical AC of 3** (DR 1 + Body 2). Jake's 18 beats 3, so he hits. He rolls greatsword damage: **2d6 = 4 + 5 = 9**, plus Body +4 = **13**. The bandit's Physical DR of 1 absorbs 1 point. The bandit takes **12 damage**.
+- **First Attack.** Jake rolls a **Combat Roll**: `2d10 + Body` because the greatsword is a physical weapon. He rolls **6 + 8 = 14**, plus Body +4 = **18**. The Bandit Leader (100 HP) wears Medium armor (Physical DR 3) and has Body +3, giving a **Physical AC of 6** (DR 3 + Body 3). Jake's 18 beats 6, so he hits. He rolls greatsword damage: **1d8 = 5**, plus Body +4 = **9**. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes **6 damage** and drops to 94 HP.
 
-- **Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 3. Damage: **2d6 = 2 + 3 = 5**, plus 4 = **9**, minus 1 DR = **8 damage**. The bandit leader is in trouble.
+- **Second Attack.** Jake rolls again: **3 + 4 = 7**, plus 4 = **11**. Still beats the AC of 6. Damage: **1d8 = 7**, plus 4 = **11**, minus 3 DR = **8 damage**. The bandit leader drops to 86 HP.
 
 {{footnote Welcome to Solus}}
 {{pageNumber,auto}}
@@ -692,11 +692,9 @@ Each character gets **3 actions** per turn. The most common actions for a player
 **Chris's player says:** "First action: Move to flank the archer. Second action: Attack the archer with my shortsword. Third action: Cast a fire bolt at the bandit leader."
 }}
 
-- **Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer wears Cloth armor (Physical DR 0, Body +1), so Physical AC is **1**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**.
+- **Shortsword Attack.** Physical weapon, so she rolls `2d10 + Body`. Her Body is +2. She rolls **9 + 5 = 14**, plus 2 = **16**. The archer is a Minion (5 HP, Cloth armor, Physical DR 0, Body +0), so Physical AC is **0**. She hits. Shortsword damage: **1d6 = 4**, plus Body +2 = **6**, minus 0 DR = **6 damage**. The archer had 5 HP and drops to 0. When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death).
 
-- **Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 3 (Light armor) + Magic -1 = **2**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 3 = **8 damage**. The bandit leader drops to 0 HP.
-
-When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries, and Death).
+- **Fire Bolt.** Spell, so she rolls `2d10 + Magic`. Her Magic is +3. She rolls **4 + 7 = 11**, plus 3 = **14**. The bandit leader's **Magical AC** is Magic DR 1 (Medium armor) + Magic -1 = **0**. She hits. Spell damage: **1d6 + 1d8 + 3 = 3 + 5 + 3 = 11**, minus Magic DR 1 = **10 damage**. The bandit leader drops to 76 HP. The fight continues.
 
 {{footnote Welcome to Solus}}
 {{pageNumber,auto}}
@@ -706,7 +704,7 @@ When a character drops to 0 HP, they are incapacitated (see Conditions, Injuries
 
 In a few minutes of play, the group used three systems:
 
-**Skill Checks** resolved Liz's Perception (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set.
+**Skill Checks** resolved Liz's Investigation (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set. Each player chose which secondary attribute to add for that specific roll.
 
 **Combat Rolls** resolved Jake's greatsword swings and Chris's shortsword strike using `2d10 + Body`, and Chris's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
 
@@ -754,11 +752,11 @@ Before you read further, here are four numbers you will see on every character s
 
 **Hit Points (HP)** measure how much damage your character can take. When your HP reaches 0, your character is incapacitated (see Conditions, Injuries, and Death). Your maximum HP is set by your background during character creation and does not change.
 
-**Mana** is the resource you spend to cast spells. Each spell costs a set amount of mana. Your mana regenerates during combat at the start of each of your turns by an amount set by your background (see Character Creation, Step 4). Outside of combat, mana refills between encounters.
+**Mana** is the resource you spend to use skills and cast spells. Your mana pool starts full at the beginning of each session. During combat, mana regenerates at the start of each of your turns by an amount set by your background (see Character Creation, Step 4). Outside of combat, mana refills between encounters.
 
 **Experience Points (XP)** are the currency of character growth. You earn XP from combat, exploration, and social encounters. You spend XP between sessions to buy new skills and raise existing ones (see Advancement, Mastery, and Between-Session Play).
 
-**Modifiers** are numbers from -5 to +5 that represent how good or bad your character is at something. You add a modifier to your dice roll. Higher is better.
+**Modifiers** are numbers from -5 to +5 that represent your character's capability in a given area. You add a modifier to your dice roll. For most attributes, a higher modifier produces stronger results. Sanity is the exception: low Sanity is not worse, it is different (see Attributes and Skills).
 
 ## How Dice Work
 
@@ -776,7 +774,7 @@ The GM sets a **target number**. If your result meets or beats the target, you s
 
 ### When You Roll
 
-You roll only when the outcome is uncertain. If your character is trained at a task and nothing complicates it, the GM describes the success without dice. If the task is beyond your character entirely, the GM describes the failure. Dice come out when the answer could go either way.
+ An adventurer is competent at adventuring. If your character would reasonably succeed at a task given who they are and the circumstances are calm, the GM describes the success without dice. If the task is impossible given the situation, the GM describes the failure. Dice come out when pressure, complexity, or opposition make the result genuinely uncertain.
 
 
 ### Critical Results
@@ -816,6 +814,10 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 4. If your result meets or beats the AC, you hit. Roll damage. The defender's **Damage Reduction** (DR) subtracts from the damage dealt.
 5. If your result falls short, you miss.
 
+{{descriptive
+**TODO:** Jacob, how should spells that create physical projectiles (hurling a boulder, creating an earth spike) interact with AC? Does the target use Physical AC because the impact is physical, or Magical AC because a spell created it? This needs a ruling.
+}}
+
 {{note
 **Example:** You swing a greatsword at a bandit. Your Body is +4. You roll 2d10 and get 6 + 8 = 14, plus 4 = 18. The bandit wears Medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You beat 4, so you hit. You roll 1d8 + 4 for damage and deal 10. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes 7 damage.
 }}
@@ -834,10 +836,10 @@ Roll a Skill Check when your character attempts something uncertain that is not 
 3. Compare your result to the DC.
 4. The GM reads the outcome using the **Degree of 5** scale (see Running the Game). Beating the DC by 5 or more earns a bonus. Missing the DC by 5 or more adds a setback. The wider the gap, the bigger the swing.
 
-Your **Skill Modifier** is the sum of two attributes: a fixed **primary** attribute and a **secondary** attribute you chose at character creation. See Attributes and Skills for the full list and how this math works.
+Your **Skill Modifier** is the sum of two attributes: a fixed **primary** attribute and a **secondary** attribute you choose when you make the roll. Each skill lists two secondary options. You pick whichever fits the situation. See Attributes and Skills for the full list.
 
 {{note
-**Example:** You try to calm a spooked horse. The GM calls for Animal Handling against DC 12. Animal Handling uses Social as its primary. Your secondary choice is Mind. Your Social is +3 and your Mind is +4, so your modifier is +7. You roll 2d10 and get 4 + 5 = 9, plus 7 = 16. You beat DC 12 by 4 and the horse calms down. If you had rolled 3 + 2 = 5, plus 7 = 12, you would meet the DC exactly: a bare success with no bonus or setback.
+**Example:** You try to calm a spooked horse. The GM calls for Animal Handling against DC 12. Animal Handling uses Social as its primary. The secondary options are Body and Mind. You choose Mind for this roll because you are reading the horse's body language, not wrestling it into submission. Your Social is +3 and your Mind is +4, so your modifier is +7. You roll 2d10 and get 4 + 5 = 9, plus 7 = 16. You beat DC 12 by 4 and the horse calms down. If you had rolled 3 + 2 = 5, plus 7 = 12, you would meet the DC exactly: a bare success with no bonus or setback.
 }}
 
 {{footnote Core Mechanics}}
@@ -919,13 +921,11 @@ The first number after mana is your **maximum mana**. The second is your **mana 
 | Martial | 120 | 30 | 3 |
 | Hybrid | 110 | 70 | 10 |
 
-A Caster has the deepest mana pool and fastest regeneration but the lowest health. A Martial has the most health but barely enough mana for basic utility spells. A Hybrid splits the difference.
+A Caster has the deepest mana pool and fastest regeneration but the lowest health. A Martial has the most health and a smaller mana pool, enough to fuel martial skills and the occasional utility spell. A Hybrid splits the difference.
 
-### Step 5: Choose Your Initiative Modifier
+### Step 5: Initiative Modifier
 
-Pick whether your character uses **Body** or **Magic** for initiative rolls. This choice is permanent. When combat starts, you roll 1d10 + your chosen modifier to determine turn order (see Combat: Starting Combat).
-
-Martial fighters and physical brawlers pick Body. Dedicated casters pick Magic. Hybrids pick whichever is higher.
+At the start of each combat, choose whether to roll initiative with **Body** or **Magic**. Roll 1d10 + the chosen modifier to determine turn order (see Combat: Starting Combat). You can pick a different modifier each fight.
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
@@ -939,11 +939,11 @@ Pick two spell disciplines from the ten listed in Magic and Spellcasting.
 - Your **Main discipline (×1)** has no mana cost penalty.
 - Your **Sub discipline (×2)** doubles the mana cost of any spell using it.
 
-All other disciplines are locked or tertiary (see Magic and Spellcasting: Spell Disciplines for full rules). If your character does not cast spells, you still pick two disciplines. They define what magical knowledge your character has access to if circumstances change.
+You cannot cast spells from disciplines outside your Main and Sub. If your character does not cast spells, you still pick two disciplines. They define what magical knowledge your character can draw on if circumstances change.
 
 ### Step 7: Choose Your Skills
 
-Pick skills from the skill list in the Attributes and Skills chapter. For each skill you take, choose its **secondary attribute** from the two options listed. This choice is permanent and determines your skill modifier (see Attributes and Skills: How Skill Modifiers Work).
+Pick skills from the skill list in the Attributes and Skills chapter. Each skill has a fixed primary attribute and two secondary attribute options. When you roll a skill check, you choose which secondary to use for that roll (see Attributes and Skills: How Skill Modifiers Work).
 
 You start with a limited set of skills and can gain more through play. Only **10 skills** can be active at any time (see Attributes and Skills for full rules on active and inactive skills).
 
@@ -962,11 +962,9 @@ As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills
 
 Pick weapons and armor from the tables in Equipment, Armor, and Weapons. Your background does not restrict your choices. A Caster can wear Heavy armor. A Martial can carry a staff.
 
-Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Equipment, Armor, and Weapons: How Armor Works). Your weapon determines your damage dice, tags, and traits.
+You begin with **one set of armor** (any tier except Enchanted) and **two weapons**. Choose one melee and one ranged, two melee, or two ranged.
 
-{{descriptive
-**TODO:** Jacob, need starting equipment budget or package rules.
-}}
+Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Equipment, Armor, and Weapons: How Armor Works). Your weapon determines your damage dice, tags, and traits.
 
 ### Step 9: Review Your Sheet
 
@@ -979,10 +977,10 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Race | Race, size, speed, racial traits | Fixed |
 | Background | Caster, Martial, or Hybrid | Fixed |
 | Attributes | Body, Mind, Social, Magic, Sanity | Fixed |
-| Initiative | Body or Magic modifier | Fixed |
+| Initiative | Body or Magic modifier | Chosen each combat |
 | Disciplines | Main discipline, Sub discipline | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
-| Skills | Active skills (up to 10), secondary picks | Skills can be swapped between sessions; secondary picks are permanent |
+| Skills | Active skills (up to 10) | Skills can be swapped between sessions |
 | Support Skills | Socketed augments per skill | Changeable between sessions |
 | Equipment | Weapons, armor, gear | Changeable |
 | Masteries | Mastery skills (if any unlocked) | Changeable between sessions |
@@ -1017,7 +1015,7 @@ Body covers all physical capability: strength, speed, endurance, coordination.
 
 #### Mind
 
-Mind covers intellect, reasoning, perception, and emotional awareness. A character with high Mind spots hidden details, recalls useful lore, and resists tricks that target reasoning. A character with low Mind overlooks clues, forgets critical knowledge, and falls for deceptions.
+Mind covers intellect, reasoning, perception, and emotional composure. A character with high Mind spots hidden details, recalls useful lore, resists tricks that target reasoning, and holds steady under fear and stress. A character with low Mind overlooks clues, forgets critical knowledge, falls for deceptions, and panics under pressure.
 
 #### Social
 
@@ -1035,10 +1033,14 @@ Magic covers all spellcasting. Every spell you cast uses Magic, regardless of it
 
 #### Sanity
 
-Sanity covers mental fortitude and perception of hidden truths. 
+Sanity measures how deeply your character perceives the true nature of the world.
 
-- Lower Sanity does not make you unstable. It opens your eyes. Characters with low Sanity perceive things others cannot: hidden layers of the world, eldritch presences, and truths that erode the mind.
-- Sanity governs fear, stress, madness thresholds, and any corruption mechanics. A character with high Sanity is unshakeable but blind to the world's deeper horrors. A character with low Sanity sees too much and risks breaking under the weight of that knowledge.
+- Sanity is the only attribute that can change during play. All other attributes stay fixed at creation.
+- A character with low Sanity sees things others cannot: hidden layers of reality, presences beyond normal perception, truths the world conceals. They can interact with these things, and those things can interact with them.
+- A character with high Sanity is grounded and stable but perceives only the surface.
+- Once your Sanity drops past a threshold, the awareness is permanent. Raising Sanity back up restores your composure but does not erase what you have seen.
+
+Characters choose low Sanity to access hidden knowledge and interact with forces invisible to others. Those forces can reach back.
 }}
 
 {{footnote Attributes and Skills}}
@@ -1048,9 +1050,15 @@ Sanity covers mental fortitude and perception of hidden truths.
 
 ## Skills
 
-A **skill** is a trained capability your character has. Skills cover everything outside of direct combat attacks: climbing a wall, picking a lock, persuading a merchant, identifying a spell, treating a wound, tracking an animal through snow. When you attempt one of these actions and the outcome is uncertain, the GM calls for a **Skill Check** (see Core Mechanics) using the relevant skill.
+A **skill** is a trained ability your character uses in and out of combat. Skills include climbing a wall, picking a lock, landing a precise combo, channeling energy through a weapon, persuading a merchant, or tracking an animal through snow. Martial characters fuel their combat skills with a steady mana drain at low cost. Casters spend mana in larger amounts per spell. Both draw from the same shared mana pool.
 
-Your character does not start with every skill. You choose which skills to take during character creation, and you can gain or swap skills between sessions. You can own as many skills as you can afford, but only 10 can be **active** at any time. Skills you are not carrying cannot be used.
+When you attempt a non-combat action and the outcome is uncertain, the GM calls for a **Skill Check** (see Core Mechanics) using the relevant skill from the table below. The 11 skills in the table cover non-combat Skill Checks and their attribute pairings.
+
+{{descriptive
+**TODO:** Jacob — active combat skills (the mana-costing abilities characters equip and fight with) need their own list or section. The 11 skills below only cover Skill Check abilities. Where do combat skills live?
+}}
+
+Your character does not start with every skill. You choose which skills to take during character creation, and you can gain or swap skills between sessions. You can carry up to 10 **active** skills at any time. Skills you are not carrying cannot be used.
 
 Skills grow through play. As you earn XP and spend it, your skills advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked skills also unlock **Support Skill Slots**, which let you attach augments that change how the skill behaves (see Advancement and Between Sessions).
 
@@ -1064,17 +1072,17 @@ Every skill has a **primary** attribute and a **secondary** attribute.
 
 The **primary** is fixed. It never changes for that skill. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the skill draws on.
 
-The **secondary** is your choice. Each skill lists two options. You pick one when you create your character, and that pick is permanent. The secondary represents how your character approaches that skill: do you climb walls through trained technique (Mind) or through sheer refusal to let go (Sanity)?
+The **secondary** is your choice each time you roll. Every skill lists two options. When you make a check, you pick whichever secondary fits the situation. The secondary represents how your character approaches that skill in the moment: do you climb this wall through trained technique (Mind) or through sheer refusal to let go (Sanity)?
 
 **Skill Modifier** = primary attribute + secondary attribute.
 
 {{note
-**Example:** You are building a character with Body +4, Mind +1, and Sanity -2. You take Athletics, which uses Body as its primary. The secondary options are Mind or Sanity.
+**Example:** Your character has Body +4, Mind +1, and Sanity -2. Athletics uses Body as its primary. The secondary options are Mind or Sanity.
 
-- If you pick Mind: Athletics = +4 + 1 = **+5**.
-- If you pick Sanity: Athletics = +4 + (-2) = **+2**. 
+- With Mind: Athletics = +4 + 1 = **+5**.
+- With Sanity: Athletics = +4 + (-2) = **+2**. 
 
-The choice is permanent. Pick the secondary that fits the character you want to play.
+You choose which secondary to use each time you roll, based on how your character approaches the task.
 }}
 
 This system means every attribute contributes to multiple skills. A character who invests heavily in one attribute will be strong in some skills and dangerously weak in others. Two characters with the same skill can have different modifiers because they chose different secondaries.
@@ -1101,7 +1109,7 @@ The table below shows all 11 skills. When you make a Skill Check, find the skill
 | Performance | Social | Body or Sanity | Entertaining, inspiring, distracting through art, music, or drama |
 | Speech | Social | Body or Mind | Persuading, deceiving, negotiating, intimidating, commanding |
 | Arcana | Magic | Mind or Sanity | Identifying, understanding, or manipulating magical and supernatural forces |
-| Insight | Sanity | Body or Mind | Perceiving hidden truths, eldritch knowledge, cosmic or occult comprehension |
+| Insight | Sanity | Body or Mind | Perceiving hidden truths, occult knowledge, cosmic or otherworldly comprehension |
 
 }}
 
@@ -1176,7 +1184,7 @@ When an attack targets you, resolve it in two steps:
 
 ## Weapons
 
-All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories by fighting style:
+All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories for quick identification:
 
 ##### Weapon Categories
 | Category | Examples | Damage |
@@ -1188,11 +1196,11 @@ All weapon damage adds **Body** as the damage modifier, including ranged weapons
 | Ranged / Thrown | Bow, Bomb Flask | 1d6 + Body to 1d8 + Body |
 | Firearms | Revolver, Rifle, Shotgun, Sniper Rifle | 1d8 + Body to 1d12 + Body |
 
-Light weapons deal less damage per hit but can be dual-wielded and strike fast. Heavy weapons share a base die with medium weapons but carry traits that offer crowd control, knockback, or finisher effects. Reach weapons let you strike from further away. Firearms deal the highest base damage but carry their own resource costs. The choice between categories is about how you want to fight, not just how hard you want to hit.
+No weapon category restricts your playstyle. A caster can swing a greatsword. A martial can throw daggers. Categories exist so you can find a weapon fast and know its base damage. Each weapon's unique traits determine what it does in play, not its category label.
 
 #### Weapon Tags
 
-Every weapon carries one or more **tags**: short labels that describe how the weapon behaves. The core tags are Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed.
+Every weapon carries one or more **tags**: short labels that describe how the weapon behaves. Tags include Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed.
 
 Tags matter because other rules reference them. A Support Skill that triggers "on a Heavy weapon hit" only fires when you swing a weapon tagged Heavy. A condition that says "Melee attacks are at disadvantage" applies to any weapon tagged Melee. Tags connect your weapon to the rest of the system.
 
@@ -1219,6 +1227,8 @@ Solus has no spell list. You build every spell from scratch by setting ten **par
 
 Each parameter has a **mana cost** and an **action cost**. Add up the mana costs of parameters 2 through 10 to get the spell's base mana cost, then multiply by your Discipline's cost multiplier for the final mana total. The highest action cost among your parameters sets how many of your 3 turn actions the spell requires.
 
+Your mana pool starts full at the beginning of each encounter. Mana regenerates at the start of your turn each round.
+
 **Sustained spells.** Some parameter options show **S** in the Actions column instead of a number. Picking any S option makes the spell **sustained**: it cannot be cast in a single turn. A sustained spell costs all 3 actions on the turn you begin casting, then 1 action each subsequent turn to maintain. If you skip the maintenance action or get interrupted (knocked unconscious, silenced, stunned), the spell ends and mana already spent is lost. You can release a sustained spell voluntarily at the start of your turn for free.
 
 ##### Spell Parameter Table
@@ -1226,7 +1236,6 @@ Each parameter has a **mana cost** and an **action cost**. Add up the mana costs
 |:---|:---|:---:|:---:|:---|
 | **Discipline** | Main | — | ×1 | Multiplier applied to the total of all other parameters. See Disciplines. |
 | | Sub | — | ×2 | |
-| | Tertiary | — | ×3 | Requires GM approval. |
 | | Locked | — | — | Cannot cast unless a Mastery grants access. |
 | **Function** | Utility | — | 0 | Dual-function spells add both costs. |
 | | Movement | — | 1 | |
@@ -1268,6 +1277,10 @@ Each parameter has a **mana cost** and an **action cost**. Add up the mana costs
 **Total mana cost** = (sum of parameters 2–10) × discipline multiplier. 
 
   **Total action cost** = the highest action value among your parameters.
+
+{{descriptive
+**TODO:** Jacob prefers this table grouped by action cost tier (all 1-action options together, all 2-action options together, etc.). Revisit layout once Jacob confirms the grouping he wants.
+}}
 }}
 
 {{footnote Magic and Spellcasting}}
@@ -1285,10 +1298,7 @@ Discipline also sets the spell's **cost multiplier**. At character creation you 
 - **Main discipline (×1).** Your primary school. All parameter costs stay at face value.
 - **Sub discipline (×2).** Your secondary school. The total mana cost of any spell using this discipline is doubled.
 
-All other disciplines are **tertiary** or **locked**:
-
-- **Tertiary (×3).** Any discipline outside your Main and Sub. You can attempt spells from a tertiary discipline, but the total mana cost is tripled. Requires GM approval each time.
-- **Locked.** You cannot cast spells from a locked discipline unless a Mastery grants access.
+All other disciplines are **locked**. You cannot cast spells from a locked discipline unless a Mastery grants access (see Advancement, Mastery, and Between-Session Play).
 
 ##### Spell Disciplines Table
 | Discipline | What It Does | Tag → Escalation |
@@ -1312,7 +1322,7 @@ All other disciplines are **tertiary** or **locked**:
 | Martial | 30 | 3 |
 
 {{descriptive
-**TODO:** Jacob, I'm aware you didn't create Tertiary. I did. I think it should be a variant rule: either play with Tertiary Disciplines and skip the Mastery system, or use the default where locked disciplines require a Mastery to access. Let me know which direction you want.
+**TODO:** Jacob, Tertiary Disciplines (×3 with GM approval) were cut from the default rules. If you want them back as a variant rule, let me know.
 }}
 }}
 {{footnote Magic and Spellcasting}}
@@ -1352,7 +1362,7 @@ T1 Burn applies 1 Burn stack on hit. Burn stacks deal fire damage equal to the s
 
 **Base mana** (parameters 2–10): 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 3 = **13**
 
-**Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26. As a Tertiary (×3), 39.
+**Discipline multiplier:** Elemental is your Main (×1), so the final cost is **13 mana**. As your Sub (×2) the same spell would cost 26.
 
 **Action cost:** The highest action value is 2 (Size). The spell costs **2 of your 3 actions**.
 
@@ -1430,7 +1440,7 @@ Combat begins when negotiation, stealth, or avoidance fails and violence starts.
 
 ### Starting Combat
 
-When combat breaks out, every combatant rolls for **initiative**. Roll **1d10** and add either your **Body** or your **Magic** modifier. You choose which modifier to use. This choice is per character, not per encounter. A martial fighter adds Body. A caster adds Magic. A hybrid picks whichever is higher.
+When combat breaks out, every combatant rolls for **initiative**. Roll **1d10** and add either your **Body** or your **Magic** modifier. You choose which modifier to use each time combat starts.
 
 The GM ranks everyone from highest to lowest. That is the turn order for the entire encounter unless a rule changes it.
 
@@ -1512,11 +1522,11 @@ When you attack, follow these steps:
 
 Tags are system-wide. The same Burn stack works the same way whether it came from a spell, a weapon trait, or a pool of lava. See Conditions, Injuries, and Death for full stack rules and condition effects.
 
-**Stack escalation.** Some conditions escalate when they reach 5 stacks. Five Acid stacks trigger Corroded (-2 DR). Five Bleed stacks trigger Shredded. Five Force stacks trigger Concussed. Your weapon and spell choices determine which escalation paths you threaten.
+**Stack escalation.** Some conditions escalate when they reach 5 stacks. Five Acid stacks trigger Corroded (-2 DR). Five Bleed stacks trigger Shredded. Five Force stacks trigger an escalated condition (see Conditions, Injuries, and Death). Your weapon and spell choices determine which escalation paths you threaten.
 
 ## Worked Example
 
-Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor), **Chris** (hybrid, Body +2, Magic +3, shortsword 1d6+Body, Light armor), and a **Bandit Sergeant** (Enemy rank, Body +3, Magic -1, mace 1d8+Body, Medium armor, 100 HP).
+Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor), **Chris** (hybrid, Body +2, Magic +3, shortsword 1d6+Body, Light armor), and a **Bandit Sergeant** (Enemy rank, Body +3, Magic -1, war hammer 1d8+Body [Force], Medium armor, 100 HP).
 
 **Initiative.** Jake rolls d10: 8, plus Body +4 = 12. Chris rolls d10: 6, plus Magic +3 = 9. Bandit Sergeant rolls d10: 7, plus Body +3 = 10. Turn order: Jake (12), Bandit Sergeant (10), Chris (9).
 
@@ -1526,7 +1536,7 @@ Three combatants: **Jake** (martial, Body +4, greatsword 1d8+Body, Medium armor)
 - Action 3: Attack again. Roll `2d10 + 4` = 3 + 8 + 4 = **15**. Beats AC 6. Damage: `1d8 + 4` = 7 + 4 = **11**, minus 3 = **8 damage**. Bandit at 86 HP.
 
 #### Bandit Sergeant's turn 
-- Action 1: Attack Jake with mace (Force tag). Roll `2d10 + 3` = 9 + 4 + 3 = **16**. Jake's Physical AC = DR 3 + Body 4 = **7**. Hit. Damage: `1d8 + 3` = 6 + 3 = **9**, minus 3 DR = **6 damage**. Jake gains 1 Force stack.
+- Action 1: Attack Jake with war hammer (Force tag). Roll `2d10 + 3` = 9 + 4 + 3 = **16**. Jake's Physical AC = DR 3 + Body 4 = **7**. Hit. Damage: `1d8 + 3` = 6 + 3 = **9**, minus 3 DR = **6 damage**. Jake gains 1 Force stack.
 - Action 2: Attack again. Roll `2d10 + 3` = 2 + 5 + 3 = **10**. Beats AC 7. Damage: `1d8 + 3` = 3 + 3 = **6**, minus 3 = **3 damage**. Jake gains a second Force stack (now 2 Force, dealing 2 damage at start of his next turn).
 - Action 3: Move. The Bandit steps 10 feet to put Jake between himself and Chris.
 
@@ -1597,17 +1607,22 @@ Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.
 | Rule | Detail |
 |:---|:---|
 | Stacks per hit | 1 per hit. Always. |
-| One tag per hit | Multi-tag attacks: choose one. A single hit never applies two stack types. |
+| One tag per hit (weapons) | Weapon attacks apply one tag per hit. Choose if the weapon has multiple. |
+| Multi-tag (magic) | Spells can apply multiple stack types in a single hit if built to do so. |
 | Damage per tick | Equal to the current stack count. 3 stacks = 3 damage. |
 | Damage timing | On application (immediate) and at the start of the target's next turn. |
 | Cap | 5 stacks per type. No exceptions. |
 | Independence | Different types stack separately. 3 Burn + 2 Bleed = both tracked, both deal damage. |
 | DR | Elemental stacks (Burn, Chilled, Volt, Acid): reduced by Magic DR. Physical stacks (Bleed, Force): reduced by Physical DR. DR does not prevent stacks from applying or escalating. |
 
+{{descriptive
+**TODO:** Jacob has not confirmed whether DR should reduce stack damage. This rule is provisional.
+}}
+
 | **Removal** | |
 |:---|:---|
-| Decay | Each stack expires 2 rounds after application. New stacks get fresh timers. Old stacks keep theirs. |
-| Purge | Full purge (2 actions): remove all elemental stacks. Partial purge (1 action): remove 1 stack per elemental type. Some purge abilities target specific elements. |
+| Decay | Each stack type has one shared timer that lasts 2 rounds. A new hit of the same type resets the timer. When the timer expires, all stacks of that type are removed at once. |
+| Purge | Full purge (2 actions): remove all elemental stacks from yourself. Partial purge (1 action): remove 1 stack per elemental type from yourself. Purge abilities come from specific weapons and skills; not every character has access. |
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. |
 | Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). See Condition Profiles for each type's counter. |
 
@@ -1615,15 +1630,15 @@ Every stack follows the same four-beat cycle: **Hit → Stack → Hurt → Fade.
 {{note
 **Example: Tracking stacks across two rounds.**
 
-Round 1, your turn: You hit an enemy with a Bleed-tagged sword. The enemy gains 1 Bleed stack and takes 1 bleed damage immediately.
+Round 1, your turn: You hit an enemy with a Bleed-tagged sword. The enemy gains 1 Bleed stack and takes 1 bleed damage. A 2-round Bleed timer starts.
 
-Round 1, enemy's turn: At the start of the enemy's turn, the 1 Bleed stack deals 1 damage again. The enemy attacks you.
+Round 1, enemy's turn: At the start of the enemy's turn, the 1 Bleed stack deals 1 damage.
 
-Round 2, your turn: You hit the enemy again. The enemy gains a second Bleed stack (now at 2). The enemy takes 2 bleed damage immediately (the current stack count). The new stack has a fresh 2-round timer. The first stack has 1 round left on its timer.
+Round 2, your turn: You hit the enemy again. The enemy gains a second Bleed stack (now at 2). The enemy takes 2 bleed damage. The Bleed timer resets to 2 rounds.
 
 Round 2, enemy's turn: At the start of the enemy's turn, 2 Bleed stacks deal 2 damage.
 
-Round 3, enemy's turn: The first stack expires (2 rounds have passed since it was applied). The enemy is back to 1 Bleed stack and takes 1 damage.
+Round 4, enemy's turn: The Bleed timer expires (2 full rounds since the last Bleed hit). All Bleed stacks are removed.
 }}
 
 
@@ -1640,7 +1655,7 @@ When a stack type reaches 5, it triggers an **escalated condition** (also called
 | Acid | Corroded | DR reduced by 2. Corrosion countdown on flesh. |
 | Poison | Venomous | Lose 1 action. Self-accelerating stacks. |
 | Bleed | Shredded | TODO |
-| Force | Concussed | TODO |
+| Force | TODO | "Concussed" was replaced. Awaiting new name/effect. |
 
 {{note
 **Example: Burn to Ignited.** You get hit by a fire spell three rounds in a row. Round 1: 1 Burn stack, 1 fire damage. Round 2: 2 Burn stacks, 2 fire damage. Round 3: 3 stacks, 3 damage. Two more hits and you reach 5 Burn stacks. At 5, you become Ignited: you take Burn damage every turn and cannot receive healing. Your ally hits you with an ice spell (Chilled tag). The Chilled cancels 1 Burn stack, dropping you to 4. Ignited ends. Another ice hit drops you to 3. The fire is coming under control.
@@ -1714,11 +1729,7 @@ Lightning attackers can set up the Stunned combo by applying Wet first (water sp
 | **Countered by** | Radiant removes Venomous at 10 or fewer stacks. Purge removes Venomous at 15+. Purge cannot restore an action permanently lost at 35. |
 | **DR type** | Magic DR reduces Poison stack damage. |
 
-{{descriptive
-**TODO:** Jacob, need the mechanical effect for Poisoned (distinct from Venomous).
-}}
-
-Venomous is the most dangerous escalation in the game. It accelerates on its own once triggered. Act fast.
+Poison at T1 has no special effect beyond dealing stack damage. It serves as a primer for the Venomous escalation.
 
 
 #### Bleed
@@ -1741,16 +1752,16 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 |:---|:---|
 | **Tag** | Force (from Impact, Blast, Slam, Repulse effects) |
 | **Stack** | Force. Deals physical force damage equal to stack count. |
-| **At 5: Concussed** | |
+| **At 5: TODO** | "Concussed" was replaced. Need new escalation name and effect from Jacob. |
 | **Countered by** | Decay, purging, or spending. Some weapon traits let you spend Force stacks for bonus damage or special effects before reaching 5. Spent stacks are removed immediately. |
 | **DR type** | Physical DR reduces Force stack damage. |
 
 {{descriptive
-**TODO:** Jacob, need the Concussed effect definition.
+**TODO:** Jacob, need the Force escalation effect definition ("Concussed" was replaced).
 }}
 
 {{note
-**Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering Concussed.
+**Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering the Force escalation.
 }}
 
 
@@ -1800,7 +1811,7 @@ These conditions do not come from stacks. They are applied directly by abilities
 
 ##### Life Magic Tags
 
-These tags do not create stacks. They produce immediate effects from spells built with the Life discipline.
+Life tags follow the same stack system as other tags, with T1 and T2 effects. They are not separate from the condition framework.
 
 | Tag | Effect |
 |:---|:---|
@@ -1811,9 +1822,13 @@ These tags do not create stacks. They produce immediate effects from spells buil
 | Rouse | Returns a recently deceased target to life (body intact, death recent). |
 | Revive | Returns a long-dead target to life at extreme cost or risk. |
 
+{{descriptive
+**TODO:** Jacob, Life tags need T1 and T2 breakdowns to match the stack system. Which tags are T1 primers and which are T2 escalations?
+}}
+
 ##### Death Magic Tags
 
-These tags do not create stacks. They produce immediate effects from spells built with the Death discipline.
+Death tags follow the same stack system as other tags, with T1 and T2 effects.
 
 | Tag | Effect |
 |:---|:---|
@@ -1822,22 +1837,53 @@ These tags do not create stacks. They produce immediate effects from spells buil
 | Reanimate | Restores temporary motion to lifeless matter. |
 | Vivify | Tethers a spirit or essence to a vessel beyond natural death. |
 
+{{descriptive
+**TODO:** Jacob, Death tags need T1 and T2 breakdowns to match the stack system. Which tags are T1 primers and which are T2 escalations?
+}}
+
 
 {{descriptive
-**TODO:** Jacob, Shredded, Concussed, Poisoned, and Weaken still need full definitions from you.
+**TODO:** Jacob, Shredded and the Force escalation (formerly Concussed) still need full definitions. Weaken also needs a definition.
 }}
 
 ### Dropping to 0 HP
 
-When your HP reaches 0, you are **incapacitated**. You fall where you stand. You cannot take actions, move, or use reactions. You remain on the battlefield, and other creatures can still target you with attacks, abilities, or healing.
+When your HP reaches 0, you enter the **dying state**. You gain a **countdown** starting at 10 (track with a d10 or other marker). When the countdown reaches 0, you die.
 
-If an ally heals you to 1 HP or more before your next turn ends, you are no longer incapacitated. You can act on your following turn.
+You remain conscious and can act, with these penalties:
 
-If no healing reaches you, your character dies at the end of your next turn.
+- All attack rolls are made with **disadvantage**.
+- Your movement speed is **halved**.
+- Your mana regeneration rate is **halved** (rounded down).
 
-{{descriptive
-**TODO:** Jacob, the dying system, repeated knockdown rules, and Madness thresholds are still under review. Send me the final versions and I'll replace this section.
+#### Countdown on Your Turn
+
+You still get 3 actions. Each action you take costs the countdown:
+
+- Each action you **use** (attack, move, cast, etc.) reduces the countdown by **2**.
+- Each action you **skip** (do nothing) reduces the countdown by **1**.
+
+You can mix used and skipped actions in any order.
+
+{{note
+**Example:** You enter dying at countdown 10.
+
+Your next turn: Action 1, you move (countdown -2 = 8). Action 2, you do nothing (-1 = 7). Action 3, you do nothing (-1 = 6).
 }}
+
+#### Countdown from Enemy Attacks
+
+When an enemy hits you with an attack, the countdown drops based on how many actions the attack cost:
+
+- 1-action attack: countdown **-1**
+- 2-action attack: countdown **-3**
+- 3-action attack: countdown **-5**
+
+If the countdown reaches 0 from an enemy hit, you die immediately.
+
+#### Leaving the Dying State
+
+If you receive healing that brings you to **1 HP or more**, you leave the dying state. If you remain above 0 HP until the **start of your next turn**, your countdown resets to 10.
 
 {{footnote Conditions, Injuries, and Death}}
 {{pageNumber,auto}}
@@ -1850,7 +1896,7 @@ If no healing reaches you, your character dies at the end of your next turn.
 
 Every NPC in Solus uses the same action economy, equipment, skills, and spells as player characters. An enemy swings a sword the same way you do, casts spells from the same framework, and takes 3 actions on its turn. The GM does not run NPCs from a separate system. The GM runs them from the same rules you use.
 
-The only differences between NPC tiers are stat modifiers, HP, and mana pools. Each tier also supports martial, caster, and hybrid variants.
+The only differences between NPC tiers are stat modifiers, HP, and mana pools. Each tier also supports martial, caster, and hybrid variants. An NPC's mana pool and regeneration rate depend on whether the GM builds them as a Martial (30 max, 3 regen), Caster (100 max, 15 regen), or Hybrid (70 max, 10 regen), just like player backgrounds. Most common NPCs use the Martial pool.
 
 ### NPC Tiers
 
@@ -1871,6 +1917,8 @@ The only differences between NPC tiers are stat modifiers, HP, and mana pools. E
 | Enemy / Ally | +4 | +1 | +3 | -3 | +0 |
 | Mini Boss | +5 | +4 | -3 | +0 | -2 |
 | Boss | +5 | +3 | +0 | +5 | -5 |
+
+The attribute spreads for Enemy through Boss tiers are **examples**. Rearrange them to fit the NPC you are building. A scholarly Enemy might swap Body and Mind. A charismatic Mini Boss might lead with Social. The point budget stays the same; the placement should represent the character.
 
 \column
 
@@ -1938,12 +1986,12 @@ Masteries are specializations that unlock when your **total lifetime XP** reache
 Masteries function like skills, not classes. They define a specialization (a school of magic, a combat discipline, a social archetype) through mechanics, not through role restrictions.
 
 {{descriptive
-**TODO:** Jacob, need Mastery XP thresholds, Mastery point budget, and the Mastery Skill list.
+**TODO:** Jacob is redesigning Masteries. The current version too closely resembles a class system. Masteries may become regular skills or move into a "special" category with tradeoffs. Waiting on a revised foundation before finalizing this section.
 }}
 
 ### Between Sessions
 
-Between sessions, you can update any part of your character that the rules mark as changeable (see Character Creation, Step 7). With GM confirmation, you can:
+Between sessions, you can update any part of your character that the rules mark as changeable (see Character Creation, Step 9). With GM confirmation, you can:
 
 - Swap active skills (remember: 10 active at a time, see Attributes and Skills).
 - Socket or change Support Skills on your active skills.
@@ -1951,6 +1999,8 @@ Between sessions, you can update any part of your character that the rules mark 
 - Change weapons and armor from your inventory.
 - Spend or gain money and resources.
 - Record new languages your character has learned.
+
+Skill swaps are also available on **long rests** during a session, so players can adapt tactics between encounters. Support Skills can be changed on both **short and long rests**.
 
 {{footnote Advancement, Mastery, and Between Sessions}}
 {{pageNumber,auto}}
@@ -1978,6 +2028,8 @@ When a player attempts a Skill Check, you set the **Difficulty Class (DC)**. Sta
 | Near Impossible | 24 |
 
 Raise the DC if the character lacks relevant context: they have never seen this kind of lock, they are working in the dark, or they are doing it under time pressure. Lower the DC if the character has specific training, preparation, or tools for this task. Most DC adjustments fall between -5 and +5.
+
+These numbers are calibrated to a 2d10 + modifier system where modifiers range from -5 to +10 (two attributes combined). A Moderate DC of 12 gives a character with a +5 modifier about a 70% chance of success. A Hard DC of 16 with the same modifier drops to about 40%. The curve rewards investment without making low-modifier attempts hopeless.
 
 A roll is only needed when the outcome is uncertain. If the task is trivial for the character, describe the success. If the task is impossible, describe the failure.
 
@@ -2095,7 +2147,7 @@ This chapter collects reference tables and playtest materials. Use these at the 
 2. Roll `2d10 + Body` (physical) or `2d10 + Magic` (spell).
 3. Compare to Physical AC or Magical AC. Meet or beat = hit.
 4. Roll damage dice + modifier. Subtract target's DR.
-5. Apply tags. 1 stack per hit. One tag per hit.
+5. Apply tags. 1 stack per hit. Weapons: one tag per hit; spells can apply multiple.
 6. Check for 0 HP.
 
 ### NPC Tiers
@@ -2135,7 +2187,7 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Hit | A tagged attack lands. Target gains 1 stack. |
 | Stack | Stack count goes up. Damage = current count. |
 | Hurt | Damage ticks twice: on application and at start of target's next turn. |
-| Fade | Each stack decays after 2 rounds. At 5 stacks, escalated condition triggers. |
+| Fade | One timer per stack type, resets on new hit. When the timer expires (2 rounds), all stacks of that type are removed. At 5 stacks, escalated condition triggers. |
 
 ### Escalated Conditions
 
@@ -2153,9 +2205,9 @@ This chapter collects reference tables and playtest materials. Use these at the 
 
 | Method | Rule |
 |:---|:---|
-| Decay | Each stack expires 2 rounds after application. |
-| Purge (full) | 2 actions. Removes all elemental stacks. |
-| Purge (partial) | 1 action. Removes 1 stack per elemental type. |
+| Decay | One timer per stack type (2 rounds). Resets on new hit. All stacks removed when timer expires. |
+| Purge (full) | 2 actions. Removes all elemental stacks from yourself. |
+| Purge (partial) | 1 action. Removes 1 stack per elemental type from yourself. |
 | Spend | Some abilities consume stacks to power effects. |
 | Counter | Opposing elements cancel 1:1 (Burn ↔ Chilled). |
 
@@ -2167,7 +2219,6 @@ This chapter collects reference tables and playtest materials. Use these at the 
 |:---|:---:|
 | Main Discipline | ×1 |
 | Sub Discipline | ×2 |
-| Tertiary Discipline | ×3 |
 | Locked Discipline | Cannot cast |
 
 ### Character Creation Steps
@@ -2204,30 +2255,30 @@ This chapter collects reference tables and playtest materials. Use these at the 
 | Critical Failure | Both dice show 1 (natural 2). The effect backfires or misfires. | 7 |
 | Critical Success | Both dice show 10 (natural 20). The effect lands at its best possible outcome. | 7 |
 | DC (Difficulty Class) | The target number for a Skill Check, set by the GM based on the task's difficulty. | 7, 8 |
-| Decay | Each stack expires 2 rounds after it was applied. Automatic removal. | 21 |
+| Decay | One timer per stack type. Lasts 2 rounds, resets on new hit. When it expires, all stacks of that type are removed. | 21 |
 | Degree of 5 | The scale measuring how far above or below the DC a Skill Check lands. Gaps of 5 or 10 add bonuses or setbacks. | 8 |
 | Disadvantage | Roll 3d10 instead of 2d10 and drop the highest die. | 7 |
 | Discipline | One of 10 spell schools (Fire, Ice, Lightning, Acid, Poison, Water, Life, Death, Force, Bleed). Determines tags a spell applies. | 10, 15, 16 |
 | DR (Damage Reduction) | A flat number subtracted from damage after a hit lands. Physical DR and Magic DR are separate. | 7, 13, 21 |
 | Escalated Condition | A stronger effect triggered when a stack type reaches 5 (e.g., 5 Burn = Ignited). Also called a T2 condition. | 21 |
 | GM (Game Master) | The player who describes the world, controls NPCs, sets DCs, and adjudicates the rules. | 3 |
-| HP (Hit Points) | How much damage a character can absorb. At 0 HP, the character is incapacitated. | 9, 23 |
-| Incapacitated | A character at 0 HP who cannot take actions, move, or use reactions. | 23 |
-| Initiative | 1d10 + Body or Magic (chosen at character creation, permanent). Determines turn order at the start of combat. | 9, 17 |
-| Mana | The resource spent to cast spells. Regenerates at the start of your turn each round. | 9, 15 |
+| HP (Hit Points) | How much damage a character can absorb. At 0 HP, the character enters the dying state (see Dropping to 0 HP). | 9, 23 |
+| Incapacitated | A character rendered unable to act by a condition or effect. Distinct from the dying state at 0 HP. | 23 |
+| Initiative | 1d10 + Body or Magic (chosen each combat). Determines turn order at the start of combat. | 9, 17 |
+| Mana | The resource spent to cast spells and use skills. Starts full each encounter. Regenerates at the start of your turn each round. | 9, 15 |
 | Mana Regen | Mana recovered per round. Caster: 15. Hybrid: 10. Martial: 3. | 9, 15 |
 | Mastery | A specialization unlocked by total XP thresholds. Grants Mastery points spent on Mastery Skills. | 25 |
 | Melee Reach | The distance (default 5 feet) within which a creature can make melee attacks and trigger opportunity attacks. | 18 |
 | Modifier | A number from -5 to +5 added to a dice roll to produce a result. | 7, 12 |
 | NPC (Non-Player Character) | Any character controlled by the GM. Uses the same rules as player characters. Tier determines stats. | 24 |
 | Opportunity Attack | A reaction triggered when a creature leaves an enemy's melee reach. | 18 |
-| Purge | Full purge (2 actions): remove all elemental stacks. Partial purge (1 action): remove 1 stack per elemental type. | 21 |
+| Purge | Full purge (2 actions): remove all elemental stacks from yourself. Partial purge (1 action): remove 1 stack per elemental type from yourself. | 21 |
 | Reaction | 1 per round. An action taken in response to another creature's action. Refreshes at the start of your turn. | 18 |
 | Round | One full cycle of turns for all combatants. Represents 3 seconds of in-world time. | 17 |
-| Secondary Attribute | The second attribute added to a Skill Modifier. Chosen once per skill, permanent. | 8, 12 |
+| Secondary Attribute | The second attribute added to a Skill Modifier. Chosen per roll from two options listed for each skill. | 8, 12 |
 | Skill | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. | 12 |
 | Skill Check | 2d10 + Skill Modifier vs. DC. Used when an uncertain non-combat action is attempted. | 8, 12 |
-| Skill Modifier | Primary attribute + chosen secondary attribute for a given skill. Permanent once set. | 8, 12 |
+| Skill Modifier | Primary attribute + chosen secondary attribute for a given skill. Secondary chosen per roll. | 8, 12 |
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. | 21 |
 | Stack | A condition counter. 1 per hit, damage equals current count, ticks twice per round, 2-round decay, caps at 5. | 20, 21 |
 | Support Skill | An augment socketed into a skill that modifies its behavior. Slots unlock as skill rank increases. | 12, 25 |
