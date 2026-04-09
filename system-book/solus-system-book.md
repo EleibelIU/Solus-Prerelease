@@ -42,7 +42,7 @@ The GM speaks: *"You've been tracking a stolen shipment through the forest for t
 
 Liz's player says: "I want to listen and figure out how many people are over there."
 
-The GM calls for a **Skill Check**. The skill is **Investigation**. Investigation's primary attribute is Mind. Liz's player picks Body as her secondary for this check. Her Mind is +3 and her Body is +1, so her Investigation modifier for this roll is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
+The GM calls for a **Proficiency Check**. The proficiency is **Investigation**. Investigation's primary attribute is Mind. Liz's player picks Body as her secondary for this check. Her Mind is +3 and her Body is +1, so her Investigation modifier for this roll is **+4**. The GM sets the **Difficulty Class (DC)** at 14, because the targets are speaking quietly across a ravine with wind.
 
 Liz's player rolls 2d10: **6 + 9 = 15**, plus her modifier of +4 = **19**. She beats the DC of 14 by 5. The GM uses the **Degree of 5** scale: beating a DC by 5 or more earns a bonus.
 
@@ -54,7 +54,7 @@ If Liz had rolled a 4 + 3 = 7, plus 4 = 11, she would have missed the DC by 3.
 
 Jake's player says: "I want to jump the gap."
 
-Twelve feet is a serious distance. The GM calls for an **Athletics** Skill Check, DC 13. Athletics uses Body as its primary. Jake's player picks Mind as his secondary for this check. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
+Twelve feet is a serious distance. The GM calls for an **Athletics** Proficiency Check, DC 13. Athletics uses Body as its primary. Jake's player picks Mind as his secondary for this check. His Body is +4 and Mind is +1, giving him an Athletics modifier of **+5**.
 
 Jake rolls 2d10: **8 + 7 = 15**, plus 5 = **20**. He clears the gap by a wide margin. The GM describes him landing in a crouch on the far side. Because he beat the DC by 7 (more than 5), the GM rules he lands silently and keeps his footing.
 
@@ -97,7 +97,7 @@ Chris's player says: "First action: Move to flank the archer. Second action: Att
 
 In a few minutes of play, the group used three systems:
 
-**Skill Checks** resolved Liz's Investigation (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Skill Modifier` against a DC the GM set. Each player chose which secondary attribute to add for that specific roll.
+**Proficiency Checks** resolved Liz's Investigation (hearing enemies) and Jake's Athletics (jumping the gap). Both used `2d10 + Proficiency Modifier` against a DC the GM set. Each player chose which secondary attribute to add for that specific roll.
 
 **Combat Rolls** resolved Jake's greatsword swings and Chris's shortsword strike using `2d10 + Body`, and Chris's fire bolt using `2d10 + Magic`. Physical attacks targeted Physical AC. The spell targeted Magical AC.
 
@@ -111,7 +111,7 @@ These three systems carry the game. The chapters that follow teach each one in f
 | --- | --- |
 | Learn how dice, rolls, and target numbers work | Core Mechanics (Ch. 2) |
 | Build a character from scratch | Character Creation (Ch. 3) |
-| Understand your five attributes and eleven skills | Attributes and Skills (Ch. 4) |
+| Understand your five attributes and eleven proficiencies | Attributes and Proficiencies (Ch. 4) |
 | Choose armor and weapons | Equipment, Armor, and Weapons (Ch. 5) |
 | Learn how spells are built and cast | Magic and Spellcasting (Ch. 6) |
 | Understand how sessions and encounters flow | Core Gameplay Loop (Ch. 7) |
@@ -190,16 +190,16 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 
 > **Example:** You swing a greatsword at a bandit. Your Body is +4. You roll 2d10 and get 6 + 8 = 14, plus 4 = 18. The bandit wears Medium armor (Physical DR 3) and has Body +1, so their Physical AC is 4. You beat 4, so you hit. You roll 1d8 + 4 for damage and deal 10. The bandit's Physical DR of 3 absorbs 3 points. The bandit takes 7 damage.
 
-#### Skill Check
+#### Proficiency Check
 
-Roll a Skill Check when your character attempts something uncertain that is not a combat attack. Picking a lock, tracking footprints, persuading a guard, recalling a piece of lore, treating a wound: these are Skill Checks.
+Roll a Proficiency Check when your character attempts something uncertain that is not a combat attack. Picking a lock, tracking footprints, persuading a guard, recalling a piece of lore, treating a wound: these are Proficiency Checks.
 
-1. The GM names the relevant skill and sets a **Difficulty Class** (DC), a target number reflecting how hard the task is.
-2. Roll `2d10 + your Skill Modifier`.
+1. The GM names the relevant proficiency and sets a **Difficulty Class** (DC), a target number reflecting how hard the task is.
+2. Roll `2d10 + your Proficiency Modifier`.
 3. Compare your result to the DC.
 4. The GM reads the outcome using the **Degree of 5** scale (see Running the Game). Beating the DC by 5 or more earns a bonus. Missing the DC by 5 or more adds a setback. The wider the gap, the bigger the swing.
 
-Your **Skill Modifier** is the sum of two attributes: a fixed **primary** attribute and a **secondary** attribute you chose at character creation. See Attributes and Skills for the full list and how this math works.
+Your **Proficiency Modifier** is the sum of two attributes: a fixed **primary** attribute and a **secondary** attribute you chose at character creation. See Attributes and Proficiencies for the full list and how this math works.
 
 > **Example:** You try to calm a spooked horse. The GM calls for Animal Handling against DC 12. Animal Handling uses Social as its primary. Your secondary choice is Mind. Your Social is +3 and your Mind is +4, so your modifier is +7. You roll 2d10 and get 4 + 5 = 9, plus 7 = 16. You beat DC 12 by 4 and the horse calms down. If you had rolled 3 + 2 = 5, plus 7 = 12, you would meet the DC exactly: a bare success with no bonus or setback.
 
@@ -211,11 +211,11 @@ Character creation follows seven steps. By the end, you will have a complete cha
 
 Decide what kind of character you want to play. Ask yourself three questions: How does this character fight? How does this character solve problems outside of combat? What is this character bad at?
 
-Solus does not restrict your choices by class or archetype. A character with high Body and high Magic can swing a greatsword and cast spells in the same turn. A character with high Social and low Body can talk their way past guards but will struggle in a fistfight. The attributes and skills you choose in the next steps define your strengths and weaknesses mechanically.
+Solus does not restrict your choices by class or archetype. A character with high Body and high Magic can swing a greatsword and cast spells in the same turn. A character with high Social and low Body can talk their way past guards but will struggle in a fistfight. The attributes and proficiencies you choose in the next steps define your strengths and weaknesses mechanically.
 
 ### Step 2: Distribute Attribute Scores
 
-You have five attributes: Body, Mind, Social, Magic, and Sanity. Each gets a modifier between -5 and +5. The Attributes and Skills chapter describes what each attribute does.
+You have five attributes: Body, Mind, Social, Magic, and Sanity. Each gets a modifier between -5 and +5. The Attributes and Proficiencies chapter describes what each attribute does.
 
 You have **5 points** to spend across all five attributes. Higher modifiers cost more points. Negative modifiers refund points. You must spend all 5 points, with zero remaining.
 
@@ -253,9 +253,9 @@ Your race sets your base movement speed, character size, and racial traits. Reco
 
 #### Humans
 
-**Adaptable.** You start with one extra active skill slot (11 instead of 10).
+**Adaptable.** You start with one extra active proficiency slot (11 instead of 10).
 
-**Determined.** Once per encounter, reroll one failed Skill Check. Keep the new result.
+**Determined.** Once per encounter, reroll one failed Proficiency Check. Keep the new result.
 
 #### Elves
 
@@ -317,13 +317,13 @@ A Caster has the deepest mana pool and fastest regeneration but the lowest healt
 
 TODO: confirm Hybrid mana. Jacob believes 70/10 is correct; if 75/10 appears more often in playtest sheets, that is the final number.
 
-### Step 5: Choose Your Skills
+### Step 5: Choose Your Proficiencies
 
-Pick skills from the skill list in the Attributes and Skills chapter. For each skill you take, choose its **secondary attribute** from the two options listed. This choice is permanent and determines your skill modifier (see Attributes and Skills: How Skill Modifiers Work).
+Pick proficiencies from the proficiency list in the Attributes and Proficiencies chapter. For each proficiency you take, choose its **secondary attribute** from the two options listed. This choice is permanent and determines your proficiency modifier (see Attributes and Proficiencies: How Proficiency Modifiers Work).
 
-You start with a limited set of skills and can gain more through play. Only **10 skills** can be active at any time (see Attributes and Skills for full rules on active and inactive skills).
+You start with a limited set of proficiencies and can gain more through play. Only **10 proficiencies** can be active at any time (see Attributes and Proficiencies for full rules on active and inactive proficiencies).
 
-As your skills grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a skill and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base skill can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how skills rank up and unlock slots.
+As your proficiencies grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a proficiency and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base proficiency can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how proficiencies rank up and unlock slots.
 
 TODO: define when Support Skill slots first become available and the full Support Skill list.
 
@@ -346,18 +346,18 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Background | Caster, Martial, or Hybrid | Fixed |
 | Attributes | Body, Mind, Social, Magic, Sanity | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
-| Skills | Active skills (up to 10), secondary picks | Skills can be swapped between sessions; secondary picks are permanent |
-| Support Skills | Socketed augments per skill | Changeable between sessions |
+| Proficiencies | Active proficiencies (up to 10), secondary picks | Proficiencies can be swapped between sessions; secondary picks are permanent |
+| Support Skills | Socketed augments per proficiency | Changeable between sessions |
 | Equipment | Weapons, armor, gear | Changeable |
 | Masteries | Mastery skills (if any unlocked) | Changeable between sessions |
 
-Solus has no character levels. Your character grows by earning XP and spending it on skill ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
+Solus has no character levels. Your character grows by earning XP and spending it on proficiency ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
 See Reference and Playtest Tools for nine sample character builds covering all three backgrounds.
 
-## Attributes and Skills
+## Attributes and Proficiencies
 
-Your character has five **attributes**. Each attribute is a number from -5 to +5 that measures a broad area of capability. Attributes feed into combat rolls, Armor Class, initiative, and your skill modifiers. Every attribute matters; there are no dump stats.
+Your character has five **attributes**. Each attribute is a number from -5 to +5 that measures a broad area of capability. Attributes feed into combat rolls, Armor Class, initiative, and your proficiency modifiers. Every attribute matters; there are no dump stats.
 
 ### The Five Attributes
 
@@ -401,7 +401,7 @@ You choose low Atraxia because you want to perceive what others can't. The cost 
 
 #### The Atraxia Pool
 
-Your **Atraxia Modifier** (-5 to +5) governs skill checks and perception, the same as any other attribute. Your **Atraxia Pool** is a separate tracked number that represents how much punishment your body and mind can absorb before they give out for good. When your Pool hits 0, you are dead. No saves. No last words. Gone.
+Your **Atraxia Modifier** (-5 to +5) governs proficiency checks and perception, the same as any other attribute. Your **Atraxia Pool** is a separate tracked number that represents how much punishment your body and mind can absorb before they give out for good. When your Pool hits 0, you are dead. No saves. No last words. Gone.
 
 You generate your Atraxia Pool at character creation. The GM chooses a **Campaign Tone** that sets the number of dice and the die type. You roll that many dice, adding your Atraxia modifier to each roll (minimum 1 per die). The total is your starting Atraxia Pool.
 
@@ -420,25 +420,25 @@ TODO: Jacob — define Atraxia Pool restoration mechanics. Can Life magic (Resto
 
 TODO: Jacob — define Atraxia modifier thresholds and perception consequences. At what modifier values does the world change around the character? Needs a threshold table and descriptions of what each tier of awareness looks and feels like in play.
 
-### Skills
+### Proficiencies
 
-A **skill** is a trained capability your character has. Skills cover everything outside of direct combat attacks: climbing a wall, picking a lock, persuading a merchant, identifying a spell, treating a wound, tracking an animal through snow. When you attempt one of these actions and the outcome is uncertain, the GM calls for a **Skill Check** (see Core Mechanics) using the relevant skill.
+A **proficiency** is a trained capability your character has. Proficiencies cover everything outside of direct combat attacks: climbing a wall, picking a lock, persuading a merchant, identifying a spell, treating a wound, tracking an animal through snow. When you attempt one of these actions and the outcome is uncertain, the GM calls for a **Proficiency Check** (see Core Mechanics) using the relevant proficiency.
 
-Your character does not start with every skill. You choose which skills to take during character creation, and you can gain or swap skills between sessions. You can own as many skills as you can afford, but only 10 can be **active** at any time. Skills you are not carrying cannot be used.
+Your character does not start with every proficiency. You choose which proficiencies to take during character creation, and you can gain or swap proficiencies between sessions. You can own as many proficiencies as you can afford, but only 10 can be **active** at any time. Proficiencies you are not carrying cannot be used.
 
-Skills grow through play. As you earn XP and spend it, your skills advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked skills also unlock **Support Skill Slots**, which let you attach augments that change how the skill behaves (see Advancement and Between Sessions).
+Proficiencies grow through play. As you earn XP and spend it, your proficiencies advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked proficiencies also unlock **Support Skill Slots**, which let you attach augments that change how the proficiency behaves (see Advancement and Between Sessions).
 
-### How Skill Modifiers Work
+### How Proficiency Modifiers Work
 
-When you make a Skill Check, you roll `2d10` and add your **Skill Modifier**. That modifier comes from two of your attributes added together.
+When you make a Proficiency Check, you roll `2d10` and add your **Proficiency Modifier**. That modifier comes from two of your attributes added together.
 
-Every skill has a **primary** attribute and a **secondary** attribute.
+Every proficiency has a **primary** attribute and a **secondary** attribute.
 
-The **primary** is fixed. It never changes for that skill. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the skill draws on.
+The **primary** is fixed. It never changes for that proficiency. Athletics always uses Body. Arcana always uses Magic. The primary represents the core capability the proficiency draws on.
 
-The **secondary** is your choice. Each skill lists two options. You pick one when you create your character, and that pick is permanent. The secondary represents how your character approaches that skill: do you climb walls through trained technique (Mind) or through sheer refusal to let go (Sanity)?
+The **secondary** is your choice. Each proficiency lists two options. You pick one when you create your character, and that pick is permanent. The secondary represents how your character approaches that proficiency: do you climb walls through trained technique (Mind) or through sheer refusal to let go (Sanity)?
 
-**Skill Modifier** = primary attribute + secondary attribute.
+**Proficiency Modifier** = primary attribute + secondary attribute.
 
 > **Example:** You are building a character with Body +4, Mind +1, and Sanity -2. You take Athletics, which uses Body as its primary. The secondary options are Mind or Sanity.
 >
@@ -448,13 +448,13 @@ The **secondary** is your choice. Each skill lists two options. You pick one whe
 >
 > The choice is permanent. Pick the secondary that fits the character you want to play.
 
-This system means every attribute contributes to multiple skills. A character who invests heavily in one attribute will be strong in some skills and dangerously weak in others. Two characters with the same skill can have different modifiers because they chose different secondaries. That means two fighters or two healers can feel meaningfully different from each other at the table.
+This system means every attribute contributes to multiple proficiencies. A character who invests heavily in one attribute will be strong in some proficiencies and dangerously weak in others. Two characters with the same proficiency can have different modifiers because they chose different secondaries. That means two fighters or two healers can feel meaningfully different from each other at the table.
 
-### Skill List
+### Proficiency List
 
-The table below shows all 11 skills. When you make a Skill Check, find the skill, add the primary and your chosen secondary together, and that is the modifier you roll with.
+The table below shows all 11 proficiencies. When you make a Proficiency Check, find the proficiency, add the primary and your chosen secondary together, and that is the modifier you roll with.
 
-| Skill | Primary | Secondary (pick one) | What it covers |
+| Proficiency | Primary | Secondary (pick one) | What it covers |
 | --- | --- | --- | --- |
 | Athletics | Body | Mind or Sanity | Climbing, jumping, sprinting, swimming, feats of strength or endurance |
 | Stealth | Body | Mind or Sanity | Moving unseen, hiding, acting without drawing attention |
@@ -706,9 +706,9 @@ A session of Solus follows a repeating cycle. Every encounter, whether it involv
 
 1. **The world presents a problem.** The GM describes a situation that demands a response: a locked door, an ambush, a starving village, a collapsing bridge. The problem can be physical, social, magical, or environmental.
 2. **You act.** You use your character's attributes, skills, equipment, and spells to respond. You might fight, negotiate, investigate, sneak, or flee.
-3. **The system resolves consequences.** Dice rolls determine uncertain outcomes. Combat Rolls resolve attacks. Skill Checks resolve everything else. The GM interprets the results using the Degree of 5 scale (see Running the Game).
+3. **The system resolves consequences.** Dice rolls determine uncertain outcomes. Combat Rolls resolve attacks. Proficiency Checks resolve everything else. The GM interprets the results using the Degree of 5 scale (see Running the Game).
 4. **Rewards follow.** Successful encounters award XP. Combat encounters pay XP per enemy rank. Exploration and social encounters award XP for engagement, whether you succeed or fail.
-5. **Characters adjust between sessions.** You spend XP to raise skill ranks or buy new skills. You can swap active skills, change equipment, and update changeable traits with GM confirmation (see Advancement and Between Sessions).
+5. **Characters adjust between sessions.** You spend XP to raise proficiency ranks or buy new proficiencies. You can swap active proficiencies, change equipment, and update changeable traits with GM confirmation (see Advancement and Between Sessions).
 6. **The next problem begins.** The world reacts to what you did. New problems emerge from the consequences of old ones.
 
 ### Three Types of Encounters
@@ -717,9 +717,9 @@ The GM builds encounters from three modes. Most sessions mix all three.
 
 **Combat encounters** use initiative, turn order, and the action economy from the Combat chapter. Enemies fight using the same rules you do. Rewards scale with enemy rank.
 
-**Social encounters** use Skill Checks (Speech, Performance, Insight, Knowledge) against DCs set by the GM. You earn XP for engaging, regardless of outcome. Failing a negotiation still counts as play.
+**Social encounters** use Proficiency Checks (Speech, Performance, Insight, Knowledge) against DCs set by the GM. You earn XP for engaging, regardless of outcome. Failing a negotiation still counts as play.
 
-**Exploration encounters** use Skill Checks (Survival, Athletics, Investigation, Arcana, Stealth) to navigate terrain, find hidden things, avoid hazards, and solve puzzles. XP is awarded when the group engages with the encounter, not just when they solve it.
+**Exploration encounters** use Proficiency Checks (Survival, Athletics, Investigation, Arcana, Stealth) to navigate terrain, find hidden things, avoid hazards, and solve puzzles. XP is awarded when the group engages with the encounter, not just when they solve it.
 
 ## Combat
 
@@ -750,7 +750,7 @@ On your turn, you get **3 actions**. Spend them in any order. Finish resolving o
 | Move | Move up to your full movement speed. |
 | Drink a Potion | Consume a potion or similar item. |
 | Interact | Open a door, draw a weapon, pick up an object, pull a lever. |
-| Use a Skill | Attempt a Skill Check during combat (Medicine to stabilize, Athletics to grapple). |
+| Use a Proficiency | Attempt a Proficiency Check during combat (Medicine to stabilize, Athletics to grapple). |
 
 **Multi-action abilities.** Some spells and skills cost 2 or 3 actions. You can spend those actions on the same turn or split them across consecutive turns. If you are interrupted (stunned, knocked unconscious, forced to move) before completing all required actions, the ability fails and any spent actions are lost. Mana spent on a failed spell is not refunded.
 
@@ -1250,13 +1250,13 @@ You do not need to win to earn XP. You need to engage.
 
 ### Spending XP
 
-You spend XP **between sessions**. XP buys two things: new skills and skill rank increases.
+You spend XP **between sessions**. XP buys two things: new proficiencies and proficiency rank increases.
 
-**Buying a new skill** costs a flat amount. The skill starts at Rank 1.
+**Buying a new proficiency** costs a flat amount. The proficiency starts at Rank 1.
 
-**Raising a skill's rank** costs XP that increases exponentially from Rank 1 to Rank 10. Early ranks are cheap. Late ranks are expensive. This means spreading XP across many skills gives you breadth, while focusing XP on a few skills gives you depth. Both strategies are viable.
+**Raising a proficiency's rank** costs XP that increases exponentially from Rank 1 to Rank 10. Early ranks are cheap. Late ranks are expensive. This means spreading XP across many proficiencies gives you breadth, while focusing XP on a few proficiencies gives you depth. Both strategies are viable.
 
-**Support Skill Slots** unlock as a skill's rank increases. A Rank 1 skill has 1 slot. Every other rank after that (Rank 2, 4, 6, 8, 10) opens another, to a maximum of 5 slots per skill.
+**Support Skill Slots** unlock as a proficiency's rank increases. A Rank 1 proficiency has 1 slot. Every other rank after that (Rank 2, 4, 6, 8, 10) opens another, to a maximum of 5 slots per proficiency.
 
 TODO: add the full XP cost table (acquisition cost + rank 1-10 costs) and XP awards per enemy tier, exploration, and social encounters.
 
@@ -1272,9 +1272,9 @@ TODO: add Mastery XP thresholds, Mastery point budget, and the Mastery Skill lis
 
 Between sessions, you can update any part of your character that the rules mark as changeable (see Character Creation, Step 7). With GM confirmation, you can:
 
-- Swap active skills (remember: 10 active at a time, see Attributes and Skills).
+- Swap active proficiencies (remember: 10 active at a time, see Attributes and Proficiencies).
 - Socket or change Support Skills on your active skills.
-- Change Masteries using the same rules as skill swaps.
+- Change Masteries using the same rules as proficiency swaps.
 - Change weapons and armor from your inventory.
 - Spend or gain money and resources.
 - Record new languages your character has learned.
@@ -1285,7 +1285,7 @@ This chapter is for the GM. It covers how to set difficulty, interpret roll resu
 
 ### Setting DCs
 
-When a player attempts a Skill Check, you set the **Difficulty Class (DC)**. Start with a baseline that reflects the task's inherent difficulty, then adjust it based on the character's circumstances.
+When a player attempts a Proficiency Check, you set the **Difficulty Class (DC)**. Start with a baseline that reflects the task's inherent difficulty, then adjust it based on the character's circumstances.
 
 | Difficulty | Suggested DC |
 | --- | --- |
@@ -1302,7 +1302,7 @@ A roll is only needed when the outcome is uncertain. If the task is trivial for 
 
 ### The Degree of 5
 
-After a Skill Check, read the result using the **Degree of 5** scale. The gap between the result and the DC determines how much the outcome swings beyond a basic success or failure.
+After a Proficiency Check, read the result using the **Degree of 5** scale. The gap between the result and the DC determines how much the outcome swings beyond a basic success or failure.
 
 | Gap | Outcome |
 | --- | --- |
@@ -1312,7 +1312,7 @@ After a Skill Check, read the result using the **Degree of 5** scale. The gap be
 | Miss DC by 5-9 | Failure with a minor setback. |
 | Miss DC by 10+ | Failure with a major setback. |
 
-The Degree of 5 applies to all Skill Checks. It does not apply to Combat Rolls (those are binary hit-or-miss against AC).
+The Degree of 5 applies to all Proficiency Checks. It does not apply to Combat Rolls (those are binary hit-or-miss against AC).
 
 > **Example:** A player rolls Speech to negotiate a ceasefire. DC 14. They roll 21. That beats the DC by 7, which earns a minor bonus. The enemy agrees to the ceasefire and offers a concession the player did not ask for. If the player had rolled 25, beating by 11, the enemy might surrender entirely.
 
@@ -1344,7 +1344,7 @@ This chapter collects quick-reference tables and playtest materials. Use these a
 | --- | --- | --- |
 | Combat Roll (physical) | 2d10 + Body | Target's Physical AC |
 | Combat Roll (spell) | 2d10 + Magic | Target's Magical AC |
-| Skill Check | 2d10 + Skill Modifier | DC set by GM |
+| Proficiency Check | 2d10 + Proficiency Modifier | DC set by GM |
 | Initiative | 1d10 + Body or Magic | Ranked highest to lowest |
 
 ### Quick Reference: Armor Tiers
@@ -1574,9 +1574,9 @@ Human · Speed 30 ft. · Medium · Hybrid
 **Physical AC** 2 · **Magical AC** 5
 **Weapons:** Rapier (1d8), Dagger (1d4)
 
-**Racial Traits:** Adaptable (11 skill slots), Determined
+**Racial Traits:** Adaptable (11 proficiency slots), Determined
 
-*Social infiltrator with spell support. High Social dominates conversation. Mind and Temporal spells control the battlefield. Adaptable gives an extra skill slot for broader coverage.*
+*Social infiltrator with spell support. High Social dominates conversation. Mind and Temporal spells control the battlefield. Adaptable gives an extra proficiency slot for broader coverage.*
 
 #### Caydori Brighstar — Elf Hybrid
 
@@ -1637,17 +1637,17 @@ Dwarf · Speed 25 ft. · Medium · Martial
 | Term | Definition | Chapter |
 | --- | --- | --- |
 | AC (Armor Class) | The target number an attacker must meet or beat to land a hit. Physical AC and Magical AC are calculated separately. | Ch. 5: Equipment, Armor, and Weapons |
-| Action | One of 3 things you do on your turn: Attack, Cast a Spell, Move, Drink a Potion, Interact, or Use a Skill. | Ch. 8: Combat |
+| Action | One of 3 things you do on your turn: Attack, Cast a Spell, Move, Drink a Potion, Interact, or Use a Proficiency. | Ch. 8: Combat |
 | Advantage | Roll 3d10 instead of 2d10 and drop the lowest die. | Ch. 2: Core Mechanics |
 | AOE (Area of Effect) | A spell targeting an area rather than specific creatures. All creatures in the area are affected. | Ch. 6: Magic and Spellcasting |
-| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Sanity) ranging from -5 to +5. | Ch. 4: Attributes and Skills |
+| Attribute | One of 5 core stats (Body, Mind, Social, Magic, Sanity) ranging from -5 to +5. | Ch. 4: Attributes and Proficiencies |
 | Background | Caster, Martial, or Hybrid. Sets starting HP, max mana, and mana regeneration rate. | Ch. 3: Character Creation |
 | Combat Roll | 2d10 + Body (physical/martial) or 2d10 + Magic (spells) compared against the target's AC. | Ch. 2: Core Mechanics |
 | Condition | An ongoing effect applied by tags. Conditions use stacks that build and decay over time. | Ch. 9: Conditions, Injuries, and Death |
 | Critical Failure | Both dice show 1 (natural 2). The effect backfires or misfires. | Ch. 2: Core Mechanics |
 | Critical Success | Both dice show 10 (natural 20). The effect lands at its best possible outcome. | Ch. 2: Core Mechanics |
-| DC (Difficulty Class) | The target number for a Skill Check, set by the GM based on the task's difficulty. | Ch. 2: Core Mechanics |
-| Degree of 5 | The scale measuring how far above or below the DC a Skill Check lands. Gaps of 5 or 10 add bonuses or setbacks. | Ch. 12: Running the Game |
+| DC (Difficulty Class) | The target number for a Proficiency Check, set by the GM based on the task's difficulty. | Ch. 2: Core Mechanics |
+| Degree of 5 | The scale measuring how far above or below the DC a Proficiency Check lands. Gaps of 5 or 10 add bonuses or setbacks. | Ch. 12: Running the Game |
 | Disadvantage | Roll 3d10 instead of 2d10 and drop the highest die. | Ch. 2: Core Mechanics |
 | DR (Damage Reduction) | A flat number subtracted from damage after a hit lands. Physical DR and Magic DR are separate. | Ch. 5: Equipment, Armor, and Weapons |
 | Escalation | When a stack type reaches 5, it triggers a stronger escalated condition (e.g., 5 Acid stacks trigger Corroded). | Ch. 9: Conditions, Injuries, and Death |
@@ -1663,11 +1663,11 @@ Dwarf · Speed 25 ft. · Medium · Martial
 | Opportunity Attack | A reaction triggered when a creature leaves an enemy's melee reach. | Ch. 8: Combat |
 | Reaction | 1 per round. An action taken in response to another creature's action. Refreshes at the start of your turn. | Ch. 8: Combat |
 | Round | One full cycle of turns for all combatants. Represents 3 seconds of in-world time. | Ch. 8: Combat |
-| Skill | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. | Ch. 4: Attributes and Skills |
-| Skill Check | 2d10 + Skill Modifier vs. DC. Used when an uncertain non-combat action is attempted. | Ch. 2: Core Mechanics |
-| Skill Modifier | Primary attribute + chosen secondary attribute for a given skill. Permanent once set. | Ch. 4: Attributes and Skills |
+| Proficiency | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. | Ch. 4: Attributes and Proficiencies |
+| Proficiency Check | 2d10 + Proficiency Modifier vs. DC. Used when an uncertain non-combat action is attempted. | Ch. 2: Core Mechanics |
+| Proficiency Modifier | Primary attribute + chosen secondary attribute for a given proficiency. Permanent once set. | Ch. 4: Attributes and Proficiencies |
 | Stack | A condition counter. 1 per hit, +1 damage per stack per round, 2-round decay, caps at 5. | Ch. 9: Conditions, Injuries, and Death |
-| Support Skill | An augment socketed into a skill that modifies its behavior. Slots unlock as skill rank increases. | Ch. 3: Character Creation |
+| Support Skill | An augment socketed into a proficiency that modifies its behavior. Slots unlock as proficiency rank increases. | Ch. 3: Character Creation |
 | Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. | Ch. 5: Equipment, Armor, and Weapons |
 | Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. | Ch. 8: Combat |
-| XP (Experience Points) | Earned from encounters, spent between sessions to buy skills and raise skill ranks. | Ch. 2: Core Mechanics |
+| XP (Experience Points) | Earned from encounters, spent between sessions to buy proficiencies and raise proficiency ranks. | Ch. 2: Core Mechanics |
