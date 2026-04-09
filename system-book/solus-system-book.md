@@ -795,7 +795,7 @@ When you attack, follow these steps:
 
 Tags are system-wide. The same Burn stack works the same way whether it came from a spell, a weapon trait, or a pool of lava. See Conditions, Injuries, and Death for full stack rules and condition effects.
 
-**Stack escalation.** Some conditions escalate when they reach 5 stacks. Five Acid stacks trigger Corroded (-2 DR). Five Bleed stacks trigger Shredded. Five Force stacks trigger Concussed. Your weapon and spell choices determine which escalation paths you threaten.
+**Stack escalation.** Some conditions escalate when they reach 5 stacks. Five Acid stacks trigger Corroded (-2 DR). Five Bleed stacks trigger Shredded (-2 Physical DR, stacks stop decaying). Five Force stacks trigger Staggered (movement halved, +1d6 bonus damage from physical attacks). Your weapon and spell choices determine which escalation paths you threaten.
 
 ### Worked Example: A Full Round
 
@@ -959,23 +959,27 @@ Venomous is the most dangerous escalation in the game. It accelerates on its own
 
 | | |
 | --- | --- |
-| **Tag** | Bleed (from Smite-type effects and weapon traits) |
+| **Tag** | Bleed (condition stack, applied by weapon traits and Order/Smite spell tags: [Strike] at T1, [Judgement] at T2) |
 | **Stack** | Bleed. Deals physical bleed damage equal to stack count. |
-| **At 5: Shredded** | TODO: define Shredded effect. |
+| **At 5: Shredded** | Physical DR reduced by 2. Bleed stacks do not decay while Shredded persists. Healing or purging ends Shredded and allows stacks to decay normally. |
 | **Countered by** | Decay (2 rounds) or purging. No direct elemental opposite. |
 | **DR type** | Physical DR reduces Bleed stack damage. |
+
+Shredded is the physical mirror of Corroded. Corroded strips Magic DR and eats through material. Shredded strips Physical DR and keeps wounds open. If both are active, the target loses DR on both fronts.
 
 #### Force
 
 | | |
 | --- | --- |
-| **Tag** | Force (from Impact, Blast, Slam, Repulse effects) |
+| **Tag** | Force (condition stack, applied by weapon traits and Force spell tags: [Impact]/[Blast] at T1, [Slam]/[Repulse] at T2) |
 | **Stack** | Force. Deals physical force damage equal to stack count. |
-| **At 5: Concussed** | TODO: define Concussed effect. |
+| **At 5: Staggered** | Movement halved. Physical attacks against you deal +1d6 bonus force damage while you remain at 5+ Force stacks. |
 | **Countered by** | Decay, purging, or spending. Some weapon traits let you spend Force stacks for bonus damage or special effects before reaching 5. Spent stacks are removed immediately. |
 | **DR type** | Physical DR reduces Force stack damage. |
 
-> **Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering Concussed.
+Staggered represents accumulated kinetic trauma. Your body can no longer absorb blunt impacts. The +1d6 bonus applies to melee and ranged physical attacks, not spells. Spending stacks below 5 ends Staggered immediately.
+
+> **Example:** Your unarmed fighting style builds Force stacks on yourself. You have 4. Your next punch lets you spend all 4 for +4 bonus damage. Your count drops to 0, and you avoid triggering Staggered.
 
 #### Water / Wet
 
@@ -1122,12 +1126,12 @@ Every effect in Solus works through tags and stacks. The conditions below follow
 | Frightened | You cannot willingly move closer to the fear source. Disadvantage on attacks and checks against the source. |
 | Incapacitated | You cannot take actions, move, or use reactions. You remain on the battlefield. (See Dropping to 0 HP.) |
 | Restrained | Your movement is physically limited. You cannot move freely. Some abilities require the target to be Restrained. |
+| Shredded | Applied by Bleed at 5 stacks. Physical DR reduced by 2. Bleed stacks do not decay while Shredded persists. |
+| Staggered | Applied by Force at 5 stacks. Movement halved. Physical attacks deal +1d6 bonus force damage. |
 | Stunned | Disadvantage on all actions. You lose your reaction for the round. (Usually from Shocked + Wet.) |
 | Unconscious | You are unresponsive and cannot act until awakened or the effect ends. |
 | Weaken | Slow deterioration of vitality or structure. Applied by Decay (Death: Rot). Reduces damage dealt by 1. |
 | Vulnerable | Applied by Wither (Death: Rot T2). Incoming damage increased by 2. |
-
-TODO: Shredded and the Force escalation (formerly Concussed) still need full definitions from Jacob.
 
 ### Dropping to 0 HP
 
