@@ -97,7 +97,6 @@ The following parts of a character are fixed at creation or by level.
 - Racial bonuses
 - Ability scores
 - Skill modifiers
-- Mastery at the level it unlocks
 - Base movement speed
 - Background
 - Character name
@@ -108,7 +107,6 @@ The following parts of a character are fixed at creation or by level.
 The following parts can change between sessions or through play.
 
 - Skills
-- Mastery skills inside a chosen Mastery
 - Armor damage resistance
 - Weapons
 - Level
@@ -467,7 +465,7 @@ Bosses break the normal point-buy expectation. A Boss gets one extra +5 beyond t
 
 TODO: add encounter-building procedure, XP awards by enemy rank, and guidance for mixing ranks in one encounter.
 
-## Advancement, Mastery, and Between-Session Play
+## Advancement and Between-Session Play
 
 Character advancement runs through skills. You earn XP by progressing through and interacting with the world in exploration, combat, and conversation. Each enemy type, from Minion through Boss, awards a set amount of XP. Exploration encounters also award XP when the group engages with them. Social and conversation encounters award XP on both success and failure.
 
@@ -475,15 +473,13 @@ You spend XP after each session.
 
 You use XP to buy new skills and to raise the skills you already have. Each skill has an initial cost to acquire it. Each skill then advances through thresholds from Rank 1 to Rank 10. Costs rise as the rank rises, and that increase is exponential. If you buy a new skill, it starts at Rank 1 and advances through the normal rank track from there.
 
-Support Skill Slots open as a skill improves. A Rank 1 skill starts with 1 Support Skill Slot. Every other rank after that, starting at Rank 2, opens another slot, to a maximum of 5 slots per skill. As you raise a skill's rank, you open more room to augment that skill with support options.
+Your character also has 10 combat ability slots for active abilities used in fights. These are independent of skills and have their own chapter.
 
-Mastery opens from total XP, not from a single skill. After your character reaches certain total XP thresholds, you unlock Mastery Skills and gain a set number of Mastery points to spend on them. Mastery points are finite, and you have fewer Mastery points than total Mastery Skills.
+You can own as many skillsas you can afford.
 
-You can own as many skills as you can afford, but you can only keep 10 skills active at one time.
+Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap skills with GM confirmation. You can also change weapons within your inventory, adjust spells, update equipment, spend or gain money and resources, and record new languages as your character learns them.
 
-Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap skills with GM confirmation. Your Mastery stays fixed, but you can change the skills inside that Mastery the same way you change normal skills. You can also change weapons within your inventory, adjust spells, update equipment, spend or gain money and resources, and record new languages as your character learns them.
-
-TODO: add the full XP cost tables, the XP thresholds for Mastery, and the exact XP awards for combat, exploration, and conversation encounters.
+TODO: add the full XP cost tables and the exact XP awards for combat, exploration, and conversation encounters.
 
 ## Running the Game
 
@@ -493,7 +489,7 @@ Use NPCs as part of the world, not just as combat pieces. An NPC can create a pr
 
 Keep a clear split between what the players control and what the GM or the system controls.
 
-- Players control their skills, Mastery Skills, equipment, weapons, spells, money, resources, and languages.
+- Players control their skills, equipment, weapons, spells, money, resources, and languages.
 - The GM or the system controls status effects, environmental effects, lingering injuries, long-term curses, madness, and reputation changes.
 
 Track temporary and long-term changes on the character sheet as separate layers. If a spell raises a character's health for a short time, record that change as a temporary condition instead of rewriting the character's fixed maximum values.
