@@ -37,6 +37,33 @@ The older `system-book/solus-system-book.md` is a prior plaintext draft. It is n
 
 Unfinished sections are marked with `TODO:` comments addressed from Liz (editor) to Jacob (system designer).
 
+## Local Development Setup
+
+The build scripts require only Python 3.12+ (standard library only — no third-party packages).
+
+**Windows (PowerShell)**
+
+```powershell
+# Clone the repo, then from the project root:
+.\init.ps1
+# Activate the environment for your shell session:
+.\.venv\Scripts\Activate.ps1
+# Run the build script:
+python .\scripts\build_obsidian_vault.py
+# Run the tests:
+python .\scripts\test_build_obsidian_vault.py
+```
+
+**macOS / Linux**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/build_obsidian_vault.py
+python scripts/test_build_obsidian_vault.py
+```
+
 ## Obsidian Vault Package
 
 A GitHub Actions workflow builds an Obsidian-ready vault package from the manuscript and archive on each push to `main`.
