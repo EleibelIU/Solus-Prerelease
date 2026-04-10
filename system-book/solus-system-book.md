@@ -266,14 +266,33 @@ You prepare up to 10 Techniques at a time from any combination of layers. You ca
 
 ### Augment Layers
 
-Augments modify Techniques. You socket them into Augment Slots. Two layers exist.
+Augments modify Techniques. Three layers exist, mirroring the Technique architecture.
 
-| Layer | Scope |
+| Layer | How Equipped | Scope | Count |
+|---|---|---|---|
+| Universal Augments | Socketed into Technique Augment Slots | Any Technique, any weapon | 22 |
+| Weapon Augments | Passive (always active once learned) | All Techniques from that weapon | 5 per weapon |
+| Technique Augments | Socketed into that Technique's Augment Slots | One specific Technique only | 2-3 per Technique |
+
+**Weapon Augments are passive.** Learn them with XP. Once learned, they apply to every Technique from that weapon automatically. They do not consume Augment Slots. They add Mana cost to every Technique from that weapon.
+
+| Weapon Mastery Rank | Weapon Augments Available |
 |---|---|
-| Universal Augments | Any Technique, any weapon |
-| Category Augments | Only Techniques from that weapon category |
+| 1 | 0 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 (all) |
 
-No weapon-specific Augments exist. Augments add Mana cost to the Technique they modify. Stacking multiple Augments on one Technique adds their Mana costs together.
+**Universal Augments and Technique Augments share Augment Slots.** Each prepared Technique has slots based on Weapon Mastery Rank (0/1/1/2/2/3). Fill each slot with one Universal Augment or one Technique Augment.
+
+**Mana cost stacking.** Every Augment adds Mana cost. Multiple Augments on one Technique stack additively. Weapon Augments add their cost to every Technique from that weapon.
+
+> **Example:** Rapier Lunge (0 Mana base) with Flourish weapon augment (+1 Mana) and Retreating Lunge technique augment (+1 Mana) costs 2 Mana total.
+
+**Exclusivity.** Condition augments (Burn, Chill, Shock, Force, Bleed, Poison) are mutually exclusive on the same Technique. One added condition per Technique. The weapon's innate condition stacks freely.
+
+The full augment catalog for all 32 weapons lives in the companion web reference. This chapter covers all Universal Augments, Weapon Augments for each weapon, and full Technique Augments for Rapier and Katana as worked examples.
 
 ### Universal Techniques
 
@@ -289,7 +308,7 @@ Every character has access to these four Techniques regardless of weapon or Mast
 
 ### Universal Augments
 
-Sixteen Augments are available to all characters. The first twelve work with any Technique on any weapon. The last four (Spellblade Augments) bridge weapon attacks and spellcasting.
+Twenty-two Augments are available to all characters. Characters know all Universal Augments at creation. The first eighteen work with any Technique on any weapon. The last four (Spellblade Augments) bridge weapon attacks and spellcasting.
 
 | Augment | Effect | Mana Cost Increase |
 |---|---|---|
@@ -305,6 +324,12 @@ Sixteen Augments are available to all characters. The first twelve work with any
 | Condition: Burn | On hit, apply 1 Burn stack. | +2 |
 | Condition: Chill | On hit, apply 1 Chill stack. | +2 |
 | Condition: Shock | On hit, apply 1 Shock stack. | +2 |
+| Condition: Force | On hit, apply 1 Force stack. | +2 |
+| Condition: Bleed | On hit, apply 1 Bleed stack. | +2 |
+| Condition: Poison | On hit, apply 1 Poison stack. | +2 |
+| Execute | +50% damage to targets below 25% HP. | +3 |
+| Knockback | On hit, push target 1 space. | +1 |
+| Fortify | After using this Technique, gain +2 AC until your next turn. | +2 |
 
 #### Spellblade Augments
 
@@ -357,7 +382,7 @@ Weapons carry properties that modify how they function in combat.
 
 ### Weapon Categories
 
-Weapons are grouped into seven categories. Each category shares a fighting style, a set of Category Techniques, and Category Augments.
+Weapons are grouped into seven categories. Each category shares a fighting style and a set of Category Techniques. Category Techniques have their own Technique Augments, shared across all weapons in that category.
 
 ---
 
@@ -375,13 +400,20 @@ Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, an
 | 2 | Exploit Opening | Reaction | When an adjacent enemy misses an attack, make a free attack against them. |
 | 3 | Assassinate | 2 Actions | Attack an unaware target. On hit, double damage. |
 
-#### Light Melee Category Augments
+#### Light Melee Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Feint | Force target to take the hit or spend their Reaction to dodge. If dodged, you gain advantage on your next attack. | +2 |
-| Poisoned Edge | On hit, apply 1 Venom stack. | +2 |
-| Twin Strike | If dual-wielding Light Melee weapons, hit with both weapons. Second weapon deals half damage. | +2 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Quick Draw | Lightning Draw | +1d4 bonus damage on the attack after Quick Draw. | +1 |
+| Quick Draw | Concealed Draw | Attack after Quick Draw has advantage if target was unaware of this weapon. | +2 |
+| Flurry | Triple Flurry | Add a third attack at -2 to hit. | +3 |
+| Flurry | Precise Flurry | Remove the half-damage penalty on both attacks. Full damage, twice. | +3 |
+| Slip Away | Dancing Steps | Move 2 spaces instead of 1. | +1 |
+| Slip Away | Counter Slip | If the enemy follows you (moves adjacent on their turn), make a free attack at +1d4. | +2 |
+| Exploit Opening | Punishing Opening | Free attack deals +1d6 bonus damage. | +2 |
+| Exploit Opening | Crippling Opening | On hit, target has -2 to hit until their next turn. | +1 |
+| Assassinate | Vanishing Strike | After Assassinate, enter hiding if you have cover within 1 space. Repeatable kills. | +3 |
+| Assassinate | Lethal Ambush | Triple damage instead of double against unaware targets. | +3 |
 
 #### Light Melee Weapons
 
@@ -426,6 +458,18 @@ TODO: full Technique list. Condition signature: Force. Unique mechanic: Burn For
 | 4 | Crimson Venom | 1 Action, 8 Mana | Requires Shredded (T2 Bleed) and Venomous (T2 Poison) on the target. 2d6 Piercing. Apply Neurotoxin (T3): target movement becomes 0, Poison damage doubles each round. |
 | 5 | Lethal Dose (Capstone) | 1 Action, 15 Mana | Requires Neurotoxin (T3) on the target. Poison stacks jump to 35. Target permanently loses 1 Action per turn. Once per long rest. |
 
+##### Dagger Weapon Augments (Toxic Edge)
+
+Passive. Once learned, these apply to ALL Dagger Techniques. Each adds its Mana cost to every Dagger Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Envenomed Blade | Poison stacks from Dagger Techniques deal +1 per tick (+2 total per stack per round instead of +1). | +2 |
+| 2 | Twin Fangs | When dual-wielding daggers, each Dagger Technique strikes with both blades. Second strike deals half damage. | +3 |
+| 3 | Coat Blade | Before a Dagger Technique, spend 1 additional Action to coat your blade. Next hit applies 2 extra Poison stacks. | +0 (costs Action) |
+| 4 | Arterial Cut | Bleed applied by Dagger Techniques cannot be removed by mundane healing. Only magical healing removes Dagger Bleed. | +1 |
+| 5 | Shadowstep | After a Dagger Technique reduces a target to 0 HP, teleport up to 3 spaces to another enemy. | +2 |
+
 #### Short Sword (Standard, Light Melee)
 
 TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Guaranteed Bleed on every hit (1 stack, scaling to 2 at Rank 3). No variance. Consistent pressure.
@@ -453,6 +497,18 @@ TODO: full Technique list. Condition signature: Bleed. Unique mechanic: On kill,
 | 4 | Fortress | 2 Actions, 5 Mana | +6 AC. Immune to forced movement. Adjacent allies gain +2 AC. You cannot move or attack. Lasts until your next turn. |
 | 5 | Aegis (Capstone) | Reaction, 10 Mana | Negate all damage from one attack targeting you or an adjacent ally. Once per long rest. |
 
+##### Shield Weapon Augments (Guard)
+
+Passive. Once learned, these apply to ALL Shield Techniques. Each adds its Mana cost to every Shield Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Shield Master | Your Shield's +2 AC bonus also applies to all allies within 1 space. | +0 |
+| 2 | Battering Ram | Shield Techniques that push deal +1d4 Bludgeon per space pushed. | +1 |
+| 3 | Reflective Guard | When you negate a ranged attack with a Shield Technique, reflect it back at the attacker at -4 to hit. | +2 |
+| 4 | Tower Shield | Raise Shield and Fortress provide full cover from one direction. Blocks line of sight for ranged attacks through your space. | +1 |
+| 5 | Shield Throw | Shield Techniques can be performed at 20 ft range (Thrown). Shield bounces back at end of your turn. | +3 |
+
 ---
 
 ### Medium Melee
@@ -469,13 +525,20 @@ Balanced offense and defense. One-handed weapons that pair with shields or off-h
 | 2 | Disarming Strike | 1 Action | On hit, target rolls `2d10 + Body` vs. your attack roll or drops their weapon. |
 | 3 | Measured Assault | 3 Actions | Commit all 3 Actions to one attack. Add your weapon die twice to damage. If the target dies, refund 1 Action. |
 
-#### Medium Melee Category Augments
+#### Medium Melee Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Precision | +2 to hit, -1 die size on damage. Apply a condition based on body part targeted: arm = Disarm, leg = Slow, head = Stun. | +2 |
-| Shield Synergy | +1 AC until end of turn if you have a Shield in your off-hand. | +1 |
-| Flowing Form | After using a Technique, enter or switch stances as a free action. | +1 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Parry | Iron Parry | Parry also works against ranged attacks within 10 ft. | +2 |
+| Parry | Deflecting Parry | On successful Parry, redirect the attack to another enemy within 1 space (your Parry roll vs. new target's AC). | +3 |
+| Riposte Stance | Aggressive Riposte | Counterattack deals +1d6 bonus damage. | +2 |
+| Riposte Stance | Persistent Stance | Riposte Stance lasts until you choose to end it, not just until next turn. | +1 |
+| Press the Advantage | Overwhelming Advantage | Next TWO attacks have advantage instead of one. | +3 |
+| Press the Advantage | Pressing Wound | The advantage attack also applies 1 Bleed stack on hit. | +1 |
+| Disarming Strike | Shattering Disarm | Dropped weapon flies 2 spaces. If it hits another creature, 1d4 damage. | +1 |
+| Disarming Strike | Follow-Up Disarm | After disarming, make a free attack against the now-unarmed target at +2 to hit. | +2 |
+| Measured Assault | Devastating Assault | +3 weapon dice instead of +2. | +3 |
+| Measured Assault | Momentum Assault | On kill, refund 2 Actions instead of 1. | +3 |
 
 #### Medium Melee Weapons
 
@@ -528,7 +591,109 @@ TODO: full Technique list. Condition signature: Bleed (one-handed) / Force (two-
 | 4 | Tempo Rubato | Passive | Reactions no longer consume your Reaction for the round. Unlimited Parry/Riposte per round. |
 | 5 | Touché (Capstone) | 1 Action, 15 Mana | Spend 3 Openings. Auto-crit, triple damage. Target rolls `2d10 + Body` vs. DC 20 or incapacitated for 1 round. Once per long rest. |
 
-#### Curved Sword (Standard, Medium Melee)
+##### Rapier Weapon Augments (Openings)
+
+Passive. Once learned, these apply to ALL Rapier Techniques. Each adds its Mana cost to every Rapier Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Riposte Mastery | Gain 2 Openings instead of 1 from Parries and enemy misses. Maximum Openings increases to 5. | +0 |
+| 2 | Flourish | Spend 1 Opening as a Free Action to impose disadvantage on the next attack against you this round. | +1 |
+| 3 | Duelist's Grace | While you hold 2+ Openings, +1 AC. At 4+ Openings (requires Riposte Mastery), +2 AC. | +0 |
+| 4 | Tempo Control | When you spend Openings on a Technique, the target has -1 to hit per Opening spent until their next turn. | +1 |
+| 5 | Fencing Master | Openings generated by Passata Sotto and Derobement are doubled. | +2 |
+
+##### Rapier Technique Augments
+
+Socket into Augment Slots on individual Rapier Techniques. Each Technique has 2-3 options.
+
+**Lunge** (1 Action — Attack up to 2 spaces. -2 AC until next turn.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Retreating Lunge | After Lunge, return to starting position. Negates -2 AC penalty. | +1 |
+| Lunging Advance | On hit, move to adjacent space. Gap-closer. | +1 |
+| Exposing Lunge | On hit, gain 1 Opening. Lunge becomes an Opening generator. | +2 |
+
+**Feinting Thrust** (1 Action — Spend 1 Opening. Advantage.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Double Feint | Spend 2 Openings. Advantage AND target has disadvantage on next attack. | +2 |
+| Feint Chain | On hit, gain 1 Opening. Net 0 cost on hit. Sustained pressure. | +1 |
+
+**En Garde** (Free Action — +1 AC. Parries generate 2 Openings.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Grand Salute | Enemies that miss you (not just Parries) grant 3 Openings. | +2 |
+| Aggressive Stance | +1d4 damage while in En Garde. AC bonus drops to +0. | +1 |
+
+**Compound Riposte** (Reaction — After Parry, free attack +1d8. Costs 1 Opening.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Triple Riposte | 2 additional attacks at -2 each. Three strikes after one Parry. | +4 |
+| Disarming Riposte | On hit, target drops weapon. | +2 |
+| Bleeding Riposte | On hit, apply 2 Bleed stacks. | +1 |
+
+**Derobement** (Reaction — Auto-succeed on Disarm. Gain 1 Opening.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Counter-Disarm | After Derobement, free Disarm attempt against the attacker. | +2 |
+| Perfect Defense | Derobement also negates the triggering attack entirely. | +3 |
+
+**Fleche** (1 Action, 3 Mana — Move 3 spaces in a line. +2 to hit. 1-round cooldown.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Passant Fleche | Hit every enemy in the charge line. +2 applies to all. | +3 |
+| Retreating Fleche | After Fleche, teleport back to starting position. Hit-and-run. | +2 |
+| Accelerating Fleche | 5 spaces. Removes 1-round cooldown. | +2 |
+
+**Balestra** (1 Action, 5 Mana — Spend 2 Openings. Three rapid thrusts.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Cascading Balestra | If all 3 hit, 4th thrust at +1d8 damage. | +3 |
+| Scattering Balestra | Each thrust targets a different enemy in reach. AoE burst. | +2 |
+| Finishing Balestra | Below 50% HP: each thrust deals +1d6. | +2 |
+
+**Counter-Tempo** (Passive — At 3 Openings, +1d6 damage.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Escalating Tempo | Bonus scales: 3 = +1d6, 4 = +2d6, 5 = +3d6. | +2 per attack |
+| Tempo Burst | Spend all Openings for +1d10 per Opening on next attack. | +0 (Openings are cost) |
+
+**Passata Sotto** (Reaction, 3 Mana — Auto-miss. Gain 1 Opening. Once per round.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Rising Thrust | After duck, free attack at +1d8. | +3 |
+| Evasive Roll | After Passata Sotto, move 2 spaces. No opportunity attacks. | +1 |
+
+**Prise de Fer** (1 Action, 5 Mana — Bind weapon 1 round. 2 Openings.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Enveloppement | Bind 2 rounds. Break-free DC +2. | +3 |
+| Coupé | If target breaks free, free attack. If not, 1d8 at start of their turn. | +2 |
+
+**Tempo Rubato** (Passive — Unlimited Parry/Riposte per round.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Perpetual Motion | Each Parry grants cumulative +1 damage to next attack. Resets at turn start. | +1 per Parry |
+| Blade Barrier | At 3+ Openings, melee attackers take 1d4 on miss. Passive retaliation. | +2 |
+
+**Touché** (Capstone, 1 Action, 15 Mana — 3 Openings. Auto-crit, ×3 damage. DC 20 or incapacitated.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Final Curtain | On kill, once-per-long-rest resets. Chain-kill potential. | +5 |
+| Dramatic Finish | Enemies within 6 spaces: `2d10 + Social` vs. DC 15 or Frightened 2 rounds. | +3 |
 
 TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping Bleed hits two adjacent targets per attack. Best group-Bleed spreader in Medium Melee.
 
@@ -551,7 +716,110 @@ TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping
 | 4 | Musō Ken (No-Mind Blade) | Passive | Your third consecutive hit on the same target each turn deals +2d10 damage and ignores Physical DR. |
 | 5 | Ōgi: Hitotsume (Capstone — The One Cut) | 3 Actions, 15 Mana | Single perfect draw strike. Auto-hit. Weapon damage ×3 +1d10 per Bleed stack on target. Apply 5 Bleed stacks (triggers Shredded). Target rolls `2d10 + Body` vs. DC 18 or enters Dying. Once per long rest. |
 
-#### Mace (Standard, Medium Melee)
+##### Katana Weapon Augments (Momentum Blade)
+
+Passive. Once learned, these apply to ALL Katana Techniques. Each adds its Mana cost to every Katana Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Flow State | Momentum Blade escalation persists if you switch targets mid-turn. First hit on a new target counts as "consecutive" if you hit the previous target this turn. | +0 |
+| 2 | Battojutsu Mastery | Iaijutsu and Battojutsu Techniques deal +1d6 damage. Sheathing at end of turn is automatic. | +1 |
+| 3 | Crimson Arc | When a Katana Technique applies Bleed, one other enemy within 2 spaces takes 1 Bleed stack. | +1 |
+| 4 | Zanshin (Lingering Intent) | After using 3+ Katana Techniques in one turn, the last target hit takes 1 additional Bleed stack at start of their turn. | +0 |
+| 5 | Mugen (Infinite Blade) | At 5 Bleed stacks (Shredded), your Momentum Blade count does not reset at end of turn. It continues into the next turn. | +2 |
+
+##### Katana Technique Augments
+
+Socket into Augment Slots on individual Katana Techniques. Each Technique has 2-3 options.
+
+**Iaijutsu (Draw Cut)** (1 Action — Sheathed. +2 to hit, +1d6.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Flash Step | Teleport up to 4 spaces to target before the draw strike. | +3 |
+| Returning Draw | Sheathe as part of same Action. Each redraw this combat: +1d6 (stacks to +3d6). | +1 |
+| Quickdraw Assault | No longer requires sheathed. -1d6 damage (net +0 vs. normal attack, trades bonus for flexibility). | +2 |
+
+**Successive Cuts** (Passive — +2 to hit on targets hit this turn.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Relentless Pursuit | +3 after 2nd hit, +4 after 3rd. Snowballing accuracy. | +1 per attack |
+| Bleeding Edge | Each successive hit applies 1 additional Bleed beyond Momentum Blade. | +2 |
+
+**Chiburi (Blood Flick)** (Free Action — After 2+ hits, Bleed lasts 1 extra round.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Splattering Flick | Bleed splashes to 1 enemy within 2 spaces (half stacks, rounded down). | +2 |
+| Cleansing Flick | Remove 1 condition from yourself. Purge debuffs through offense. | +1 |
+
+**Tsubame Gaeshi (Swallow Reversal)** (1 Action, 3 Mana — Second strike at -2. Both count for Momentum.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Triple Reversal | Third strike at -4. Three hits, one Action. All count for Momentum. | +3 |
+| Perfect Reversal | Second strike has no penalty. Clean double-hit. | +2 |
+| Aerial Reversal | Strikes can target different enemies in reach. Split the reversal. | +2 |
+
+**Battojutsu (War Draw)** (1 Action, 3 Mana — Sheathed. +4 to hit, +1d10. DC 14 half movement.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Thunder Draw | On hit, 2 Force stacks + 1-space shockwave pushes adjacent enemies. Cross-condition draw. | +3 |
+| Phantom Draw | Target cannot use Reactions. Delayed damage reveal: target doesn't know they're hit until end of turn. | +4 |
+
+**Seme (Pressure)** (Free Action, 3 Mana — This turn, +1 Bleed per Momentum hit.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Overwhelming Pressure | While active, targets have -1 AC per Bleed stack on them. | +2 |
+| Sustained Pressure | Lasts 2 turns instead of 1. | +3 |
+
+**Kirioroshi (Cleaving Down-Cut)** (1 Action, 5 Mana — +1d6 per Bleed stack, max +5d6.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Seismic Cut | Creates 1-space difficult terrain behind target. | +1 |
+| Executioner's Cut | Below 25% HP: max bonus increases to +8d6. | +3 |
+| Splitting Cut | Hits primary + 1 adjacent enemy (half damage + half Bleed bonus). | +3 |
+
+**Tsuki (Piercing Thrust)** (1 Action, 8 Mana — Auto-hit. 1d10 + 2 Bleed. Counts for Momentum.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Armor Piercing Thrust | Ignores all Physical DR. True damage. | +2 |
+| Chain Thrust | Free second thrust at -2 to hit on another target in reach. 1d10 + 1 Bleed. | +3 |
+
+**Suriage (Rising Parry-Cut)** (Reaction, 5 Mana — Your attack vs. theirs. Win: negate + 1d10 + 1 Bleed.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Counter Momentum | Suriage counts as a Momentum Blade hit. Defense feeds offense. | +1 |
+| Rising Storm | On negate, make a second strike at +1d6. | +3 |
+
+**Zantetsuken (Iron-Cutting Slash)** (2 Actions, 8 Mana — ×2 damage, ignore Physical DR. +2d10 if Shredded.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| All-Cleaving Slash | Hits all enemies in a 2-space cone. AoE devastation. | +5 |
+| Material Destruction | On hit, destroy one piece of target's equipment. Permanent until repaired. | +3 |
+| Dimensional Slash | Range extends to 3 spaces. Ranged slash wave. | +4 |
+
+**Musō Ken (No-Mind Blade)** (Passive — 3rd consecutive hit: +2d10, ignore Physical DR.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Transcendent Blade | Bonus applies to 4th, 5th+ hits. Uncapped escalation. | +2 per hit beyond 3rd |
+| Void Cut | 3rd hit also bypasses Magic DR. True damage strike. | +2 |
+
+**Ōgi: Hitotsume (Capstone)** (3 Actions, 15 Mana — Auto-hit, ×3, +1d10/Bleed, 5 Bleed → Shredded, DC 18 → Dying.)
+
+| Augment | Effect | Mana Cost |
+|---|---|---|
+| Mugen Ittō (Infinite One-Sword) | On kill, once-per-long-rest resets. Chain-kill potential. | +5 |
+| Shinsoku (Godspeed) | Costs 2 Actions instead of 3. Faster execution. | +5 |
+| Tsujigiri (Crossroads Kill) | After Hitotsume, enemies within 4 spaces take 1d10 Slashing + 2 Bleed from wind pressure. | +4 |
 
 TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks impose -1 per stack to mental Proficiency Checks. At Staggered (5 Force): disadvantage on all Proficiency Checks.
 
@@ -583,13 +851,20 @@ Two-handed, high damage, slow. Heavy Melee favors commitment, area attacks, and 
 | 2 | Whirlwind | 2 Actions | Attack all adjacent enemies. One roll vs. each AC. |
 | 3 | Executioner | 2 Actions | If target is below 25% HP, auto-crit on hit. |
 
-#### Heavy Melee Category Augments
+#### Heavy Melee Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Follow-Through | On kill, gain +1 Action this turn. | +3 |
-| Sundering | On hit, reduce target's Physical DR by 1 until end of combat. Stacks. | +2 |
-| Earthquake | All creatures within 1 space of target roll `2d10 + Body` vs. DC 12 or fall prone. | +3 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Cleave | Cascading Cleave | If Cleave also kills, Cleave triggers again. Chain unlimited. | +2 per chain |
+| Cleave | Sweeping Cleave | Cleave hits ALL adjacent enemies, not just one. | +3 |
+| Power Attack | Brutal Power Attack | +2 dice instead of +1 die. -4 to hit instead of -2. | +2 |
+| Power Attack | Focused Power Attack | Remove the -2 penalty. Clean extra damage. | +3 |
+| Staggering Blow | Crumbling Blow | Also reduces target's Physical DR by 1 until end of combat. Stacks. | +2 |
+| Staggering Blow | Dizzying Blow | Target has disadvantage on attacks until their next turn. | +2 |
+| Whirlwind | Expanding Whirlwind | Radius increases to 2 spaces. | +3 |
+| Whirlwind | Sustained Whirlwind | Spend 1 Action on subsequent turns to maintain the spin. Deals weapon damage to all enemies within range each turn. | +2 per turn |
+| Executioner | Merciful Execution | Threshold increases to below 50% HP. -1d6 damage. | +2 |
+| Executioner | Grim Execution | On kill, all enemies within 3 spaces roll `2d10 + Social` vs. DC 13 or Frightened for 1 round. | +1 |
 
 #### Heavy Melee Weapons
 
@@ -628,6 +903,18 @@ Two-handed, high damage, slow. Heavy Melee favors commitment, area attacks, and 
 | 4 | Zufechten | Passive | First attack each combat has advantage and deals +1d6 damage. |
 | 5 | Meisterhau (Capstone) | 3 Actions, 15 Mana | Auto-hit. Weapon damage × 3. Target rolls `2d10 + Body` vs. DC 18 or falls prone, Stunned, and Staggered. Once per long rest. |
 
+##### Greatsword Weapon Augments (Half-Sword)
+
+Passive. Once learned, these apply to ALL Greatsword Techniques. Each adds its Mana cost to every Greatsword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Grip Flow | Switching between normal and Half-Sword grip is a Free Action (instead of costing an Action). | +0 |
+| 2 | Mortal Draw | The first Greatsword Technique after switching grip deals +1d8 bonus damage. | +1 |
+| 3 | Zweihänder Reach | Normal-grip Greatsword Techniques gain +1 space reach. | +2 |
+| 4 | Half-Sword Precision | [Half-Sword] Techniques gain an additional +2 to hit. | +1 |
+| 5 | Swordsmanship | After a [Half-Sword] Technique, your next normal-grip Technique this turn has advantage. After a normal-grip Technique, your next [Half-Sword] Technique deals +1d6 damage. | +2 |
+
 #### Greathammer (Standard, Heavy Melee) — 9 Techniques
 
 **Unique Mechanic: Crushing Force.** Every hit applies 2 Force stacks instead of 1. At Staggered (5 Force stacks), your Force damage ticks deal triple bonus (3 per stack per round instead of 1).
@@ -643,6 +930,18 @@ Two-handed, high damage, slow. Heavy Melee favors commitment, area attacks, and 
 | 4 | Shatter | 1 Action, 8 Mana | Requires Staggered. Triggers Shattered (T3 Enhanced): Physical DR = 0 for 2 rounds. Physical attacks auto-apply 1 Bleed. |
 | 4 | Pulverize | 2 Actions, 8 Mana | Requires Staggered. Weapon damage + 2d8. Target rolls `2d10 + Body` vs. DC 16 or Stunned for 1 round. |
 | 5 | Obliterate (Capstone) | 3 Actions, 15 Mana | Requires Shattered. Weapon damage × 4. Kill = target cannot be resurrected. Boss: damage × 3, boss loses 1 action permanently. Once per long rest. |
+
+##### Greathammer Weapon Augments (Crushing Force)
+
+Passive. Once learned, these apply to ALL Greathammer Techniques. Each adds its Mana cost to every Greathammer Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Aftershock | Greathammer Techniques that push the target also deal 1d6 Bludgeon to enemies adjacent to the push destination. | +2 |
+| 2 | Concussive Waves | When you apply Force stacks with a Greathammer Technique, enemies adjacent to your target each take 1 Force stack. | +3 |
+| 3 | Impact Crater | Greathammer Techniques that cause prone create difficult terrain in a 1-space radius for 2 rounds. | +1 |
+| 4 | Momentum of Ruin | When you hit a Staggered target with a Greathammer Technique, refund 1 Action. Once per turn. | +0 |
+| 5 | Tectonic | Greathammer Techniques against objects, structures, and terrain deal triple damage. Terrain destruction radius +1 space. | +1 |
 
 #### Great Axe (Standard, Heavy Melee)
 
@@ -668,13 +967,20 @@ Extended range (2+ spaces) and zone control. Reach weapons punish movement, lock
 | 2 | Impale | 1 Action | On hit, target is Restrained until they spend an Action to pull free or you release. You cannot attack other targets while impaling. |
 | 3 | Phalanx | Passive | While adjacent to an ally who also wields a Reach weapon, both of you gain +2 AC. |
 
-#### Reach Category Augments
+#### Reach Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Extended Reach | +1 space range for Reach weapons (+2 total from default). | +2 |
-| Trip | On hit, target rolls `2d10 + Body` vs. your attack roll or falls prone. | +2 |
-| Brace | If you haven't moved this turn, +1d6 damage vs. enemies who moved toward you. | +1 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Sentinel | Threatening Reach | Sentinel also triggers when enemies move WITHIN your reach, not just on entry. | +2 |
+| Sentinel | Stopping Strike | On hit, target's remaining movement becomes 0. | +2 |
+| Sweep | Wide Sweep | Hit up to 3 targets instead of 2. | +2 |
+| Sweep | Trip Sweep | On hit, each target rolls `2d10 + Body` vs. DC 12 or falls prone. | +2 |
+| Keep at Bay | Forceful Push | Push 2 spaces instead of 1. | +1 |
+| Keep at Bay | Punishing Distance | If pushed target moves back toward you on their turn, make a free attack as a Reaction. | +2 |
+| Impale | Lifting Impale | Impaled target is lifted off the ground. Cannot use movement abilities. Attacks against them have +2 to hit. | +2 |
+| Impale | Shared Impale | Impale passes through to a second target behind the first. Both Restrained. | +4 |
+| Phalanx | Reinforced Phalanx | With two adjacent Reach allies, bonus increases to +3 AC. | +1 |
+| Phalanx | Offensive Phalanx | While in Phalanx, your attacks deal +1d4 damage. | +1 |
 
 #### Reach Weapons
 
@@ -717,6 +1023,18 @@ Extended range (2+ spaces) and zone control. Reach weapons punish movement, lock
 | 4 | Bloodletter | 1 Action, 8 Mana | Attack a Bleeding target. On hit, double the target's Bleed stacks (max 5). If target reaches 5 stacks, immediately trigger Shredded. |
 | 5 | Heartstopper (Capstone) | 2 Actions, 12 Mana | Auto-hit. Apply 5 Bleed stacks. Target enters Shredded. Target rolls `2d10 + Body` vs. DC 16 or is Restrained for 1 round. Bleed from Heartstopper does not decay for 3 rounds. Once per long rest. |
 
+##### Spear Weapon Augments (Deep Pierce)
+
+Passive. Once learned, these apply to ALL Spear Techniques. Each adds its Mana cost to every Spear Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Formation Fighting | While an ally is within 2 spaces, Spear Techniques gain +2 to hit. | +0 |
+| 2 | Pin Down | Spear Techniques that apply Bleed also reduce target movement by 1 space per Bleed stack active on them. | +1 |
+| 3 | Thrown Mastery | After a thrown Spear Technique, the spear returns immediately (no end-of-turn wait). Thrown range +10 ft. | +1 |
+| 4 | Vital Strike | Bleed from Spear Techniques ignores 1 additional Physical DR (2 total with Deep Pierce). | +2 |
+| 5 | Lance Charge | If you moved 3+ spaces toward a target before using a Spear Technique, +1d8 Piercing damage. | +2 |
+
 #### Halberd (Standard, Reach)
 
 TODO: full Technique list. Condition signature: Force/Bleed. Unique mechanic: Sweep splits conditions. Primary target takes Force, secondary targets take Bleed. Dual-condition zone controller.
@@ -757,13 +1075,20 @@ Projectile weapons. Ranged favors kiting, precision, and area denial. You attack
 | 2 | Volley | 2 Actions | Attack up to 3 targets. Roll separately for each. |
 | 3 | Kill Shot | 2 Actions | If the target hasn't moved since your last turn, double damage. |
 
-#### Ranged Category Augments
+#### Ranged Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Arcing | Ignore half-cover. | +1 |
-| Piercing Shot | Projectile passes through the first target. Second target behind takes half damage. | +2 |
-| Scatter | On hit, 1d4 splash damage to all adjacent to target. | +2 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Aimed Shot | Precision Aim | +4 to hit instead of +2. | +2 |
+| Aimed Shot | Headshot | On hit, target has disadvantage on their next attack. | +2 |
+| Quick Shot | Rapid Fire | Make 2 Quick Shots in one Action at -2 to hit each. | +3 |
+| Quick Shot | Snap Accuracy | Remove the -1 die size penalty. Full damage, fast shot. | +2 |
+| Suppressing Fire | Extended Suppression | Area increases to 3 spaces. Duration extends to 2 rounds. | +3 |
+| Suppressing Fire | Psychological Pressure | Enemies in the area roll `2d10 + Social` vs. DC 12 or Frightened until they leave. | +2 |
+| Volley | Storm Volley | Attack 5 targets instead of 3. | +3 |
+| Volley | Focused Volley | All 3 attacks target the same enemy. Concentrated burst. | +2 |
+| Kill Shot | Patient Kill Shot | If you haven't moved for 2 rounds, triple damage instead of double. | +2 |
+| Kill Shot | Kill Zone | Kill Shot applies to any target within a 2-space area you designate. | +3 |
 
 #### Ranged Weapons
 
@@ -804,6 +1129,18 @@ Projectile weapons. Ranged favors kiting, precision, and area denial. You attack
 | 4 | Thread the Needle | 1 Action, 5 Mana | Ignores cover, Shield bonuses, and 50% of target's DR. |
 | 5 | Deadeye (Capstone) | 2 Actions, 15 Mana | Auto-hit, auto-crit. Target rolls `2d10 + Body` vs. DC 18 or takes +3d8 damage. Once per long rest. |
 
+##### Bow Weapon Augments (Draw)
+
+Passive. Once learned, these apply to ALL Bow Techniques. Each adds its Mana cost to every Bow Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Power Draw | Full Draw attacks (2+ Actions aiming) deal +2d8 instead of +1d8. Stacks with Perfect Draw passive (+3d8 total). | +2 |
+| 2 | Rapid Nock | After using a Bow Technique, your next Bow Technique this turn costs 1 less Action (minimum 1). Once per turn. | +2 |
+| 3 | Pinning Shot | Bow Techniques that hit a target within 1 space of a wall or solid object pin them (Restrained until they spend 1 Action to pull the arrow free). | +2 |
+| 4 | Windage | Bow Techniques ignore cover penalties (half cover and three-quarter cover). | +1 |
+| 5 | Arrow Recovery | After combat, recover 50% of spent ammunition (round down). | +0 |
+
 #### Crossbow (Standard, Ranged)
 
 TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Deep Penetration extends Pierce to Bleed ticks. High single-shot damage offset by Loading. Higher ranks unlock faster reload Techniques.
@@ -832,13 +1169,20 @@ Mechanical ranged weapons. Firearms deal high damage per shot but are limited by
 | 2 | Penetrating Round | 1 Action | Ignores all Physical DR. Costs 2 ammunition. |
 | 3 | Dead Eye | 3 Actions | Auto-hit, maximum damage. Once per combat. |
 
-#### Firearms Category Augments
+#### Firearms Category Technique Augments
 
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
-| Rapid Reload | Reload as a free action after using a Technique. | +2 |
-| Hollow Point | +1d6 damage. Loses Pierce property for this attack. | +2 |
-| Ricochet | On a miss, projectile bounces to a random adjacent enemy. Re-roll the attack at -4. | +2 |
+| Technique | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| Fan the Hammer | Full Fan | Fire 4 times at half damage instead of 2. | +3 |
+| Fan the Hammer | Aimed Fan | First shot deals full damage instead of half. | +2 |
+| Steady Aim | Dead Calm | Bonus increases to +4 if you haven't moved for 2 consecutive rounds. | +1 |
+| Steady Aim | Prone Aim | While prone, +2 additional to hit on ranged attacks. | +0 |
+| Covering Fire | Suppressive Cover | Cover applies to 2 allies instead of 1. | +2 |
+| Covering Fire | Warning Shots | Enemies who attack the covered ally have disadvantage. | +2 |
+| Penetrating Round | Overcharged Round | Also ignores Magic DR. True damage round. | +3 |
+| Penetrating Round | Through-and-Through | Projectile continues through the target. One enemy behind takes half damage. | +2 |
+| Dead Eye | Double Tap | Fire twice. Both auto-hit at maximum damage. 2x ammunition. | +5 |
+| Dead Eye | Calm Before the Storm | Dead Eye doesn't consume your Reaction for the round. | +1 |
 
 #### Firearms Weapons
 
@@ -985,38 +1329,41 @@ Caster characters spend Mana on Spells. They use Universal Techniques and unaugm
 
 #### The Duelist (Rapier + Shield)
 
-- **Mastery:** Rapier 4, Shield 2.
+- **Mastery:** Rapier 4, Shield 2. Background: Martial.
 - **Role:** Counter-fighting tank.
 - **Core loop:** En Garde stance → Parry incoming attacks → generate Openings → Compound Riposte for bonus damage. Shield for Cover Ally and emergency Raise Shield.
 - **Key Techniques:** En Garde, Parry (Medium Melee), Compound Riposte, Fleche, Tempo Rubato, Shield Bash, Cover Ally.
-- **Augments:** Precision (targeted conditions on ripostes), Shield Synergy (+1 AC), Siphon (sustain HP through ripostes).
+- **Weapon Augments (passive):** Riposte Mastery (2 Openings per Parry), Duelist's Grace (+1 AC at 2+ Openings), Tempo Control (-1 to hit per Opening spent).
+- **Technique Augments (socketed):** Feint Chain (free Openings on Feinting Thrust hits), Bleeding Riposte (Bleed on Compound Riposte), Rising Thrust (attack after Passata Sotto).
 - **Condition path:** Bleed through Rapier → Shredded at 5 stacks. Openings accelerate Bleed application.
 
 #### The Berserker (Great Axe)
 
-- **Mastery:** Great Axe 5.
+- **Mastery:** Great Axe 5. Background: Martial.
 - **Role:** All offense. Rush in, AoE, execute.
 - **Core loop:** Charge in → Power Attack → Cleave on kills → Executioner to finish wounded targets. Double Bleed ticks pressure everything.
 - **Key Techniques:** Power Attack, Cleave, Whirlwind, Executioner, Staggering Blow.
-- **Augments:** Follow-Through (kill = +1 Action), Sundering (strip DR), Momentum (+1d6 after moving).
+- **Category Technique Augments:** Cascading Cleave (chain kills), Brutal Power Attack (+2 dice), Expanding Whirlwind (2-space radius).
 - **Condition path:** Bleed at double tick rate → Shredded → Hemorrhage (T3) → Exsanguination (T4 capstone, once per long rest).
 
 #### The Sentinel (Spear + Shield)
 
-- **Mastery:** Spear 3, Shield 3.
+- **Mastery:** Spear 3, Shield 3. Background: Martial.
 - **Role:** Pure tank and controller. Lock down movement, protect allies.
 - **Core loop:** Sentinel (Reaction attacks on approach) → Impale to pin targets → Shield Wall with adjacent ally → Raise Shield for durability.
 - **Key Techniques:** Sentinel, Sweep, Impale, Keep at Bay, Phalanx, Shield Bash, Raise Shield, Shield Wall.
-- **Augments:** Trip (prone on hit), Brace (+1d6 vs. chargers), Shield Synergy (+1 AC).
-- **Condition path:** Bleed through Spear. Impaled targets do not lose Bleed stacks to decay. Force through Shield Bash for Staggered.
+- **Weapon Augments (passive):** Formation Fighting (+2 to hit near allies), Pin Down (Bleed slows movement), Shield Master (AC bonus to nearby allies).
+- **Category Technique Augments:** Threatening Reach (Sentinel triggers within reach), Trip Sweep (prone on Sweep hits).
+- **Condition path:** Bleed through Spear (ignores 1 Physical DR). Impaled targets do not lose Bleed to decay. Force through Shield Bash.
 
 #### The Hybrid (Staff + Spellcasting)
 
 - **Mastery:** Staff 3. Background: Hybrid (110 HP, 70 Mana, 10 regen).
 - **Role:** Gish condition accelerator.
-- **Core loop:** Cast Burn/Chill spells → Staff attacks catalyze elemental stacks (extra ticks) → push to T2 escalation → Staff T3 enhancement Technique → T4 if fight goes long.
+- **Core loop:** Cast Burn/Chill spells → Staff attacks catalyze elemental stacks (extra ticks) → push to T2 escalation → T3 enhancement Technique → T4 if fight goes long.
 - **Key Techniques:** Staff weapon Techniques (TODO), Sentinel, Sweep. Spells: Burn/Chill/Shock varieties.
-- **Augments:** Arcane Infusion (+1d8 elemental after spell), Spell Strike (Touch spell + Staff attack), Mana Reave (sustain Mana through hits).
+- **Universal Augments (socketed):** Condition: Burn (add stacks to Staff Techniques), Elemental Shift (change damage type on any Technique).
+- **Spellblade Augments:** Arcane Infusion (+1d8 elemental after spell), Spell Strike (Touch spell + melee attack), Mana Reave (+3 Mana on Technique kills).
 - **Condition path:** Spell stacks + Staff catalysis → Frozen (Chill T2) → Permafrost (T3, 12 Mana) → Absolute Zero (T4 capstone, 17 Mana, once per long rest).
 
 #### The Assassin (Dagger + Hand Crossbow)
@@ -1025,8 +1372,13 @@ Caster characters spend Mana on Spells. They use Universal Techniques and unaugm
 - **Role:** Dual-condition poison and bleed specialist. Ambush predator.
 - **Core loop:** Open at range with Hand Crossbow → apply Poison stacks (1 per hit, 2 at Rank 3) → close to melee → Dagger Flurry for Bleed + Poison → double escalation (Shredded + Venomous). Against bosses: Neurotoxin (T3) + Hemorrhage (T3) for layered pressure.
 - **Key Techniques:** Quick Draw, Flurry, Assassinate, Hand Crossbow Techniques (TODO). Quick Shot for ranged Poison, Flurry for melee combo.
-- **Augments:** Poisoned Edge (extra Venom stack), Feint (force hits through), Twin Strike (dual-wield bonus).
+- **Weapon Augments (passive):** Envenomed Blade (+1 Poison tick damage), Arterial Cut (mundane healing can't remove Dagger Bleed), Shadowstep (teleport on kill).
+- **Category Technique Augments:** Triple Flurry (3rd attack), Vanishing Strike (stealth after Assassinate), Lethal Ambush (×3 damage).
 - **Condition path:** Poison at range → Venomous (T2) → Neurotoxin (T3, movement = 0). Bleed in melee → Shredded (T2) → Hemorrhage (T3). Against bosses: stack both T3s, then Lethal Dose (T4 capstone, once per long rest).
+
+### Full Augment Catalog
+
+The book includes all Universal Augments and worked examples for Rapier and Katana (Weapon Augments + Technique Augments). The full catalog of all 32 weapons, their Weapon Augments, and all Technique Augments is available through the Solus character builder web app. TODO: web app URL.
 
 ## Magic and Spellcasting
 
@@ -1278,7 +1630,7 @@ XP is a shared budget across three investment tracks:
 
 - **Proficiency ranks.** Buy new proficiencies or raise existing ones. Each proficiency advances from Rank 1 to Rank 10. Costs rise exponentially.
 - **Weapon Mastery ranks.** Buy Mastery Ranks in individual weapons (Rank 1 to 5). Higher ranks unlock more Techniques and Augment Slots.
-- **Augments.** Purchase Universal and Category Augments to socket into your prepared Techniques.
+- **Augments.** Purchase Weapon Augments and learn Technique Augments to socket into your prepared Techniques. All 22 Universal Augments are known at creation.
 
 Spreading XP gives breadth. Focusing XP gives depth. A character with three weapons at Mastery 2 plays differently from one weapon at Mastery 5.
 
