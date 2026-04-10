@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+
+# Build outputs
+dist/
+dist-vault/
+dist-vault.zip
+solus-obsidian-vault.zip
+
+# Temporary test artifacts
+tmp-test-vault/
+tmp-test-vault.zip
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

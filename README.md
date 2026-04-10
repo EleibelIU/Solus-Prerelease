@@ -23,6 +23,33 @@ The manuscript already carries the stable rules material for Solus, including th
 
 Treat [The System Book Document](system-book/solus-system-book.md) as the current source of truth for all rules. Use the archive for source tracing, extraction, and comparison, not for new book prose.
 
+## Local Development Setup
+
+The build scripts require only Python 3.12+ (standard library only — no third-party packages).
+
+**Windows (PowerShell)**
+
+```powershell
+# Clone the repo, then from the project root:
+.\init.ps1
+# Activate the environment for your shell session:
+.\.venv\Scripts\Activate.ps1
+# Run the build script:
+python .\scripts\build_obsidian_vault.py
+# Run the tests:
+python .\scripts\test_build_obsidian_vault.py
+```
+
+**macOS / Linux**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/build_obsidian_vault.py
+python scripts/test_build_obsidian_vault.py
+```
+
 ## Obsidian Vault Package
 
 This repository includes a GitHub Actions workflow that builds an Obsidian-ready vault package from the manuscript and archive.
