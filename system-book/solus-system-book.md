@@ -411,9 +411,20 @@ Shield occupies the off-hand. It functions as both a defensive item (+2 AC while
 
 TODO: full Technique list. Condition signature: Force. Unique mechanic: Burn Force stacks on yourself to boost unarmed strikes. Grapple pin combos with Force tick damage.
 
-#### Dagger (Standard, Light Melee)
+#### Dagger (Standard, Light Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed/Poison. Unique mechanic: Dual condition application. Rank 3+ hits apply both Bleed and Poison. Pairs with Flurry for fastest stack application in the game. Capstone: Lethal Dose (T4, Neurotoxin).
+**Unique Mechanic: Toxic Edge.** Dagger Techniques apply Bleed or Poison as listed. At Mastery Rank 3, all damaging Dagger Techniques also apply 1 Bleed and 1 Poison stack on hit. Pairs with Flurry for the fastest condition stacking in the game.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Lacerate | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. |
+| 1 | Poison Prick | 1 Action | 1d6 Piercing. Apply 1 Poison stack. |
+| 2 | Fan of Blades | 1 Action, 3 Mana | Throw daggers at up to 2 targets within 20 ft. 1d6 Piercing each. Apply 1 Poison stack per target. |
+| 2 | Sidestep | Reaction | When an enemy misses you in melee, strike back. 1d6 Piercing. Apply 1 Bleed stack. |
+| 3 | Hemorrhaging Strike | 1 Action, 5 Mana | 2d6 Slashing. Apply 2 Bleed stacks. If the target has Poison stacks, apply 1 additional Poison stack. |
+| 3 | Venomous Ambush | 1 Action, 7 Mana | Requires hiding or an unaware target. 3d6 Piercing. Apply 2 Poison stacks. This attack has advantage. |
+| 4 | Crimson Venom | 1 Action, 8 Mana | Requires Shredded (T2 Bleed) and Venomous (T2 Poison) on the target. 2d6 Piercing. Apply Neurotoxin (T3): target movement becomes 0, Poison damage doubles each round. |
+| 5 | Lethal Dose (Capstone) | 1 Action, 15 Mana | Requires Neurotoxin (T3) on the target. Poison stacks jump to 35. Target permanently loses 1 Action per turn. Once per long rest. |
 
 #### Short Sword (Standard, Light Melee)
 
@@ -521,9 +532,24 @@ TODO: full Technique list. Condition signature: Bleed (one-handed) / Force (two-
 
 TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping Bleed hits two adjacent targets per attack. Best group-Bleed spreader in Medium Melee.
 
-#### Katana (Complex, Medium Melee)
+#### Katana (Complex, Medium Melee) — 12 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Escalating Bleed on consecutive hits in the same turn (1st = 1 stack, 2nd = 2 stacks, 3rd = 3 stacks). Rewards committing all Actions to one target.
+**Unique Mechanic: Momentum Blade.** Each consecutive hit against the same target in one turn applies escalating Bleed: 1st hit = 1 stack, 2nd hit = 2 stacks, 3rd hit = 3 stacks. Switching targets or ending your turn resets the count.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Iaijutsu (Draw Cut) | 1 Action | Requires katana sheathed. Draw and strike in one motion. +2 to hit, +1d6 damage. You may sheathe the katana as a Free Action at end of your turn. |
+| 1 | Successive Cuts | Passive | When you attack a target you already hit this turn, +2 to hit. |
+| 1 | Chiburi (Blood Flick) | Free Action | After hitting a target 2 or more times this turn, your Bleed stacks on that target last 1 additional round. |
+| 2 | Tsubame Gaeshi (Swallow Reversal) | 1 Action, 3 Mana | On hit, reverse the blade for a second strike at -2 to hit. Both hits count separately for Momentum Blade. |
+| 2 | Battojutsu (War Draw) | 1 Action, 3 Mana | Requires katana sheathed. Enhanced draw cut. +4 to hit, +1d10 damage. Target rolls `2d10 + Body` vs. DC 14 or loses half movement for 1 round. |
+| 2 | Seme (Pressure) | Free Action, 3 Mana | Until end of turn, each Momentum Blade hit applies +1 additional Bleed stack (1st hit = 2, 2nd = 3, 3rd = 4). |
+| 3 | Kirioroshi (Cleaving Down-Cut) | 1 Action, 5 Mana | Overhead strike. On hit, deal weapon damage +1d6 per Bleed stack on target (max +5d6). |
+| 3 | Tsuki (Piercing Thrust) | 1 Action, 8 Mana | Precision thrust. Auto-hit. Deal 1d10 damage + 2 Bleed stacks. Counts as a consecutive hit for Momentum Blade. |
+| 3 | Suriage (Rising Parry-Cut) | Reaction, 5 Mana | When attacked in melee, roll your attack vs. theirs. Win: negate the attack and deal 1d10 damage + 1 Bleed stack. |
+| 4 | Zantetsuken (Iron-Cutting Slash) | 2 Actions, 8 Mana | Full-force slash. Weapon damage ×2, ignore Physical DR. If target is Shredded, deal +2d10 damage. |
+| 4 | Musō Ken (No-Mind Blade) | Passive | Your third consecutive hit on the same target each turn deals +2d10 damage and ignores Physical DR. |
+| 5 | Ōgi: Hitotsume (Capstone — The One Cut) | 3 Actions, 15 Mana | Single perfect draw strike. Auto-hit. Weapon damage ×3 +1d10 per Bleed stack on target. Apply 5 Bleed stacks (triggers Shredded). Target rolls `2d10 + Body` vs. DC 18 or enters Dying. Once per long rest. |
 
 #### Mace (Standard, Medium Melee)
 
@@ -602,9 +628,21 @@ Two-handed, high damage, slow. Heavy Melee favors commitment, area attacks, and 
 | 4 | Zufechten | Passive | First attack each combat has advantage and deals +1d6 damage. |
 | 5 | Meisterhau (Capstone) | 3 Actions, 15 Mana | Auto-hit. Weapon damage × 3. Target rolls `2d10 + Body` vs. DC 18 or falls prone, Stunned, and Staggered. Once per long rest. |
 
-#### Greathammer (Standard, Heavy Melee)
+#### Greathammer (Standard, Heavy Melee) — 9 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: 2 Force stacks per hit. Fastest single-weapon path to Staggered. At Staggered, Force attacks deal triple bonus damage. Capstone: Obliterate (T4, weapon damage × 4).
+**Unique Mechanic: Crushing Force.** Every hit applies 2 Force stacks instead of 1. At Staggered (5 Force stacks), your Force damage ticks deal triple bonus (3 per stack per round instead of 1).
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Skull Crack | 1 Action | On hit, target has disadvantage on their next attack roll. |
+| 1 | Driving Blow | 1 Action | On hit, push target 2 spaces. Collision with a wall or creature deals 1d8 bonus damage. |
+| 2 | Earthshaker | 2 Actions, 3 Mana | Strike the ground. All enemies within 1 space roll `2d10 + Body` vs. DC 13 or fall prone. |
+| 2 | Concussive Blow | 1 Action, 3 Mana | On hit, target loses Reaction until their next turn. If target is Staggered, also Stunned for 1 round. |
+| 3 | Tremor | 2 Actions, 5 Mana | All enemies within 2 spaces take 1d8 damage and roll `2d10 + Body` vs. DC 14 or fall prone. |
+| 3 | Armor Crush | 1 Action, 5 Mana | On hit, reduce target's Physical DR by 2 until end of combat. Stacks. |
+| 4 | Shatter | 1 Action, 8 Mana | Requires Staggered. Triggers Shattered (T3 Enhanced): Physical DR = 0 for 2 rounds. Physical attacks auto-apply 1 Bleed. |
+| 4 | Pulverize | 2 Actions, 8 Mana | Requires Staggered. Weapon damage + 2d8. Target rolls `2d10 + Body` vs. DC 16 or Stunned for 1 round. |
+| 5 | Obliterate (Capstone) | 3 Actions, 15 Mana | Requires Shattered. Weapon damage × 4. Kill = target cannot be resurrected. Boss: damage × 3, boss loses 1 action permanently. Once per long rest. |
 
 #### Great Axe (Standard, Heavy Melee)
 
@@ -664,9 +702,20 @@ Extended range (2+ spaces) and zone control. Reach weapons punish movement, lock
 | Trident | Bleed | — | Impaled targets: Bleed stacks do not decay. |
 | Chain | Force | — | Entangled targets gain 1 Force stack per turn (constricting). |
 
-#### Spear (Standard, Reach)
+#### Spear (Standard, Reach) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Bleed ignores 1 Physical DR. Brace against charges applies 3 Bleed stacks. Best defensive Reach weapon when paired with Shield.
+**Unique Mechanic: Deep Pierce.** All Bleed applied by Spear attacks ignores 1 Physical DR on tick damage. Defensive Reach weapon optimized for Shield pairing and formation fighting.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Brace | Reaction | When an enemy moves 2+ spaces toward you, make a free attack at reach. On hit, apply 3 Bleed stacks. |
+| 1 | Measured Thrust | 1 Action | Attack at reach. On hit, apply 1 Bleed stack. If you did not move this turn, +2 to hit. |
+| 2 | Javelin Toss | 1 Action, 3 Mana | Throw your Spear up to 30 ft. +1d8 damage. Apply 2 Bleed stacks on hit. Spear returns to your hand at end of turn. |
+| 2 | Goading Thrust | 1 Action, 3 Mana | Attack at reach. On hit, apply 1 Bleed stack. Mark the target until your next turn. If the marked target moves away from you, make a free attack (no Reaction cost). |
+| 3 | Hold the Line | Passive | While wielding a Shield, Brace triggers against any enemy entering your reach (no distance requirement). Brace attacks deal +1d6 damage. |
+| 3 | Puncture | 1 Action, 5 Mana | Precision thrust. Ignores all Physical DR. On hit, apply 2 Bleed stacks. |
+| 4 | Bloodletter | 1 Action, 8 Mana | Attack a Bleeding target. On hit, double the target's Bleed stacks (max 5). If target reaches 5 stacks, immediately trigger Shredded. |
+| 5 | Heartstopper (Capstone) | 2 Actions, 12 Mana | Auto-hit. Apply 5 Bleed stacks. Target enters Shredded. Target rolls `2d10 + Body` vs. DC 16 or is Restrained for 1 round. Bleed from Heartstopper does not decay for 3 rounds. Once per long rest. |
 
 #### Halberd (Standard, Reach)
 
