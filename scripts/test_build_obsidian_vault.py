@@ -33,7 +33,7 @@ expected_paths = [
     output_root / "system-book" / "solus-system-book.md",
     output_root / "system-book" / "chapters" / "01 Introduction and Design Goals.md",
     output_root / "system-book" / "chapters" / "02 Core Mechanics.md",
-    output_root / "system-book" / "chapters" / "13 Reference and Playtest Tools.md",
+    output_root / "system-book" / "chapters" / "14 Reference and Playtest Tools.md",
     output_root / "archive" / "epics-and-stories",
     output_root / "archive" / "rough-notes",
     output_root / "archive" / "playtest-materials",
@@ -48,7 +48,7 @@ if "[[System Book]]" not in home_text:
     raise SystemExit("Home.md does not contain the System Book wiki link.")
 
 toc_text = (output_root / "System Book.md").read_text(encoding="utf-8")
-if "[[system-book/chapters/08 Combat]]" not in toc_text:
+if "[[system-book/chapters/09 Combat]]" not in toc_text:
     raise SystemExit("System Book.md does not contain the Combat chapter link.")
 
 chapter_text = (output_root / "system-book" / "chapters" / "02 Core Mechanics.md").read_text(encoding="utf-8")

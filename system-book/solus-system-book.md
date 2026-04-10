@@ -132,11 +132,17 @@ The following parts are long-term and should stay on the sheet until they are re
 - Madness
 - Reputation
 
-### Step 7: Choose Equipment
+### Step 7: Choose Starting Weapons
 
-Choose weapons, armor, and gear that fit the build.
+Pick one or two weapons from the tables in Weapons, Techniques, and Augments. You begin at Mastery Rank 1 in your chosen weapon(s). This grants access to that weapon's tier 1 Techniques and its category's tier 1 Techniques.
 
-TODO: add starting equipment rules.
+Choose your starting Techniques. You can prepare up to 10 Techniques from your available pools (Universal, Category, and Weapon-Specific). You can change prepared Techniques on a short or long rest.
+
+### Step 8: Choose Equipment
+
+Choose armor from the tables in Armor and Defense. Your background does not restrict your choices. You begin with one set of armor (any tier except Enchanted).
+
+TODO: add starting equipment rules for gear and supplies.
 
 ## Attributes and Skills
 
@@ -199,7 +205,7 @@ Each skill uses one fixed primary attribute and one player-chosen secondary attr
 | Arcana | Magic | Used to identify, understand, manipulate, or reason about magical, supernatural forces. | Mind<br>Sanity |
 | Insight | Sanity | Used to uncover and comprehend hidden cosmic, occult, eldritch, or existential truths revealed through fractured perception or loss of mental stability. | Body<br>Mind |
 
-## Equipment, Armor, and Weapons
+## Armor and Defense
 
 Armor splits protection between physical damage and magic damage. Each armor tier carries a damage reduction value for each side, and that same split also feeds into Armor AC. To calculate Armor AC, add Physical DR to Body for physical defense, and add Magic DR to Magic for magical defense. DR reduces damage after a hit lands.
 
@@ -213,20 +219,765 @@ Armor splits protection between physical damage and magic damage. Each armor tie
 
 Magic DR reduces damage from elemental status effects, but it does not stop those effects from applying or escalating. A target can still build stacks and reach a higher condition even while armor cuts the damage from those stacks.
 
-Weapons are organized by category, tag set, and damage format. Base weapon damage uses Body across the current weapon tables, including ranged weapons and firearms.
+## Weapons, Techniques, and Augments
 
-| Category | Example Weapons | Core Damage |
-| --- | --- | --- |
-| Light Melee | Dagger, Claw Gauntlet, Short Sword, Chain Blade, Bare Hands | 1d4 + Body to 1d6 + Body |
-| Medium Melee | Rapier, Katana, Curved Sword | 1d8 + Body |
-| Heavy Melee | Greatsword, Greathammer, Great Axe | 1d8 + Body |
-| Reach Weapons | Halberd, Scythe, Whip | 1d6 + Body to 1d10 + Body |
-| Ranged / Thrown | Bow, Bomb Flask | 1d6 + Body to 1d8 + Body |
-| Firearms | Revolver, Rifle, Shotgun, Sniper Rifle | 1d8 + Body to 1d12 + Body |
+Every character fights with weapons. Weapons deal damage, apply condition stacks, and unlock Techniques. Your choice of weapon defines your combat role as much as your attributes do.
 
-Weapon tags define how a weapon behaves in play. Current tags include combinations such as Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed. Many weapons also carry custom traits that apply stacks, move targets, alter terrain, or unlock finishers once a target reaches the right setup.
+This chapter covers three systems:
 
-TODO: insert the full weapon-by-weapon trait list after the equipment chapter is locked.
+- **Weapons** grant base damage, properties, and condition signatures.
+- **Techniques** are active combat abilities. They cost Actions and sometimes Mana. You prepare up to 10 at a time, changeable on a short or long rest. Each Technique requires its associated weapon equipped.
+- **Augments** modify Techniques. You socket Augments into Augment Slots unlocked by Weapon Mastery.
+
+### Weapon Mastery
+
+Each weapon has its own Mastery track, ranked 0 through 5. You buy Mastery Ranks with XP from your shared advancement budget. Higher ranks unlock stronger Techniques and more Augment Slots.
+
+| Mastery Rank | Unlock | Augment Slots per Technique | XP Cost |
+|---|---|---|---|
+| 0 (Untrained) | Universal Techniques only | 0 | — |
+| 1 | Category Techniques (tier 1) + Weapon Techniques (tier 1) | 1 | TODO: XP cost |
+| 2 | Category Techniques (tier 2) + Weapon Techniques (tier 2) | 1 | TODO: XP cost |
+| 3 | Category Techniques (tier 3) + Weapon Techniques (tier 3) | 2 | TODO: XP cost |
+| 4 | Weapon Techniques (tier 4) | 2 | TODO: XP cost |
+| 5 | Weapon Techniques (tier 5) + Capstone | 3 | TODO: XP cost |
+
+Weapon complexity determines how high the Mastery track goes and how many Techniques are available.
+
+| Complexity | Max Rank | Weapon Techniques | Total Pool |
+|---|---|---|---|
+| Simple | 3 | 4–5 | ~10–12 |
+| Standard | 5 | 7–9 | ~16–20 |
+| Complex | 5 | 10–14 | ~20–25 |
+
+Simple weapons cap at Rank 3. Standard and Complex weapons reach Rank 5.
+
+### Technique Layers
+
+Techniques come from three sources. Each layer has different unlock requirements and scope.
+
+| Layer | Source | Scope |
+|---|---|---|
+| Universal | Available to all characters | Any equipped weapon |
+| Category | Unlocked by Mastery Rank 1+ in any weapon in that category | Any weapon in that category |
+| Weapon-Specific | Unlocked by that weapon's Mastery Rank | Only that specific weapon |
+
+You prepare up to 10 Techniques at a time from any combination of layers. You can swap your prepared list on a short or long rest.
+
+### Augment Layers
+
+Augments modify Techniques. You socket them into Augment Slots. Two layers exist.
+
+| Layer | Scope |
+|---|---|
+| Universal Augments | Any Technique, any weapon |
+| Category Augments | Only Techniques from that weapon category |
+
+No weapon-specific Augments exist. Augments add Mana cost to the Technique they modify. Stacking multiple Augments on one Technique adds their Mana costs together.
+
+### Universal Techniques
+
+Every character has access to these four Techniques regardless of weapon or Mastery Rank.
+
+**Brace.** Plant your feet. Until your next turn, gain +2 AC. You cannot move. Free Action to enter; costs your movement for the turn.
+
+**Shove.** Push an adjacent creature 1 space. Roll `2d10 + Body` vs. target's `2d10 + Body`. Costs 1 Action.
+
+**Taunt.** Force a target within 6 spaces to roll `2d10 + Social` vs. your `2d10 + Social`. On failure, the target must attack you on their next turn if able. Costs 1 Action.
+
+**Second Wind.** Recover `1d10 + Body modifier` HP. Costs 1 Action. Once per combat. Cannot use while Dying.
+
+### Universal Augments
+
+Sixteen Augments are available to all characters. The first twelve work with any Technique on any weapon. The last four (Spellblade Augments) bridge weapon attacks and spellcasting.
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Reach | Range +1 space (melee) or +10 ft (ranged). | +2 |
+| Splash | On hit, half damage to all adjacent to target. | +3 |
+| Potency | +1 die of damage (same type as weapon). | +2 |
+| Efficiency | -1 Action cost (minimum 1). | +3 |
+| Momentum | If you moved 2+ spaces this turn, +1d6 damage. | +1 |
+| Duration | Conditions applied last 1 extra round. | +2 |
+| Trigger | Choose a trigger condition. Technique auto-fires as a Reaction when triggered. | +4 |
+| Chain | On hit, make a second attack at a different target at -4 to hit. | +3 |
+| Siphon | On hit, recover HP equal to 25% of damage dealt. | +3 |
+| Condition: Burn | On hit, apply 1 Burn stack. | +2 |
+| Condition: Chill | On hit, apply 1 Chill stack. | +2 |
+| Condition: Shock | On hit, apply 1 Shock stack. | +2 |
+
+#### Spellblade Augments
+
+These four Augments connect weapon combat and spellcasting. Any character with Mana can use them.
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Spell Strike | Deliver one Touch spell alongside a weapon attack. One roll, two payloads. Miss = spell not expended. | +0 (spell Mana paid separately) |
+| Arcane Infusion | After casting a spell this turn, your next Technique deals +1d8 elemental damage (matching the spell's element). | +2 |
+| Channeling | While concentrating on a spell, the Technique costs 2 less Mana (minimum 0). | +0 |
+| Mana Reave | On hit, restore Mana equal to your weapon's base damage die (e.g., 1d8 weapon = roll 1d8 Mana restored). Once per round. | +3 |
+
+### Weapon Properties Reference
+
+Weapons carry properties that modify how they function in combat.
+
+| Property | Effect |
+|---|---|
+| Finesse | Use Body or Magic modifier for attack rolls (player's choice). |
+| Light | Can be dual-wielded. One weapon in each hand. |
+| Paired | Comes as a set. Always dual-wielded. |
+| Heavy | -2 to hit for characters with Body modifier below +1. |
+| Two-Handed | Requires both hands. Cannot use a Shield. |
+| Versatile (XdY) | Wield one-handed or two-handed. Two-handed uses the listed die. |
+| Adaptive | Changes weapon category based on grip. |
+| Reach | Attack targets 2 spaces away (default). |
+| Reach (N spaces) | Attack targets up to N spaces away. |
+| Thrown (N ft) | Make a ranged attack up to N feet. Uses Body modifier. |
+| Defensive (+N AC) | +N AC while equipped. |
+| Bash | Can make melee attacks with a Shield. |
+| Hooked | On hit, free Disarm attempt. Target rolls `2d10 + Body` vs. your attack roll. |
+| Bludgeon | Bludgeoning damage. +2 to hit vs. Heavy armor. |
+| Pierce | Ignores 2 Physical DR. |
+| Bypass | Ignores Shield AC bonuses. |
+| Chain | Target cannot Parry this weapon. |
+| Sweeping | Attacks can hit two adjacent targets. Once per turn, free. |
+| Entangle | On hit, attempt to Restrain target. Costs 1 extra Action. |
+| Disarm | On hit, free Disarm attempt. |
+| Arcane | Spells gain +1 range tier while equipped. Bonus, not a requirement for casting. |
+| Ammunition (N) | Holds N shots before requiring a Reload. |
+| Reload | 1 Action to reload. Some Techniques modify reload speed. |
+| Loading | 1 Action to reload after each shot. |
+| Consumable | Destroyed on use. Must be crafted or purchased. |
+| Spread | Point-blank range: +1d6 damage. Maximum range: -1d6 damage. |
+| AoE (radius) | Hits all targets in the listed radius on impact. |
+| Unarmed | Cannot be disarmed. Compatible with grappling Techniques. |
+| Grapple | Advantage on grapple checks. |
+| Conduit | Spell attack rolls gain +1 to hit while equipped. Bonus, not a requirement. |
+| Spellforged | Legendary property. Contains one spell, castable once per long rest as a free action (0 Actions, 0 Mana). |
+
+### Weapon Categories
+
+Weapons are grouped into seven categories. Each category shares a fighting style, a set of Category Techniques, and Category Augments.
+
+---
+
+### Light Melee
+
+Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, and condition application. These weapons strike often and stack conditions faster than any other category.
+
+#### Light Melee Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Quick Draw | Free Action | Switch to this weapon as a free action. If you attack in the same turn, +1 to hit. |
+| 1 | Flurry | 1 Action | Two attacks as a single Action. Each deals half weapon damage. |
+| 2 | Slip Away | Free (on hit) | After hitting, move 1 space without provoking reactions. |
+| 2 | Exploit Opening | Reaction | When an adjacent enemy misses an attack, make a free attack against them. |
+| 3 | Assassinate | 2 Actions | Attack an unaware target. On hit, double damage. |
+
+#### Light Melee Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Feint | Force target to take the hit or spend their Reaction to dodge. If dodged, you gain advantage on your next attack. | +2 |
+| Poisoned Edge | On hit, apply 1 Venom stack. | +2 |
+| Twin Strike | If dual-wielding Light Melee weapons, hit with both weapons. Second weapon deals half damage. | +2 |
+
+#### Light Melee Weapons
+
+| # | Weapon | Complexity | Base Damage | Properties |
+|---|---|---|---|---|
+| 1 | Bare Hands | Simple | 1d6 | Unarmed, Grapple |
+| 2 | Dagger | Standard | 1d6 | Finesse, Thrown (20 ft), Light |
+| 3 | Short Sword | Standard | 1d8 | Finesse, Light |
+| 4 | Claw Gauntlet | Standard | 1d6 | Finesse, Light, Paired |
+| 5 | Sickle | Standard | 1d6 | Finesse, Light, Hooked |
+| 6 | Shield | Standard | 1d6 | Defensive (+2 AC), Bash |
+
+Shield occupies the off-hand. It functions as both a defensive item (+2 AC while equipped) and a weapon with its own Mastery track. Shield Techniques include bashes, blocks, pushes, and formation abilities.
+
+#### Light Melee Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Bare Hands | Force | — | Burn Force stacks on yourself for bonus unarmed damage. Grapple Techniques pin targets while Force stacks tick. |
+| Dagger | Bleed | Poison | Paired with Flurry, applies stacks faster than any other weapon. Rank 3+: apply Bleed AND Poison on a single hit. |
+| Short Sword | Bleed | — | Every hit applies 1 Bleed. No variance. Rank 3: guaranteed 2 Bleed stacks per hit. |
+| Claw Gauntlet | Bleed | — | Dual-wield mandatory (Paired). Each Flurry hits twice. Fastest path to Shredded (5 Bleed) in the game. |
+| Sickle | Bleed | — | On kill, transfer remaining Bleed stacks to one adjacent enemy. |
+| Shield | Force | — | Shield Bash applies 1 Force stack. Repeated bashes build toward Staggered while maintaining high AC. |
+
+#### Bare Hands (Simple, Light Melee)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Burn Force stacks on yourself to boost unarmed strikes. Grapple pin combos with Force tick damage.
+
+#### Dagger (Standard, Light Melee)
+
+TODO: full Technique list. Condition signature: Bleed/Poison. Unique mechanic: Dual condition application. Rank 3+ hits apply both Bleed and Poison. Pairs with Flurry for fastest stack application in the game. Capstone: Lethal Dose (T4, Neurotoxin).
+
+#### Short Sword (Standard, Light Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Guaranteed Bleed on every hit (1 stack, scaling to 2 at Rank 3). No variance. Consistent pressure.
+
+#### Claw Gauntlet (Standard, Light Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Paired property forces dual-wield. Each Flurry lands twice. Fastest path to Shredded (5 Bleed stacks) in the game.
+
+#### Sickle (Standard, Light Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: On kill, transfer remaining Bleed stacks to one adjacent enemy. Harvest-chain kills spread Bleed across groups.
+
+#### Shield (Standard, Light Melee) — 8 Techniques
+
+**Unique Mechanic: Guard.** +2 AC while equipped (base Defensive property). Shield Techniques enhance defense and provide offense. Tank/controller hybrid.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Shield Bash | 1 Action | 1d6 Bludgeon. Push target 1 space. |
+| 1 | Raise Shield | 1 Action | +4 AC total until your next turn. Costs movement. |
+| 2 | Shield Slam | 1 Action, 3 Mana | Charge 2 spaces and bash. Target rolls `2d10 + Body` vs. DC 12 or falls prone. |
+| 2 | Cover Ally | Reaction | Redirect an attack on an adjacent ally to yourself. Gain Shield AC bonus against the redirected attack. |
+| 3 | Shield Wall | Passive | When adjacent to an ally also using Raise Shield, both gain +6 AC instead of +4. |
+| 3 | Rebounding Bash | 1 Action, 5 Mana | Bash bounces to a second adjacent target. Both take 1d6 Bludgeon and are pushed 1 space. |
+| 4 | Fortress | 2 Actions, 5 Mana | +6 AC. Immune to forced movement. Adjacent allies gain +2 AC. You cannot move or attack. Lasts until your next turn. |
+| 5 | Aegis (Capstone) | Reaction, 10 Mana | Negate all damage from one attack targeting you or an adjacent ally. Once per long rest. |
+
+---
+
+### Medium Melee
+
+Balanced offense and defense. One-handed weapons that pair with shields or off-hand weapons. Medium Melee favors positioning, counterplay, and adaptability.
+
+#### Medium Melee Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Parry | Reaction | Add your weapon damage die to AC against one melee attack. |
+| 1 | Riposte Stance | Free Action | Enter stance. While in Riposte Stance, a successful Parry triggers a free counterattack. |
+| 2 | Press the Advantage | Free (on hit) | After hitting, your next attack this turn has advantage. |
+| 2 | Disarming Strike | 1 Action | On hit, target rolls `2d10 + Body` vs. your attack roll or drops their weapon. |
+| 3 | Measured Assault | 3 Actions | Commit all 3 Actions to one attack. Add your weapon die twice to damage. If the target dies, refund 1 Action. |
+
+#### Medium Melee Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Precision | +2 to hit, -1 die size on damage. Apply a condition based on body part targeted: arm = Disarm, leg = Slow, head = Stun. | +2 |
+| Shield Synergy | +1 AC until end of turn if you have a Shield in your off-hand. | +1 |
+| Flowing Form | After using a Technique, enter or switch stances as a free action. | +1 |
+
+#### Medium Melee Weapons
+
+| # | Weapon | Complexity | Base Damage | Properties |
+|---|---|---|---|---|
+| 7 | Longsword | Standard | 1d10 | Versatile (1d12 two-handed) |
+| 8 | Rapier | Complex | 1d8 | Finesse |
+| 9 | Curved Sword | Standard | 1d8 | Finesse |
+| 10 | Katana | Complex | 1d10 | Finesse, Two-Handed |
+| 11 | Mace | Standard | 1d8 | Bludgeon |
+| 12 | Flail | Standard | 1d8 | Bypass, Chain |
+| 13 | War Pick | Standard | 1d8 | Pierce |
+| 14 | Bastard Sword | Complex | 1d10 | Versatile (1d12), Adaptive |
+
+**Bastard Sword and the Adaptive property.** One-handed grip = Medium Melee category. Two-handed grip = Heavy Melee category. At Mastery 3, you access Category Techniques from both categories.
+
+#### Medium Melee Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Longsword | Bleed | Force | One-handed = Bleed. Two-handed = Force. Player chooses stack path by grip. |
+| Rapier | Bleed | — | Bleed bypasses 1 Physical DR. Opening-spent Techniques apply 2 Bleed stacks. |
+| Curved Sword | Bleed | — | Sweeping Bleed hits two adjacent targets. Spreads Bleed across a group. |
+| Katana | Bleed | — | Each consecutive hit in the same turn applies +1 additional Bleed (1st = 1, 2nd = 2, 3rd = 3). |
+| Mace | Force | — | Force stacks also impose -1 to mental Proficiency Checks per stack. At Staggered: disadvantage on all Proficiency Checks. |
+| Flail | Force | — | Ignores Shield AC and Parry. Force stacks land against defensive opponents. |
+| War Pick | Bleed | — | Pierce extends to Bleed: Bleed damage also ignores 2 Physical DR. |
+| Bastard Sword | Bleed or Force | — | Matches grip. Switch mid-combat to exploit whichever path is closer to escalation. |
+
+#### Longsword (Standard, Medium Melee)
+
+TODO: full Technique list. Condition signature: Bleed (one-handed) / Force (two-handed). Unique mechanic: Grip-switching determines condition path. Versatile damage (1d10/1d12).
+
+#### Rapier (Complex, Medium Melee) — 12 Techniques
+
+**Unique Mechanic: Openings.** A successful Parry or an enemy miss in melee grants you 1 Opening (maximum 3). Spend Openings to enhance Rapier Techniques. Openings reset at the end of combat.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Lunge | 1 Action | Attack a target up to 2 spaces away. -2 AC until your next turn. |
+| 1 | Feinting Thrust | 1 Action | Spend 1 Opening. Attack has advantage. |
+| 1 | En Garde | Free Action | Defensive stance. +1 AC. Successful Parries generate 2 Openings instead of 1. |
+| 2 | Compound Riposte | Reaction | After a successful Parry, make a free attack at +1d8 damage. Costs 1 Opening. |
+| 2 | Derobement | Reaction | Auto-succeed on Disarm resistance. Gain 1 Opening. |
+| 2 | Fleche | 1 Action, 3 Mana | Move 3 spaces in a line and attack. +2 to hit. Cannot reuse for 1 round. |
+| 3 | Balestra | 1 Action, 5 Mana | Spend 2 Openings. Three rapid thrusts. Roll each separately. |
+| 3 | Counter-Tempo | Passive | At 3 Openings, all your attacks deal +1d6 damage. |
+| 3 | Passata Sotto | Reaction, 3 Mana | Duck under an attack. The attack auto-misses. Gain 1 Opening. Once per round. |
+| 4 | Prise de Fer | 1 Action, 5 Mana | Bind enemy weapon for 1 round. Target rolls `2d10 + Body` to break free. Costs 2 Openings. |
+| 4 | Tempo Rubato | Passive | Reactions no longer consume your Reaction for the round. Unlimited Parry/Riposte per round. |
+| 5 | Touché (Capstone) | 1 Action, 15 Mana | Spend 3 Openings. Auto-crit, triple damage. Target rolls `2d10 + Body` vs. DC 20 or incapacitated for 1 round. Once per long rest. |
+
+#### Curved Sword (Standard, Medium Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping Bleed hits two adjacent targets per attack. Best group-Bleed spreader in Medium Melee.
+
+#### Katana (Complex, Medium Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Escalating Bleed on consecutive hits in the same turn (1st = 1 stack, 2nd = 2 stacks, 3rd = 3 stacks). Rewards committing all Actions to one target.
+
+#### Mace (Standard, Medium Melee)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks impose -1 per stack to mental Proficiency Checks. At Staggered (5 Force): disadvantage on all Proficiency Checks.
+
+#### Flail (Standard, Medium Melee)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Bypass and Chain properties mean Force stacks land against Shields and cannot be Parried. Anti-tank weapon.
+
+#### War Pick (Standard, Medium Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Pierce extends to Bleed damage. Bleed ticks also ignore 2 Physical DR. Capstone: Total Dissolution (T4, destroys armor).
+
+#### Bastard Sword (Complex, Medium Melee / Heavy Melee)
+
+TODO: full Technique list. Condition signature: Bleed (one-handed) or Force (two-handed). Unique mechanic: Adaptive. Switches category by grip. At Mastery 3, access Category Techniques from both Medium Melee and Heavy Melee.
+
+---
+
+### Heavy Melee
+
+Two-handed, high damage, slow. Heavy Melee favors commitment, area attacks, and overwhelming force. These weapons hit hard but cost more Actions per attack.
+
+#### Heavy Melee Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Cleave | Free (on kill) | On kill, make a free attack against an adjacent enemy. |
+| 1 | Power Attack | 1 Action | +1 damage die. -2 to hit. |
+| 2 | Staggering Blow | 1 Action | On hit, target loses Reaction and has -2 AC until their next turn. |
+| 2 | Whirlwind | 2 Actions | Attack all adjacent enemies. One roll vs. each AC. |
+| 3 | Executioner | 2 Actions | If target is below 25% HP, auto-crit on hit. |
+
+#### Heavy Melee Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Follow-Through | On kill, gain +1 Action this turn. | +3 |
+| Sundering | On hit, reduce target's Physical DR by 1 until end of combat. Stacks. | +2 |
+| Earthquake | All creatures within 1 space of target roll `2d10 + Body` vs. DC 12 or fall prone. | +3 |
+
+#### Heavy Melee Weapons
+
+| # | Weapon | Complexity | Base Damage | Properties |
+|---|---|---|---|---|
+| 15 | Greatsword | Complex | 2d6 | Two-Handed, Heavy |
+| 16 | Greathammer | Standard | 2d8 | Two-Handed, Heavy, Bludgeon |
+| 17 | Great Axe | Standard | 1d12 | Two-Handed, Heavy |
+| 18 | Greatclub | Simple | 2d6 | Two-Handed, Heavy, Bludgeon |
+
+#### Heavy Melee Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Greatsword | Force | Bleed | Normal grip = Force. Half-Sword grip = Bleed (1d8, Finesse). |
+| Greathammer | Force | — | 2 Force stacks per hit. Fastest single-weapon path to Staggered. At Staggered, Force attacks deal triple bonus damage. |
+| Great Axe | Bleed | — | Bleed stacks deal +1 per stack (2 per stack instead of 1). At Shredded, attacks ignore ALL Physical DR. |
+| Greatclub | Force | — | 1 Force per hit. Knockback into walls or terrain grants bonus Force stacks. |
+
+#### Greatsword (Complex, Heavy Melee) — 12 Techniques
+
+**Unique Mechanic: Half-Sword.** Grip the blade for close-range precision. Techniques tagged [Half-Sword] use the Greatsword as a Medium Melee weapon (1d8 damage, Finesse).
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Overhead Slash | 1 Action | On hit against Heavy armor, +1d6 damage. |
+| 1 | Wide Sweep | 1 Action | Attack target + one adjacent enemy. One roll vs. both ACs. |
+| 1 | Mordhau [Half-Sword] | 1 Action | Strike with crossguard. 1d8 Bludgeon. Ignores 2 Physical DR. |
+| 2 | Zwerchhaü | 1 Action, 3 Mana | Horizontal cross-cut. Target cannot use Reactions until their next turn. |
+| 2 | Winding Thrust [Half-Sword] | 1 Action | Precision thrust. +4 to hit, 1d6 damage. Apply 1 Bleed stack. |
+| 2 | Murder Stroke [Half-Sword] | 2 Actions | Pommel strike. 1d10 Bludgeon. Target rolls `2d10 + Body` vs. DC 14 or Stunned for 1 round. |
+| 3 | Krumphau | 1 Action, 5 Mana (Reaction) | Counter-cut. When an enemy attacks you in melee, strike simultaneously. If you hit and they miss, they are Staggered. |
+| 3 | Blade Cyclone | 2 Actions, 8 Mana | Hit all enemies within 2 spaces. Full damage to each. Once per combat. |
+| 3 | Absetzen | Reaction, 3 Mana | Deflect a melee attack. Your attack roll vs. theirs. Win = negate attack + free thrust (1d6 damage). |
+| 4 | Schielhau | 1 Action, 5 Mana | Target drops their weapon and takes 1d6 Bleed damage. |
+| 4 | Zufechten | Passive | First attack each combat has advantage and deals +1d6 damage. |
+| 5 | Meisterhau (Capstone) | 3 Actions, 15 Mana | Auto-hit. Weapon damage × 3. Target rolls `2d10 + Body` vs. DC 18 or falls prone, Stunned, and Staggered. Once per long rest. |
+
+#### Greathammer (Standard, Heavy Melee)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: 2 Force stacks per hit. Fastest single-weapon path to Staggered. At Staggered, Force attacks deal triple bonus damage. Capstone: Obliterate (T4, weapon damage × 4).
+
+#### Great Axe (Standard, Heavy Melee)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Bleed stacks deal double tick damage (+2 per stack instead of +1). At Shredded (5 stacks), attacks ignore all Physical DR. Capstone: Exsanguination (T4).
+
+#### Greatclub (Simple, Heavy Melee)
+
+TODO: full Technique list (caps at Rank 3). Condition signature: Force. Unique mechanic: Knockback into walls or terrain grants bonus Force stacks. Environmental combo weapon.
+
+---
+
+### Reach
+
+Extended range (2+ spaces) and zone control. Reach weapons punish movement, lock down areas, and protect allies. They favor kiting, formation fighting, and battlefield control.
+
+#### Reach Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Sentinel | Reaction | Enemies entering your reach provoke a free attack. |
+| 1 | Sweep | 1 Action | Attack up to two adjacent targets within your reach. One roll vs. both ACs. |
+| 2 | Keep at Bay | Free (on hit) | On hit, push target 1 space away from you. |
+| 2 | Impale | 1 Action | On hit, target is Restrained until they spend an Action to pull free or you release. You cannot attack other targets while impaling. |
+| 3 | Phalanx | Passive | While adjacent to an ally who also wields a Reach weapon, both of you gain +2 AC. |
+
+#### Reach Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Extended Reach | +1 space range for Reach weapons (+2 total from default). | +2 |
+| Trip | On hit, target rolls `2d10 + Body` vs. your attack roll or falls prone. | +2 |
+| Brace | If you haven't moved this turn, +1d6 damage vs. enemies who moved toward you. | +1 |
+
+#### Reach Weapons
+
+| # | Weapon | Complexity | Base Damage | Properties |
+|---|---|---|---|---|
+| 19 | Spear | Standard | 1d8 | Reach, Versatile (1d10), Thrown (30 ft) |
+| 20 | Halberd | Standard | 1d10 | Reach, Two-Handed, Heavy |
+| 21 | Scythe | Complex | 1d10 | Reach, Two-Handed, Sweeping |
+| 22 | Whip | Standard | 1d4 | Reach (3 spaces), Finesse, Disarm |
+| 23 | Staff | Standard | 1d6 | Reach, Two-Handed, Defensive (+1 AC), Arcane |
+| 24 | Trident | Standard | 1d8 | Reach, Thrown (20 ft), Pierce |
+| 25 | Chain | Complex | 1d8 | Reach (2 spaces), Two-Handed, Entangle |
+
+**Staff and the Arcane property.** Spells gain +1 range tier while holding a Staff. This is a bonus. Any character with Mana can cast any spell with any weapon or empty-handed. The Staff never gates casting.
+
+#### Reach Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Spear | Bleed | — | Bleed ignores 1 Physical DR. Brace: charging targets take 3 Bleed stacks. |
+| Halberd | Force | Bleed | Sweep applies Force on primary target and Bleed on secondary targets. |
+| Scythe | Bleed | — | Purge stacks from allies. On kill, transfer stacks to an adjacent enemy. |
+| Whip | Bleed | — | Apply Bleed at 3-space range. Rank 3: pull a Bleeding target toward you. |
+| Staff | Force | — | Force stacks catalyze elemental stacks (extra tick on hit against targets with active elemental stacks). Gish bridge weapon. |
+| Trident | Bleed | — | Impaled targets: Bleed stacks do not decay. |
+| Chain | Force | — | Entangled targets gain 1 Force stack per turn (constricting). |
+
+#### Spear (Standard, Reach)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Bleed ignores 1 Physical DR. Brace against charges applies 3 Bleed stacks. Best defensive Reach weapon when paired with Shield.
+
+#### Halberd (Standard, Reach)
+
+TODO: full Technique list. Condition signature: Force/Bleed. Unique mechanic: Sweep splits conditions. Primary target takes Force, secondary targets take Bleed. Dual-condition zone controller.
+
+#### Scythe (Complex, Reach)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Purge stacks from allies as a Technique. On kill, transfer remaining stacks to an adjacent enemy. Harvest-chain combos. Capstone: Exsanguination (T4).
+
+#### Whip (Standard, Reach)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: 3-space reach. Apply Bleed at extreme range. Rank 3 Technique pulls Bleeding targets toward you. Control + punishment.
+
+#### Staff (Standard, Reach)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks catalyze elemental stacks, dealing an extra tick on hit against targets with active elemental stacks. Primary gish bridge weapon. Arcane property boosts spell range.
+
+#### Trident (Standard, Reach)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Impaled targets do not lose Bleed stacks to natural decay. Sustained pressure on pinned targets.
+
+#### Chain (Complex, Reach)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Entangled targets gain 1 Force stack per turn (constricting). Escalates to Staggered without additional attacks. Capstone: Cascade Failure (T4).
+
+---
+
+### Ranged
+
+Projectile weapons. Ranged favors kiting, precision, and area denial. You attack from safety, but ammunition and Action costs limit sustained fire.
+
+#### Ranged Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Aimed Shot | 2 Actions | Spend 1 extra Action aiming. Advantage and +2 to hit. |
+| 1 | Quick Shot | 1 Action | Ranged attack at -1 die size on damage. |
+| 2 | Suppressing Fire | 2 Actions | Target a 2-space area. All enemies in the area have disadvantage on attacks until your next turn. |
+| 2 | Volley | 2 Actions | Attack up to 3 targets. Roll separately for each. |
+| 3 | Kill Shot | 2 Actions | If the target hasn't moved since your last turn, double damage. |
+
+#### Ranged Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Arcing | Ignore half-cover. | +1 |
+| Piercing Shot | Projectile passes through the first target. Second target behind takes half damage. | +2 |
+| Scatter | On hit, 1d4 splash damage to all adjacent to target. | +2 |
+
+#### Ranged Weapons
+
+| # | Weapon | Complexity | Base Damage | Range | Properties |
+|---|---|---|---|---|---|
+| 26 | Bow | Complex | 1d8 | 60 ft | Two-Handed, Ammunition |
+| 27 | Crossbow | Standard | 1d10 | 80 ft | Two-Handed, Ammunition, Loading, Pierce |
+| 28 | Hand Crossbow | Standard | 1d6 | 30 ft | Light, Ammunition, Loading |
+| 29 | Bomb Flask | Standard | 2d4 | 30 ft | Thrown, AoE (2-space radius), Consumable |
+
+**Crossbow and Loading.** The Crossbow requires 1 Action to reload after each shot. Higher Mastery ranks unlock Techniques that reduce or bypass reload time.
+
+#### Ranged Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Bow | Varies | — | Condition changes by Technique. Elemental Arrow: Burn/Chill/Shock/Corrode. Base attacks: Bleed. |
+| Crossbow | Bleed | — | Deep Penetration: Bleed ignores 2 Physical DR (Pierce extends to Bleed). |
+| Hand Crossbow | Poison | — | Every hit applies 1 Poison. Rapid-fire rushes Venomous. Rank 3: 2 Poison per hit. |
+| Bomb Flask | Varies | — | AoE stacks: Fire Flask = Burn, Acid Flask = Acid, Frost Flask = Chill. Area denial condition weapon. |
+
+#### Bow (Complex, Ranged) — 12 Techniques
+
+**Unique Mechanic: Draw.** Extra Actions spent drawing before firing increase power. Quick Shot = 0 Draw. Standard attack = 1 Draw. Full Draw = 2 Draw.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Power Shot | 2 Actions (1 Action + 1 Draw) | +1d8 damage. |
+| 1 | Snap Shot | 1 Action (0 Draw) | Quick shot at -2 to hit. Allows 3 attacks per turn. |
+| 1 | Pin Down | 1 Action | On hit, target's movement halved next turn. |
+| 2 | Rain of Arrows | 2 Actions, 5 Mana | 3-space area. All creatures in the area take 1d8 (roll vs. each AC). |
+| 2 | Trick Shot | 1 Action, 3 Mana | Shoot a specific object (rope, chandelier, weapon strap). Auto-hit objects. |
+| 2 | Hunter's Mark | 1 Action, 3 Mana | Mark a target. All your ranged attacks vs. that target gain +2 to hit for the rest of combat. |
+| 3 | Multishot | 1 Action, 5 Mana | Fire 3 arrows at up to 3 targets. Roll each separately. |
+| 3 | Elemental Arrow | 1 Action, 5 Mana | Imbue an arrow with Burn, Chill, Shock, or Corrode. On hit, apply 2 stacks. |
+| 3 | Perfect Draw | Passive | Full Draw attacks deal +2d8 damage instead of +1d8. |
+| 4 | Arrow Storm | 3 Actions, 10 Mana | 5-space line. All creatures in the line take 2d8 damage. Once per combat. |
+| 4 | Thread the Needle | 1 Action, 5 Mana | Ignores cover, Shield bonuses, and 50% of target's DR. |
+| 5 | Deadeye (Capstone) | 2 Actions, 15 Mana | Auto-hit, auto-crit. Target rolls `2d10 + Body` vs. DC 18 or takes +3d8 damage. Once per long rest. |
+
+#### Crossbow (Standard, Ranged)
+
+TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Deep Penetration extends Pierce to Bleed ticks. High single-shot damage offset by Loading. Higher ranks unlock faster reload Techniques.
+
+#### Hand Crossbow (Standard, Ranged)
+
+TODO: full Technique list. Condition signature: Poison. Unique mechanic: Every hit applies 1 Poison stack. Rapid-fire rushes Venomous (5 Poison). Rank 3: 2 Poison per hit. Capstone: Lethal Dose (T4, Neurotoxin).
+
+#### Bomb Flask (Standard, Ranged)
+
+TODO: full Technique list. Condition signature: Varies by flask type (Burn, Acid, Chill). Unique mechanic: AoE condition application. Consumable. Must be crafted or purchased. Area denial and group condition stacking.
+
+---
+
+### Firearms
+
+Mechanical ranged weapons. Firearms deal high damage per shot but are limited by ammunition and reload requirements.
+
+#### Firearms Category Techniques
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Fan the Hammer | 1 Action | Fire twice in one Action. Half damage each. Revolver and Hand Crossbow only. |
+| 1 | Steady Aim | Passive | If you haven't moved this turn, +2 to hit on all ranged attacks. |
+| 2 | Covering Fire | 1 Action | Choose an ally. Until your next turn, if an enemy attacks that ally, you may fire at the attacker as a Reaction. |
+| 2 | Penetrating Round | 1 Action | Ignores all Physical DR. Costs 2 ammunition. |
+| 3 | Dead Eye | 3 Actions | Auto-hit, maximum damage. Once per combat. |
+
+#### Firearms Category Augments
+
+| Augment | Effect | Mana Cost Increase |
+|---|---|---|
+| Rapid Reload | Reload as a free action after using a Technique. | +2 |
+| Hollow Point | +1d6 damage. Loses Pierce property for this attack. | +2 |
+| Ricochet | On a miss, projectile bounces to a random adjacent enemy. Re-roll the attack at -4. | +2 |
+
+#### Firearms Weapons
+
+| # | Weapon | Complexity | Base Damage | Range | Properties |
+|---|---|---|---|---|---|
+| 30 | Revolver | Standard | 1d8 | 40 ft | Light, Ammunition (6), Reload |
+| 31 | Rifle | Standard | 1d10 | 80 ft | Two-Handed, Ammunition (8), Reload |
+| 32 | Shotgun | Standard | 2d6 | 20 ft | Two-Handed, Ammunition (2), Reload, Spread |
+
+#### Firearms Condition Signatures
+
+| Weapon | Primary | Secondary | Unique Interaction |
+|---|---|---|---|
+| Revolver | Force | — | Each shot applies 1 Force stack. Fan the Hammer applies 2 Force in one Action. |
+| Rifle | Bleed | Force | Standard shots apply Bleed. Penetrating Round applies Force. Switch by Technique. |
+| Shotgun | Force | — | Point-blank: 2 Force stacks. Maximum range: 1 Force stack. Spread: 1 Force to adjacent targets. |
+
+#### Revolver (Standard, Firearms)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Fan the Hammer for rapid Force stacking. 6-round cylinder with Reload. Light property allows dual-wielding.
+
+#### Rifle (Standard, Firearms)
+
+TODO: full Technique list. Condition signature: Bleed/Force. Unique mechanic: Condition switches by Technique. Standard shots = Bleed. Penetrating Round = Force. Long range and high per-shot damage.
+
+#### Shotgun (Standard, Firearms)
+
+TODO: full Technique list. Condition signature: Force. Unique mechanic: Spread property. Point-blank shots deal bonus damage and apply 2 Force stacks. Close-range area pressure weapon.
+
+---
+
+### Condition Escalation and Techniques
+
+Weapon Techniques interact with the condition stack system. Every condition follows the same pipeline: apply stacks → reach 5 stacks → trigger T2 escalation. Weapon Techniques extend this pipeline into T3 and T4.
+
+#### Escalation Pipeline
+
+1. **Stacks (T1).** Apply condition stacks through weapon hits and Techniques. Each stack deals +1 damage per round.
+2. **T2 Escalation.** At 5 stacks, the condition escalates automatically. Bleed → Shredded. Force → Staggered. Burn → Ignited. Chill → Frozen. Shock → Shocked. Acid → Corroded. Poison → Venomous.
+3. **T3 Enhancement.** Requires a T2 escalated condition active on the target. Costs 12 Mana. Accessed through Rank 3–4 Weapon Techniques.
+4. **T4 Ultimate.** Requires a T3 enhancement active on the target. Costs 17 Mana. Once per long rest. Accessed through Rank 5 Capstone Weapon Techniques.
+
+#### T3 Enhanced Escalations
+
+T3 enhancements require the T2 escalated condition already active on the target. Weapon Techniques at Rank 3–4 deliver these. Spellcasters can cast T3 effects directly for 12 Mana.
+
+| T3 Enhancement | Requires | Effect | Weapon Access |
+|---|---|---|---|
+| Hemorrhage | Shredded (Bleed 5) | Bleed doubles to 2 per stack per tick. Healing 50% effective. Shredded persists 2 extra rounds after Purge. | Scythe, Great Axe, Claw Gauntlet, Katana |
+| Shattered | Staggered (Force 5) | Physical DR = 0 for 2 rounds. Physical attacks auto-apply 1 Bleed. | Greathammer, Mace, Greatclub, Flail |
+| Immolation | Ignited (Burn 5) | Burn spreads: 1 Burn stack to all within 1 space each round. Double Burn tick damage. | Bow (Elemental Arrow), Bomb Flask (Fire), Condition: Burn Augment |
+| Permafrost | Frozen (Chill 5) | Target re-freezes at end of turn for 2 rounds. Physical damage vs. Frozen target: +1d8. | Staff (gish), Condition: Chill Augment |
+| Overload | Shocked (Volt 5) | Arc: 1 Volt stack per round to all within 2 spaces. Target loses Reaction for the rest of combat. | Chain, Whip, Condition: Shock Augment |
+| Dissolution | Corroded (Acid 5) | Weapon or shield degrades: weapon loses 1 die size, shield loses 1 AC. At 0, the item breaks. | War Pick, Sickle, Bomb Flask (Acid) |
+| Neurotoxin | Venomous (Poison 5+) | Target's movement = 0. Poison accelerates at 5 stacks instead of 10. | Dagger, Hand Crossbow |
+
+#### T4 Ultimate Escalations
+
+T4 ultimates require the T3 enhancement already active on the target. These cost 17 Mana, are once per long rest, and represent the pinnacle of a weapon's Mastery track.
+
+| T4 Ultimate | Requires | Effect | Weapon Capstone |
+|---|---|---|---|
+| Exsanguination | Hemorrhage | Target rolls `2d10 + Body` vs. DC 18 or enters Dying regardless of current HP. On success: 4d10 Bleed damage. | Scythe, Great Axe |
+| Obliterate | Shattered | Weapon damage × 4. Kill = target cannot be resurrected. Boss: damage × 3, boss loses 1 action permanently. | Greathammer |
+| Detonation | Immolation | Target explodes: 4d12 fire damage to all within 3 spaces. Kill. Boss: 4d12 damage + Ignited for 3 rounds. | Bomb Flask |
+| Absolute Zero | Permafrost | Incapacitated for 2 rounds. All damage doubled during incapacitation. Boss: 1 round, damage × 1.5. | Staff (gish capstone) |
+| Cascade Failure | Overload | 2d12 Lightning damage to all creatures with Volt stacks within 5 spaces. All become Shocked. Boss: Shocked for 2 rounds. | Chain |
+| Total Dissolution | Dissolution | Armor destroyed (DR = 0, permanent). No armor: 4d10 Acid damage. Boss: DR -4 for rest of combat. | War Pick |
+| Lethal Dose | Neurotoxin | Poison stacks jump to 35. Target loses 1 action permanently. Boss: stacks jump to 20, loses 1 action for 3 rounds. | Dagger |
+
+#### Escalation Paths
+
+Three paths reach T3 and T4. They combine freely.
+
+| Path | How T3 | How T4 |
+|---|---|---|
+| Weapon Techniques | Build stacks over turns → T2 at 5 stacks → T3 Technique enhances | T3 active → T4 capstone Technique (once per long rest) |
+| Spellcasting | Pay 12 Mana for T3 spell directly | Pay 17 Mana for T4 spell directly |
+| Gish combo | Spells rush to T2 → weapon T3 Technique enhances | Either path to T3 → weapon T4 or spell T4 |
+
+> **Example:** A Staff-wielding Hybrid casts Chill spells to reach Frozen (T2). On the next turn, the Hybrid uses a Staff Technique to apply Permafrost (T3, 12 Mana). The enemy re-freezes each round and takes +1d8 from physical attacks. Two turns later, the Hybrid triggers Absolute Zero (T4, 17 Mana), incapacitating the target for 2 rounds with all damage doubled.
+
+---
+
+### Magic Weapons
+
+Magic weapons are rare, named items with innate properties. You find or earn them. They cannot be crafted through normal means.
+
+| Tier | Innate Augments | Bonus Augment Slots | Unique Techniques | Rarity |
+|---|---|---|---|---|
+| Enchanted | 1 | +1 | 0 | Uncommon |
+| Rare | 1 | +1 | 1 | Rare |
+| Legendary | 2 | +2 | 2–3 | Legendary |
+
+**Innate Augments** are permanently socketed into the weapon. They do not consume your Augment Slots.
+
+**Bonus Augment Slots** add +1 or +2 Augment Slots to every Technique used with this weapon, stacking with Mastery-granted slots.
+
+**Unique Techniques** are exclusive to the weapon. They cannot be learned any other way. They count toward your 10 prepared Technique limit.
+
+**Elemental Attunement.** Some magic weapons carry an elemental attunement. All attacks with that weapon apply 1 stack of the attuned element.
+
+> **Example:** A Legendary Greatsword might have Innate: Potency and Condition: Burn, +2 Augment Slots per Technique, and 2 Unique Techniques (a fire-enhanced Wide Sweep and a flame dash). The wielder applies Burn on every hit without spending Augment Slots, has 5 total Augment Slots per Technique at Mastery 5, and can prepare the 2 Unique Techniques alongside their standard choices.
+
+---
+
+### Gish Synergies
+
+Spellcasting requires only Mana. No weapon, item, or property gates casting. Any character with Mana can cast any spell with any weapon equipped or empty-handed. Weapons grant bonuses but never act as prerequisites.
+
+Five bridges connect weapon combat and spellcasting.
+
+**Spell Strike.** The Spell Strike Augment bundles a Touch spell with a weapon attack. One roll resolves both. If you miss, the spell is not expended. Mana for the spell is paid separately from the Technique's Mana cost.
+
+**Arcane Infusion.** The Arcane Infusion Augment rewards casting before attacking. After you cast a spell, your next Technique deals +1d8 elemental damage matching the spell's element.
+
+**Stack Exploitation.** Spell stacks and Technique stacks share the same counter per condition type. A Burn spell adds to the same Burn counter as a Condition: Burn Augment or a weapon's innate Burn application. Gish characters cycle stacks faster than pure martials or pure casters.
+
+**Action Economy Weaving.** You have 3 Actions per turn. Split them between Spells and Techniques in any combination. You are never locked into one mode. Cast a spell with Action 1, attack with Action 2, attack with Action 3.
+
+**Mana Reave.** The Mana Reave Augment restores Mana on weapon hits equal to your weapon's base damage die. This enables sustained Technique use for Hybrid builds that would otherwise run dry.
+
+---
+
+### Mana Economy
+
+Technique costs scale with power. Universal Techniques are free or cost 0–1 Mana. Rank 1 Techniques cost 0–3 Mana. Rank 3 Techniques cost 3–8 Mana. Rank 5 Capstones cost 10–15 Mana. Augments add their listed Mana cost on top.
+
+| Background | HP | Mana | Regen/Round | Technique Budget (10-round combat) |
+|---|---|---|---|---|
+| Martial | 120 | 30 | 3 | ~10 Techniques at 3 Mana average |
+| Hybrid | 110 | 70 | 10 | ~23 Techniques at 3 Mana average |
+| Caster | 100 | 100 | 15 | Spells, not Techniques |
+
+Martial characters rely on free Universal Techniques and low-cost Rank 1–2 weapon Techniques. Their 30 Mana reserves power a few high-impact Rank 3+ abilities per combat.
+
+Hybrid characters weave Techniques and Spells. Their 70 Mana pool and 10 Mana regen per round sustain both Augmented Techniques and spell combos across a full fight.
+
+Caster characters spend Mana on Spells. They use Universal Techniques and unaugmented weapon attacks for Action economy when Mana runs low.
+
+---
+
+### Build Examples
+
+#### The Duelist (Rapier + Shield)
+
+- **Mastery:** Rapier 4, Shield 2.
+- **Role:** Counter-fighting tank.
+- **Core loop:** En Garde stance → Parry incoming attacks → generate Openings → Compound Riposte for bonus damage. Shield for Cover Ally and emergency Raise Shield.
+- **Key Techniques:** En Garde, Parry (Medium Melee), Compound Riposte, Fleche, Tempo Rubato, Shield Bash, Cover Ally.
+- **Augments:** Precision (targeted conditions on ripostes), Shield Synergy (+1 AC), Siphon (sustain HP through ripostes).
+- **Condition path:** Bleed through Rapier → Shredded at 5 stacks. Openings accelerate Bleed application.
+
+#### The Berserker (Great Axe)
+
+- **Mastery:** Great Axe 5.
+- **Role:** All offense. Rush in, AoE, execute.
+- **Core loop:** Charge in → Power Attack → Cleave on kills → Executioner to finish wounded targets. Double Bleed ticks pressure everything.
+- **Key Techniques:** Power Attack, Cleave, Whirlwind, Executioner, Staggering Blow.
+- **Augments:** Follow-Through (kill = +1 Action), Sundering (strip DR), Momentum (+1d6 after moving).
+- **Condition path:** Bleed at double tick rate → Shredded → Hemorrhage (T3) → Exsanguination (T4 capstone, once per long rest).
+
+#### The Sentinel (Spear + Shield)
+
+- **Mastery:** Spear 3, Shield 3.
+- **Role:** Pure tank and controller. Lock down movement, protect allies.
+- **Core loop:** Sentinel (Reaction attacks on approach) → Impale to pin targets → Shield Wall with adjacent ally → Raise Shield for durability.
+- **Key Techniques:** Sentinel, Sweep, Impale, Keep at Bay, Phalanx, Shield Bash, Raise Shield, Shield Wall.
+- **Augments:** Trip (prone on hit), Brace (+1d6 vs. chargers), Shield Synergy (+1 AC).
+- **Condition path:** Bleed through Spear. Impaled targets do not lose Bleed stacks to decay. Force through Shield Bash for Staggered.
+
+#### The Hybrid (Staff + Spellcasting)
+
+- **Mastery:** Staff 3. Background: Hybrid (110 HP, 70 Mana, 10 regen).
+- **Role:** Gish condition accelerator.
+- **Core loop:** Cast Burn/Chill spells → Staff attacks catalyze elemental stacks (extra ticks) → push to T2 escalation → Staff T3 enhancement Technique → T4 if fight goes long.
+- **Key Techniques:** Staff weapon Techniques (TODO), Sentinel, Sweep. Spells: Burn/Chill/Shock varieties.
+- **Augments:** Arcane Infusion (+1d8 elemental after spell), Spell Strike (Touch spell + Staff attack), Mana Reave (sustain Mana through hits).
+- **Condition path:** Spell stacks + Staff catalysis → Frozen (Chill T2) → Permafrost (T3, 12 Mana) → Absolute Zero (T4 capstone, 17 Mana, once per long rest).
+
+#### The Assassin (Dagger + Hand Crossbow)
+
+- **Mastery:** Dagger 4, Hand Crossbow 3. Background: Hybrid or Martial.
+- **Role:** Dual-condition poison and bleed specialist. Ambush predator.
+- **Core loop:** Open at range with Hand Crossbow → apply Poison stacks (1 per hit, 2 at Rank 3) → close to melee → Dagger Flurry for Bleed + Poison → double escalation (Shredded + Venomous). Against bosses: Neurotoxin (T3) + Hemorrhage (T3) for layered pressure.
+- **Key Techniques:** Quick Draw, Flurry, Assassinate, Hand Crossbow Techniques (TODO). Quick Shot for ranged Poison, Flurry for melee combo.
+- **Augments:** Poisoned Edge (extra Venom stack), Feint (force hits through), Twin Strike (dual-wield bonus).
+- **Condition path:** Poison at range → Venomous (T2) → Neurotoxin (T3, movement = 0). Bleed in melee → Shredded (T2) → Hemorrhage (T3). Against bosses: stack both T3s, then Lethal Dose (T4 capstone, once per long rest).
 
 ## Magic and Spellcasting
 
@@ -314,6 +1065,7 @@ On your turn, you can take up to 3 actions in any order. Resolve each action bef
 You can spend an action to:
 
 - attack with a weapon
+- use a Technique
 - cast a spell
 - move
 - drink a potion
@@ -321,7 +1073,9 @@ You can spend an action to:
 - make a skill check
 - use a skill
 
-Some spells and skills take more than one action. You can spend those actions on the same turn or across multiple turns unless something interrupts you.
+Techniques are active combat abilities tied to your equipped weapon. They cost 1 or more Actions and sometimes Mana. See Weapons, Techniques, and Augments for the full system.
+
+Some spells, skills, and Techniques take more than one action. You can spend those actions on the same turn or across multiple turns unless something interrupts you.
 
 ### Reactions
 
@@ -471,13 +1225,19 @@ Character advancement runs through skills. You earn XP by progressing through an
 
 You spend XP after each session.
 
-You use XP to buy new skills and to raise the skills you already have. Each skill has an initial cost to acquire it. Each skill then advances through thresholds from Rank 1 to Rank 10. Costs rise as the rank rises, and that increase is exponential. If you buy a new skill, it starts at Rank 1 and advances through the normal rank track from there.
+XP is a shared budget across three investment tracks:
 
-Your character also has 10 combat ability slots for active abilities used in fights. These are independent of skills and have their own chapter.
+- **Proficiency ranks.** Buy new proficiencies or raise existing ones. Each proficiency advances from Rank 1 to Rank 10. Costs rise exponentially.
+- **Weapon Mastery ranks.** Buy Mastery Ranks in individual weapons (Rank 1 to 5). Higher ranks unlock more Techniques and Augment Slots.
+- **Augments.** Purchase Universal and Category Augments to socket into your prepared Techniques.
 
-You can own as many skillsas you can afford.
+Spreading XP gives breadth. Focusing XP gives depth. A character with three weapons at Mastery 2 plays differently from one weapon at Mastery 5.
 
-Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap skills with GM confirmation. You can also change weapons within your inventory, adjust spells, update equipment, spend or gain money and resources, and record new languages as your character learns them.
+Your character has 10 prepared Technique slots for active abilities used in fights. These are independent of proficiencies. See Weapons, Techniques, and Augments for the full system.
+
+You can own as many proficiencies as you can afford.
+
+Between sessions, you can update the parts of the character that the rules mark as changeable. You can gain or swap proficiencies with GM confirmation. You can also change prepared Techniques and re-socket Augments on a short or long rest, change weapons within your inventory, adjust spells, update equipment, spend or gain money and resources, and record new languages as your character learns them.
 
 TODO: add the full XP cost tables and the exact XP awards for combat, exploration, and conversation encounters.
 

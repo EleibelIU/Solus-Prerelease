@@ -548,7 +548,8 @@ theme: 5ePHB
   - #### [{{ The Five Attributes}}{{ 11}}](#p11)
   - #### [{{ Proficiencies}}{{ 12}}](#p12)
   - #### [{{ Proficiency List}}{{ 12}}](#p12)
-- ### [{{ Ch. 5: Equipment, Armor, and Weapons}}{{ 13}}](#p13)
+- ### [{{ Ch. 5: Armor and Defense}}{{ 13}}](#p13)
+- ### [{{ Ch. 6: Weapons, Techniques, and Augments}}{{ 14}}](#p14)
   - #### [{{ Armor}}{{ 13}}](#p13)
   - #### [{{ Weapons}}{{ 14}}](#p14)
 - ### [{{ Ch. 6: Magic and Spellcasting}}{{ 15}}](#p15)
@@ -728,7 +729,8 @@ These three systems carry the game. The chapters that follow teach each one in f
 | Learn how dice, rolls, and target numbers work | Core Mechanics (Ch. 2) |
 | Build a character from scratch | Character Creation (Ch. 3) |
 | Understand your five attributes and eleven proficiencies | Attributes and Proficiencies (Ch. 4) |
-| Choose armor and weapons | Equipment, Armor, and Weapons (Ch. 5) |
+| Choose armor | Armor and Defense (Ch. 5) |
+| Choose weapons and Techniques | Weapons, Techniques, and Augments (Ch. 6) |
 | Learn how spells are built and cast | Magic and Spellcasting (Ch. 6) |
 | Understand how sessions and encounters flow | Core Gameplay Loop (Ch. 7) |
 | Run a full combat encounter | Combat (Ch. 8) |
@@ -814,7 +816,7 @@ Roll a Combat Roll when you attack with a weapon or cast an offensive spell.
 
 1. Choose your attack. Physical and martial attacks (a sword swing, a punch, an arrow) add your **Body** modifier. Spells add your **Magic** modifier.
 2. Roll `2d10 + Body` or `2d10 + Magic`.
-3. Compare your result to the defender's **Armor Class** (AC). Physical attacks target **Physical AC**. Spells target **Magical AC**. (See Equipment, Armor, and Weapons for how AC is calculated.)
+3. Compare your result to the defender's **Armor Class** (AC). Physical attacks target **Physical AC**. Spells target **Magical AC**. (See Armor and Defense for how AC is calculated.)
 
 {{footnote Core Mechanics}}
 {{pageNumber,auto}}
@@ -1018,13 +1020,21 @@ Your character also has access to 10 **combat ability slots** for active abiliti
 {{footnote Character Creation}}
 {{pageNumber,auto}}
 
-### Step 8: Choose Equipment
+### Step 8: Choose Starting Weapons
 
-Pick weapons and armor from the tables in Equipment, Armor, and Weapons. Your background does not restrict your choices. A Caster can wear Heavy armor. A Martial can carry a staff.
+Pick one or two weapons from the tables in Weapons, Techniques, and Augments. You begin at **Mastery Rank 1** in your chosen weapon(s). This grants access to that weapon's tier 1 Techniques and its category's tier 1 Techniques.
 
-You begin with **one set of armor** (any tier except Enchanted) and **two weapons**. Choose one melee and one ranged, two melee, or two ranged.
+Choose your starting Techniques. You can prepare up to **10 Techniques** from your available pools (Universal, Category, and Weapon-Specific). You can change prepared Techniques on a short or long rest.
 
-Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Equipment, Armor, and Weapons: How Armor Works). Your weapon determines your damage dice, tags, and traits.
+### Step 9: Choose Equipment
+
+Choose armor from the tables in Armor and Defense. Your background does not restrict your choices. A Caster can wear Heavy armor. A Martial can carry a staff.
+
+You begin with **one set of armor** (any tier except Enchanted).
+
+Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Armor and Defense). Your weapon determines your damage dice, tags, and traits.
+
+TODO: add starting equipment rules for gear and supplies.
 
 ### Step 9: Review Your Sheet
 
@@ -1042,12 +1052,13 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
 | Atraxia Pool | Rolled at creation (Campaign Tone dice + modifier) | Permanent; drains during dying |
 | Proficiencies | Active proficiencies | Proficiencies can be swapped between sessions |
-| Combat Abilities | 10 active combat ability slots | Changeable between sessions |
+| Weapon Mastery | Mastery Rank per weapon (Rank 1-5) | Permanent (XP investment) |
+| Techniques | 10 prepared Technique slots | Changeable on short/long rest |
 | Equipment | Weapons, armor, gear | Changeable |
 
 
 
-Solus has no character levels. Your character grows by earning XP and spending it on proficiency ranks (see Advancement and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
+Solus has no character levels. Your character grows by earning XP and spending it on proficiency ranks, Weapon Mastery ranks, and Augments (see Advancement and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
 See Reference and Playtest Tools for nine sample character builds covering all three backgrounds.
 
@@ -1068,7 +1079,7 @@ Your character has five **attributes**. Each attribute is a number from -5 to +5
 
 Body covers all physical capability: strength, speed, endurance, coordination. 
 
-- Body is added to physical and martial combat rolls and contributes to **Physical AC** (see Equipment, Armor, and Weapons). Body is one of the two attributes you can choose for **initiative** at the start of combat.
+- Body is added to physical and martial combat rolls and contributes to **Physical AC** (see Armor and Defense). Body is one of the two attributes you can choose for **initiative** at the start of combat.
 
 - A character with high Body hits harder with weapons, resists physical attacks, and endures punishment. A character with low Body is fragile, inaccurate with weapons, and easy to hit with physical force.
 
@@ -1204,7 +1215,7 @@ The table below shows all 11 proficiencies. When you make a Proficiency Check, f
 
 <!-- CHAPTER 5: EQUIPMENT, ARMOR, AND WEAPONS -->
 
-# Equipment, Armor, and Weapons
+# Armor and Defense
 
 ## Armor
 
@@ -1243,7 +1254,7 @@ Every standard tier provides 4 total DR, split between physical and magical prot
 
 The maximum DR on a single damage type is 4. The maximum possible AC is 9 (DR 4 + attribute modifier +5).
 
-{{footnote Equipment, Armor, and Weapons}}
+{{footnote Armor and Defense}}
 {{pageNumber,auto}}
 
 ### Taking Hits
@@ -1261,47 +1272,19 @@ When an attack targets you, resolve it in two steps:
 **Example:** You wear Heavy Armor (Physical DR 4, Magic DR 0) with Body +3 and Magic +0. Your Physical AC is 7. Your Magical AC is 0. A sword fighter rolls 11 against your Physical AC of 7, hits, and deals 9 damage. Your Physical DR of 4 absorbs 4, leaving 5 damage. A caster rolls the same 11 against your Magical AC of 0, also hits, and deals 9 damage. With Magic DR 0, nothing absorbs. You take the full 9. Heavy armor makes you a fortress against blades and a glass window against magic.
 }}
 
-{{footnote Equipment, Armor, and Weapons}}
+{{footnote Armor and Defense}}
 {{pageNumber,auto}}
 
 \page
 
-## Weapons
+<!-- CHAPTER 6: WEAPONS, TECHNIQUES, AND AUGMENTS -->
 
-All weapon damage adds **Body** as the damage modifier, including ranged weapons and firearms. Weapons are grouped into categories for quick identification:
-
-##### Weapon Categories
-| Category | Examples | Damage |
-|:---|:---|:---|
-| Light Melee | Dagger, Short Sword, Claw Gauntlet, Bare Hands | 1d4 + Body to 1d6 + Body |
-| Medium Melee | Rapier, Katana, Curved Sword | 1d8 + Body |
-| Heavy Melee | Greatsword, Greathammer, Great Axe | 1d8 + Body |
-| Reach | Halberd, Scythe, Whip | 1d6 + Body to 1d10 + Body |
-| Ranged / Thrown | Bow, Bomb Flask | 1d6 + Body to 1d8 + Body |
-| Firearms | Revolver, Rifle, Shotgun, Sniper Rifle | 1d8 + Body to 1d12 + Body |
-
-No weapon category restricts your playstyle. A caster can swing a greatsword. A martial can throw daggers. Categories exist so you can find a weapon fast and know its base damage. Each weapon's unique traits determine what it does in play, not its category label.
-
-#### Weapon Tags
-
-Every weapon carries one or more **tags**: short labels that describe how the weapon behaves. Tags include Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed.
-
-Tags matter because other rules reference them. A combat ability that triggers "on a Heavy weapon hit" only fires when you swing a weapon tagged Heavy. A condition that says "Melee attacks are at disadvantage" applies to any weapon tagged Melee. Tags connect your weapon to the rest of the system.
-
-Many weapons also carry unique **traits**: special effects that apply condition stacks, move targets, alter terrain, or unlock finisher attacks once a target has the right conditions applied to them.
-
-{{descriptive
-**TODO:** Jacob, need the full weapon-by-weapon trait list. I'll insert it once the equipment chapter is locked.
-
-**TODO:** Jacob, are shields missing from the equipment list? Do they need to be added?
-}}
-
-{{footnote Equipment, Armor, and Weapons}}
-{{pageNumber,auto}}
+<!-- The full Weapons, Techniques, and Augments chapter will be inserted here -->
+<!-- See system-book/solus-system-book.md for the canonical content -->
 
 \page
 
-<!-- CHAPTER 6: MAGIC AND SPELLCASTING -->
+<!-- CHAPTER 7: MAGIC AND SPELLCASTING -->
 
 # Magic and Spellcasting
 
@@ -1621,13 +1604,14 @@ On your turn, you get **3 actions**. Spend them in any order. Finish resolving o
 | Action | What It Does |
 |:---|:---|
 | Attack | Strike with a weapon. Roll a Combat Roll (see below). |
+| Use a Technique | Activate a prepared Technique. Costs 1+ actions and sometimes mana. See Weapons, Techniques, and Augments. |
 | Cast a Spell | Cast a spell using 1 or more actions. Multi-action spells can span turns. |
 | Move | Move up to your full movement speed. |
 | Drink a Potion | Consume a potion or similar item. |
 | Interact | Open a door, draw a weapon, pick up an object, pull a lever. |
 | Use a Proficiency | Attempt a Proficiency Check during combat (Medicine to stabilize, Athletics to grapple). |
 
-**Multi-action abilities.** Some spells and skills cost 2 or 3 actions. You can spend those actions on the same turn or split them across consecutive turns. If you are interrupted (stunned, knocked unconscious, forced to move) before completing all required actions, the ability fails and any spent actions are lost. Mana spent on a failed spell is not refunded.
+**Multi-action abilities.** Some spells, Techniques, and proficiency uses cost 2 or 3 actions. You can spend those actions on the same turn or split them across consecutive turns. If you are interrupted (stunned, knocked unconscious, forced to move) before completing all required actions, the ability fails and any spent actions are lost. Mana spent on a failed spell or Technique is not refunded.
 
 ### Reactions
 
@@ -2194,14 +2178,16 @@ You do not need to win to earn XP. You need to engage.
 
 ### Spending XP
 
-You spend XP **between sessions**. XP buys two things: new proficiencies and proficiency rank increases.
+You spend XP **between sessions**. XP is a shared budget across three investment tracks:
 
-**Buying a new proficiency** costs a flat amount. The proficiency starts at Rank 1.
+- **Proficiency ranks.** Buy new proficiencies or raise existing ones. Each proficiency advances from Rank 1 to Rank 10. Costs rise exponentially.
+- **Weapon Mastery ranks.** Buy Mastery Ranks in individual weapons (Rank 1 to 5). Higher ranks unlock more Techniques and Augment Slots.
+- **Augments.** Purchase Universal and Category Augments to socket into your prepared Techniques.
 
-**Raising a proficiency's rank** costs XP that increases exponentially from Rank 1 to Rank 10. Early ranks are cheap. Late ranks are expensive. This means spreading XP across many proficiencies gives you breadth, while focusing XP on a few proficiencies gives you depth. Both strategies are viable.
+Spreading XP gives breadth. Focusing XP gives depth. A character with three weapons at Mastery 2 plays differently from one weapon at Mastery 5.
 
 {{descriptive
-**TODO:** Jacob, need the full XP cost table (acquisition cost + rank 1-10 costs) and XP awards per enemy tier, exploration, and social encounters.
+**TODO:** Need the full XP cost table (proficiency acquisition + rank 1-10 costs, Weapon Mastery rank 1-5 costs, Augment purchase costs) and XP awards per enemy tier, exploration, and social encounters.
 }}
 
 \column
@@ -2211,12 +2197,12 @@ You spend XP **between sessions**. XP buys two things: new proficiencies and pro
 Between sessions, you can update any part of your character that the rules mark as changeable (see Character Creation, Step 9). With GM confirmation, you can:
 
 - Swap active proficiencies.
-- Change active combat abilities (see combat abilities chapter).
+- Change prepared Techniques and re-socket Augments (also available on short/long rests).
 - Change weapons and armor from your inventory.
 - Spend or gain money and resources.
 - Record new languages your character has learned.
 
-Proficiency swaps are also available on **long rests** during a session, so players can adapt tactics between encounters. Combat abilities can be changed on both **short and long rests**.
+Proficiency swaps are also available on **long rests** during a session, so players can adapt tactics between encounters. Technique and Augment changes are available on both **short and long rests**.
 
 {{footnote Advancement and Between Sessions}}
 {{pageNumber,auto}}
@@ -2751,11 +2737,19 @@ Dwarf · Speed 25 ft. · Medium · Martial
 | Proficiency Modifier | Primary attribute + chosen secondary attribute for a given proficiency. Secondary chosen per roll. | 8, 12 |
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. | 21 |
 | Stack | A condition counter. 1 per hit, damage equals current count, ticks twice per round, 2-round decay, caps at 5. | 20, 21 |
-| Combat Ability | An active ability used in combat. 10 slots available from character creation. Independent of proficiencies. | 12, 25 |
+| Augment | A modifier that sockets into a Technique to change its behavior. Universal Augments fit any Technique; Category Augments fit Techniques from that category only. | 6 |
+| Category Technique | A Technique shared by all weapons in a category (e.g., all Light Melee weapons share Flurry). Unlocked by Weapon Mastery Rank in any weapon in that category. | 6 |
+| Combat Ability | See Technique. Legacy term for active combat abilities. | 6 |
 | Sustained | A spell maintained over multiple rounds. 3 actions to begin, 1 action per turn to maintain. Interruption ends it. | 15 |
 | Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. | 19, 20 |
 | Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. | 17 |
-| XP (Experience Points) | Earned from encounters, spent between sessions to buy proficiencies and raise proficiency ranks. | 25 |
+| XP (Experience Points) | Earned from encounters, spent between sessions to buy proficiency ranks, Weapon Mastery ranks, and Augments. | 25 |
+| Technique | An active combat ability tied to a specific weapon. 10 slots can be prepared at a time. Costs Actions and sometimes Mana. Three pools: Universal, Category, and Weapon-Specific. | 6 |
+| T3 Enhanced Escalation | A powered-up escalation condition requiring T2 active and Weapon Mastery Rank 3+. Costs 12 mana. | 6, 21 |
+| T4 Ultimate Escalation | The strongest escalation condition. Requires T3 active and Weapon Mastery Rank 5. Costs 17 mana. Once per long rest. | 6, 21 |
+| Universal Technique | A Technique usable with any weapon (Brace, Shove, Taunt, Second Wind). Available at Weapon Mastery Rank 0. | 6 |
+| Weapon Mastery | A per-weapon investment track from Rank 0-5. Higher ranks unlock more Techniques and Augment Slots. Purchased with XP. | 6, 25 |
+| Weapon-Specific Technique | A Technique unique to one weapon (e.g., Riposte for Rapier, Cyclone Slash for Greatsword). Unlocked by Weapon Mastery Rank in that weapon. | 6 |
 }}
 
 {{footnote Reference and Playtest Tools}}
