@@ -1892,7 +1892,7 @@ Lightning attackers can set up the Stunned combo by applying Wet first (water sp
 | | |
 |:---|:---|
 | **Tag** | Poison |
-| **Stack** | Poisoned. |
+| **Stack** | Poisoned. Deals poison damage equal to stack count. |
 | **At escalation: Venomous** | You lose 1 action. Stacks increase by 1 per round, accelerating to +5 per round at 10 stacks. At 15 stacks, lose a second action. At 20, lose your third. At 35, permanently lose 1 action. |
 | **Countered by** | Radiant removes Venomous at 10 or fewer stacks. Purge removes Venomous at 15+. Purge cannot restore an action permanently lost at 35. |
 | **DR type** | Magic DR reduces Poison stack damage. |
