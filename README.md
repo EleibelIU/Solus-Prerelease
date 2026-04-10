@@ -1,41 +1,27 @@
 # Solus Prerelease
 
-Solus is a tabletop RPG in active development. This repository holds the rules manuscript, archive material, and build tooling for the game.
+Solus is a tabletop RPG project in active development. This repository now centers on one active system-book manuscript built for later conversion into Homebrewery.
 
-## Source of Truth
+The manuscript holds the current rules draft in reader-facing order. Older epic files, rough notes, and playtest material stay in the archive so the source history remains intact.
 
-The active manuscript is **[Homebrewery/Solus-System-Book-Homebrew.md](Homebrewery/Solus-System-Book-Homebrew.md)**. All rules editing happens in this file. It renders directly in [Homebrewery V3](https://homebrewery.naturalcrit.com/) using the 5ePHB theme with Frostmaiden CSS.
+## Start Here
 
-The older `system-book/solus-system-book.md` is a prior plaintext draft. It is not maintained. Use the Homebrewery file for all current work.
+- [System book manuscript](system-book/solus-system-book.md)
+- [Project status](docs/project-status.md)
+- [Archived source drafts](archive/epics-and-stories)
 
 ## Repository Structure
 
-| Folder | Purpose |
-|:---|:---|
-| [Homebrewery/](Homebrewery) | Active manuscript, theme CSS, cover art, and HTML export. |
-| [archive/](archive) | Older epic drafts, rough notes, and playtest files. Source tracing only. |
-| [system-book/](system-book) | Legacy plaintext manuscript. Superseded by Homebrewery file. |
-| [docs/](docs) | Project status, specs, and planning material. |
-| [scripts/](scripts) | Build scripts (Obsidian vault pipeline, tests). |
-| [.github/workflows/](.github/workflows) | GitHub Actions for the Obsidian vault build. |
+- [system-book](system-book) holds the active manuscript.
+- [docs](docs) holds status, specs, and planning material.
+- [archive](archive) holds the older epic drafts, rough notes, and playtest files.
+- [.obsidian](.obsidian) holds local vault settings and plugins.
 
-## Manuscript Chapters
+## Current State
 
-1. Welcome to Solus
-2. Core Mechanics
-3. Character Creation
-4. Attributes and Skills
-5. Equipment, Armor, and Weapons
-6. Magic and Spellcasting
-7. Core Gameplay Loop
-8. Combat
-9. Conditions, Injuries, and Death
-10. NPCs, Enemies, and Encounters
-11. Advancement, Mastery, and Between-Session Play
-12. Running the Game
-13. Reference and Playtest Tools (includes glossary)
+The manuscript already carries the stable rules material for Solus, including the core mechanics, character framework, combat structure, NPC ranks, and advancement model. Unfinished systems stay marked with short TODOs so they remain visible without pretending to be done.
 
-Unfinished sections are marked with `TODO:` comments addressed from Liz (editor) to Jacob (system designer).
+Treat [The System Book Document](system-book/solus-system-book.md) as the current source of truth for all rules. Use the archive for source tracing, extraction, and comparison, not for new book prose.
 
 ## Local Development Setup
 
@@ -66,12 +52,12 @@ python scripts/test_build_obsidian_vault.py
 
 ## Obsidian Vault Package
 
-A GitHub Actions workflow builds an Obsidian-ready vault package from the manuscript and archive on each push to `main`.
+This repository includes a GitHub Actions workflow that builds an Obsidian-ready vault package from the manuscript and archive.
 
 The published package includes:
 
 - the full manuscript
 - generated chapter files split from the manuscript
 - archive material for source browsing
-- navigation notes for Obsidian
+- small navigation notes for Obsidian
 - a rolling prerelease download on GitHub
