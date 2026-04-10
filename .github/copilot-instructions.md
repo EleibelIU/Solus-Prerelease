@@ -59,7 +59,7 @@ The full catalog of open questions is in `docs/superpowers/specs/2026-04-08-solu
 
 **Blocks the most other work — resolve these first:**
 
-- **Active combat skills** (spec #6) — mana-costing combat abilities have no list or section; blocks character creation and combat chapters
+- **Combat abilities system** (spec #6, #7) — the PoE2-inspired martial combat ability system needs its own chapter, name, and full mechanics; blocks character creation and combat chapters
 - **XP awards and encounter building** (spec #16) — no XP values per enemy tier or encounter type; blocks advancement and GM chapters
 - **T3/T4 effect tiers** (spec #10) — T3 (12 mana) and T4 (17 mana) have costs but no mechanical description; blocks spellcasting completion
 - **Save resolution** (spec #9) — Accuracy Type "Save" has no working mechanic since Resist Rolls were removed; blocks spellcasting completion
@@ -70,9 +70,7 @@ The full catalog of open questions is in `docs/superpowers/specs/2026-04-08-solu
 - **Weapon trait list** (spec #12) — per-weapon traits are missing from the equipment tables
 - **Shields** (spec #13) — unknown whether shields exist in the system
 - **Short-term injury table** (spec #15) — Dying references rolling on this table but it doesn't exist
-- **Mastery redesign** (spec #17) — no Mastery Skill list, no point budgets, no XP thresholds; blocks advancement chapter
 - **GM pacing and DCs** (spec #18) — Running the Game chapter lacks encounter pacing and DC calibration guidance
-- **Support Skills / Skill Gems rewrite** (spec #7) — system is undefined beyond slot count; Advancement references it
 
 **Quick confirmations needed from the designer:**
 
@@ -138,7 +136,7 @@ Boss gets one extra +5 beyond the normal limit. Bosses use Enchanted armor.
 
 **Spell framework:** spells are built from parameters (Category, Function, Range, Size, Shape, Duration, Target Count, Accuracy Type, Effect Tier). No field can stay empty. Function costs: Utility +0, Movement +1, Defensive +1, Offensive +2; multi-function spells add both. Damage comes from range, target count, and size (one die each). Die scaling: d6 = +1 mana, d8 = +2, d10 = +3, d12 = +5. Main category costs normal; Sub category costs double. T3 and T4 mana costs exist (12 and 17) but their mechanical effects are unresolved — *spec #10*.
 
-**Advancement:** XP earned through combat, exploration, and conversation. Spent after sessions on new skills or raising existing skills (Rank 1–10, exponential cost). Support Skill Slots: 1 at Rank 1, +1 every other rank, max 5 per skill. Max 10 active skills at a time. Mastery unlocks from total XP thresholds (not single-skill rank); Mastery redesign is pending — *spec #17*.
+**Advancement:** XP earned through combat, exploration, and conversation. Spent after sessions on new skills or raising existing skills (Rank 1–10, exponential cost). Combat abilities: 10 slots available from character creation, independent of proficiencies, changeable on short/long rests.
 
 ## Writing Standard
 

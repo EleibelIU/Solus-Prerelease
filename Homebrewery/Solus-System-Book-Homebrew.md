@@ -565,7 +565,7 @@ theme: 5ePHB
   - #### [{{ Other Conditions}}{{ 23}}](#p23)
   - #### [{{ Dropping to 0 HP}}{{ 23}}](#p23)
 - ### [{{ Ch. 10: NPCs, Enemies, and Encounters}}{{ 24}}](#p24)
-- ### [{{ Ch. 11: Advancement, Mastery, and Between-Session Play}}{{ 25}}](#p25)
+- ### [{{ Ch. 11: Advancement and Between-Session Play}}{{ 25}}](#p25)
 - ### [{{ Ch. 12: Running the Game}}{{ 26}}](#p26)
 - ### [{{ Ch. 13: Reference and Playtest Tools}}{{ 27}}](#p27)
   - #### [{{ Reference Tables}}{{ 27}}](#p27)
@@ -759,7 +759,7 @@ Before you read further, here are four numbers you will see on every character s
 
 **Atraxia Pool** is a tracked number generated at character creation that represents your long-term tolerance for punishment. It drains when you enter the dying state and does not regenerate on its own. When it reaches 0, your character is permanently dead. (See Attributes and Proficiencies: The Atraxia Pool, and Conditions, Injuries, and Death: Dropping to 0 HP.)
 
-**Experience Points (XP)** are the currency of character growth. You earn XP from combat, exploration, and social encounters. You spend XP between sessions to buy new skills and raise existing ones (see Advancement, Mastery, and Between-Session Play).
+**Experience Points (XP)** are the currency of character growth. You earn XP from combat, exploration, and social encounters. You spend XP between sessions to buy new skills and raise existing ones (see Advancement and Between-Session Play).
 
 **Modifiers** are numbers from -5 to +5 that represent your character's capability in a given area. You add a modifier to your dice roll. For most attributes, a higher modifier produces stronger results. Atraxia is the exception: low Atraxia is not worse, it is different (see Attributes and Proficiencies).
 
@@ -1012,14 +1012,8 @@ If your character does not cast spells, you still pick two affinities. They defi
 
 Pick proficiencies from the proficiency list in the Attributes and Proficiencies chapter. Each proficiency has a fixed primary attribute and two secondary attribute options. When you roll a proficiency check, you choose which secondary to use for that roll (see Attributes and Proficiencies: How Proficiency Modifiers Work).
 
-You start with a limited set of proficiencies and can gain more through play. Only **10 proficiencies** can be active at any time (see Attributes and Proficiencies for full rules on active and inactive proficiencies).
-{{descriptive
-**TODO**: This is accidentally referring to two different systems and needs to be redone. https://poe2db.tw/us/Support_Gems is the actual system this is doing which is similar to Shadowrun's Mods but can be used for anything. This is a fault of naming; Not that I didn't grasp the system. 
-
-This needs to be its own ENTIRE CHAPTER divergent from skills. Let's rename it something that suggests combinatrics. 
-}}
-
-As your proficiencies grow in rank, they unlock **Support Skill Slots**. Support Skills are augments that socket into a proficiency and change how it works: reduced cooldown, extended range, changed area shape, added effects. Two characters who share the same base proficiency can play it differently depending on which Support Skills they attach. See Advancement, Mastery, and Between-Session Play for how proficiencies rank up and unlock slots.
+You start with a limited set of proficiencies and can gain more through play.
+Your character also has access to 10 **combat ability slots** for active abilities used in fights. These are independent of proficiencies. See the combat abilities chapter (coming soon) for the full system. Martial characters use mana-fueled combat abilities. Casters use the freeform spell builder. Both draw from the same mana pool.
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
@@ -1047,13 +1041,13 @@ Check your sheet against this reference. If anything is blank, go back to the st
 | Tag Affinities | Main affinity, Sub affinity | Fixed |
 | HP / Mana | Max HP, Max Mana, Mana Regen | Fixed (set by background) |
 | Atraxia Pool | Rolled at creation (Campaign Tone dice + modifier) | Permanent; drains during dying |
-| Proficiencies | Active proficiencies (up to 10) | Proficiencies can be swapped between sessions |
-| Support Skills | Socketed augments per proficiency | Changeable between sessions |
+| Proficiencies | Active proficiencies | Proficiencies can be swapped between sessions |
+| Combat Abilities | 10 active combat ability slots | Changeable between sessions |
 | Equipment | Weapons, armor, gear | Changeable |
-| Masteries | Mastery skills (if any unlocked) | Changeable between sessions |
 
 
-Solus has no character levels. Your character grows by earning XP and spending it on proficiency ranks (see Advancement, Mastery, and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
+
+Solus has no character levels. Your character grows by earning XP and spending it on proficiency ranks (see Advancement and Between-Session Play). The attributes, race, background, and name you chose in these steps are permanent. Everything else can change between sessions with GM confirmation.
 
 See Reference and Playtest Tools for nine sample character builds covering all three backgrounds.
 
@@ -1092,9 +1086,7 @@ Magic covers all spellcasting. Every spell you cast uses Magic, regardless of it
 
 - Magic is added to magical combat rolls and contributes to **Magical AC**. Magic is the other attribute you can choose for **initiative**.
 
-- The type of magic you specialize in is handled through Masteries, not through this attribute.
-
-- A character with high Magic casts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
+- A character with high Magiccasts powerful spells, resists magical attacks, and reacts quickly in combat. A character with low Magic casts weak spells and is easy to hit with magic.
 
 #### Atraxia
 
@@ -1150,13 +1142,9 @@ A **proficiency** is a trained ability your character uses in and out of combat.
 
 When you attempt a non-combat action and the outcome is uncertain, the GM calls for a **Proficiency Check** (see Core Mechanics) using the relevant proficiency from the table below. The 11 proficiencies in the table cover non-combat Proficiency Checks and their attribute pairings.
 
-{{descriptive
-**TODO:** Jacob — active combat skills (the mana-costing abilities characters equip and fight with) need their own list or section. The 11 proficiencies below only cover Proficiency Check abilities. Where do combat skills live?
-}}
+Your character does not start with every proficiency.You choose which proficiencies to take during character creation, and you can gain or swap proficiencies between sessions.
 
-Your character does not start with every proficiency. You choose which proficiencies to take during character creation, and you can gain or swap proficiencies between sessions. You can carry up to 10 **active** proficiencies at any time. Proficiencies you are not carrying cannot be used.
-
-Proficiencies grow through play. As you earn XP and spend it, your proficiencies advance through ranks (Rank 1 to Rank 10), becoming more effective. Higher-ranked proficiencies also unlock **Support Skill Slots**, which let you attach augments that change how the proficiency behaves (see Advancement and Between Sessions).
+Proficiencies grow through play. As you earn XP and spend it, your proficiencies advance through ranks (Rank 1 to Rank 10), becoming more effective.
 
 \column
 
@@ -1298,7 +1286,7 @@ No weapon category restricts your playstyle. A caster can swing a greatsword. A 
 
 Every weapon carries one or more **tags**: short labels that describe how the weapon behaves. Tags include Melee, Light, Medium, Heavy, Reach, Thrown, Splash, One-Handed, Two-Handed, Ranged, Firearm, and Unarmed.
 
-Tags matter because other rules reference them. A Support Skill that triggers "on a Heavy weapon hit" only fires when you swing a weapon tagged Heavy. A condition that says "Melee attacks are at disadvantage" applies to any weapon tagged Melee. Tags connect your weapon to the rest of the system.
+Tags matter because other rules reference them. A combat ability that triggers "on a Heavy weapon hit" only fires when you swing a weapon tagged Heavy. A condition that says "Melee attacks are at disadvantage" applies to any weapon tagged Melee. Tags connect your weapon to the rest of the system.
 
 Many weapons also carry unique **traits**: special effects that apply condition stacks, move targets, alter terrain, or unlock finisher attacks once a target has the right conditions applied to them.
 
@@ -1332,7 +1320,7 @@ Your mana pool starts full at the beginning of each encounter. Mana regenerates 
 |:---|:---|:---:|:---:|:---|
 | **Tag Affinity** | Main | — | ×1 | Multiplier applied to the total of all other parameters. See Tag Affinities. |
 | | Sub | — | ×2 | |
-| | Locked | — | — | Cannot cast unless a Mastery grants access. |
+| | Locked | — | — | Cannot cast from a locked affinity. |
 | **Function** | Utility | — | 0 | Dual-function spells add both costs. |
 | | Movement | — | 1 | |
 | | Defensive | — | 1 | |
@@ -1394,7 +1382,7 @@ Your affinity also sets the spell's **cost multiplier**. At character creation y
 - **Main affinity (×1).** Your primary school. All parameter costs stay at face value.
 - **Sub affinity (×2).** Your secondary school. The total mana cost of any spell using this affinity is doubled.
 
-All other affinities are **locked**. You cannot cast spells from a locked affinity unless a Mastery grants access (see Advancement, Mastery, and Between-Session Play).
+All other affinities are **locked**. You cannot cast spells from a locked affinity.
 
 ##### Tag Affinities Table
 | Tag Affinity | What It Does | Tag → Escalation |
@@ -2188,9 +2176,9 @@ NPCs are not only combat pieces. An NPC can create a problem (a corrupt magistra
 
 \page
 
-<!-- CHAPTER 11: ADVANCEMENT, MASTERY, AND BETWEEN-SESSION PLAY -->
+<!-- CHAPTER 11: ADVANCEMENT AND BETWEEN-SESSION PLAY -->
 
-# Advancement, Mastery, and Between-Session Play
+# Advancement and Between-Session Play
 
 Solus has no character levels. Your character grows by earning **XP** and spending it on skills.
 
@@ -2212,38 +2200,25 @@ You spend XP **between sessions**. XP buys two things: new proficiencies and pro
 
 **Raising a proficiency's rank** costs XP that increases exponentially from Rank 1 to Rank 10. Early ranks are cheap. Late ranks are expensive. This means spreading XP across many proficiencies gives you breadth, while focusing XP on a few proficiencies gives you depth. Both strategies are viable.
 
-**Support Skill Slots** unlock as a proficiency's rank increases. A Rank 1 proficiency has 1 slot. Every other rank after that (Rank 2, 4, 6, 8, 10) opens another, to a maximum of 5 slots per proficiency.
-
 {{descriptive
 **TODO:** Jacob, need the full XP cost table (acquisition cost + rank 1-10 costs) and XP awards per enemy tier, exploration, and social encounters.
 }}
 
 \column
 
-### Masteries
-
-Masteries are specializations that unlock when your **total lifetime XP** reaches certain thresholds. At each threshold, you gain Mastery points to spend on Mastery Skills. Mastery points are finite. You will have fewer points than available Mastery Skills, so you must choose which Masteries to invest in.
-
-Masteries function like skills, not classes. They define a specialization (a school of magic, a combat discipline, a social archetype) through mechanics, not through role restrictions.
-
-{{descriptive
-**TODO:** Jacob is redesigning Masteries. The current version too closely resembles a class system. Masteries may become regular skills or move into a "special" category with tradeoffs. Waiting on a revised foundation before finalizing this section.
-}}
-
 ### Between Sessions
 
 Between sessions, you can update any part of your character that the rules mark as changeable (see Character Creation, Step 9). With GM confirmation, you can:
 
-- Swap active proficiencies (remember: 10 active at a time, see Attributes and Proficiencies).
-- Socket or change Support Skills on your active proficiencies.
-- Change Masteries using the same rules as proficiency swaps.
+- Swap active proficiencies.
+- Change active combat abilities (see combat abilities chapter).
 - Change weapons and armor from your inventory.
 - Spend or gain money and resources.
 - Record new languages your character has learned.
 
-Proficiency swaps are also available on **long rests** during a session, so players can adapt tactics between encounters. Support Skills can be changed on both **short and long rests**.
+Proficiency swaps are also available on **long rests** during a session, so players can adapt tactics between encounters. Combat abilities can be changed on both **short and long rests**.
 
-{{footnote Advancement, Mastery, and Between Sessions}}
+{{footnote Advancement and Between Sessions}}
 {{pageNumber,auto}}
 
 \page
@@ -2301,7 +2276,7 @@ The Degree of 5 applies to all Proficiency Checks. It does not apply to Combat R
 
 Keep a clear boundary between what the player decides and what the system or GM decides.
 
-**Players control:** skills, Mastery Skills, equipment, weapons, spells, money, resources, languages, and which actions to take on their turn.
+**Players control:** skills, equipment, weapons, spells, money, resources, languages, and which actions to take on their turn.
 
 **The GM or system controls:** status effects, environmental effects, lingering injuries, long-term curses, madness, reputation changes, and NPC behavior.
 
@@ -2762,7 +2737,7 @@ Dwarf · Speed 25 ft. · Medium · Martial
 | Initiative | 1d10 + Body or Magic (chosen each combat). Determines turn order at the start of combat. | 9, 17 |
 | Mana | The resource spent to cast spells and use skills. Starts full each encounter. Regenerates at the start of your turn each round. | 9, 15 |
 | Mana Regen | Mana recovered per round. Caster: 15. Hybrid: 10. Martial: 3. | 9, 15 |
-| Mastery | A specialization unlocked by total XP thresholds. Grants Mastery points spent on Mastery Skills. | 25 |
+
 | Melee Reach | The distance (default 5 feet) within which a creature can make melee attacks and trigger opportunity attacks. | 18 |
 | Modifier | A number from -5 to +5 added to a dice roll to produce a result. | 7, 12 |
 | NPC (Non-Player Character) | Any character controlled by the GM. Uses the same rules as player characters. Tier determines stats. | 24 |
@@ -2771,12 +2746,12 @@ Dwarf · Speed 25 ft. · Medium · Martial
 | Reaction | 1 per round. An action taken in response to another creature's action. Refreshes at the start of your turn. | 18 |
 | Round | One full cycle of turns for all combatants. Represents 3 seconds of in-world time. | 17 |
 | Secondary Attribute | The second attribute added to a Proficiency Modifier. Chosen per roll from two options listed for each proficiency. | 8, 12 |
-| Proficiency | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. 10 active at a time. | 12 |
+| Proficiency | A trained capability (Athletics, Stealth, Speech, etc.) used for non-combat actions. | 12 |
 | Proficiency Check | 2d10 + Proficiency Modifier vs. DC. Used when an uncertain non-combat action is attempted. | 8, 12 |
 | Proficiency Modifier | Primary attribute + chosen secondary attribute for a given proficiency. Secondary chosen per roll. | 8, 12 |
 | Spend | Some abilities consume your stacks to power an effect. Spent stacks do not count toward escalation. | 21 |
 | Stack | A condition counter. 1 per hit, damage equals current count, ticks twice per round, 2-round decay, caps at 5. | 20, 21 |
-| Support Skill | An augment socketed into a proficiency that modifies its behavior. Slots unlock as proficiency rank increases. | 12, 25 |
+| Combat Ability | An active ability used in combat. 10 slots available from character creation. Independent of proficiencies. | 12, 25 |
 | Sustained | A spell maintained over multiple rounds. 3 actions to begin, 1 action per turn to maintain. Interruption ends it. | 15 |
 | Tag | A mechanical label (Burn, Bleed, Force, etc.) on a weapon, spell, terrain, or ability. Tags determine which conditions apply. | 19, 20 |
 | Turn | The portion of a round in which one combatant acts. You get 3 actions on your turn. | 17 |
