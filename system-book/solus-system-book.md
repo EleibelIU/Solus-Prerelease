@@ -767,13 +767,13 @@ Socket into Augment Slots on individual Rapier Techniques. Each Technique has 2-
 
 #### Curved Sword (Standard, Medium Melee) — 9 Techniques
 
-**Unique Mechanic: Liquid Metal.** Once per turn, extend your attack's reach to 10 ft at no cost. The blade shifts between three forms: Quicksilver (liquid, Bleed), Mercury (flat sweep, Force), and Galinstan (teardrop tip, Force + Knockback). Switching forms is a Free Action.
+**Unique Mechanic: Liquid Metal.** Once per turn, extend your attack's reach to 10 ft at no cost. The blade shifts between three forms: Quicksilver (liquid, Bleed), Mercury (flat sweep, Force), and Galinstan (teardrop tip, Force + push). Switching forms is a Free Action.
 
 | Rank | Technique | Cost | Effect |
 |---|---|---|---|
 | 1 | Quicksilver | 1 Action | Liquefy the blade. Slashing damage. Apply 1 Bleed on hit. Spend 2 Bleed stacks: deal +1d4 Bleed damage. Spend 4: extend reach to 10 ft, deal +1d4 Bleed damage, and hit one creature directly behind the target for the same damage. Each target struck gains 2 Bleed stacks on hit (1 Bleed on miss). |
 | 1 | Mercury | 1 Action | Flatten the blade into a wide sweep. Slashing damage. Apply 1 Force on hit. Spend 2 Force stacks: deal +1d4 bonus damage. Spend 4: extend reach to 10 ft and apply 4 Force stacks on hit (1 Force on miss). |
-| 2 | Galinstan | 1 Action, 3 Mana | Shift the blade's mass to its tip. Bludgeoning damage. Apply 1 Force on hit. Spend 2 Force stacks: attempt Knockback (target makes Body save vs. your DC). Spend 4: extend reach to 10 ft, hit up to 2 adjacent enemies, each saves vs. Knockback and gains 4 Force stacks on fail (1 Force on miss). |
+| 2 | Galinstan | 1 Action, 3 Mana | Shift the blade's mass to its tip. Bludgeoning damage. Apply 1 Force on hit. Spend 2 Force stacks: push the target 10 ft directly away from you (Body save vs. your DC to resist). Spend 4: extend reach to 10 ft, hit up to 2 adjacent enemies, each saves vs. push or is knocked back 10 ft and gains 4 Force stacks on fail (1 Force on miss). |
 | 2 | Form Transition | Free Action, 3 Mana | Switch forms. Your next attack in the new form applies 2 condition stacks instead of 1. |
 | 3 | Quicksilver Chain | 1 Action, 5 Mana | Enter Quicksilver form. Strike, then strike again if the first hits. Each hit applies 2 Bleed stacks. |
 | 3 | Mercury Sweep | 1 Action, 5 Mana | Enter Mercury form. Strike all enemies within 10 ft in a single sweep. Each hit applies 1 Force stack. |
@@ -790,7 +790,7 @@ Passive. Once learned, these apply to ALL Curved Sword Techniques. Each adds its
 | 1 | Flow State | Form Transition costs 0 Mana. | +1 |
 | 2 | Pressure Wave | Mercury hits push the target 5 ft. | +2 |
 | 3 | Serrated Liquid | Quicksilver attacks apply 1 additional Bleed stack. | +1 |
-| 4 | Mass Shift | Galinstan Knockback saves are made at Disadvantage. | +2 |
+| 4 | Mass Shift | Galinstan push saves are made at Disadvantage. | +2 |
 | 5 | True Liquefaction | Once per turn, when a hit clears all condition stacks, immediately apply 2 stacks of the clearing form's condition. | +3 |
 
 #### Katana (Complex, Medium Melee) — 12 Techniques
@@ -1047,7 +1047,7 @@ Passive. Once learned, these apply to ALL Greathammer Techniques. Each adds its 
 |---|---|---|---|
 | 1 | Heavy Swing | 1 Action | Strike. Apply 2 Bleed stacks on hit. |
 | 1 | UP and DOWN | 1 Action | Strike. On hit, target makes a Body save vs. your DC. Fail: launch target 10 ft airborne and deal half weapon damage. If you have 10+ ft of movement remaining, leap and slam for half weapon damage (auto-hit). Target falls prone on impact. Success: grounded, half weapon damage. |
-| 2 | Stick and KICK | 1 Action, 3 Mana | Strike. On hit, target makes a Body save vs. your DC. Fail: axe embeds (target Pinned). Spend your next Action to Kick the Pinned target (repeat save at Disadvantage: fail → Push 5 ft or knock prone; success → Kick still deals 2 damage). Success: not Pinned, half weapon damage. Attempt Kick normally on either result. |
+| 2 | Stick and KICK | 1 Action, 3 Mana | Strike. On hit, target makes a Body save vs. your DC. Fail: axe embeds (target's movement drops to 0; they are Pinned in place). Spend your next Action to Kick the Pinned target (repeat save at Disadvantage: fail → Push 5 ft or knock prone; success → Kick still deals 2 damage). Success: not Pinned, half weapon damage. Attempt Kick normally on either result. |
 | 2 | Wide Arc | 1 Action, 3 Mana | Sweep through up to 2 adjacent enemies with a single attack roll. Apply 1 Bleed stack to each target hit. |
 | 3 | Deep Wound | 1 Action, 5 Mana | Strike. Apply 3 Bleed stacks on hit. If the target already has active Bleed, deal +1d6 bonus damage. |
 | 3 | Rend Armor | 1 Action, 5 Mana | Strike. On hit, reduce the target's Physical DR by 2 until end of your next turn. Apply 1 Bleed stack. If the target is already Shredded, the DR reduction lasts until a short rest. |
@@ -1346,9 +1346,9 @@ TODO: full Technique list. Condition signature: Poison. Unique mechanic: Every h
 
 | Flask Type | Condition | Special AoE Effect |
 |---|---|---|
-| Fire | Burn | AoE may ignite terrain for 2 rounds |
-| Cold | Chill | AoE creates difficult terrain for 2 rounds |
-| Lightning | Shock | Wet targets in AoE may escalate Shock stacks |
+| Fire | Burn | On direct hit, ignites flammable terrain in a 5 ft radius for 2 rounds (1 Burn stack/round to any creature entering) |
+| Cold | Chill | AoE creates difficult terrain (half movement) for 2 rounds |
+| Lightning | Shock | Targets already Wet in the AoE gain 1 extra Shock stack |
 | Poison | Poison | AoE deals 1 ongoing poison damage per stack per round |
 | Frenzyflame | Burn | Deals 20 Madness to targets, 15 Madness to self. No AoE. |
 
@@ -1431,7 +1431,7 @@ Mechanical ranged weapons. Firearms deal high damage per shot but are limited by
 |---|---|---|---|
 | 1 | Quick Draw | 1 Action | Fire 1 round. Apply 1 Force stack on hit. Counts toward the Last Words streak. |
 | 1 | Hair Trigger | 1 Action | Fire at 2–3 adjacent targets (all within 5 ft of each other). 1 attack roll vs. the highest AC. Each hit uses the highest DR among those hit. Costs 2 rounds per target (4–6 rounds total). Apply 1 Force stack per hit. Each hit counts toward the Last Words streak. |
-| 2 | Roulette | 1 Action, 3 Mana | Enter Roulette mode. Before each shot, call evens or odds and roll 1d6. Hit + correct call: normal damage + 1d6 bonus. Miss + correct call: round spent, no damage. Incorrect call: misfire (1d6 damage to yourself, ignores DR, shot wasted). Roulette ends when you choose to stop, reload, or run out of rounds. Roulette shots do not count toward Last Words. |
+| 2 | Roulette | 1 Action, 3 Mana | Enter Roulette mode. Before each shot, call evens or odds and roll 1d6. Hit + correct call: normal damage + 1d6 bonus. Miss + correct call: round expended from cylinder, no damage. Incorrect call: misfire (1d6 damage to yourself, ignores DR, round expended). Roulette ends when you choose to stop, reload, or run out of rounds. Roulette shots do not count toward Last Words. |
 | 2 | Fan the Hammer | 1 Action, 3 Mana | Fire 3 rounds at one target in rapid sequence. Each hit applies 1 Force stack. The second shot has Advantage if the first hit. The third has Advantage if the second hit. Each hit counts toward the Last Words streak. |
 | 3 | Dead Aim | 1 Action, 5 Mana | Take careful aim. Your next shot has Advantage and deals +1d6 on hit. Counts toward the Last Words streak. |
 | 3 | Suppressive Shot | Reaction, 5 Mana | When an enemy moves within range, fire 1 round at them. On hit, their movement ends for this turn. Apply 1 Force stack. Counts toward the Last Words streak. |
