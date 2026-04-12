@@ -439,9 +439,32 @@ Shield occupies the off-hand. It functions as both a defensive item (+2 AC while
 | Sickle | Bleed | — | On kill, transfer remaining Bleed stacks to one adjacent enemy. |
 | Shield | Force | — | Shield Bash applies 1 Force stack. Repeated bashes build toward Staggered while maintaining high AC. |
 
-#### Bare Hands (Simple, Light Melee)
+#### Bare Hands (Simple, Light Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Burn Force stacks on yourself to boost unarmed strikes. Grapple pin combos with Force tick damage.
+**Unique Mechanic: A Fist Like Steel.** Every hit applies 1 Force stack to the target. At 5 Force stacks, the target becomes Staggered. Spend stacks with To The Face before they reach 5 to deal bonus damage and prevent escalation.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | With My Bare Hands | 1 Action | Strike. On hit, choose one free action: Shove (knock prone), Grapple, or Push 5 ft. Make a contested Body check vs. the target's Athletics. Once per turn. |
+| 1 | The Old One, Two | 1 Action | Strike twice. Cannot use With My Bare Hands on the second strike. |
+| 2 | To The Face | 1 Action, 3 Mana | Strike. On hit, expend any number of Force stacks. Deal bonus damage equal to stacks spent. Spend 3+: also attempt Disarm (Body check vs. your DC). Spend 4+: attempt Stunned instead (same check). These effects replace bonus damage. On a miss, stacks are still lost. |
+| 2 | Clinch | 1 Action, 3 Mana | Grapple a target within 5 ft. While the grapple holds, Bare Hands attacks against them deal +2 damage and apply 1 additional Force stack per hit. |
+| 3 | Ground and Pound | 1 Action, 5 Mana | Requires an active Grapple. Strike three times against the grappled target. Each hit applies 1 Force stack. |
+| 3 | Stand Your Ground | Reaction, 5 Mana | When a target you have Force stacks on attempts to disengage or move away, make a contested Body check vs. their Athletics. On success, they cannot move this turn. |
+| 4 | Bone Breaker | 1 Action, 8 Mana | Requires [Staggered]. Strike. On hit, halve the target's movement speed and give them Disadvantage on attack rolls until a short rest. Apply 2 Force stacks. |
+| 5 | Haymaker (Capstone) | 2 Actions, 15 Mana | Requires [Staggered]. Deliver one devastating blow. On hit, triple weapon damage and trigger Shattered. Once per long rest. |
+
+##### Bare Hands Weapon Augments (A Fist Like Steel)
+
+Passive. Once learned, these apply to ALL Bare Hands Techniques. Each adds its Mana cost to every Bare Hands Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Iron Fist | Your hits apply 1 additional Force stack. | +1 |
+| 2 | Follow Through | After using To The Face, your next Bare Hands attack has Advantage. | +2 |
+| 3 | Grappler | Clinch's grapple range extends to 10 ft. | +1 |
+| 4 | Concussive | Force stacks deal 1 passive damage per stack at the start of the target's turn. | +2 |
+| 5 | Unstoppable | While you have 3+ Force stacks on a target, your Bare Hands attacks cannot be interrupted by Reactions. | +3 |
 
 #### Dagger (Standard, Light Melee) — 8 Techniques
 
@@ -470,13 +493,60 @@ Passive. Once learned, these apply to ALL Dagger Techniques. Each adds its Mana 
 | 4 | Arterial Cut | Bleed applied by Dagger Techniques cannot be removed by mundane healing. Only magical healing removes Dagger Bleed. | +1 |
 | 5 | Shadowstep | After a Dagger Technique reduces a target to 0 HP, teleport up to 3 spaces to another enemy. | +2 |
 
-#### Short Sword (Standard, Light Melee)
+#### Short Sword (Standard, Light Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Guaranteed Bleed on every hit (1 stack, scaling to 2 at Rank 3). No variance. Consistent pressure.
+**Unique Mechanic: Shared Risk.** You can choose to take Bleed stacks on yourself to activate stance bonuses. Each stance requires 1+ Bleed on yourself and 2+ Bleed on the target to provide its benefit. Only one stance can be active at a time. If you reach 5 Bleed stacks yourself, you become Shredded.
 
-#### Claw Gauntlet (Standard, Light Melee)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | First Adventure | 1 Action | Enter Offensive Stance and apply 1 Bleed to yourself. Strike. On hit, apply 1 Bleed to the target. While in stance with 1+ Bleed on yourself and 2+ on the target, attacks deal +1d4 bonus damage. Gain 1 Bleed on yourself at the start of each of your turns while in stance. |
+| 1 | Seasoned Traveler | 1 Action | Enter Defensive Stance and apply 1 Bleed to yourself. Strike. On hit, apply 1 Bleed to the target. While in stance with 1+ Bleed on yourself and 2+ on the target, gain +2 Physical DR. Each time you are hit while in stance, take +1d4 bleed damage. |
+| 2 | A Real Adventure | 1 Action, 3 Mana | Enter Aggressive Stance and apply 1 Bleed to yourself. Strike. On hit, apply 1 Bleed to the target. While in stance with 1+ Bleed on yourself and 2+ on the target, make 1 extra melee attack as part of your Action. Gain 1 Bleed on yourself each time you use the bonus attack. |
+| 2 | Recover | 1–2 Actions, 3 Mana | Purge 2 Bleed stacks from yourself (1 Action) or all Bleed stacks from yourself (2 Actions). You cannot enter a stance until the start of your next turn. |
+| 3 | Double Down | 1 Action, 5 Mana | Strike twice. Each hit applies 1 Bleed to the target. If you are in a stance, apply 1 Bleed to yourself as well. |
+| 3 | Wound Pressure | Reaction, 5 Mana | When a Bleeding target moves away from you, make a free opportunity attack. On hit, apply 2 Bleed stacks. |
+| 4 | Deep Cut | 1 Action, 8 Mana | Requires [Shredded] on target. Strike. On hit, deal bonus damage equal to all active Bleed stacks on the target and apply 1 Bleed to yourself. |
+| 5 | Veteran (Capstone) | 2 Actions, 15 Mana | Requires 4+ Bleed on yourself and [Shredded] on target. On hit, transfer all your Bleed stacks to the target. Deal +1d4 damage per stack transferred. Take 1d6 bleed damage per stack transferred as your wounds reopen. If the transfer triggers Exsanguination, this damage bypasses DR. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Paired property forces dual-wield. Each Flurry lands twice. Fastest path to Shredded (5 Bleed stacks) in the game.
+##### Short Sword Weapon Augments (Shared Risk)
+
+Passive. Once learned, these apply to ALL Short Sword Techniques. Each adds its Mana cost to every Short Sword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Sharp Edge | While in a stance, hits apply 1 additional Bleed stack to the target. | +1 |
+| 2 | Pain Tolerance | Bleed stacks on yourself deal 1 less damage per round (minimum 0). | +2 |
+| 3 | Swift Stance | Switching stances costs 0 Actions and no Bleed stacks. | +1 |
+| 4 | Bleeding Edge | While in Aggressive Stance with [Shredded] on target, gain one additional bonus attack. | +2 |
+| 5 | Last Stand | When you drop below 25 HP while in any stance, immediately apply 3 Bleed stacks to the target for free. | +3 |
+
+#### Claw Gauntlet (Standard, Light Melee) — 9 Techniques
+
+**Unique Mechanic: Paired Blades.** Claw Gauntlet requires both gauntlets equipped. You cannot hold a shield or off-hand weapon. Only one Damage Mode can be active at a time. Switching modes is a Free Action. Attacks in the active mode may include one extra strike per Action.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | One, Two, I'm Coming for You | 1 Action | Enter Bleed Mode. All attacks apply 1 Bleed on hit. Once per Action, make one extra strike. |
+| 1 | They're All Doomed | 1 Action | Enter Acid Mode. All attacks apply 1 Acid on hit. Once per Action, make one extra strike. |
+| 2 | He Doesn't Run | 1 Action, 3 Mana | Launch a flurry at one target within 20 ft. Target makes a Body save vs. your DC. Fail: Anchored and full damage. Success: full damage, no Anchor. |
+| 2 | Rend | Reaction, 3 Mana | When an adjacent enemy attacks you, slash back. On hit, apply 1 Bleed and 1 Acid stack. |
+| 3 | Tear Through | 1 Action, 5 Mana | Make 4 strikes (2 per gauntlet). Each hit applies the active mode's condition stack. |
+| 3 | Mode Shift | Free Action, 5 Mana | Switch Damage Modes. Your next attack in the new mode applies 2 condition stacks instead of 1. |
+| 4 | I Wanna See What Your Insides Look Like | 2 Actions, 8 Mana | Requires [Shredded] and [Corroded] on target. Make 2 strikes. If either hits, trigger He Doesn't Run with an automatic save failure. Gain 3 Bleed and 3 Acid stacks yourself. |
+| 4 | Predator's Pace | 1 Action, 8 Mana | Move up to your full speed. Until end of turn, attacks have Advantage and each hit applies the active mode's condition. |
+| 5 | Final Claw (Capstone) | 2 Actions, 15 Mana | Requires [Shredded] and [Corroded] on target. Make 4 strikes. Each hit applies 2 Bleed and 2 Acid stacks. If target is Anchored, all strikes have Advantage. Once per long rest. |
+
+##### Claw Gauntlet Weapon Augments (Paired Blades)
+
+Passive. Once learned, these apply to ALL Claw Gauntlet Techniques. Each adds its Mana cost to every Claw Gauntlet Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Dual Poison | While in Acid Mode, attacks also apply 1 Bleed stack. | +1 |
+| 2 | Death Grip | He Doesn't Run's save DC increases by 2. | +2 |
+| 3 | Serrated | Bleed stacks you apply deal +1 damage per stack per round. | +1 |
+| 4 | Mode Lock | After switching modes with Mode Shift, your first attack has Advantage. | +2 |
+| 5 | Total Dissolution | While target has both [Shredded] and [Corroded], your attacks ignore Physical DR. | +3 |
 
 #### Sickle (Standard, Light Melee)
 
@@ -695,7 +765,33 @@ Socket into Augment Slots on individual Rapier Techniques. Each Technique has 2-
 | Final Curtain | On kill, once-per-long-rest resets. Chain-kill potential. | +5 |
 | Dramatic Finish | Enemies within 6 spaces: `2d10 + Social` vs. DC 15 or Frightened 2 rounds. | +3 |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping Bleed hits two adjacent targets per attack. Best group-Bleed spreader in Medium Melee.
+#### Curved Sword (Standard, Medium Melee) — 9 Techniques
+
+**Unique Mechanic: Liquid Metal.** Once per turn, extend your attack's reach to 10 ft at no cost. The blade shifts between three forms: Quicksilver (liquid, Bleed), Mercury (flat sweep, Force), and Galinstan (teardrop tip, Force + Knockback). Switching forms is a Free Action.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Quicksilver | 1 Action | Liquefy the blade. Slashing damage. Apply 1 Bleed on hit. Spend 2 Bleed stacks: deal +1d4 Bleed damage. Spend 4: extend reach to 10 ft, deal +1d4 Bleed damage, and hit one creature directly behind the target for the same damage. Each target struck gains 2 Bleed stacks on hit (1 Bleed on miss). |
+| 1 | Mercury | 1 Action | Flatten the blade into a wide sweep. Slashing damage. Apply 1 Force on hit. Spend 2 Force stacks: deal +1d4 bonus damage. Spend 4: extend reach to 10 ft and apply 4 Force stacks on hit (1 Force on miss). |
+| 2 | Galinstan | 1 Action, 3 Mana | Shift the blade's mass to its tip. Bludgeoning damage. Apply 1 Force on hit. Spend 2 Force stacks: attempt Knockback (target makes Body save vs. your DC). Spend 4: extend reach to 10 ft, hit up to 2 adjacent enemies, each saves vs. Knockback and gains 4 Force stacks on fail (1 Force on miss). |
+| 2 | Form Transition | Free Action, 3 Mana | Switch forms. Your next attack in the new form applies 2 condition stacks instead of 1. |
+| 3 | Quicksilver Chain | 1 Action, 5 Mana | Enter Quicksilver form. Strike, then strike again if the first hits. Each hit applies 2 Bleed stacks. |
+| 3 | Mercury Sweep | 1 Action, 5 Mana | Enter Mercury form. Strike all enemies within 10 ft in a single sweep. Each hit applies 1 Force stack. |
+| 4 | Volatile Flow | 1 Action, 8 Mana | Requires [Shredded] or [Staggered]. Strike. On hit, deal bonus damage equal to the total active Bleed and Force stacks on the target. Clear all those stacks. |
+| 4 | Form Lock | Free Action, 8 Mana | Commit to your current form until end of your next turn. All attacks in this form have Advantage. Condition stacks applied by this form are doubled. |
+| 5 | Liquid Ruin (Capstone) | 2 Actions, 15 Mana | Requires [Shredded] and [Staggered]. Strike once in each form: Quicksilver, Mercury, Galinstan. Each hit applies that form's conditions at double value. If all three hit, trigger Exsanguination and Shattered simultaneously. Once per long rest. |
+
+##### Curved Sword Weapon Augments (Liquid Metal)
+
+Passive. Once learned, these apply to ALL Curved Sword Techniques. Each adds its Mana cost to every Curved Sword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Flow State | Form Transition costs 0 Mana. | +1 |
+| 2 | Pressure Wave | Mercury hits push the target 5 ft. | +2 |
+| 3 | Serrated Liquid | Quicksilver attacks apply 1 additional Bleed stack. | +1 |
+| 4 | Mass Shift | Galinstan Knockback saves are made at Disadvantage. | +2 |
+| 5 | True Liquefaction | Once per turn, when a hit clears all condition stacks, immediately apply 2 stacks of the clearing form's condition. | +3 |
 
 #### Katana (Complex, Medium Melee) — 12 Techniques
 
@@ -943,9 +1039,33 @@ Passive. Once learned, these apply to ALL Greathammer Techniques. Each adds its 
 | 4 | Momentum of Ruin | When you hit a Staggered target with a Greathammer Technique, refund 1 Action. Once per turn. | +0 |
 | 5 | Tectonic | Greathammer Techniques against objects, structures, and terrain deal triple damage. Terrain destruction radius +1 space. | +1 |
 
-#### Great Axe (Standard, Heavy Melee)
+#### Great Axe (Standard, Heavy Melee) — 9 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Bleed stacks deal double tick damage (+2 per stack instead of +1). At Shredded (5 stacks), attacks ignore all Physical DR. Capstone: Exsanguination (T4).
+**Unique Mechanic: Double Tick.** Great Axe Bleed stacks deal 2 damage per stack per round instead of 1. Once the target reaches [Shredded], all Great Axe attacks ignore Physical DR entirely.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Heavy Swing | 1 Action | Strike. Apply 2 Bleed stacks on hit. |
+| 1 | UP and DOWN | 1 Action | Strike. On hit, target makes a Body save vs. your DC. Fail: launch target 10 ft airborne and deal half weapon damage. If you have 10+ ft of movement remaining, leap and slam for half weapon damage (auto-hit). Target falls prone on impact. Success: grounded, half weapon damage. |
+| 2 | Stick and KICK | 1 Action, 3 Mana | Strike. On hit, target makes a Body save vs. your DC. Fail: axe embeds (target Pinned). Spend your next Action to Kick the Pinned target (repeat save at Disadvantage: fail → Push 5 ft or knock prone; success → Kick still deals 2 damage). Success: not Pinned, half weapon damage. Attempt Kick normally on either result. |
+| 2 | Wide Arc | 1 Action, 3 Mana | Sweep through up to 2 adjacent enemies with a single attack roll. Apply 1 Bleed stack to each target hit. |
+| 3 | Deep Wound | 1 Action, 5 Mana | Strike. Apply 3 Bleed stacks on hit. If the target already has active Bleed, deal +1d6 bonus damage. |
+| 3 | Rend Armor | 1 Action, 5 Mana | Strike. On hit, reduce the target's Physical DR by 2 until end of your next turn. Apply 1 Bleed stack. If the target is already Shredded, the DR reduction lasts until a short rest. |
+| 4 | Axe Slam | 1 Action, 8 Mana | Requires [Shredded]. Strike, ignoring all Physical DR. Apply 2 additional Bleed stacks on hit. Target makes a Body save or falls prone. |
+| 4 | Bleeding Frenzy | 1 Action, 8 Mana | Requires [Shredded]. Strike twice, ignoring all Physical DR. Apply 1 Bleed stack per hit. |
+| 5 | Reaping Blow (Capstone) | 2 Actions, 15 Mana | Requires [Shredded]. Strike, ignoring all Physical DR. On hit, triple weapon damage and trigger Exsanguination. Once per long rest. |
+
+##### Great Axe Weapon Augments (Double Tick)
+
+Passive. Once learned, these apply to ALL Great Axe Techniques. Each adds its Mana cost to every Great Axe Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Savage Swing | Each hit applies 1 additional Bleed stack. | +1 |
+| 2 | Launch Mastery | UP and DOWN's slam at the apex deals full weapon damage instead of half. | +2 |
+| 3 | Embedded | Stick and KICK's Pinned condition lasts 1 extra round. | +1 |
+| 4 | Hemorrhage | While target is Shredded, hits splash 1 Bleed stack to all other enemies within 5 ft. | +2 |
+| 5 | Execution | When a target reaches Exsanguination, your next Great Axe attack automatically critically hits. | +3 |
 
 #### Greatclub (Simple, Heavy Melee)
 
@@ -1035,17 +1155,88 @@ Passive. Once learned, these apply to ALL Spear Techniques. Each adds its Mana c
 | 4 | Vital Strike | Bleed from Spear Techniques ignores 1 additional Physical DR (2 total with Deep Pierce). | +2 |
 | 5 | Lance Charge | If you moved 3+ spaces toward a target before using a Spear Technique, +1d8 Piercing damage. | +2 |
 
-#### Halberd (Standard, Reach)
+#### Halberd (Standard, Reach) — 9 Techniques
 
-TODO: full Technique list. Condition signature: Force/Bleed. Unique mechanic: Sweep splits conditions. Primary target takes Force, secondary targets take Bleed. Dual-condition zone controller.
+**Unique Mechanic: Dual Edge.** The halberd's blade and pole are distinct attack modes. Blade Mode applies Bleed (Slashing) and Pole Mode applies Force (Bludgeoning). Switching modes is a Free Action. Certain techniques specify the required mode.
 
-#### Scythe (Complex, Reach)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Blade | 1 Action | Blade Mode. Make a single attack roll against the higher AC of two adjacent enemies. On hit, deal full damage to both. Each target reduces damage using the highest DR between them. Apply 1 Bleed to each target hit. |
+| 1 | Pole Strike | 1 Action | Pole Mode. Strike one target. Apply 1 Force stack on hit. If the target is within 5 ft, apply 2 Force stacks instead. |
+| 2 | Hook | 1 Action, 3 Mana | On hit, drag the target up to 10 ft in a direction of your choice. If this pulls the target out of an ally's reach, that ally makes an Opportunity Attack with Advantage. |
+| 2 | Pole | 2 Actions, 3 Mana | Pole Mode. Make two attacks against the same target. If both hit, apply 2 Bleed stacks in addition to normal Force stacks. |
+| 3 | Extended Blade | 1 Action, 5 Mana | Blade Mode. Strike all enemies in a 10 ft line extending from you. Apply 1 Bleed to each target hit. |
+| 3 | Haft Block | Reaction, 5 Mana | Interpose the haft against a melee attack. Reduce incoming damage by 1d6 + Body. If the attacker is within reach, apply 1 Force stack to them. |
+| 4 | Sweep and Pin | 1 Action, 8 Mana | Requires [Staggered] or [Shredded]. Blade Mode. Strike all enemies within 10 ft. Each target hit makes a Body save or falls prone. Apply 1 Bleed to each target hit. |
+| 4 | Impale | 1 Action, 8 Mana | Blade Mode. Strike. On hit, pin the target (Restrained) until you move or attack again. Apply 3 Bleed stacks. Target makes a Body save at the end of each of their turns to break free. |
+| 5 | Battlefield Reaper (Capstone) | 2 Actions, 15 Mana | Requires [Staggered] on at least one target. Sweep through all enemies within 10 ft in one motion. One attack roll vs. each. On hit: apply 3 Force and 3 Bleed to each. Any target already at 5 Force immediately triggers Staggered. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Purge stacks from allies as a Technique. On kill, transfer remaining stacks to an adjacent enemy. Harvest-chain combos. Capstone: Exsanguination (T4).
+##### Halberd Weapon Augments (Dual Edge)
 
-#### Whip (Standard, Reach)
+Passive. Once learned, these apply to ALL Halberd Techniques. Each adds its Mana cost to every Halberd Technique you use.
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: 3-space reach. Apply Bleed at extreme range. Rank 3 Technique pulls Bleeding targets toward you. Control + punishment.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Reach | Pole Strike range increases to 15 ft. | +1 |
+| 2 | Decisive Hook | Hook's drag distance increases to 15 ft. | +2 |
+| 3 | Blade Guard | After any Blade Mode Technique, gain +1 Physical DR until your next turn. | +1 |
+| 4 | Force Transfer | When Hook moves a target into another enemy's space, both take 1d6 bonus damage. | +2 |
+| 5 | Cleave Through | Blade Mode hits apply 1 Bleed stack to all enemies adjacent to the primary target. | +3 |
+
+#### Scythe (Complex, Reach) — 9 Techniques
+
+**Unique Mechanic: Harvest.** When you kill a target that has Bleed active, transfer all their Bleed stacks to one adjacent enemy of your choice. Once per turn, spend 1 Action to purge all Bleed stacks from one ally within reach. That ally takes no damage from those stacks.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Reaper's Spiral | 1 Action | All enemies within 10 ft make a Body save vs. your DC. Fail: full weapon damage and 1 Bleed stack. Success: half damage. Does not provoke opportunity attacks. |
+| 1 | Reap | 1 Action | Strike. On hit, the target gains 1 Reap stack (max 1 per target per turn). At 3 Reap stacks, spend 1 Action to consume all stacks and deal 10 damage (reduced by DR). Reap stacks are lost if the target is healed or if you fail to hit them for 2 consecutive rounds. |
+| 2 | Wraith Arc | 1 Action, 3 Mana | Move up to 15 ft through 2 or more enemies. Attack range drops to 5 ft during movement. No opportunity attacks while moving. Make 1 attack roll vs. the highest AC among enemies passed through. On hit, all passed-through enemies take full damage (each reduces damage using the highest DR among them). |
+| 2 | Death's Mercy | 1 Action, 3 Mana | Purge all Bleed stacks from one ally within reach. Redirect half the purged stack count as damage to one enemy within reach (DR applies). |
+| 3 | Spiral Surge | 1 Action, 5 Mana | All enemies within 10 ft make a Body save. Fail: full weapon damage and 2 Bleed stacks. Success: half damage and 1 Bleed stack. Does not provoke opportunity attacks. |
+| 3 | Grave Hunger | 1 Action, 5 Mana | Requires 3+ Bleed on target. Strike. On hit, deal bonus damage equal to the target's active Bleed stack count. Apply 2 additional Bleed stacks. |
+| 4 | Spectral Harvest | 1 Action, 8 Mana | Requires [Shredded]. Strike. On hit, transfer all Bleed stacks from this target to all other enemies within 10 ft (split evenly, round down). The original target takes full weapon damage. |
+| 4 | Reaper's Stride | 1 Action, 8 Mana | Move up to your full speed. Every enemy you pass adjacent to makes a Body save. Fail: 1d6 damage and 2 Bleed stacks. No opportunity attacks during this movement. |
+| 5 | Final Harvest (Capstone) | 2 Actions, 15 Mana | Requires [Shredded]. Strike every enemy within 10 ft once. Each hit deals double weapon damage. Transfer all Bleed stacks from each hit target to one adjacent enemy of your choice. Any target already at Shredded triggers Exsanguination. Once per long rest. |
+
+##### Scythe Weapon Augments (Harvest)
+
+Passive. Once learned, these apply to ALL Scythe Techniques. Each adds its Mana cost to every Scythe Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Curved Blade | Reaper's Spiral and Spiral Surge radius extends to 15 ft. | +1 |
+| 2 | Reap Mastery | Reap stacks cap at 4 instead of 3. Reap detonation deals 14 damage instead of 10. | +2 |
+| 3 | Soul Drain | When Harvest transfers stacks on a kill, you gain 5 HP. | +1 |
+| 4 | Ghost Arc | Wraith Arc movement increases to 20 ft. Attack roll gains +2 to hit. | +2 |
+| 5 | Endless Reaping | Final Harvest does not consume its long rest use if all targets were already Shredded at the start of the technique. | +3 |
+
+#### Whip (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Extended Reach.** The whip's reach is 15 ft (3 spaces). At Mastery Rank 3, once per turn when you hit a Bleeding target, pull them up to 10 ft toward you as a free action. No contested check required.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Control Lash | 1 Action | Strike. On hit, choose one: Trip (target makes Body save vs. your DC → prone), Disarm (Body save → drops one held item), Pull 5 ft toward you (Body check vs. your DC), or Hold (Restrained until start of your next turn; you cannot attack while holding, releasing is free). One option per hit. Once per turn. |
+| 1 | Serpent's Tempo | 1 Action | Strike. Apply 1 Force stack on hit. If you hit the same target again this turn with another Whip attack, apply 1 additional Force stack on that second hit. |
+| 2 | Crack the Air | 1 Action, 3 Mana | Snap the whip in a 10 ft cone. All creatures in the cone make a Body save vs. your DC. Fail: Deafened until end of their next turn and apply 1 Force stack. Deals no damage. |
+| 2 | Wrap and Rip | 1 Action, 3 Mana | Strike. On hit, wrap the whip around the target's limb (Restrained). On your next turn, spend 1 Action to tear free: deal 1d6 bleed damage and apply 2 Bleed stacks. |
+| 3 | Snap Pull | 1 Action, 5 Mana | Strike a target within 15 ft. On hit, pull them up to 10 ft toward you and apply 2 Bleed stacks. If pulled within an ally's reach, that ally may make an Opportunity Attack with Advantage. |
+| 3 | Ensnare | 1 Action, 5 Mana | Strike at a target's legs. On hit, Restrained and speed drops to 0 until they spend 1 Action to break free (Body save vs. your DC). Apply 1 Bleed stack. |
+| 4 | Shredding Lash | 1 Action, 8 Mana | Requires [Shredded]. Strike. On hit, double weapon damage and apply 2 Bleed stacks. The target cannot remove Bleed stacks by any means until end of your next turn. |
+| 5 | Serpent's Wrath (Capstone) | 2 Actions, 15 Mana | Requires [Shredded] or [Staggered]. Strike every enemy within 15 ft. Each hit applies 3 Bleed and 3 Force stacks. Targets already at 5 Bleed trigger Shredded. Targets already at 5 Force trigger Staggered. Once per long rest. |
+
+##### Whip Weapon Augments (Extended Reach)
+
+Passive. Once learned, these apply to ALL Whip Techniques. Each adds its Mana cost to every Whip Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Long Reach | Extend Whip reach to 20 ft. | +1 |
+| 2 | Barbed | Bleed stacks you apply cannot be removed until the start of your next turn. | +2 |
+| 3 | Coiled Strike | After using Control Lash, your next Whip attack has Advantage. | +1 |
+| 4 | Trip Expert | Tripped targets must spend their full Action to stand and immediately gain 1 Bleed stack. | +2 |
+| 5 | Whiplash | After pulling a target with Snap Pull or the Rank 3+ free pull, your next Whip attack against them deals +1d6 damage. | +3 |
 
 #### Staff (Standard, Reach)
 
@@ -1149,9 +1340,41 @@ TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Deep Pen
 
 TODO: full Technique list. Condition signature: Poison. Unique mechanic: Every hit applies 1 Poison stack. Rapid-fire rushes Venomous (5 Poison). Rank 3: 2 Poison per hit. Capstone: Lethal Dose (T4, Neurotoxin).
 
-#### Bomb Flask (Standard, Ranged)
+#### Bomb Flask (Standard, Ranged) — 9 Techniques
 
-TODO: full Technique list. Condition signature: Varies by flask type (Burn, Acid, Chill). Unique mechanic: AoE condition application. Consumable. Must be crafted or purchased. Area denial and group condition stacking.
+**Unique Mechanic: Flask Types.** Before combat, choose one flask type. The loaded type determines what condition your flask applies and its special area effect. Switch flask types on a short rest.
+
+| Flask Type | Condition | Special AoE Effect |
+|---|---|---|
+| Fire | Burn | AoE may ignite terrain for 2 rounds |
+| Cold | Chill | AoE creates difficult terrain for 2 rounds |
+| Lightning | Shock | Wet targets in AoE may escalate Shock stacks |
+| Poison | Poison | AoE deals 1 ongoing poison damage per stack per round |
+| Frenzyflame | Burn | Deals 20 Madness to targets, 15 Madness to self. No AoE. |
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Lob | 1 Action | Throw a flask up to 20 ft. Direct hit: 1d6 + Body damage and apply 1 condition stack. On landing, 10 ft AoE: each target makes a Body save or takes half damage and gains 1 condition stack per round for 2 rounds. AoE may hit allies. |
+| 1 | Slam | 1 Action | Melee bash with the flask (5 ft). 1d6 + Body damage. Choose: Wall of Sparks (5 ft radius AoE, 1 condition stack/round, 2 rounds) or Rolling Sparks (10 ft line AoE, 1 condition stack/round, 2 rounds). Apply 1 condition stack to the direct target. AoE may hit allies. |
+| 2 | Dead On | 1 Action, 3 Mana | Aim for a direct hit. On hit, deal 2d6 + Body damage and apply 2 condition stacks. On miss, resolve as a normal Lob with no direct-hit bonus. |
+| 2 | Delayed Burst | 1 Action, 3 Mana | Throw a flask up to 30 ft. It detonates at the start of your next turn. Targets in the 10 ft AoE cannot avoid the detonation unless they moved out of range. Apply 2 condition stacks on detonation. |
+| 3 | Ricochet | 1 Action, 5 Mana | Throw a flask to bounce off a surface or target and hit up to 2 creatures behind cover or around corners. Each hit applies 1 condition stack. Any direct target also takes 1d6 + Body damage. |
+| 3 | Saturation | 2 Actions, 5 Mana | Throw two flasks at the same point. AoE radius expands to 15 ft. Each target in the area gains 2 condition stacks per round for 2 rounds. AoE may hit allies. |
+| 4 | Frenzy Surge | 1 Action, 8 Mana | Frenzyflame Flask only. Throw or slam. Deal 2d6 fire damage and apply 2 Burn stacks. Targets gain 20 Madness. You gain 15 Madness. No AoE. |
+| 4 | Chain Reaction | 1 Action, 8 Mana | Requires target at T2 condition (Ignited, Frozen, Shocked, or Venomous). Throw a flask at that target. Detonation triggers that condition's T2 effect on all enemies in a 10 ft AoE, not just the direct target. |
+| 5 | Maximum Payload (Capstone) | 2 Actions, 15 Mana | Requires at least one target at T2 condition. Throw up to 3 flasks in sequence, each landing in a different location within 30 ft. Full damage and condition stacks per flask. Each successive flask expands the previous AoE by 5 ft (overlapping areas stack conditions). Once per long rest. |
+
+##### Bomb Flask Weapon Augments (Flask Types)
+
+Passive. Once learned, these apply to ALL Bomb Flask Techniques. Each adds its Mana cost to every Bomb Flask Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Volatile Mix | Direct hits apply 1 additional condition stack. | +1 |
+| 2 | Precision Lob | Lob and Saturation AoE radius increases by 5 ft. | +2 |
+| 3 | Quick Brew | Switching flask types during combat is a Free Action. | +1 |
+| 4 | Concentrated Formula | Condition stacks you apply last 1 extra round before decaying. | +2 |
+| 5 | Catalytic Overflow | When a target reaches T2 condition from your flask, all other enemies within 5 ft of them gain 2 stacks of the same condition. | +3 |
 
 ---
 
@@ -1200,17 +1423,89 @@ Mechanical ranged weapons. Firearms deal high damage per shot but are limited by
 | Rifle | Bleed | Force | Standard shots apply Bleed. Penetrating Round applies Force. Switch by Technique. |
 | Shotgun | Force | — | Point-blank: 2 Force stacks. Maximum range: 1 Force stack. Spread: 1 Force to adjacent targets. |
 
-#### Revolver (Standard, Firearms)
+#### Revolver (Standard, Firearms) — 9 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Fan the Hammer for rapid Force stacking. 6-round cylinder with Reload. Light property allows dual-wielding.
+**Unique Mechanic: Last Words.** The revolver holds 6 rounds. Track consecutive hits across a full cylinder. If all 6 shots hit without a miss, the 6th gains Piercing (ignores half Physical DR, rounded down) and applies 1 Burn stack. A miss resets the streak. Reload costs 1 Action and refills all 6 rounds.
 
-#### Rifle (Standard, Firearms)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Quick Draw | 1 Action | Fire 1 round. Apply 1 Force stack on hit. Counts toward the Last Words streak. |
+| 1 | Hair Trigger | 1 Action | Fire at 2–3 adjacent targets (all within 5 ft of each other). 1 attack roll vs. the highest AC. Each hit uses the highest DR among those hit. Costs 2 rounds per target (4–6 rounds total). Apply 1 Force stack per hit. Each hit counts toward the Last Words streak. |
+| 2 | Roulette | 1 Action, 3 Mana | Enter Roulette mode. Before each shot, call evens or odds and roll 1d6. Hit + correct call: normal damage + 1d6 bonus. Miss + correct call: round spent, no damage. Incorrect call: misfire (1d6 damage to yourself, ignores DR, shot wasted). Roulette ends when you choose to stop, reload, or run out of rounds. Roulette shots do not count toward Last Words. |
+| 2 | Fan the Hammer | 1 Action, 3 Mana | Fire 3 rounds at one target in rapid sequence. Each hit applies 1 Force stack. The second shot has Advantage if the first hit. The third has Advantage if the second hit. Each hit counts toward the Last Words streak. |
+| 3 | Dead Aim | 1 Action, 5 Mana | Take careful aim. Your next shot has Advantage and deals +1d6 on hit. Counts toward the Last Words streak. |
+| 3 | Suppressive Shot | Reaction, 5 Mana | When an enemy moves within range, fire 1 round at them. On hit, their movement ends for this turn. Apply 1 Force stack. Counts toward the Last Words streak. |
+| 4 | Feelin' Lucky | 1 Action, 8 Mana | Requires exactly 2 rounds remaining. Discard 1, leaving 1 round. Call evens or odds and roll 1d6. Correct: this shot gains Piercing + 1 Burn stack (as Last Words). Incorrect: misfire (1d6 damage, ignores DR) + 1 Burn on self. Either result resets Last Words. |
+| 4 | Execution Shot | 1 Action, 8 Mana | Requires [Staggered]. Fire 1 round. On hit, double damage and apply 2 Force stacks. Target makes a Body save or falls prone. |
+| 5 | Last Round (Capstone) | 2 Actions, 15 Mana | Requires [Staggered] and Last Words streak active (all prior shots this cylinder hit). Fire the final round. Ignores all Physical DR, deals triple weapon damage, and triggers Shattered. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed/Force. Unique mechanic: Condition switches by Technique. Standard shots = Bleed. Penetrating Round = Force. Long range and high per-shot damage.
+##### Revolver Weapon Augments (Last Words)
 
-#### Shotgun (Standard, Firearms)
+Passive. Once learned, these apply to ALL Revolver Techniques. Each adds its Mana cost to every Revolver Technique you use.
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Spread property. Point-blank shots deal bonus damage and apply 2 Force stacks. Close-range area pressure weapon.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Hair-Trigger Tension | Fan the Hammer fires 4 rounds instead of 3. | +1 |
+| 2 | Gambler's Eye | Roulette's correct call bonus increases to +1d8. | +2 |
+| 3 | Quick Reload | Reload costs a Free Action if you have 2+ Actions remaining. | +1 |
+| 4 | Steel Streak | Fan the Hammer shots each count individually toward the Last Words streak. | +2 |
+| 5 | One in the Chamber | After triggering Last Words, immediately load 1 free round before reloading. | +3 |
+
+#### Rifle (Standard, Firearms) — 9 Techniques
+
+**Unique Mechanic: Ammo Switch.** The rifle carries two ammo types. Standard Rounds apply Bleed on hit. Penetrating Rounds apply Force on hit. Switching active ammo type costs 1 Action and commits all remaining shots to the new type until you switch again or reload.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Aimed Shot | 1 Action | Fire 1 round. Apply 1 stack of the active ammo type's condition on hit. |
+| 1 | Take The Shot | 1 Action | Fire a 2-round burst. Each hit applies 1 condition stack (active ammo type). Activate Precision Mode as part of this action: fire 3 rounds per burst instead, each hit applies 2 stacks, and you gain 1 stack of the active condition yourself. |
+| 2 | Game Over Man | 1 Action, 3 Mana | Fire 5 rounds at one target. Each hit applies 2 Bleed stacks regardless of active ammo. Grants access to Suppressing Fire on your next Action this turn. |
+| 2 | Penetrating Burst | 1 Action, 3 Mana | Switch to Penetrating Rounds and fire 2 rounds. Each hit ignores half Physical DR (rounded down) and applies 2 Force stacks. |
+| 3 | Suppressing Fire | 1 Action, 5 Mana | Requires Game Over Man used this turn or 5+ rounds remaining. Empty the remaining magazine in a 15 ft horizontal arc. All creatures in the arc make a Body save vs. your DC. Fail: full damage + Frightened + 2 Force stacks. Success: half damage + 1 Force stack. You gain 2 Bleed stacks. |
+| 3 | Overwatch | Reaction, 5 Mana | When an enemy moves within range, fire 1 round. On hit, their movement ends and they gain 2 stacks of the active condition. |
+| 4 | Panic Burst | 2 Actions, 8 Mana | Fire 5 rounds distributed across up to 3 targets. Each hit applies Frightened and 2 condition stacks (active ammo type). |
+| 4 | Scope In | Free Action, 8 Mana | Double effective range until end of your turn. Your next shot ignores cover bonuses and has Advantage. |
+| 5 | Going Out Shooting (Capstone) | 2 Actions, 15 Mana | Requires [Shredded] or [Staggered]. Fire the remaining magazine at up to 3 targets (distribute shots freely). Each hit deals full weapon damage + 3 condition stacks (active ammo type). If any target reaches Exsanguination or Shattered, immediately reload as a free action. Once per long rest. |
+
+##### Rifle Weapon Augments (Ammo Switch)
+
+Passive. Once learned, these apply to ALL Rifle Techniques. Each adds its Mana cost to every Rifle Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Fast Switch | Switching ammo type is now a Free Action. | +1 |
+| 2 | Hollow Point | Standard Round hits apply 1 additional Bleed stack. | +2 |
+| 3 | Armor Piercer | Penetrating Round hits ignore 1 additional point of Physical DR. | +1 |
+| 4 | Rapid Reload | After Suppressing Fire empties the magazine, reload immediately as a Free Action. | +2 |
+| 5 | Terminal Velocity | When a shot kills a target with active condition stacks, transfer 2 of those stacks to one adjacent enemy. | +3 |
+
+#### Shotgun (Standard, Firearms) — 9 Techniques
+
+**Unique Mechanic: Two Modes.** Switch freely between Hip Fire Mode (15 ft cone — all targets make a Body save, 1 Force stack on fail) and ADS Mode (direct fire, 10 ft range — can use Hasta la Vista and Flesh Hook). Switching is a Free Action. Point-blank shots at 5 ft apply 2 Force stacks instead of 1 and deal +1d6 bonus damage in either mode.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Buckshot | 1 Action | ADS Mode. Fire at one target. Apply 1 Force stack on hit. At point blank (5 ft): apply 2 Force stacks and deal +1d6 damage. |
+| 1 | Flesh Hook | 1 Action | ADS Mode only. Launch a barbed hook at a creature within 20 ft. Roll vs. target AC. On hit, you are pulled toward the target. This movement does not provoke opportunity attacks and does not count against your movement. |
+| 2 | Hasta la Vista | 1 Action, 3 Mana | ADS Mode only. Fire both barrels at one target within 5 ft. Single attack roll. On hit: deal 2d10 bonus damage and push 10 ft. Target makes a Body save vs. your DC or falls prone. You take half the damage rolled. You make a Body save vs. your own DC or fall prone. |
+| 2 | Hip Fire Blast | 1 Action, 3 Mana | Hip Fire Mode. All creatures in a 15 ft cone make a Body save vs. your DC (8 + Body modifier). Fail: full damage + 1 Force stack. Success: half damage. Cannot use Hasta la Vista in this mode. |
+| 3 | Close Quarter Press | 1 Action, 5 Mana | ADS Mode. Move up to 10 ft and fire at a target within 5 ft of your destination. Apply 2 Force stacks. Target makes a Body save or falls prone. This movement does not provoke opportunity attacks. |
+| 3 | Spread Panic | 1 Action, 5 Mana | Hip Fire Mode. Fire in a 15 ft cone. All targets that fail the Body save also become Frightened until end of your next turn. Force stacks apply as normal. |
+| 4 | Double Barrel Fury | 1 Action, 8 Mana | Requires [Staggered]. ADS Mode. Fire both barrels at one target. Double weapon damage. Apply 3 Force stacks. Target makes a Body save or falls prone and loses their next Reaction. |
+| 4 | Breach and Clear | 2 Actions, 8 Mana | Move through a doorway, barrier, or adjacent space occupied by an enemy. Fire as part of the move. All targets adjacent to the breach point make a Body save. Fail: full damage + 2 Force stacks + knocked prone. Success: half damage. |
+| 5 | Buckshot Apocalypse (Capstone) | 2 Actions, 15 Mana | Requires [Staggered]. Hip Fire Mode at maximum output. All enemies in a 20 ft cone make a Body save. Fail: triple weapon damage + 4 Force stacks + prone. Success: full weapon damage + 2 Force stacks. Any target already at 5 Force triggers Staggered. Once per long rest. |
+
+##### Shotgun Weapon Augments (Two Modes)
+
+Passive. Once learned, these apply to ALL Shotgun Techniques. Each adds its Mana cost to every Shotgun Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Point-Blank Master | Point-blank bonus damage increases to +1d8. | +1 |
+| 2 | Recoil Absorber | After using Hasta la Vista, you do not make a save to avoid falling prone. | +2 |
+| 3 | Wide Choke | Hip Fire cone expands to 20 ft. | +1 |
+| 4 | Slug Round | Once per combat, fire a single slug. On hit: ignore all Physical DR and deal +1d10 damage. Apply 2 Force stacks. | +2 |
+| 5 | Last Shell | When you have exactly 1 round remaining, it automatically deals maximum damage and applies 3 Force stacks. | +3 |
 
 ---
 
