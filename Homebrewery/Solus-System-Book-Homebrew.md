@@ -2719,7 +2719,7 @@ Roll `2d10`, add together, add modifier. Meet or beat the target number to succe
 
 #### Attributes and Point Buy *(Character Creation)*
 
-Five attributes: Body, Mind, Social, Magic, Atraxia. Range: −5 to +5.
+Five attributes: Body, Mind, Social, Magic, Sanity. Range: −5 to +5.
 
 Point buy at creation: **5 points.** Costs: +5 = 6, +4 = 4, +3 = 3, +2 = 2, +1 = 1, 0 = 0. Negative modifiers refund points; refunded points must be spent elsewhere.
 
