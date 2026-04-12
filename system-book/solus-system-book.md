@@ -655,9 +655,32 @@ Balanced offense and defense. One-handed weapons that pair with shields or off-h
 | War Pick | Bleed | — | Pierce extends to Bleed: Bleed damage also ignores 2 Physical DR. |
 | Bastard Sword | Bleed or Force | — | Matches grip. Switch mid-combat to exploit whichever path is closer to escalation. |
 
-#### Longsword (Standard, Medium Melee)
+#### Longsword (Standard, Medium Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed (one-handed) / Force (two-handed). Unique mechanic: Grip-switching determines condition path. Versatile damage (1d10/1d12).
+**Unique Mechanic: Versatile Grip.** One-handed Longsword Techniques apply Bleed. Two-handed Longsword Techniques apply Force. Switch grip as part of any Technique or use Grip Shift mid-combo. At Mastery Rank 3, switching grip grants +1 to your next attack roll this turn.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Arming Slash | 1 Action | One-handed. 1d10 Slashing. Apply 1 Bleed stack. |
+| 1 | Heavy Chop | 1 Action | Two-handed. 1d12 Bludgeoning. Apply 1 Force stack. |
+| 2 | Grip Shift | Free Action, 3 Mana | Switch grip. Your next Longsword Technique this turn uses the new grip's condition path and deals +1d6 damage. |
+| 2 | Half-Sword Thrust | 1 Action, 3 Mana | Two-handed grip on blade. 1d10 Piercing, ignores 2 Physical DR. Apply 1 Force stack. |
+| 3 | Mordhau | 1 Action, 5 Mana | Two-handed. Strike with the crossguard. 2d8 Bludgeoning. Apply 2 Force stacks. Target rolls `2d10 + Body` vs. DC 14 or drops held item. |
+| 3 | Zwerchhau | 1 Action, 7 Mana | One-handed horizontal cut. 2d10 Slashing. Apply 2 Bleed stacks. If target has 3+ Bleed stacks, apply 3 instead. |
+| 4 | Versatile Execution | 1 Action, 8 Mana | Choose grip. One-handed: requires Shredded (5 Bleed). Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective. Two-handed: requires Staggered (5 Force). Apply Concussion (T3): target's Actions halved (minimum 1), mental DR drops to 0. |
+| 5 | Master of Arms (Capstone) | 2 Actions, 12 Mana | Two strikes. First (one-handed): 2d10 Slashing, 3 Bleed stacks. Second (two-handed): 2d12 Bludgeoning, 3 Force stacks. If either T3 is active, target rolls `2d10 + Body` vs. DC 18 or Stunned 1 round. Once per long rest. |
+
+##### Longsword Weapon Augments (Versatile Grip)
+
+Passive. Once learned, these apply to ALL Longsword Techniques. Each adds its Mana cost to every Longsword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Fluid Transition | Grip Shift costs 0 Mana. Switching grips is always free. | +0 |
+| 2 | Dual Conditioning | One-handed Techniques also apply 1 Force stack. Two-handed Techniques also apply 1 Bleed stack. | +2 |
+| 3 | Balanced Weight | +1 AC in one-handed grip. +1 damage die size in two-handed grip (1d12 becomes 2d6). | +1 |
+| 4 | Punishing Swap | After switching grips, your next Technique this turn deals +1d6 damage. Stacks with Grip Shift bonus. | +1 |
+| 5 | Sustained Escalation | Hemorrhage and Concussion (T3) effects persist 1 additional round. | +2 |
 
 #### Rapier (Complex, Medium Melee) — 12 Techniques
 
@@ -782,7 +805,32 @@ Socket into Augment Slots on individual Rapier Techniques. Each Technique has 2-
 | Final Curtain | On kill, once-per-long-rest resets. Chain-kill potential. | +5 |
 | Dramatic Finish | Enemies within 6 spaces: `2d10 + Social` vs. DC 15 or Frightened 2 rounds. | +3 |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Sweeping Bleed hits two adjacent targets per attack. Best group-Bleed spreader in Medium Melee.
+#### Curved Sword (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Sweeping Edge.** Each damaging Curved Sword Technique that hits also applies 1 Bleed stack to one adjacent enemy within 1 space of the target. At Mastery Rank 3, Sweeping Edge spreads to 2 adjacent enemies.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Sweeping Cut | 1 Action | 1d8 Slashing. Apply 1 Bleed stack. Sweeping Edge: 1 adjacent enemy takes 1 Bleed stack. |
+| 1 | Paired Blades | Passive | Curved Swords may be dual-wielded. While dual-wielding, +2 to attack rolls with Curved Sword Techniques. |
+| 2 | Crescent Sweep | 1 Action, 3 Mana | Attack all enemies in a 2-space cone. 1d8 Slashing each. Apply 1 Bleed stack to each. Sweeping Edge triggers per target hit. |
+| 2 | Cleave | 1 Action, 3 Mana | On kill, carry remaining damage +1d6 to one adjacent enemy. Apply 2 Bleed stacks to the secondary target. |
+| 3 | Deadly Dance | 1 Action, 5 Mana | 3 strikes at different targets in reach. 1d8 Slashing each. Apply 1 Bleed per hit. Sweeping Edge triggers per strike. |
+| 3 | Whirlwind | 1 Action, 7 Mana | Strike all enemies within 2 spaces. 2d6 Slashing each. Apply 2 Bleed stacks each. |
+| 4 | Hemorrhaging Tide | 1 Action, 8 Mana | Requires Shredded (5 Bleed) on target. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective. Sweeping Edge spreads 1 Bleed stack to all enemies within 2 spaces. |
+| 5 | Crimson Tempest (Capstone) | 2 Actions, 12 Mana | Strike all enemies within 3 spaces. 2d8 Slashing each. Apply 3 Bleed stacks each. Sweeping Edge applies to every target: each adjacent enemy takes 2 Bleed stacks. Once per long rest. |
+
+##### Curved Sword Weapon Augments (Sweeping Edge)
+
+Passive. Once learned, these apply to ALL Curved Sword Techniques. Each adds its Mana cost to every Curved Sword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Wide Arc | Sweeping Edge range increases from 1 space to 2 spaces. | +1 |
+| 2 | Bleeding Momentum | While 3+ enemies have Bleed stacks, Curved Sword Techniques deal +1d4 damage. | +1 |
+| 3 | Crimson Spray | When Sweeping Edge applies Bleed, that enemy also takes 1d4 Slashing damage. | +2 |
+| 4 | Dual Dance | While dual-wielding, Deadly Dance and Whirlwind gain +1 additional strike. | +2 |
+| 5 | Cascade | When any enemy reaches Shredded (5 Bleed), all enemies within 2 spaces take 1 Bleed stack. | +1 |
 
 #### Katana (Complex, Medium Melee) — 12 Techniques
 
@@ -908,19 +956,117 @@ Socket into Augment Slots on individual Katana Techniques. Each Technique has 2-
 | Shinsoku (Godspeed) | Costs 2 Actions instead of 3. Faster execution. | +5 |
 | Tsujigiri (Crossroads Kill) | After Hitotsume, enemies within 4 spaces take 1d10 Slashing + 2 Bleed from wind pressure. | +4 |
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks impose -1 per stack to mental Proficiency Checks. At Staggered (5 Force): disadvantage on all Proficiency Checks.
+#### Mace (Standard, Medium Melee) — 8 Techniques
 
-#### Flail (Standard, Medium Melee)
+**Unique Mechanic: Concussive Impact.** Force stacks from Mace Techniques impose -1 per stack to mental Proficiency Checks (Investigation, Knowledge, Medicine, Arcana, Insight). At Staggered (5 Force), the target has disadvantage on ALL Proficiency Checks.
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Bypass and Chain properties mean Force stacks land against Shields and cannot be Parried. Anti-tank weapon.
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Skull Crack | 1 Action | 1d8 Bludgeoning. Apply 1 Force stack. |
+| 1 | Jarring Blow | 1 Action | 1d8 Bludgeoning. Apply 1 Force stack. Target rolls `2d10 + Mind` vs. DC 12 or loses concentration on one active effect. |
+| 2 | Concussive Slam | 1 Action, 3 Mana | 1d10 Bludgeoning. Apply 2 Force stacks. |
+| 2 | Dazing Strike | 1 Action, 3 Mana | 1d8 Bludgeoning. Apply 1 Force stack. Target cannot use Reactions until start of their next turn. |
+| 3 | Thundering Strike | 1 Action, 5 Mana | 2d8 Bludgeoning. Apply 2 Force stacks. Adjacent enemies within 1 space take 1d4 Bludgeoning and 1 Force stack. |
+| 3 | Rattling Blow | 1 Action, 7 Mana | 2d10 Bludgeoning. Apply 2 Force stacks. Target rolls `2d10 + Mind` vs. DC 15 or loses 1 Action next turn. |
+| 4 | Concussion | 1 Action, 8 Mana | Requires Staggered (5 Force) on target. Apply Concussion (T3): target's Actions halved (round down, minimum 1), mental DR drops to 0. Lasts 2 rounds. |
+| 5 | Cranial Devastation (Capstone) | 2 Actions, 12 Mana | 3d10 Bludgeoning. Apply 5 Force stacks (triggers Staggered). Target rolls `2d10 + Body` vs. DC 18 or Stunned 1 round. If Concussion (T3) active, Stun lasts 2 rounds. Once per long rest. |
 
-#### War Pick (Standard, Medium Melee)
+##### Mace Weapon Augments (Concussive Impact)
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Pierce extends to Bleed damage. Bleed ticks also ignore 2 Physical DR. Capstone: Total Dissolution (T4, destroys armor).
+Passive. Once learned, these apply to ALL Mace Techniques. Each adds its Mana cost to every Mace Technique you use.
 
-#### Bastard Sword (Complex, Medium Melee / Heavy Melee)
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Rattling Impact | Force stacks from Mace Techniques also impose -1 per stack to Body-based Proficiency Checks (Athletics, Survival). | +1 |
+| 2 | Armor Dent | Mace Techniques deal +2 damage against targets in Heavy or Medium armor. | +0 |
+| 3 | Lingering Concussion | Force stacks from Mace Techniques last 1 additional round. | +1 |
+| 4 | Shattering Force | When a target reaches Staggered (5 Force), their Physical DR drops by 1 until end of combat. | +2 |
+| 5 | Brain Rattler | Concussion (T3) prevents the target from casting spells for its duration. | +2 |
 
-TODO: full Technique list. Condition signature: Bleed (one-handed) or Force (two-handed). Unique mechanic: Adaptive. Switches category by grip. At Mastery 3, access Category Techniques from both Medium Melee and Heavy Melee.
+#### Flail (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Unstoppable Chain.** Flail Techniques ignore Shield AC bonus (Bypass) and cannot be Parried (Chain). Force stacks from Flail Techniques cannot be prevented by defensive reactions.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Chain Strike | 1 Action | 1d8 Bludgeoning. Apply 1 Force stack. Ignores Shield AC bonus. Cannot be Parried. |
+| 1 | Wrap and Pull | 1 Action | 1d6 Bludgeoning. Apply 1 Force stack. Target rolls `2d10 + Body` vs. DC 12 or pulled 1 space toward you. |
+| 2 | Overhead Smash | 1 Action, 3 Mana | 1d10 Bludgeoning. Apply 2 Force stacks. Cannot be Parried. |
+| 2 | Disarming Swing | 1 Action, 3 Mana | 1d8 Bludgeoning. Apply 1 Force stack. Target rolls `2d10 + Body` vs. DC 14 or drops weapon. |
+| 3 | Crushing Arc | 1 Action, 5 Mana | Swing in a 2-space cone. 2d8 Bludgeoning each. Apply 2 Force stacks each. Cannot be Parried. |
+| 3 | Wrecking Blow | 1 Action, 7 Mana | 2d10 Bludgeoning. Apply 2 Force stacks. Destroys target's Shield or reduces Physical DR by 2 until end of combat. |
+| 4 | Concussion | 1 Action, 8 Mana | Requires Staggered (5 Force) on target. Apply Concussion (T3): target's Actions halved (round down, minimum 1), mental DR drops to 0. Lasts 2 rounds. Cannot be prevented by defensive abilities. |
+| 5 | Siege Breaker (Capstone) | 2 Actions, 12 Mana | 3d10 Bludgeoning. Apply 5 Force stacks (triggers Staggered). Target's armor destroyed: Physical DR and Magic DR drop to 0 until repaired. Target rolls `2d10 + Body` vs. DC 18 or Prone. Once per long rest. |
+
+##### Flail Weapon Augments (Unstoppable Chain)
+
+Passive. Once learned, these apply to ALL Flail Techniques. Each adds its Mana cost to every Flail Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Chain | Flail Techniques gain +1 space reach. | +1 |
+| 2 | Weighted Head | Flail Techniques deal +1d4 Bludgeoning against targets with Shield or Heavy armor. | +1 |
+| 3 | Entangling Chain | Wrap and Pull range increases to 2 spaces. On success, target is also Restrained until end of their next turn. | +2 |
+| 4 | Armor Breaker | Force stacks from Flail Techniques reduce target's Physical DR by 1 per stack (max -5). Resets at end of combat. | +2 |
+| 5 | Relentless Assault | Defensive reactions (Parry, Block, Shield Wall) against Flail Techniques auto-fail. | +2 |
+
+#### War Pick (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Deep Pierce.** War Pick Techniques and their Bleed ticks ignore 2 Physical DR. At Mastery Rank 3, Bleed ticks from War Pick Techniques ignore 3 Physical DR instead.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Puncture | 1 Action | 1d8 Piercing. Apply 1 Bleed stack. Ignores 2 Physical DR. |
+| 1 | Hooking Strike | 1 Action | 1d6 Piercing. Apply 1 Bleed stack. Target rolls `2d10 + Body` vs. DC 12 or loses half movement next turn. |
+| 2 | Spike Drive | 1 Action, 3 Mana | 1d10 Piercing. Apply 2 Bleed stacks. Ignores 2 Physical DR. |
+| 2 | Rending Tear | 1 Action, 3 Mana | 1d8 Piercing. Apply 1 Bleed stack. Deal +1d6 damage per existing Bleed stack on target (max +5d6). |
+| 3 | Armor Crack | 1 Action, 5 Mana | 2d8 Piercing. Apply 2 Bleed stacks. Target's Physical DR drops by 2 until end of combat. Stacks with Deep Pierce. |
+| 3 | Impaling Strike | 1 Action, 7 Mana | 2d10 Piercing. Apply 2 Bleed stacks. Target rolls `2d10 + Body` vs. DC 15 or Impaled: movement 0, 1d6 Piercing at start of each turn until freed (1 Action to remove). |
+| 4 | Hemorrhage | 1 Action, 8 Mana | Requires Shredded (5 Bleed) on target. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective, persists 2 extra rounds. Deep Pierce extends: Hemorrhage ticks also ignore 2 Physical DR. |
+| 5 | Total Dissolution (Capstone) | 2 Actions, 15 Mana | Requires Hemorrhage (T3) on target. 3d10 Piercing. Apply Total Dissolution (T4): all Bleed damage ignores ALL Physical DR. Target's armor rating permanently drops by 2 until repaired. Once per long rest. |
+
+##### War Pick Weapon Augments (Deep Pierce)
+
+Passive. Once learned, these apply to ALL War Pick Techniques. Each adds its Mana cost to every War Pick Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Barbed Point | Bleed stacks from War Pick Techniques cannot be removed by mundane healing. Requires magical healing. | +1 |
+| 2 | Piercing Focus | War Pick Techniques ignore an additional 1 Physical DR (total 3). | +1 |
+| 3 | Serrated Edge | Bleed ticks reduce target's Physical DR by 1 per tick (minimum 0). Resets at end of combat. | +2 |
+| 4 | Puncture Wound | Bleed stacks from War Pick Techniques last 1 additional round. | +1 |
+| 5 | Exposed Vitals | While target has Shredded (5 Bleed), all attacks from any source ignore 2 Physical DR. | +2 |
+
+#### Bastard Sword (Complex, Medium Melee / Heavy Melee) — 12 Techniques
+
+**Unique Mechanic: Adaptive Stance.** One-handed grip = Medium Melee category, applies Bleed. Two-handed grip = Heavy Melee category, applies Force. At Mastery Rank 3, you can use Category Techniques from both Medium Melee and Heavy Melee.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Adaptive Cut | 1 Action | One-handed. 1d10 Slashing. Apply 1 Bleed stack. Medium Melee. |
+| 1 | Crushing Blow | 1 Action | Two-handed. 1d12 Bludgeoning. Apply 1 Force stack. Heavy Melee. |
+| 1 | Stance Shift | Free Action | Switch grip. Your next Bastard Sword Technique this turn uses the new grip's category and condition path. |
+| 2 | Flowing Slash | 1 Action, 3 Mana | One-handed. 1d10 Slashing. Apply 1 Bleed stack. After the strike, switch to two-handed grip (free). |
+| 2 | Overhead Cleave | 1 Action, 3 Mana | Two-handed. 1d12 Bludgeoning. Apply 2 Force stacks. Target rolls `2d10 + Body` vs. DC 13 or loses 1 Action next turn. |
+| 2 | Cross Guard Block | Reaction, 3 Mana | Reduce incoming melee damage by 1d8. Works in either grip. |
+| 3 | Rending Combination | 1 Action, 5 Mana | One-handed to two-handed. Two strikes: 1d10 Slashing + 2 Bleed, then 1d12 Bludgeoning + 2 Force. Grip switches automatically. |
+| 3 | Executioner's Swing | 1 Action, 7 Mana | Two-handed. 2d12 Bludgeoning. Apply 2 Force stacks. If target has 3+ Bleed stacks, deal +1d10 damage. |
+| 3 | Counter Stance | Passive | When you reduce damage with Cross Guard Block, apply 1 Force stack (two-handed) or 1 Bleed stack (one-handed) to the attacker. |
+| 4 | Hemorrhaging Cut | 1 Action, 8 Mana | One-handed. Requires Shredded (5 Bleed) on target. 2d10 Slashing. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective. |
+| 4 | Crushing Concussion | 1 Action, 8 Mana | Two-handed. Requires Staggered (5 Force) on target. 2d12 Bludgeoning. Apply Concussion (T3): target's Actions halved (minimum 1), mental DR drops to 0. |
+| 5 | Adaptive Mastery (Capstone) | 3 Actions, 15 Mana | Three alternating strikes. First (one-handed): 2d10 Slashing, 3 Bleed stacks. Second (two-handed): 2d12 Bludgeoning, 3 Force stacks. Third (your choice): 3d10 damage, triggers Shredded or Staggered. If both T3s are active, target rolls `2d10 + Body` vs. DC 20 or enters Dying. Once per long rest. |
+
+##### Bastard Sword Weapon Augments (Adaptive Stance)
+
+Passive. Once learned, these apply to ALL Bastard Sword Techniques. Each adds its Mana cost to every Bastard Sword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Fluid Grip | Stance Shift applies 1 Bleed or 1 Force stack (your choice) to one enemy in reach. | +0 |
+| 2 | Cross-Conditioning | One-handed Techniques also apply 1 Force stack. Two-handed Techniques also apply 1 Bleed stack. | +2 |
+| 3 | Dual Category Mastery | Category Techniques from both Medium Melee and Heavy Melee cost 1 less Mana (minimum 0). | +0 |
+| 4 | Adaptive Parry | Cross Guard Block reduces 1d10 instead of 1d8. +1d4 per grip switch this turn. | +1 |
+| 5 | Convergence | When target has both Bleed and Force stacks, Bastard Sword Techniques deal +1 damage per combined stack. | +2 |
 
 ---
 
