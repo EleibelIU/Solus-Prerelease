@@ -1176,13 +1176,54 @@ Passive. Once learned, these apply to ALL Greathammer Techniques. Each adds its 
 | 4 | Momentum of Ruin | When you hit a Staggered target with a Greathammer Technique, refund 1 Action. Once per turn. | +0 |
 | 5 | Tectonic | Greathammer Techniques against objects, structures, and terrain deal triple damage. Terrain destruction radius +1 space. | +1 |
 
-#### Great Axe (Standard, Heavy Melee)
+#### Great Axe (Standard, Heavy Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Bleed stacks deal double tick damage (+2 per stack instead of +1). At Shredded (5 stacks), attacks ignore all Physical DR. Capstone: Exsanguination (T4).
+**Unique Mechanic: Savage Rend.** Bleed stacks from Great Axe Techniques tick for +2 damage per stack per round instead of +1. At Shredded (5 stacks), Great Axe attacks ignore all Physical DR.
 
-#### Greatclub (Simple, Heavy Melee)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Heft | Passive | Great Axe attacks gain +2 to hit. |
+| 1 | Hewing Strike | 1 Action | On hit, apply 1 Bleed stack. |
+| 2 | Primal Rage | Free (on hit), 3 Mana | When you hit a target below 50% HP, deal +1d6 bonus damage. Persists until combat ends. Stacks up to 3 times. |
+| 2 | Wild Cleave | 2 Actions, 3 Mana | Attack all enemies within 1 space. Each hit applies 1 Bleed stack. |
+| 3 | Rend Asunder | 1 Action, 5 Mana | On hit, ignore all DR. Apply 3 Bleed stacks. |
+| 3 | Execution Blow | 1 Action, 8 Mana | Target at or below 25% HP: double damage. On kill: heal 1d10 + Body modifier. |
+| 4 | Hemorrhage | 1 Action, 8 Mana | Requires Shredded on target. Triggers Enhanced Escalation (T3): Bleed ticks deal +4 per stack per round. Healing on target is 50% effective for 3 rounds. |
+| 5 | Exsanguination (Capstone) | 3 Actions, 15 Mana | Requires Shredded. All Bleed stacks on target become permanent (no natural decay). Apply 3 Bleed stacks per round automatically. Target bleeds out in rounds equal to remaining HP ÷ total Bleed damage per round. Once per long rest. |
 
-TODO: full Technique list (caps at Rank 3). Condition signature: Force. Unique mechanic: Knockback into walls or terrain grants bonus Force stacks. Environmental combo weapon.
+##### Great Axe Weapon Augments (Savage Rend)
+
+Passive. Once learned, these apply to ALL Great Axe Techniques. Each adds its Mana cost to every Great Axe Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Blood Scent | After applying Bleed with a Great Axe Technique, your next attack against the same target this turn has advantage. | +0 |
+| 2 | Arterial Strike | Great Axe Techniques that apply Bleed stacks apply 1 additional stack. | +2 |
+| 3 | Sanguine Fury | While your target has 3+ Bleed stacks, Great Axe Techniques deal +1d6 bonus damage. | +1 |
+| 4 | Crimson Harvest | When a target takes Bleed tick damage from your stacks, heal HP equal to half the tick damage dealt. | +2 |
+| 5 | Relentless Edge | Bleed stacks applied by Great Axe Techniques last 3 rounds instead of 2. | +1 |
+
+#### Greatclub (Simple, Heavy Melee) — 5 Techniques
+
+**Unique Mechanic: Wallbreaker.** When a Greatclub Technique knocks a target into a wall, obstacle, or terrain feature, apply 2 bonus Force stacks.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Overhead Smash | 1 Action | On hit, push target 1 space in any direction. |
+| 1 | Battering Swing | 1 Action | On hit, apply 1 Force stack. |
+| 2 | Home Run | 1 Action, 3 Mana | On hit, push target 3 spaces. Collision with a wall or creature deals 1d8 bonus damage. |
+| 2 | Ground Pound | 2 Actions, 3 Mana | Strike the ground. All enemies within 1 space take 1d6 damage and are pushed 1 space away. |
+| 3 | Demolition | 2 Actions, 5 Mana | On hit, weapon damage + 1d10. Push target 2 spaces. Wall collision applies Staggered (5 Force stacks). Destroys non-magical terrain in the path. |
+
+##### Greatclub Weapon Augments (Wallbreaker)
+
+Passive. Once learned, these apply to ALL Greatclub Techniques. Each adds its Mana cost to every Greatclub Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Rubble Field | When you destroy terrain with a Greatclub Technique, the area becomes difficult terrain for 2 rounds. | +0 |
+| 2 | Follow Through | After pushing a target with a Greatclub Technique, move 1 space toward the target as a Free Action. | +0 |
+| 3 | Collateral Damage | When a Greatclub push sends a target into another creature, that creature takes 1d6 damage and gains 1 Force stack. | +1 |
 
 ---
 
