@@ -1679,6 +1679,145 @@ TODO: add broader GM guidance for encounter pacing, difficulty, and adjudication
 
 The current manuscript already includes several tools for running tests at the table.
 
+### Systems Reference
+
+A quick-lookup summary of each major mechanic. For full rules, see the chapter listed in parentheses.
+
+#### Resolution (Core Mechanics)
+
+Roll `2d10` and add together. Add your relevant modifier. Compare to the target number.
+
+- **Attack:** `2d10 + Stat Modifier` vs. target's `Armor AC (relevant stat + DR)`
+- **Proficiency Check:** `2d10 + Skill Modifier` vs. GM-set DC
+- **Critical success:** both dice show 10. **Critical failure:** both dice show 1.
+- **Degree of 5:** beat DC by 10+ = big bonus; 5–9 = small bonus; 0–4 = expected; miss by 5–9 = small setback; miss by 10+ = big setback.
+
+#### Attributes and Modifiers (Attributes and Skills)
+
+Five attributes: Body, Mind, Social, Magic, Sanity. Modifiers run −5 to +5.
+
+Point buy at creation: 5 points. Costs: +5=6, +4=4, +3=3, +2=2, +1=1, 0=0. Negative modifiers refund points; refunded points must be spent.
+
+Skill modifier = primary attribute + one chosen secondary attribute from two listed options.
+
+#### Armor and Defense (Armor and Defense)
+
+Two independent defense values:
+
+- **Physical AC** = relevant Stat Modifier + Physical DR
+- **Magical AC** = relevant Stat Modifier + Magic DR
+
+DR reduces damage after a hit lands. Magic DR does not block elemental stack application or escalation.
+
+| Armor Tier | Physical DR | Magic DR |
+|---|---|---|
+| Cloth | 0 | 4 |
+| Light | 1 | 3 |
+| Medium | 3 | 1 |
+| Heavy | 4 | 0 |
+| Enchanted | 3 | 3 |
+
+#### Action Economy (Combat)
+
+3 Actions per turn. 1 Reaction per round (refreshes at start of that character's turn). Initiative: `d10 + Body` or `d10 + Magic` (player chooses to match fighting style).
+
+Free Actions do not cost from the 3-Action pool.
+
+#### HP, Mana, and Backgrounds (Character Creation)
+
+| Background | HP | Mana | Mana Regen |
+|---|---|---|---|
+| Martial | 120 | 30 | 3/turn |
+| Hybrid | 110 | 70 | 10/turn |
+| Caster | 100 | 100 | 15/turn |
+
+#### Elemental Stacks and Conditions (Conditions, Injuries, and Death)
+
+Stacks cap at 5 per element. Each active stack deals +1 damage per round (modified by Magic DR). Stacks last 2 full rounds and reset on reapplication. Burn and Chilled cancel 1:1.
+
+**Escalation tiers:**
+
+| Tier | Mana | Requirement | Effect |
+|---|---|---|---|
+| T1 | 3 | — | Apply base stacks |
+| T2 | 6 | — | Skip to escalation condition |
+| T3 | 12 | T2 active, Mastery 3+ | Enhanced escalation |
+| T4 | 17 | T3 active, Rank 5 capstone | Ultimate escalation, once per long rest |
+
+Magic DR reduces stack tick damage but does not block stack application or T2/T3/T4 escalation.
+
+#### Dying (Conditions, Injuries, and Death)
+
+At 0 HP, set a death counter: `10 + Body modifier` (minimum 5, maximum 15). Each turn the counter drops by:
+
+- Active stack damage (after Magic DR)
+- +1 per unused Action slot, or +2 per used Action slot
+
+Healing restores from Dying. Roll `2d10 + Body` vs. DC `(15 − counter value at time of healing)` for consequences using the Degree of 5 table.
+
+#### Weapons, Techniques, and Augments (Weapons, Techniques, and Augments)
+
+Three independent layers:
+
+**Weapon Mastery (Rank 0–5):** Spent XP unlocks higher-rank Techniques and more Augment Slots per Technique. Rank 1 = access to Rank 1 Techniques. Each rank up also unlocks Weapon Augments.
+
+**Techniques:** Active combat abilities. Prepare 10 at a time (changeable on rest). Weapon must be equipped to use its Techniques. Category Techniques require any weapon in that category. Three layers of Technique scope: Universal → Category → Weapon-specific.
+
+**Augments — three layers:**
+
+| Layer | How equipped | Scope |
+|---|---|---|
+| Universal Augments (22) | Socket into Technique Augment Slots | Any Technique, any weapon |
+| Weapon Augments (~5 per weapon) | Passive, always active once learned | All Techniques from one weapon |
+| Technique Augments (~2–3 per technique) | Socket into that Technique's Augment Slots | One specific Technique only |
+
+Augment Slots per Technique by Mastery Rank: 0 / 1 / 1 / 2 / 2 / 3.
+Weapon Augments available by Mastery Rank: 0 / 0 / 2 / 3 / 4 / 5.
+Each Weapon Augment costs 10 XP. Universal Augments are known at creation.
+
+#### Spellcasting (Magic and Spellcasting)
+
+No spell list. Build each spell from parameters: Category, Function, Range, Size, Shape, Duration, Target Count, Accuracy Type, Effect Tier. No field can stay empty. No weapon or class requirement. Only mana gates casting.
+
+Mana cost = base + Function cost + die upgrades + tier cost.
+
+Function costs: Utility +0, Movement +1, Defensive +1, Offensive +2. Multi-function: add both. Die scaling: d6 = +1, d8 = +2, d10 = +3, d12 = +5.
+
+Main spell category costs normal. Sub category costs double.
+
+#### Proficiency Checks (Attributes and Skills)
+
+11 skills: Athletics, Stealth, Investigation, Knowledge, Medicine, Survival, Animal Handling, Performance, Speech, Arcana, Insight.
+
+Skills are NOT combat abilities. They cover non-combat checks only. Proficiency Check modifier = primary attribute + chosen secondary attribute (pick from two options when the check is called).
+
+Ranks 1–10 (higher rank = higher modifier). No maximum count on known proficiencies.
+
+#### Advancement (Advancement and Between-Session Play)
+
+XP earned through combat, exploration, and conversation. Spent on:
+
+- New proficiency knowledge
+- Proficiency rank increases (Rank 1–10, exponential cost)
+- Weapon Mastery rank increases
+- Weapon Augment purchases (10 XP each)
+
+XP is a shared budget. Spending on one area trades off against another.
+
+#### NPCs by Rank (NPCs, Enemies, and Encounters)
+
+| Rank | HP | Mana | Notes |
+|---|---|---|---|
+| Minion | 1–5 | 30/3 | All modifiers +0 |
+| Regular | 75 | 30/3 | All modifiers +1 |
+| Enemy/Ally | 100 | 100/15 | Body +4, Mind +1, Social +3, Magic −3 |
+| Mini Boss | 120 | 100/15 | Body +5, Mind +4, Social −3 |
+| Boss | 175 | 100/20 | Body +5, Mind +3, Magic +5, Sanity −5; one stat at +6 |
+
+Bosses use Enchanted armor. Each rank above Regular has more varied ability access and higher Weapon Mastery.
+
+---
+
 ### Sample Character Builds
 
 The sample character sheets provide six player builds. Each sheet tracks HP, mana, split armor values, split Armor AC, stat modifiers, and full skill totals. Taken together, they show the intended spread from martial-heavy bodies to magic-heavy casters.

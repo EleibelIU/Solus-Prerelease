@@ -570,7 +570,8 @@ theme: 5ePHB
 - ### [{{ Ch. 12: Running the Game}}{{ 26}}](#p26)
 - ### [{{ Ch. 13: Reference and Playtest Tools}}{{ 27}}](#p27)
   - #### [{{ Reference Tables}}{{ 27}}](#p27)
-  - #### [{{ Glossary}}{{ 29}}](#p29)
+  - #### [{{ Systems Reference}}{{ 29}}](#p29)
+  - #### [{{ Glossary}}{{ 32}}](#p32)
 
 }}
 
@@ -2694,7 +2695,153 @@ Dwarf · Speed 25 ft. · Medium · Martial
 \page
 
 {{wide
-### Glossary
+### Systems Reference
+
+A quick-lookup summary of every major mechanic. Each entry names its source chapter.
+}}
+
+#### Resolution *(Core Mechanics)*
+
+Roll `2d10`, add together, add modifier. Meet or beat the target number to succeed.
+
+| Roll Type | Formula | Target |
+|:---|:---|:---|
+| Attack (physical) | 2d10 + Body | Physical AC |
+| Attack (spell) | 2d10 + Magic | Magical AC |
+| Proficiency Check | 2d10 + Proficiency Modifier | DC set by GM |
+| Initiative | 1d10 + Body or Magic | Ranked highest first |
+
+**Critical success:** both dice show 10. **Critical failure:** both dice show 1.
+
+**Degree of 5:** beat by 10+ = major bonus; 5–9 = minor bonus; 0–4 = baseline; miss by 5–9 = minor setback; miss by 10+ = major setback.
+
+\column
+
+#### Attributes and Point Buy *(Character Creation)*
+
+Five attributes: Body, Mind, Social, Magic, Atraxia. Range: −5 to +5.
+
+Point buy at creation: **5 points.** Costs: +5 = 6, +4 = 4, +3 = 3, +2 = 2, +1 = 1, 0 = 0. Negative modifiers refund points; refunded points must be spent elsewhere.
+
+**Skill modifier** = primary attribute + one chosen secondary attribute (choose from two options when the check is called).
+
+#### Armor and Defense *(Armor and Defense)*
+
+| Tier | Physical DR | Magic DR |
+|:---|:---:|:---:|
+| Cloth | 0 | 4 |
+| Light | 1 | 3 |
+| Medium | 3 | 1 |
+| Heavy | 4 | 0 |
+| Enchanted | 3 | 3 |
+
+**Physical AC** = Physical DR + Body. **Magical AC** = Magic DR + Magic. DR reduces damage after a hit lands. Magic DR does not block elemental stack application or escalation.
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+#### Action Economy *(Combat)*
+
+3 Actions per turn. 1 Reaction per round (refreshes at start of your turn). Free Actions do not cost from the 3-Action pool.
+
+#### Elemental Stacks *(Conditions, Injuries, and Death)*
+
+Stacks cap at 5 per element. Each active stack deals +1 damage per round (reduced by Magic DR). Stacks last 2 full rounds and reset on reapplication. Burn and Chilled cancel 1:1.
+
+| Tier | Mana | Requirement | Effect |
+|:---|:---:|:---|:---|
+| T1 | 3 | — | Apply base stacks |
+| T2 | 6 | — | Skip to escalation condition |
+| T3 | 12 | T2 active, Mastery Rank 3+ | Enhanced escalation |
+| T4 | 17 | T3 active, Rank 5 capstone | Ultimate escalation, once per long rest |
+
+Magic DR reduces tick damage but does not block stack application or T3/T4 escalation.
+
+\column
+
+#### Dying *(Conditions, Injuries, and Death)*
+
+At 0 HP, set death counter: `10 + Body modifier` (min 5, max 15). Each turn, the counter drops by active stack damage (after Magic DR) + 1 per unused Action slot or 2 per used Action slot. Healing restores from Dying. Roll `2d10 + Body` vs. DC `(15 − counter value)` for consequences using the Degree of 5 table.
+
+#### Proficiency Checks *(Attributes and Skills)*
+
+11 skills: Athletics, Stealth, Investigation, Knowledge, Medicine, Survival, Animal Handling, Performance, Speech, Arcana, Insight. Used for **non-combat checks only.** No maximum on proficiencies known. Ranks 1–10; higher rank = higher modifier.
+
+#### Spellcasting *(Magic and Spellcasting)*
+
+No spell list. Build each spell from parameters: Category, Function, Range, Size, Shape, Duration, Target Count, Accuracy Type, Effect Tier. No weapon, class, or item requirement. Only mana gates casting.
+
+| Function | Cost |
+|:---|:---:|
+| Utility | +0 |
+| Movement | +1 |
+| Defensive | +1 |
+| Offensive | +2 |
+
+Multi-function: add both. Die upgrades: d6 = +1, d8 = +2, d10 = +3, d12 = +5. Main category costs normal; Sub costs double.
+
+{{footnote Reference and Playtest Tools}}
+{{pageNumber,auto}}
+
+\page
+
+{{wide
+#### Weapons, Techniques, and Augments *(Weapons, Techniques, and Augments)*
+}}
+
+Three independent layers. Weapon must be equipped to use its Techniques. Spellcasting is fully independent of this system.
+
+**Weapon Mastery (Rank 0–5):** Unlocks higher-rank Techniques and more Augment Slots per Technique. Purchased with XP.
+
+| Mastery Rank | Technique Access | Augment Slots / Technique | Weapon Augments Available |
+|:---:|:---|:---:|:---:|
+| 0 | Rank 0 (Universal) | 0 | 0 |
+| 1 | Rank 1 | 1 | 0 |
+| 2 | Rank 2 | 1 | 2 |
+| 3 | Rank 3 | 2 | 3 |
+| 4 | Rank 4 | 2 | 4 |
+| 5 | Rank 5 (Capstone) | 3 | 5 |
+
+**Techniques:** Active combat abilities. Prepare 10 at a time (changeable on rest). Three scopes: Universal (any weapon), Category (any weapon in that category), Weapon-Specific (one weapon only).
+
+**Augments — three layers:**
+
+| Layer | Count | How Equipped | Scope |
+|:---|:---:|:---|:---|
+| Universal Augments | 22 | Socket into Technique Augment Slots | Any Technique, any weapon |
+| Weapon Augments | ~5 per weapon | Passive — always active once learned (10 XP each) | All Techniques from one weapon |
+| Technique Augments | ~2–3 per technique | Socket into that Technique's Augment Slots | One specific Technique only |
+
+Universal Augments are known at creation. Weapon Augments add their Mana cost to every Technique from that weapon. Condition Augments (Burn, Chill, Shock, Force, Bleed, Poison) are mutually exclusive on the same Technique.
+
+\column
+
+#### Advancement *(Advancement and Between-Session Play)*
+
+XP earned through combat, exploration, and conversation. Spent between sessions on:
+
+- New proficiency knowledge
+- Proficiency rank increases (Rank 1–10, exponential cost)
+- Weapon Mastery rank increases
+- Weapon Augment purchases (10 XP each)
+
+XP is a shared budget across all categories.
+
+#### NPCs by Rank *(NPCs, Enemies, and Encounters)*
+
+| Rank | HP | Mana | Body | Mind | Magic |
+|:---|:---:|:---|:---:|:---:|:---:|
+| Minion | 1–5 | 30 / 3 | +0 | +0 | +0 |
+| Regular | 75 | 30 / 3 | +1 | +1 | +1 |
+| Enemy/Ally | 100 | 100 / 15 | +4 | +1 | −3 |
+| Mini Boss | 120 | 100 / 15 | +5 | +4 | +0 |
+| Boss | 175 | 100 / 20 | +5 | +3 | +5 |
+
+Bosses use Enchanted armor. Bosses may have one stat at +6 (beyond normal cap).
+
+---
 
 | Term | Definition | Pages |
 |:---|:---|:---|
