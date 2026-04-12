@@ -439,9 +439,27 @@ Shield occupies the off-hand. It functions as both a defensive item (+2 AC while
 | Sickle | Bleed | — | On kill, transfer remaining Bleed stacks to one adjacent enemy. |
 | Shield | Force | — | Shield Bash applies 1 Force stack. Repeated bashes build toward Staggered while maintaining high AC. |
 
-#### Bare Hands (Simple, Light Melee)
+#### Bare Hands (Simple, Light Melee) — 5 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Burn Force stacks on yourself to boost unarmed strikes. Grapple pin combos with Force tick damage.
+**Unique Mechanic: Iron Fist.** Bare Hands Techniques apply Force stacks to you, not the target. Spend stacks on your next hit for bonus damage. If you reach 5 Force stacks, you gain Staggered (T2 Force) on yourself. Manage your stacks or pay the price.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Steel Fist | 1 Action | 1d6 Bludgeon. Gain 1 Force stack on yourself. |
+| 1 | Grab and Slam | 1 Action | 1d6 Bludgeon. On hit, attempt a free Shove, Grapple, or Push (contested `2d10 + Body` check). Once per turn. |
+| 2 | One-Two Combo | 1 Action, 3 Mana | Strike twice. 1d6 Bludgeon each hit. Gain 1 Force stack per hit. Cannot trigger Grab and Slam on the second strike. |
+| 2 | Burning Knuckles | 1 Action | Consume all Force stacks on yourself. 1d6 Bludgeon + 1d6 per stack consumed. 3+ stacks: target rolls `2d10 + Body` vs. DC 14 or is Disarmed. 4+ stacks: target rolls `2d10 + Body` vs. DC 16 or is Stunned. Stacks consumed whether you hit or miss. |
+| 3 | Iron Hold | 1 Action, 5 Mana | Requires a Grappled target. Pin the target. While pinned, your Force stacks tick damage to the pinned target (1 damage per stack per round). Target breaks free with `2d10 + Body` vs. your `2d10 + Body`. |
+
+##### Bare Hands Weapon Augments (Iron Fist)
+
+Passive. Once learned, these apply to ALL Bare Hands Techniques. Each adds its Mana cost to every Bare Hands Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Thick Skin | While you have 3+ Force stacks on yourself, gain +1 AC. | +0 |
+| 2 | Momentum | When you consume Force stacks with Burning Knuckles, gain temporary HP equal to stacks consumed × 2. | +1 |
+| 3 | Haymaker | When you consume 4+ Force stacks, add 1d6 Bludgeon on top of the per-stack bonus. | +2 |
 
 #### Dagger (Standard, Light Melee) — 8 Techniques
 
@@ -470,17 +488,86 @@ Passive. Once learned, these apply to ALL Dagger Techniques. Each adds its Mana 
 | 4 | Arterial Cut | Bleed applied by Dagger Techniques cannot be removed by mundane healing. Only magical healing removes Dagger Bleed. | +1 |
 | 5 | Shadowstep | After a Dagger Technique reduces a target to 0 HP, teleport up to 3 spaces to another enemy. | +2 |
 
-#### Short Sword (Standard, Light Melee)
+#### Short Sword (Standard, Light Melee) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Guaranteed Bleed on every hit (1 stack, scaling to 2 at Rank 3). No variance. Consistent pressure.
+**Unique Mechanic: Steady Blade.** Every damaging Short Sword Technique applies 1 Bleed stack on hit. At Mastery Rank 3, every damaging Short Sword Technique applies 2 Bleed stacks on hit instead. No variance. Consistent pressure.
 
-#### Claw Gauntlet (Standard, Light Melee)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Slash | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. |
+| 1 | Thrust | 1 Action | 1d6 Piercing. Apply 1 Bleed stack. Target cannot take Reactions until start of their next turn. |
+| 2 | Lunging Cut | 1 Action, 3 Mana | Move 2 spaces toward target. 1d8 Slashing. Apply 1 Bleed stack. Does not provoke opportunity attacks. |
+| 2 | Parry Riposte | Reaction, 3 Mana | When an enemy hits you in melee, reduce damage by 1d6. Strike back: 1d6 Slashing. Apply 1 Bleed stack. |
+| 3 | Relentless Cuts | Passive | When you hit a target that already has Bleed stacks, deal +1 damage per existing Bleed stack on the target. |
+| 3 | Deep Gash | 1 Action, 5 Mana | 2d6 Slashing. Apply 2 Bleed stacks. If target has 3+ Bleed stacks, apply 3 stacks instead. |
+| 4 | Hemorrhage Strike | 1 Action, 8 Mana | Requires Shredded (5 Bleed stacks) on the target. 2d8 Slashing. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective, persists 2 extra rounds. |
+| 5 | Bloodletting Flurry (Capstone) | 2 Actions, 12 Mana | 3 strikes. 1d8 Slashing each. Each strike applies 2 Bleed stacks. If Hemorrhage (T3) is active, all Bleed damage on the target ticks immediately after the last strike. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Paired property forces dual-wield. Each Flurry lands twice. Fastest path to Shredded (5 Bleed stacks) in the game.
+##### Short Sword Weapon Augments (Steady Blade)
 
-#### Sickle (Standard, Light Melee)
+Passive. Once learned, these apply to ALL Short Sword Techniques. Each adds its Mana cost to every Short Sword Technique you use.
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: On kill, transfer remaining Bleed stacks to one adjacent enemy. Harvest-chain kills spread Bleed across groups.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Keen Edge | Short Sword Techniques score a critical hit on double 9s in addition to double 10s. | +1 |
+| 2 | Pressure Fighter | While the target has 3+ Bleed stacks, your Short Sword Techniques deal +1d4 Slashing. | +2 |
+| 3 | Clean Cuts | Bleed stacks from Short Sword Techniques last 1 extra round before expiring. | +1 |
+| 4 | Swordsman's Focus | After landing 3 consecutive Short Sword hits on the same target, your next Short Sword Technique against that target has advantage. | +0 |
+| 5 | Bloodletter | When Hemorrhage (T3) is active on the target, your Short Sword Techniques apply +1 additional Bleed stack. | +2 |
+
+#### Claw Gauntlet (Standard, Light Melee) — 8 Techniques
+
+**Unique Mechanic: Twin Rend.** Claw Gauntlets have the Paired property (dual-wield mandatory). Each Flurry (Universal Technique) lands twice when using Claw Gauntlets. Fastest path to Shredded (5 Bleed stacks) in the game.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Rake | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. If target already has Bleed stacks, apply 2 instead. |
+| 1 | Pounce | 1 Action | Move 2 spaces toward target. 1d6 Slashing. Apply 1 Bleed stack. |
+| 2 | Shredding Swipe | 1 Action, 3 Mana | Strike with both gauntlets. 1d6 Slashing per gauntlet (2d6 total). Apply 1 Bleed stack per gauntlet. |
+| 2 | Deflecting Claws | Reaction | When an enemy hits you in melee, reduce damage by 1d4. Counterattack: 1d6 Slashing. Apply 1 Bleed stack. |
+| 3 | Savage Frenzy | 1 Action, 5 Mana | 3 rapid strikes. 1d4 Slashing each. Apply 1 Bleed stack per strike. |
+| 3 | Predator's Instinct | Passive | When you reduce a target to Shredded (5 Bleed stacks), gain +2 to hit against that target until Bleed expires. |
+| 4 | Rending Maul | 1 Action, 8 Mana | Requires Shredded (5 Bleed stacks) on the target. 2d8 Slashing. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective, persists 2 extra rounds. |
+| 5 | Eviscerate (Capstone) | 2 Actions, 15 Mana | Requires Hemorrhage (T3) on the target. 6 strikes, 1d6 Slashing each. Each strike applies 1 Bleed stack. Bleed stacks from this Technique ignore the stack cap of 5 (maximum 11 total). Once per long rest. |
+
+##### Claw Gauntlet Weapon Augments (Twin Rend)
+
+Passive. Once learned, these apply to ALL Claw Gauntlet Techniques. Each adds its Mana cost to every Claw Gauntlet Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Serrated Edges | Bleed stacks from Claw Gauntlet Techniques deal +1 per tick. | +2 |
+| 2 | Feral Reflexes | After using a Claw Gauntlet Technique, gain +1 AC until start of your next turn. | +1 |
+| 3 | Lacerating Grip | When you Grapple a target, apply 2 Bleed stacks. Each round the Grapple persists, apply 1 additional Bleed stack. | +1 |
+| 4 | Blood Scent | You have advantage on attacks against targets with Shredded (5 Bleed stacks). | +2 |
+| 5 | Relentless Mauling | When Hemorrhage (T3) is active on the target, your Claw Gauntlet Techniques deal +1d6 Slashing. | +3 |
+
+#### Sickle (Standard, Light Melee) — 8 Techniques
+
+**Unique Mechanic: Reaping.** When a target with Bleed stacks dies, transfer all remaining Bleed stacks to one enemy within 1 space of the dying target. Harvest kills to spread Bleed across groups.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Reap | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. |
+| 1 | Hooking Slash | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. Pull target 1 space toward you. |
+| 2 | Sweeping Harvest | 1 Action, 3 Mana | Strike all enemies within 1 space. 1d6 Slashing each. Apply 1 Bleed stack per target hit. |
+| 2 | Sever Tendon | 1 Action, 3 Mana | 1d8 Slashing. Apply 2 Bleed stacks. Target's movement halved until end of their next turn. |
+| 3 | Blood Harvest | Passive | When Reaping transfers Bleed stacks, add 1 extra Bleed stack to the receiving target. |
+| 3 | Rending Hook | 1 Action, 7 Mana | 2d6 Slashing. Apply 2 Bleed stacks. Pull target 2 spaces toward you. If target collides with another enemy, both take 1d6 Bludgeon. |
+| 4 | Crimson Harvest | 1 Action, 8 Mana | Requires Shredded (5 Bleed stacks) on the target. 2d8 Slashing. Apply Hemorrhage (T3): Bleed damage doubles, healing 50% effective, persists 2 extra rounds. |
+| 5 | Grim Reaping (Capstone) | 2 Actions, 15 Mana | Requires Hemorrhage (T3) on the target. 4d6 Slashing. If the target dies, Reaping triggers on ALL enemies within 2 spaces instead of 1. Transferred stacks include the Hemorrhage (T3) condition. Once per long rest. |
+
+##### Sickle Weapon Augments (Reaping)
+
+Passive. Once learned, these apply to ALL Sickle Techniques. Each adds its Mana cost to every Sickle Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Harvest Moon | Reaping transfer range increases from 1 space to 2 spaces. | +0 |
+| 2 | Sowing Pain | Sickle Techniques that apply Bleed to an already-bleeding target deal +1d4 Slashing. | +1 |
+| 3 | Chain Reaping | When Reaping transfers stacks, split them between up to 2 adjacent enemies instead of 1. | +2 |
+| 4 | Cruel Hook | Sickle Techniques that Pull ignore forced movement immunity. | +1 |
+| 5 | Death's Harvest | When Reaping triggers, regain 3 Mana per Bleed stack transferred. | +2 |
 
 #### Shield (Standard, Light Melee) — 8 Techniques
 
