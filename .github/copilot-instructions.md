@@ -68,21 +68,21 @@ The full catalog of open questions is in `docs/superpowers/specs/2026-04-08-solu
 - **Atraxia pool restoration, modifier thresholds, and experience tables** (spec #3, #4, #5) — pool has no recovery rule; threshold effects are undefined
 - **Short-term injury table** (spec #15) — Dying references rolling on this table but it doesn't exist
 - **GM pacing and DCs** (spec #18) — Running the Game chapter lacks encounter pacing and DC calibration guidance
-- **Full weapon Technique lists** — 28 of 32 weapons need full Technique tables (4 complete: Greatsword, Rapier, Shield, Bow)
+- **Full weapon Technique lists** — 24 of 32 weapons need full Technique tables (8 complete: Dagger, Katana, Greathammer, Spear, Greatsword, Shield, Bow, Rapier)
 
 **Quick confirmations needed from the designer:**
 
 - Hybrid mana: 70/10 or 75/10? (spec #19)
 - Main/Sub affinity system: keep, modify, or cut? (spec #11)
 - Starting equipment: budget, packages, or open pick? (spec #21)
-- Spell parameter table layout: group by action cost tier? (spec #14)
+- Spell parameter table layout: group by action cost tier? (spec #14) ✅ RESOLVED
 - Spell-created physical projectiles: Physical AC or Magical AC? (spec #8)
 
 **Resolved (do not re-open):**
 
 - Bleed (Shredded) and Force (Staggered) escalation conditions — fully written in both files ✅
 - Poisoned mechanical effect — confirmed as standard stack damage pattern ✅
-- Combat abilities system (spec #6, #7) — now "Weapons, Techniques, and Augments" chapter with 32 weapons, 3-layer Techniques, 2-layer Augments ✅
+- Combat abilities system (spec #6, #7) — now "Weapons, Techniques, and Augments" chapter with 32 weapons, 3-layer Techniques, 3-layer Augments (Universal/Weapon/Technique) ✅
 - T3/T4 effect tiers (spec #10) — T3 = Enhanced Escalation (12 mana, Rank 3+), T4 = Ultimate Escalation (17 mana, Rank 5 capstone) ✅
 - Weapon trait list (spec #12) — full per-weapon properties and condition signatures written ✅
 - Shields (spec #13) — Shield is a Light Melee weapon with its own Mastery track and 8 Techniques ✅
