@@ -1309,29 +1309,175 @@ Passive. Once learned, these apply to ALL Spear Techniques. Each adds its Mana c
 | 4 | Vital Strike | Bleed from Spear Techniques ignores 1 additional Physical DR (2 total with Deep Pierce). | +2 |
 | 5 | Lance Charge | If you moved 3+ spaces toward a target before using a Spear Technique, +1d8 Piercing damage. | +2 |
 
-#### Halberd (Standard, Reach)
+#### Halberd (Standard, Reach) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Force/Bleed. Unique mechanic: Sweep splits conditions. Primary target takes Force, secondary targets take Bleed. Dual-condition zone controller.
+**Unique Mechanic: Cleaving Sweep.** Halberd Techniques that hit multiple targets split conditions: the primary target takes Force stacks, all secondary targets take Bleed stacks. Dual-condition zone controller.
 
-#### Scythe (Complex, Reach)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Versatile Strike | 1 Action | Choose slash or thrust. Slash: 1d10 Slashing, apply 1 Bleed stack. Thrust: 1d10 Piercing, apply 1 Force stack. |
+| 1 | Sweeping Arc | 1 Action, 3 Mana | Hit all enemies in a 2-space frontal arc. 1d8 damage each. Primary target takes 2 Force stacks. All secondary targets take 1 Bleed stack. |
+| 2 | Area Denial | Reaction | When an enemy enters your 2-space reach, make a free attack. 1d10 damage. Apply 1 Force stack. |
+| 2 | Haft Slam | 1 Action, 3 Mana | Bash with the haft. 1d8 Bludgeoning. Apply 2 Force stacks. Target rolls `2d10 + Body` vs. DC 13 or loses 1 space of movement next turn. |
+| 3 | Cleaving Advance | 1 Action, 5 Mana | Move up to 2 spaces and sweep all enemies you pass. 1d10 damage each. Primary target takes 2 Force stacks, secondary targets take 2 Bleed stacks. |
+| 3 | Rending Sweep | 1 Action, 5 Mana | Wide arc at 2-space reach. Hit up to 3 targets. 1d10 Slashing each. Primary takes 1 Force stack. Secondary targets take 2 Bleed stacks. If any secondary target already has Bleed, apply 1 additional Bleed stack. |
+| 4 | Concussive Cleave | 1 Action, 8 Mana | Requires 3+ Force stacks on primary target or 3+ Bleed stacks on any secondary target. Massive sweep in a 2-space arc. 2d10 damage to all targets. Primary: trigger Staggered (T3 Force). Secondary: trigger Shredded (T3 Bleed). |
+| 5 | Reaper's Arc (Capstone) | 2 Actions, 12 Mana | Hit all enemies within 2-space reach (full 360°). 3d10 damage each. Primary target takes 5 Force stacks and enters Staggered. All secondary targets take 5 Bleed stacks and enter Shredded. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Purge stacks from allies as a Technique. On kill, transfer remaining stacks to an adjacent enemy. Harvest-chain combos. Capstone: Exsanguination (T4).
+##### Halberd Weapon Augments (Cleaving Sweep)
 
-#### Whip (Standard, Reach)
+Passive. Once learned, these apply to ALL Halberd Techniques. Each adds its Mana cost to every Halberd Technique you use.
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: 3-space reach. Apply Bleed at extreme range. Rank 3 Technique pulls Bleeding targets toward you. Control + punishment.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Reach Advantage | Halberd Techniques gain +1 to hit against targets at exactly 2-space reach. | +0 |
+| 2 | Splitting Edge | Sweeping Arc and Rending Sweep apply 1 additional Bleed stack to secondary targets. | +1 |
+| 3 | Staggering Force | Force stacks from Halberd Techniques reduce target movement by 1 space per stack. | +1 |
+| 4 | Dual Condition Mastery | When a Halberd Technique applies both Force and Bleed in one sweep, +1d6 damage to all targets hit. | +2 |
+| 5 | Execution Sweep | Halberd Techniques deal +2d10 damage to targets that are Staggered or Shredded. | +2 |
 
-#### Staff (Standard, Reach)
+#### Scythe (Complex, Reach) — 12 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks catalyze elemental stacks, dealing an extra tick on hit against targets with active elemental stacks. Primary gish bridge weapon. Arcane property boosts spell range.
+**Unique Mechanic: Death's Harvest.** On kill with a Scythe Technique, transfer all remaining Bleed stacks from the dead target to one enemy within 2 spaces. Scythe has a unique Blood Purge Technique that removes Bleed from allies and heals them.
 
-#### Trident (Standard, Reach)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Reaping Cut | 1 Action | 1d10 Slashing. Apply 2 Bleed stacks. |
+| 1 | Blood Purge | 1 Action, 3 Mana | Remove all Bleed stacks from one ally within 2 spaces. Heal that ally 1d6 per stack removed. |
+| 1 | Harvest Step | Free Action | After killing a target with a Scythe Technique, move 1 space toward the nearest enemy. Does not provoke reactions. |
+| 2 | Reaping Arc | 1 Action, 3 Mana | Sweep all enemies in a 2-space frontal arc. 1d8 Slashing each. Apply 1 Bleed stack per target. |
+| 2 | Soul Harvest | Passive | On kill with a Scythe Technique, regain Mana equal to half the dead target's active Bleed stacks (round down, min 1). |
+| 2 | Deep Laceration | 1 Action, 5 Mana | 1d10 Slashing. Apply 3 Bleed stacks. If the target already has Bleed, +1d6 damage. |
+| 3 | Grim Harvest | 1 Action, 7 Mana | Strike all enemies in a 3-space line. 2d8 Slashing each. Apply 2 Bleed stacks per target. |
+| 3 | Sanguine Scythe | 1 Action, 5 Mana | Attack a Bleeding target. 1d10 Slashing +1d6 per Bleed stack on target (max +5d6). |
+| 3 | Chain Reap | Passive | When Death's Harvest transfers Bleed to an adjacent enemy, apply 1 additional Bleed stack to the new target. |
+| 4 | Hemorrhaging Sweep | 1 Action, 8 Mana | Requires 3+ Bleed stacks on target. 2d10 Slashing. Trigger Shredded (T3 Bleed). Bleed damage doubles, target healing reduced by 50%. |
+| 4 | Crimson Tide | 1 Action, 10 Mana | Hit up to 3 targets within reach. 2d8 Slashing each. Apply 3 Bleed stacks per target. On kill, Death's Harvest triggers for each killed target separately. |
+| 5 | Exsanguination (Capstone) | 3 Actions, 15 Mana | Requires Shredded (T3 Bleed) on target. Trigger Exsanguination (T4 Bleed): Bleed stacks become permanent and auto-apply 1 additional stack each round. Target loses HP equal to total Bleed stacks ×3 per round. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Impaled targets do not lose Bleed stacks to natural decay. Sustained pressure on pinned targets.
+##### Scythe Weapon Augments (Death's Harvest)
 
-#### Chain (Complex, Reach)
+Passive. Once learned, these apply to ALL Scythe Techniques. Each adds its Mana cost to every Scythe Technique you use.
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Entangled targets gain 1 Force stack per turn (constricting). Escalates to Staggered without additional attacks. Capstone: Cascade Failure (T4).
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Lingering Wounds | Bleed from Scythe Techniques lasts 1 additional round before decaying. | +0 |
+| 2 | Blood Scent | Scythe Techniques gain +2 to hit against targets with 3+ Bleed stacks. | +1 |
+| 3 | Harvest Chain | When Death's Harvest triggers, transfer Bleed to up to 2 enemies within 2 spaces (split stacks as you choose). | +1 |
+| 4 | Crimson Mist | Blood Purge range increases to 4 spaces. Heal 2d6 per stack removed instead of 1d6. | +2 |
+| 5 | Death's Embrace | Enemies killed by Scythe Techniques cannot be resurrected or healed from Dying for 1 minute. Soul Harvest restores double Mana. | +2 |
+
+#### Whip (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Lashing Reach.** Whip has 3-space reach, the longest in the game. All Whip Techniques apply Bleed at this extreme range. At Rank 3, you unlock a pull mechanic for Bleeding targets.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Crack | 1 Action | 1d4 Slashing at 3-space reach. Apply 1 Bleed stack. If this is your first attack this turn, costs a Free Action instead. |
+| 1 | Lash | 1 Action | 1d6 Slashing at 3-space reach. Apply 1 Bleed stack. +2 to hit against targets at exactly 3 spaces. |
+| 2 | Entangle | 1 Action, 3 Mana | Wrap a target within 3 spaces. Target is Restrained. Target breaks free with `2d10 + Body` vs. DC 13 as 1 Action. |
+| 2 | Lashing Fury | 1 Action, 5 Mana | Strike 3 times at 3-space reach. 1d4 Slashing each. Apply 1 Bleed stack per hit. |
+| 3 | Yank | Free Action, 2 Mana | Pull a Bleeding target up to 2 spaces toward you. Target must be within 3 spaces. |
+| 3 | Flaying Strike | 1 Action, 5 Mana | 1d8 Slashing at 3-space reach. Apply 2 Bleed stacks. If target has 3+ Bleed stacks, ignore Physical DR. |
+| 4 | Hemorrhaging Lash | 1 Action, 8 Mana | Requires 3+ Bleed stacks on target. 2d8 Slashing at 3-space reach. Trigger Shredded (T3 Bleed). Bleed damage doubles, target healing reduced by 50%. |
+| 5 | Scourge (Capstone) | 2 Actions, 12 Mana | Strike all enemies within 3-space reach. 2d8 Slashing each. Apply 5 Bleed stacks per target. All targets with 3+ Bleed are pulled 2 spaces toward you and enter Shredded. Once per long rest. |
+
+##### Whip Weapon Augments (Lashing Reach)
+
+Passive. Once learned, these apply to ALL Whip Techniques. Each adds its Mana cost to every Whip Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Reach | Whip reach increases to 4 spaces. | +0 |
+| 2 | Barbed Lash | Whip Techniques apply 1 additional Bleed stack when the target is at maximum reach distance. | +1 |
+| 3 | Constricting Wrap | Restrained targets take 1 Bleed stack at the start of each of their turns. | +1 |
+| 4 | Savage Crack | Crack deals 1d8 instead of 1d4. Lashing Fury strikes deal 1d6 instead of 1d4. | +2 |
+| 5 | Bloodhook | Yank pulls targets 3 spaces instead of 2. Pulled targets take 1d6 Slashing damage on arrival. | +2 |
+
+#### Staff (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Arcane Conduit.** Force stacks from Staff Techniques catalyze elemental stacks on the target. When you hit a target with active elemental stacks (Burn, Chill, Volt, Acid, Poison), each Force stack triggers one additional elemental tick. Primary gish (melee + magic hybrid) weapon.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Arcane Strike | 1 Action | 1d8 Bludgeoning. Apply 1 Force stack. If the target has any elemental stacks, trigger 1 elemental tick. |
+| 1 | Channel | Free Action | Your next spell this turn gains +2 range (spaces). Costs no Mana. |
+| 2 | Resonating Blow | 1 Action, 3 Mana | 1d8 Bludgeoning. Apply 2 Force stacks. Each Force stack triggers one elemental tick on the target. |
+| 2 | Spell Weave | Free Action, 3 Mana | After casting a spell that deals elemental damage, strike one adjacent target. 1d6 Bludgeoning. Apply 1 Force stack. |
+| 3 | Elemental Burst | 1 Action, 5 Mana | 1d10 Bludgeoning at 2-space reach. Apply 2 Force stacks. All elemental stacks on the target tick simultaneously. |
+| 3 | Arcane Ward | Reaction, 5 Mana | When hit by a spell, reduce damage by `2d10 + Magic`. Apply 1 Force stack to the caster if within reach. |
+| 4 | Catalytic Overload | 1 Action, 8 Mana | Requires 3+ Force stacks on target and at least 1 elemental stack. 2d10 Bludgeoning. Trigger Staggered (T3 Force). All elemental stacks on the target tick twice. |
+| 5 | Arcane Cataclysm (Capstone) | 2 Actions, 15 Mana | All enemies within 2-space reach take 3d10 Force damage. Apply 3 Force stacks each. All elemental stacks on each target tick 3 times. Targets with 3+ active elemental types enter Staggered. Once per long rest. |
+
+##### Staff Weapon Augments (Arcane Conduit)
+
+Passive. Once learned, these apply to ALL Staff Techniques. Each adds its Mana cost to every Staff Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Spell Focus | While wielding a Staff, your spells deal +1 damage per die rolled. | +0 |
+| 2 | Conduit Mastery | Arcane Conduit elemental ticks deal +1 damage each. | +1 |
+| 3 | Mana Flow | When a Staff Technique triggers 3+ elemental ticks in one hit, regain 2 Mana. | +0 |
+| 4 | Elemental Infusion | Staff Techniques inherit the element type of the highest active stack on the target. Damage type changes to match. | +2 |
+| 5 | Arcane Overcharge | Force stacks from Staff Techniques trigger 1 additional elemental tick beyond normal (Arcane Strike triggers 2, Resonating Blow triggers 3 per stack). | +2 |
+
+#### Trident (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Impaling Tines.** Trident has an Impale Technique that pins a target. While impaled, Bleed stacks do not decay naturally. Sustained Bleed pressure against pinned targets.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Pronged Thrust | 1 Action | 1d8 Piercing at reach. Apply 1 Bleed stack. |
+| 1 | Tidal Strike | 1 Action | 1d8 Piercing at reach. Apply 1 Bleed stack. If the target is adjacent to water or is prone, +1d6 damage. |
+| 2 | Impale | 1 Action, 3 Mana | Pin a target at reach. 1d8 Piercing. Apply 2 Bleed stacks. Target is Impaled: Bleed stacks do not decay until the target breaks free (`2d10 + Body` vs. DC 13, 1 Action) or you release them. |
+| 2 | Barbed Toss | 1 Action, 3 Mana | Throw your Trident up to 30 ft. 1d10 Piercing. Apply 2 Bleed stacks. Trident remains in the target until you spend a Free Action to recall it on your next turn. |
+| 3 | Twist the Tines | 1 Action, 5 Mana | Requires Impaled target. 1d10 Piercing. Apply 2 additional Bleed stacks. Bleed on this target ticks twice this round. |
+| 3 | Pinning Thrust | 1 Action, 5 Mana | 1d10 Piercing at reach. Apply 2 Bleed stacks. Target rolls `2d10 + Body` vs. DC 14 or movement becomes 0 for 1 round. |
+| 4 | Hemorrhaging Impale | 1 Action, 8 Mana | Requires 3+ Bleed stacks on target. 2d10 Piercing. Trigger Shredded (T3 Bleed). If target is Impaled, Shredded persists until the Impale ends. |
+| 5 | Neptune's Judgment (Capstone) | 2 Actions, 12 Mana | Auto-hit a target within reach. Apply 5 Bleed stacks. Target is Impaled and enters Shredded. Bleed stacks on this target tick 3 times per round for 3 rounds. Once per long rest. |
+
+##### Trident Weapon Augments (Impaling Tines)
+
+Passive. Once learned, these apply to ALL Trident Techniques. Each adds its Mana cost to every Trident Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Barbed Prongs | Bleed from Trident Techniques requires +2 to the DC to remove via mundane healing. | +0 |
+| 2 | Deep Impale | Impaled targets take 1d4 Piercing at the start of each of their turns. | +1 |
+| 3 | Trident Recall | Recalling a thrown Trident deals 1d6 Piercing to the target on exit. Apply 1 Bleed stack. | +1 |
+| 4 | Relentless Bleed | Bleed from Trident Techniques ignores 2 Magic DR on tick damage. | +2 |
+| 5 | Executioner's Pin | Trident Techniques deal +2d10 damage to Impaled targets at or below half HP. | +2 |
+
+#### Chain (Complex, Reach) — 12 Techniques
+
+**Unique Mechanic: Constriction.** Chain Techniques that Entangle or Restrain a target apply 1 Force stack per turn automatically. The target escalates toward Staggered without additional attacks. Zone control with passive Force buildup.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Lashing Chain | 1 Action | 1d8 Bludgeoning at 2-space reach. Apply 1 Force stack. |
+| 1 | Iron Bind | 1 Action, 2 Mana | Wrap a target within 2 spaces. Target is Entangled. Target escapes with `2d10 + Body` vs. DC 13 as 1 Action. While Entangled, Constriction applies 1 Force stack per turn. |
+| 1 | Chain Sweep | 1 Action | Sweep chain in a 2-space arc. 1d6 Bludgeoning to all enemies in the arc. Apply 1 Force stack each. |
+| 2 | Whirling Chains | 1 Action, 5 Mana | Hit all enemies within a 2-space radius. 1d8 Bludgeoning each. Apply 1 Force stack per target. |
+| 2 | Iron Grip | Passive | Enemies escaping your Entangle roll at -2. On a failed escape, apply 1 additional Force stack. |
+| 2 | Drag | 1 Action, 3 Mana | Pull an Entangled target up to 3 spaces toward you. 1d6 Bludgeoning on arrival. Apply 1 Force stack. |
+| 3 | Constricting Bind | 1 Action, 5 Mana | Tighten chains on an Entangled target. Target is now Restrained. Constriction applies 2 Force stacks per turn instead of 1 while Restrained. |
+| 3 | Chain Barrier | 1 Action, 5 Mana | Create a chain wall across a 3-space line. Lasts 2 rounds. Enemies crossing the wall take 1d8 Bludgeoning and gain 1 Force stack. |
+| 3 | Flailing Strike | 1 Action, 7 Mana | 2d8 Bludgeoning at 2-space reach. Apply 2 Force stacks. If the target is Entangled, +1d8 damage. |
+| 4 | Crushing Chains | 1 Action, 8 Mana | Requires 3+ Force stacks on target. 2d10 Bludgeoning. Trigger Staggered (T3 Force). Target's Actions are halved (round down). |
+| 4 | Chain Cocoon | 1 Action, 10 Mana | Requires Restrained target. Fully encase the target. Target cannot take Actions or move for 2 rounds. Constriction applies 2 Force stacks per turn. Escape DC increases to 18. |
+| 5 | Cascade Failure (Capstone) | 3 Actions, 15 Mana | Requires Staggered (T3 Force) on target. Trigger Cascade Failure (T4 Force): target's Force stacks explode outward. All enemies within 2 spaces gain half the target's Force stacks (round down, min 1) and take 2d10 Bludgeoning. Enemies reaching 3+ Force stacks from this effect enter Staggered. Once per long rest. |
+
+##### Chain Weapon Augments (Constriction)
+
+Passive. Once learned, these apply to ALL Chain Techniques. Each adds its Mana cost to every Chain Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Heavy Links | Force stacks from Chain Techniques reduce target movement by 1 space per stack. | +0 |
+| 2 | Tightening Grip | Constriction deals 1d4 Bludgeoning per Force stack each time it triggers. | +1 |
+| 3 | Chain Web | Entangling a target adjacent to another enemy applies 1 Force stack to that enemy. | +1 |
+| 4 | Relentless Bind | Entangled targets cannot use Reactions. Restrained targets cannot use Reactions or Free Actions. | +2 |
+| 5 | Shatter Chains | When Cascade Failure triggers, re-Entangle the primary target as a Free Action. Chain fragments deal 1d6 Bludgeoning to all affected enemies. | +2 |
 
 ---
 
