@@ -1561,17 +1561,86 @@ Passive. Once learned, these apply to ALL Bow Techniques. Each adds its Mana cos
 | 4 | Windage | Bow Techniques ignore cover penalties (half cover and three-quarter cover). | +1 |
 | 5 | Arrow Recovery | After combat, recover 50% of spent ammunition (round down). | +0 |
 
-#### Crossbow (Standard, Ranged)
+#### Crossbow (Standard, Ranged) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Deep Penetration extends Pierce to Bleed ticks. High single-shot damage offset by Loading. Higher ranks unlock faster reload Techniques.
+**Unique Mechanic: Deep Penetration.** Bleed ticks from Crossbow Techniques ignore 2 Physical DR. The Crossbow requires 1 Action to reload after each shot (Loading). Higher-rank Techniques reduce or bypass reload time.
 
-#### Hand Crossbow (Standard, Ranged)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Piercing Bolt | 1 Action | 1d10 Piercing. Apply 1 Bleed stack. |
+| 1 | Steady Shot | 2 Actions (includes reload) | If you haven't moved this turn, +4 to hit. 1d10 Piercing. Apply 1 Bleed stack. |
+| 2 | Quick Reload | Passive | Reload costs 0 Actions once per turn. You can fire and reload without spending an extra Action. |
+| 2 | Barbed Bolt | 1 Action, 3 Mana | 1d10 Piercing. Apply 2 Bleed stacks. Bleed from Barbed Bolt lasts 3 rounds instead of 2. |
+| 3 | Hemorrhaging Shot | 1 Action, 5 Mana | Requires Bleeding target. 2d10 Piercing. Double the target's Bleed stacks (max 5). If target reaches 5 stacks, trigger Shredded. |
+| 3 | Armor Breaker | 1 Action, 5 Mana | Ignores all Physical DR. 1d10 Piercing. Apply 2 Bleed stacks. |
+| 4 | Hemorrhage | 1 Action, 8 Mana | Requires Shredded (T2 Bleed) on target. Bleed damage doubles for 3 rounds. Target's healing received reduced by 50% for the duration. |
+| 5 | Deathmark (Capstone) | 2 Actions, 15 Mana | Auto-hit. Apply 5 Bleed stacks. Target enters Shredded. Bleed ticks ignore all Physical DR for 3 rounds. Target rolls `2d10 + Body` vs. DC 16 or Stunned for 1 round. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Poison. Unique mechanic: Every hit applies 1 Poison stack. Rapid-fire rushes Venomous (5 Poison). Rank 3: 2 Poison per hit. Capstone: Lethal Dose (T4, Neurotoxin).
+##### Crossbow Weapon Augments (Deep Penetration)
 
-#### Bomb Flask (Standard, Ranged)
+Passive. Once learned, these apply to ALL Crossbow Techniques. Each adds its Mana cost to every Crossbow Technique you use.
 
-TODO: full Technique list. Condition signature: Varies by flask type (Burn, Acid, Chill). Unique mechanic: AoE condition application. Consumable. Must be crafted or purchased. Area denial and group condition stacking.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Heavy Draw | Crossbow Techniques deal +1d10 damage against targets 40 ft or farther away. | +2 |
+| 2 | Serrated Bolts | Bleed applied by Crossbow Techniques deals +1 per tick. | +2 |
+| 3 | Bipod Rest | While you haven't moved this turn, Crossbow Techniques gain +2 to hit. Stacks with Steady Shot. | +1 |
+| 4 | Bleed Through | Deep Penetration ignores 3 Physical DR instead of 2 on Bleed ticks. | +2 |
+| 5 | Bolt Recovery | After combat, recover 50% of spent Crossbow ammunition (round down). | +0 |
+
+#### Hand Crossbow (Standard, Ranged) — 8 Techniques
+
+**Unique Mechanic: Toxic Bolts.** Every damaging Hand Crossbow Technique applies 1 Poison stack. At Mastery Rank 3, every damaging Hand Crossbow Technique applies 2 Poison stacks instead. Rapid-fire platform designed to rush Venomous (5 Poison stacks).
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Venom Shot | 1 Action | 1d6 Piercing. Apply 1 Poison stack (Toxic Bolts). |
+| 1 | Rapid Volley | 2 Actions | Fire twice. 1d6 Piercing each hit. Apply 1 Poison stack per hit. Reloads between shots automatically. |
+| 2 | Quick Load | Passive | Hand Crossbow reload costs 0 Actions once per turn. |
+| 2 | Weakening Bolt | 1 Action, 3 Mana | 1d6 Piercing. Apply 1 Poison stack. Target's next attack deals -2 damage. |
+| 3 | Concentrated Toxin | Passive | Upgrades Toxic Bolts. All damaging Hand Crossbow Techniques apply 2 Poison stacks instead of 1. |
+| 3 | Barrage | 1 Action, 5 Mana | Fire 3 bolts at up to 3 targets within 30 ft. 1d6 Piercing each. Apply Poison stacks per hit (Toxic Bolts). |
+| 4 | Neurotoxin | 1 Action, 8 Mana | Requires Venomous (5 Poison stacks) on target. Target's movement becomes 0. Poison damage doubles each round. Lasts 3 rounds. |
+| 5 | Lethal Dose (Capstone) | 1 Action, 15 Mana | Requires Neurotoxin on target. Poison stacks jump to 35. Target permanently loses 1 Action per turn. Once per long rest. |
+
+##### Hand Crossbow Weapon Augments (Toxic Bolts)
+
+Passive. Once learned, these apply to ALL Hand Crossbow Techniques. Each adds its Mana cost to every Hand Crossbow Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Dual Wield | When wielding two Hand Crossbows, fire both with a single Technique. Second shot deals half damage. | +3 |
+| 2 | Rapid Toxin | Poison stacks from Hand Crossbow Techniques deal +1 per tick. | +2 |
+| 3 | Crippling Venom | Targets with 3+ Poison stacks from your Hand Crossbow have -2 to all attacks. | +2 |
+| 4 | Coated Bolts | First Hand Crossbow Technique each combat applies 2 extra Poison stacks. | +0 |
+| 5 | Bolt Recovery | After combat, recover 50% of spent Hand Crossbow ammunition (round down). | +0 |
+
+#### Bomb Flask (Standard, Ranged) — 8 Techniques
+
+**Unique Mechanic: Volatile Mixture.** Bomb Flasks are consumable thrown weapons. Each Technique specifies which flask type to use: Fire Flask (Burn), Acid Flask (Acid/Corrode), Frost Flask (Chill). Each use consumes a flask. Flasks must be crafted or purchased.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Fire Flask | 1 Action | 2-space AoE. 2d4 Fire. Apply 2 Burn stacks to all targets. Area burns for 2 rounds (creatures entering take 1d4 Fire). Consumes 1 Fire Flask. |
+| 1 | Frost Flask | 1 Action | 2-space AoE. 2d4 Cold. Apply 2 Chill stacks to all targets. Area becomes difficult terrain for 2 rounds. Consumes 1 Frost Flask. |
+| 2 | Acid Flask | 1 Action, 3 Mana | 2-space AoE. 2d4 Acid. Apply 2 Acid stacks to all targets. Reduce targets' Physical DR by 1 for 2 rounds. Consumes 1 Acid Flask. |
+| 2 | Sticky Bomb | 1 Action, 3 Mana | Attach a flask to a single target (vs. Physical AC). 2d4 damage matching flask type. Apply 2 stacks of that condition. Stacks last 3 rounds instead of 2. Consumes 1 flask. |
+| 3 | Combining Flasks | 2 Actions, 8 Mana | Throw 2 different flasks at the same 2-space area. Combined effect: Fire+Frost = Steam Cloud (Blinded, 2 rounds). Fire+Acid = Explosion (double damage). Acid+Frost = Brittle (double DR reduction). Consumes 2 flasks. |
+| 3 | Cluster Toss | 1 Action, 5 Mana | Throw 2 flasks of the same type. 3-space AoE. 3d4 damage. Apply 3 stacks of that condition. Consumes 2 flasks. |
+| 4 | Volatile Eruption | 2 Actions, 8 Mana | Requires 5+ Burn, Chill, or Acid stacks on target. Trigger matching T3 escalation: Ignited (no healing), Frozen (movement 0, 1 Action to break free), or Corroded (DR reduced to 0 for 3 rounds). 2-space AoE centered on target applies 2 stacks to all other creatures in the area. Consumes 1 matching flask. |
+| 5 | Inferno (Capstone) | 3 Actions, 12 Mana | Throw 3 Fire Flasks. 3-space AoE. 4d4 Fire. Apply 4 Burn stacks. Area burns for 3 rounds. All targets with Burn stacks trigger Ignited. Once per long rest. Consumes 3 Fire Flasks. |
+
+##### Bomb Flask Weapon Augments (Volatile Mixture)
+
+Passive. Once learned, these apply to ALL Bomb Flask Techniques. Each adds its Mana cost to every Bomb Flask Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Expanded Blast | Bomb Flask AoE radius increases by 1 space. | +2 |
+| 2 | Lingering Residue | Bomb Flask area effects (burning ground, difficult terrain, DR reduction) last 1 additional round. | +2 |
+| 3 | Efficient Mixture | Once per combat, a Bomb Flask Technique does not consume a flask. | +0 |
+| 4 | Concentrated Formula | Bomb Flask Techniques apply 1 additional stack of their condition type. | +2 |
+| 5 | Flask Recovery | After combat, recover 1 flask of each type you used (max 3 total). | +0 |
 
 ---
 
