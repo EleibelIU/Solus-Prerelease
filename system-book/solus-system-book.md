@@ -1689,17 +1689,86 @@ Mechanical ranged weapons. Firearms deal high damage per shot but are limited by
 | Rifle | Bleed | Force | Standard shots apply Bleed. Penetrating Round applies Force. Switch by Technique. |
 | Shotgun | Force | — | Point-blank: 2 Force stacks. Maximum range: 1 Force stack. Spread: 1 Force to adjacent targets. |
 
-#### Revolver (Standard, Firearms)
+#### Revolver (Standard, Firearms) — 8 Techniques
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Fan the Hammer for rapid Force stacking. 6-round cylinder with Reload. Light property allows dual-wielding.
+**Unique Mechanic: Six Shooter.** 6-round cylinder. Each Revolver shot expends 1 round and applies 1 Force stack. Light property allows dual-wielding. Fan the Hammer (Category Technique) fires both shots, applying 1 Force per hit (2 Force per Action).
 
-#### Rifle (Standard, Firearms)
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Quick Draw | Reaction | At combat start, fire 1 shot before initiative resolves. 1d8 Force. Apply 1 Force stack. |
+| 1 | Trick Shot | 1 Action, 3 Mana | Ricochet off a surface. Ignores cover. +2 to hit. 1d8 Force. Apply 1 Force stack. |
+| 2 | Fanning Barrage | 1 Action, 3 Mana | Fire 3 rounds. 1d4 Force per round. Apply 1 Force stack per hit. Expends 3 ammunition. |
+| 2 | Pistol Whip | 1 Action | Melee attack. 1d6 Bludgeon. Apply 1 Force stack. Target loses Reaction until start of its next turn. |
+| 3 | Rapid Fan | Passive | Fan the Hammer with a Revolver applies 2 Force stacks per hit instead of 1 (4 Force total per Action). |
+| 3 | Staggering Shot | 1 Action, 5 Mana | 2d8 Force. Apply 2 Force stacks. Target rolls `2d10 + Body` vs DC 12 or Prone. |
+| 4 | Concussive Impact | 1 Action, 8 Mana | Requires Staggered (5 Force stacks) on target. 2d8 Force. Apply Shattered (T3): Physical DR = 0 for 2 rounds. Physical attacks auto-apply 1 Bleed. |
+| 5 | Dead Man's Hand (Capstone) | 1 Action, 15 Mana | Requires Shattered (T3) on target. Spend all 6 rounds. 6d8 Force. Target rolls `2d10 + Body` vs DC 18 or Stunned for 1 round. Reload required. Once per long rest. |
 
-TODO: full Technique list. Condition signature: Bleed/Force. Unique mechanic: Condition switches by Technique. Standard shots = Bleed. Penetrating Round = Force. Long range and high per-shot damage.
+##### Revolver Weapon Augments (Six Shooter)
 
-#### Shotgun (Standard, Firearms)
+Passive. Once learned, these apply to ALL Revolver Techniques. Each adds its Mana cost to every Revolver Technique you use.
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Spread property. Point-blank shots deal bonus damage and apply 2 Force stacks. Close-range area pressure weapon.
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Speed Loader | Reload costs 0 Actions once per combat. | +0 |
+| 2 | Heavy Rounds | Revolver Techniques deal +1d4 Force damage. | +2 |
+| 3 | Gunslinger | When dual-wielding Revolvers, Quick Draw fires both pistols. Second shot deals half damage and applies 1 Force stack. | +2 |
+| 4 | Hollow Points | Force stacks from Revolver Techniques deal +1 per tick (+2 total per stack per round instead of +1). | +2 |
+| 5 | Showdown | While Shattered (T3) is active on the target, your Revolver Techniques against that target have advantage. | +3 |
+
+#### Rifle (Standard, Firearms) — 8 Techniques
+
+**Unique Mechanic: Marksman.** Standard Rifle shots apply Bleed (high-velocity puncture). Techniques marked [Force] apply Force instead (kinetic impact). Choose your condition path by Technique selection.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Long Shot | 1 Action, 2 Mana | +20 ft range. 1d10 Piercing + 1d6 damage. Apply 1 Bleed stack. |
+| 1 | Bayonet Strike | 1 Action | Move 2 spaces toward target. Melee attack. 1d8 Piercing. Apply 1 Bleed stack. |
+| 2 | Scope In | 2 Actions, 5 Mana | Next Rifle shot auto-hits. +1d10 damage. Apply 2 Bleed stacks. |
+| 2 | Suppressing Burst | 1 Action, 5 Mana | [Force] 3-space line. All targets roll `2d10 + Body` vs DC 12 or Prone. Apply 1 Force stack per target. |
+| 3 | Armor Piercing Round | 1 Action, 5 Mana | Ignores all Physical DR. 2d10 Piercing. Apply 2 Bleed stacks. |
+| 3 | Kinetic Impact | 1 Action, 5 Mana | [Force] 2d10 Force. Apply 2 Force stacks. Push target 2 spaces. |
+| 4 | Decisive Shot | 1 Action, 8 Mana | Choose one path. Bleed: requires Shredded (5 Bleed) on target, 2d10 Piercing, apply Hemorrhage (T3): Bleed doubles, healing 50% effective, persists 2 extra rounds. Force: requires Staggered (5 Force) on target, 2d10 Force, apply Shattered (T3): Physical DR = 0 for 2 rounds, physical attacks auto-apply 1 Bleed. |
+| 5 | Marksman's Execution (Capstone) | 2 Actions, 15 Mana | Requires Hemorrhage or Shattered (T3) on target. Auto-hit. 4d10 Piercing. If Hemorrhage active: all Bleed stacks tick immediately. If Shattered active: Physical DR permanently reduced by 2 for rest of combat. Once per long rest. |
+
+##### Rifle Weapon Augments (Marksman)
+
+Passive. Once learned, these apply to ALL Rifle Techniques. Each adds its Mana cost to every Rifle Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Magazine | Ammunition increases from 8 to 12 rounds. | +0 |
+| 2 | Bipod | While prone or stationary, Rifle Techniques gain +2 to hit. Stacks with Steady Aim. | +1 |
+| 3 | Match Rounds | Rifle Techniques deal +1d6 damage at 60 ft or beyond. | +2 |
+| 4 | Through-and-Through | Rifle shots that hit continue through the target. One enemy directly behind takes half damage. | +2 |
+| 5 | Dual Discipline | When switching between Bleed and Force Techniques in the same turn, the second Technique deals +1d8 damage. | +3 |
+
+#### Shotgun (Standard, Firearms) — 8 Techniques
+
+**Unique Mechanic: Buckshot.** Point-blank Shotgun attacks (within 2 spaces) deal +1d6 damage and apply 2 Force stacks instead of 1. Spread property: enemies adjacent to the primary target take half damage and 1 Force stack.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Breaching Entry | 1 Action | Within 2 spaces. 2d6 Force. Apply 2 Force stacks (Buckshot). Push target 2 spaces. |
+| 1 | Slug Round | 1 Action, 2 Mana | Single target (no Spread). +1d10 damage. Range increases to 40 ft. Apply 1 Force stack. |
+| 2 | Buckshot Sweep | 1 Action, 5 Mana | 2-space cone. 2d6 Force to each target. Apply 1 Force stack per target hit. |
+| 2 | Sawed-Off Mode | Free Action | Toggle. Range halved (10 ft). Spread hits all enemies adjacent to you instead of adjacent to the target. |
+| 3 | Shrapnel Blast | 1 Action, 7 Mana | Within 2 spaces. 3d6 Force. Apply 2 Force stacks. Spread targets take full damage instead of half. |
+| 3 | Staggering Blast | 1 Action, 5 Mana | 2d6 Force. Apply 2 Force stacks. Target rolls `2d10 + Body` vs DC 14 or Prone. Push 2 spaces. |
+| 4 | Breaching Shot | 1 Action, 8 Mana | Within 1 space. Requires Staggered (5 Force stacks) on target. 3d6 Force. Apply Shattered (T3): Physical DR = 0 for 2 rounds. Physical attacks auto-apply 1 Bleed. |
+| 5 | Demolition Blast (Capstone) | 2 Actions, 15 Mana | Requires Shattered (T3) on target. 6d6 Force. All enemies within 2 spaces take 3d6 Force and 2 Force stacks. Target rolls `2d10 + Body` vs DC 18 or Stunned for 1 round. Once per long rest. |
+
+##### Shotgun Weapon Augments (Buckshot)
+
+Passive. Once learned, these apply to ALL Shotgun Techniques. Each adds its Mana cost to every Shotgun Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Tube | Ammunition increases from 2 to 4 rounds. | +0 |
+| 2 | Dragon's Breath | Shotgun Techniques within 2 spaces also apply 1 Burn stack per target hit. | +2 |
+| 3 | Knockback | Shotgun Techniques that hit push the target 1 space. Stacks with Push effects from individual Techniques. | +1 |
+| 4 | Tight Spread | Spread damage increases from half to three-quarters of the original damage. | +2 |
+| 5 | Close Quarters Master | While an enemy is within 2 spaces, Shotgun Techniques against that enemy gain +2 to hit. | +2 |
 
 ---
 
