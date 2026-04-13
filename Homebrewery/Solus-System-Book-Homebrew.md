@@ -1405,7 +1405,13 @@ These four Augments connect weapon combat and spellcasting. Any character with M
 
 ## Weapon Properties Reference
 
-Weapons carry properties that modify how they function in combat.
+Every weapon lists one or more properties in its stat block. Properties define what the weapon can do beyond dealing damage. Read the property line from left to right: the first property is the weapon's primary behavior, and the rest add secondary capabilities.
+
+Properties stack. A weapon with Light and Finesse lets you dual-wield and choose Body or Magic for attack rolls. A weapon with Two-Handed and Heavy requires both hands and penalizes low-Body characters.
+
+Some properties interact with Techniques. Reload governs how firearms cycle between shots. Paired means the weapon is always dual-wielded, which changes how Flurry (Universal Technique) works. Adaptive lets a weapon switch categories, unlocking different Category Techniques mid-combat.
+
+Properties are fixed per weapon. You cannot add or remove them. Augments and Techniques may modify what a property does (e.g., Quick Reload augment changes Reload from 1 Action to a Free Action), but the property itself stays on the weapon.
 
 | Property | Effect |
 |---|---|
