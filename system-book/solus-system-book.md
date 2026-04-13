@@ -550,7 +550,32 @@ Passive. Once learned, these apply to ALL Claw Gauntlet Techniques. Each adds it
 
 #### Sickle (Standard, Light Melee)
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: On kill, transfer remaining Bleed stacks to one adjacent enemy. Harvest-chain kills spread Bleed across groups.
+#### Sickle (Standard, Light Melee) — 8 Techniques
+
+**Unique Mechanic: Harvest.** On kill, transfer all Bleed stacks from the slain target to one adjacent enemy of your choice. Transfers happen immediately and reset the stack timer on the recipient.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Reap | 1 Action | 1d6 Slashing. Apply 1 Bleed stack. |
+| 1 | Quick Harvest | Free (on kill) | On kill, transfer all active Bleed stacks to one adjacent enemy. |
+| 2 | Bleeding Draw | 1 Action, 3 Mana | 1d6 Slashing. Apply 2 Bleed stacks. If target is already Bleeding, deal +1d4 bonus damage. |
+| 2 | Slaughter | 1 Action, 3 Mana | 1d6 Slashing. Apply 1 Bleed. On kill, transfer stacks AND make a free attack against the recipient. |
+| 3 | Blood Trail | 1 Action, 5 Mana | Strike all enemies in a 10 ft line. Each hit applies 1 Bleed. |
+| 3 | Reaper's Arc | 1 Action, 5 Mana | Dash up to 10 ft and strike. On hit, apply 2 Bleed stacks. This movement does not provoke opportunity attacks. |
+| 4 | Chain Reaping | 1 Action, 8 Mana | Requires [Shredded] on target. Strike. On kill, trigger Quick Harvest AND gain a free attack against the recipient at Advantage. |
+| 5 | Exsanguination (Capstone) | 2 Actions, 15 Mana | Requires [Shredded]. Strike. On hit, trigger Exsanguination (T4): target bleeds out over Body modifier rounds. Kill transfers all stacks to every adjacent enemy simultaneously. Once per long rest. |
+
+##### Sickle Weapon Augments (Harvest)
+
+Passive. Once learned, these apply to ALL Sickle Techniques. Each adds its Mana cost to every Sickle Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Hungry Blade | Transferred Bleed stacks deal +1 damage per stack on the first tick on the recipient. | +1 |
+| 2 | Accelerated Harvest | Quick Harvest triggers as a Free Action even if it was not a kill (once per turn, on any hit). | +2 |
+| 3 | Chain Reaction | Quick Harvest recipients gain 1 extra Bleed stack from the transfer. | +1 |
+| 4 | Crimson Wave | On kill, if Quick Harvest transfers 3+ stacks, the recipient is also Frightened for 1 round. | +2 |
+| 5 | Endless Reaping | Capstone kill does not consume your turn. Chain kills chain Capstone triggers until no Shredded enemies remain. | +5 |
 
 #### Shield (Standard, Light Melee) — 8 Techniques
 
@@ -640,7 +665,33 @@ Balanced offense and defense. One-handed weapons that pair with shields or off-h
 
 #### Longsword (Standard, Medium Melee)
 
-TODO: full Technique list. Condition signature: Bleed (one-handed) / Force (two-handed). Unique mechanic: Grip-switching determines condition path. Versatile damage (1d10/1d12).
+#### Longsword (Standard, Medium Melee) — 9 Techniques
+
+**Unique Mechanic: Adaptive Grip.** One-handed grip applies Bleed (1d10). Two-handed grip applies Force (1d12). Switching grip is a Free Action once per turn. Your condition path follows your current grip.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Cutting Draw | 1 Action | One-handed. 1d10 Slashing. Apply 1 Bleed stack. |
+| 1 | Crushing Drive | 1 Action | Two-handed. 1d12 Slashing. Apply 1 Force stack. Push target 5 ft. |
+| 2 | Grip Shift | Free Action, 3 Mana | Switch grip. First attack after switching applies 2 condition stacks instead of 1. |
+| 2 | Cross-Cut | 1 Action, 3 Mana | Strike with current grip. One-handed: apply 2 Bleed. Two-handed: apply 2 Force and push 10 ft. |
+| 3 | Sentinel Stance | Reaction, 5 Mana | When a melee attacker misses you, switch grip and counterattack with current grip conditions. |
+| 3 | Adaptive Assault | 2 Actions, 5 Mana | Strike twice. First with one-handed grip (1 Bleed), then switch and strike with two-handed grip (1 Force). Each attack is a separate roll. |
+| 4 | Condition Dominance | 1 Action, 8 Mana | Requires [Shredded] or [Staggered]. Strike. On hit, deal weapon damage x 2 and apply 2 stacks of the active condition. |
+| 4 | Versatile Mastery | Passive | While both Bleed and Force stacks are active on the same target, your attacks against them deal +1d6 bonus damage. |
+| 5 | Inevitable (Capstone) | 3 Actions, 15 Mana | Requires [Shredded] or [Staggered]. Auto-hit. Weapon damage x 3. Trigger Exsanguination (if Shredded) or Shattered (if Staggered). Once per long rest. |
+
+##### Longsword Weapon Augments (Adaptive Grip)
+
+Passive. Once learned, these apply to ALL Longsword Techniques. Each adds its Mana cost to every Longsword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Fluid Switch | Grip Shift triggers as part of any Technique without requiring a separate Free Action. | +0 |
+| 2 | Momentum | Each Grip Shift in the same turn grants +1 damage on the next attack. Stacks up to 3. | +1 |
+| 3 | One-Handed Master | One-handed Techniques apply 1 additional Bleed stack. | +1 |
+| 4 | Two-Handed Master | Two-handed Techniques push an extra 5 ft and apply 1 additional Force stack. | +1 |
+| 5 | True Versatility | Inevitable can trigger both Exsanguination and Shattered if both [Shredded] and [Staggered] are active on the target. | +5 |
 
 #### Rapier (Complex, Medium Melee) — 12 Techniques
 
@@ -917,19 +968,122 @@ Socket into Augment Slots on individual Katana Techniques. Each Technique has 2-
 | Shinsoku (Godspeed) | Costs 2 Actions instead of 3. Faster execution. | +5 |
 | Tsujigiri (Crossroads Kill) | After Hitotsume, enemies within 4 spaces take 1d10 Slashing + 2 Bleed from wind pressure. | +4 |
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks impose -1 per stack to mental Proficiency Checks. At Staggered (5 Force): disadvantage on all Proficiency Checks.
+#### Mace (Standard, Medium Melee)
+
+#### Mace (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Concussive Trauma.** Each Force stack applied by Mace Techniques also imposes -1 to all mental Proficiency Checks (Knowledge, Insight, Investigation) per stack. At [Staggered] (5 Force stacks), the target has Disadvantage on all Proficiency Checks.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Skull Crack | 1 Action | 1d8 Bludgeon. Apply 1 Force stack. Target has -1 to next Proficiency Check. |
+| 1 | Brain Rattler | 1 Action | 1d8 Bludgeon. Apply 1 Force stack. If target already has 2+ Force stacks, they lose their Reaction until next turn. |
+| 2 | Temple Strike | 1 Action, 3 Mana | 1d8 Bludgeon. Apply 2 Force stacks. If target has 3+ Force, they auto-fail one Proficiency Check this round. |
+| 2 | Pummeling Assault | 2 Actions, 3 Mana | Strike twice. Each hit applies 1 Force stack. |
+| 3 | Mind Crash | 1 Action, 5 Mana | Requires [Staggered]. Strike. On hit, target has Disadvantage on all Proficiency Checks until a short rest. Apply 2 Force. |
+| 3 | Headhunter | 1 Action, 5 Mana | Strike. On hit, target cannot take Reactions and has -2 to all attacks until their next turn. Apply 1 Force. |
+| 4 | Shatter Cognition | 2 Actions, 8 Mana | Requires [Staggered]. Strike. On hit, trigger Shattered. Target loses ability to take Reactions for 2 rounds. |
+| 5 | Mindbreaker (Capstone) | 2 Actions, 15 Mana | Requires [Shattered]. Strike. On hit, target has Disadvantage on all actions for the rest of combat. Proficiency Check penalties persist until the next short rest. Once per long rest. |
+
+##### Mace Weapon Augments (Concussive Trauma)
+
+Passive. Once learned, these apply to ALL Mace Techniques. Each adds its Mana cost to every Mace Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Rattling Blow | Each Force stack applied reduces the target's next attack roll by 1 (in addition to Proficiency Check penalties). | +1 |
+| 2 | Lingering Trauma | The Proficiency Check penalty from Mace Techniques persists 1 extra round after Force stacks are removed. | +0 |
+| 3 | Focused Impact | Brain Rattler's Reaction removal also applies if target has only 1 Force stack. | +1 |
+| 4 | Skull Resonance | When a target fails a Proficiency Check due to Mace Force stacks, apply 1 additional Force stack. | +2 |
+| 5 | Permanent Scar | Mindbreaker Disadvantage on all actions persists until the next long rest (not just until end of combat). | +4 |
 
 #### Flail (Standard, Medium Melee)
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Bypass and Chain properties mean Force stacks land against Shields and cannot be Parried. Anti-tank weapon.
+#### Flail (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Unblockable.** Flail attacks ignore Shield AC and cannot be negated by Parry. Force stacks from Flail Techniques still apply even when the target uses a Shield or Parry reaction.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Chain Whip | 1 Action | 1d8 Bludgeon. Apply 1 Force. Ignores Shield AC. Cannot be Parried. |
+| 1 | Wrapping Strike | 1 Action | 1d8 Bludgeon. Apply 1 Force. On hit, disarm attempt: target rolls 2d10 + Body vs. your attack roll or drops shield or weapon. |
+| 2 | Bypass Slam | 1 Action, 3 Mana | 1d8 Bludgeon. Apply 2 Force. Auto-bypasses Shield AC. Target cannot use Reactions until next turn. |
+| 2 | Relentless Chain | 2 Actions, 3 Mana | Strike twice. Each hit applies 1 Force. Neither can be Parried or blocked by Shield. |
+| 3 | Shield Breaker | 1 Action, 5 Mana | On hit against a target using a Shield, that target loses their Shield AC bonus for the next 3 rounds. Apply 2 Force. |
+| 3 | Crushing Rhythm | Passive | After 3 consecutive hits on the same target this combat, your next Flail Technique deals +1d8 bonus damage. Resets on miss. |
+| 4 | Annihilating Blow | 1 Action, 8 Mana | Requires [Staggered]. Strike. On hit, trigger Shattered. Target loses Shield AC until their shield is repaired (short rest). |
+| 5 | Unblockable (Capstone) | 2 Actions, 15 Mana | Requires [Shattered]. Strike. Weapon damage x 3. Ignores ALL DR. Target cannot use any defensive Reactions. Once per long rest. |
+
+##### Flail Weapon Augments (Unblockable)
+
+Passive. Once learned, these apply to ALL Flail Techniques. Each adds its Mana cost to every Flail Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Chain Extension | Flail Techniques can be used at 10 ft range instead of 5 ft. | +1 |
+| 2 | Entangling Chain | On a natural 10 (even roll on either die), target is Restrained until start of your next turn. | +2 |
+| 3 | Momentum Flail | Consecutive hits on the same target add +1 to hit (max +3). Resets on miss. | +0 |
+| 4 | Armor Dent | Each Force stack also reduces Physical DR by 1 per 2 stacks (rounded down, min 0). | +2 |
+| 5 | Catastrophic Bypass | Unblockable damage bypasses magical DR as well as physical DR. | +4 |
 
 #### War Pick (Standard, Medium Melee)
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Pierce extends to Bleed damage. Bleed ticks also ignore 2 Physical DR. Capstone: Total Dissolution (T4, destroys armor).
+#### War Pick (Standard, Medium Melee) — 8 Techniques
+
+**Unique Mechanic: Deep Pierce.** Bleed ticks from War Pick Techniques ignore 2 Physical DR. At [Shredded], Bleed ticks ignore ALL Physical DR.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Piercing Strike | 1 Action | 1d8 Piercing. Apply 1 Bleed. Bleed ticks ignore 2 Physical DR. |
+| 1 | Armor Crack | 1 Action | 1d8 Piercing. Apply 1 Bleed. Reduce target Physical DR by 1 until end of combat (stacks, min 0). |
+| 2 | Barbed Thrust | 1 Action, 3 Mana | 1d8 Piercing. Apply 2 Bleed. Target movement reduced by 5 ft per Bleed stack while Bleeding. |
+| 2 | Rending Drive | 1 Action, 3 Mana | 1d8 Piercing. Apply 1 Bleed. If target has 2+ Bleed, deal +1d6 Pierce bonus damage. |
+| 3 | Sustained Hemorrhage | 1 Action, 5 Mana | Requires 3+ Bleed. Target must spend an Action to stop Bleeding or take +1d6 Bleed damage this turn. Apply 1 extra Bleed. |
+| 3 | Sever | 1 Action, 5 Mana | 2d8 Piercing. Apply 2 Bleed. Target has Disadvantage on attacks using the struck limb until healed. |
+| 4 | Total Dissolution | 1 Action, 8 Mana | Requires [Shredded]. Strike. On hit, target Physical DR drops to 0 for 3 rounds. All physical damage bypasses armor. Apply 2 Bleed. |
+| 5 | Armor Breaker (Capstone) | 2 Actions, 15 Mana | Requires [Shredded]. Auto-hit. Weapon damage x 3. Trigger Exsanguination. Target Physical DR permanently reduced by 2 (min 0) until repaired at a blacksmith. Once per long rest. |
+
+##### War Pick Weapon Augments (Deep Pierce)
+
+Passive. Once learned, these apply to ALL War Pick Techniques. Each adds its Mana cost to every War Pick Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Serrated | Bleed from War Pick Techniques ignores 1 additional Physical DR (3 total). | +1 |
+| 2 | Crack Seeker | Armor Crack DR reduction stacks indefinitely. Each hit can reduce DR by 1 (min 0). | +2 |
+| 3 | Twisting Blade | On critical hit, apply 2 additional Bleed stacks. | +1 |
+| 4 | Persistent Wound | War Pick Bleed stacks last 1 extra round before decaying. | +2 |
+| 5 | Total Ruin | After Total Dissolution, DR reduction becomes permanent until repaired (not just 3 rounds). | +4 |
 
 #### Bastard Sword (Complex, Medium Melee / Heavy Melee)
 
-TODO: full Technique list. Condition signature: Bleed (one-handed) or Force (two-handed). Unique mechanic: Adaptive. Switches category by grip. At Mastery 3, access Category Techniques from both Medium Melee and Heavy Melee.
+#### Bastard Sword (Complex, Medium Melee / Heavy Melee) — 9 Techniques
+
+**Unique Mechanic: Adaptive Mastery.** One-handed grip = Medium Melee (1d10, Bleed). Two-handed grip = Heavy Melee (1d12, Force). At Mastery Rank 3, access Category Techniques from both Medium Melee and Heavy Melee regardless of current grip.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Fluid Cut | 1 Action | One-handed. 1d10 Slashing. Apply 1 Bleed. |
+| 1 | Crushing Strike | 1 Action | Two-handed. 1d12 Slashing. Apply 1 Force. Push target 5 ft. |
+| 2 | Adaptive Grip | Free Action, 3 Mana | Switch grip. First attack in the new grip this turn applies double condition stacks. |
+| 2 | Momentum Shift | 2 Actions, 3 Mana | Strike with one-handed grip (1 Bleed), then switch and strike with two-handed grip (1 Force). Both rolls are separate. |
+| 3 | Cross-Guard | Reaction, 5 Mana | When attacked in melee: one-handed = Parry (add damage die to AC). Two-handed = Block (reduce incoming damage by 1d8). |
+| 3 | Dual Mastery | Passive (Rank 3) | Access Category Techniques from both Medium Melee and Heavy Melee regardless of current grip. |
+| 4 | Convergence | 1 Action, 8 Mana | Requires [Shredded] or [Staggered]. Strike. On hit, weapon damage x 2. Apply 2 stacks of the active condition. |
+| 4 | Fluid Form | Passive | Grip switching no longer costs Mana (Adaptive Grip mana cost drops to 0). |
+| 5 | Grand Blade (Capstone) | 3 Actions, 15 Mana | Requires [Shredded] AND [Staggered]. Auto-hit. Weapon damage x 3. Trigger Exsanguination and Shattered simultaneously. Once per long rest. |
+
+##### Bastard Sword Weapon Augments (Adaptive Mastery)
+
+Passive. Once learned, these apply to ALL Bastard Sword Techniques. Each adds its Mana cost to every Bastard Sword Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Seamless Transition | Adaptive Grip triggers as part of any Technique without requiring a separate Free Action. | +0 |
+| 2 | Balanced Blade | While both Bleed and Force stacks are active on the same target, your attacks deal +1d6 bonus damage. | +2 |
+| 3 | One-Handed Edge | One-handed Techniques apply 1 additional Bleed stack. | +1 |
+| 4 | Two-Handed Power | Two-handed Techniques push an extra 5 ft and apply 1 additional Force stack. | +1 |
+| 5 | True Grand Blade | Grand Blade triggers Exsanguination with Shredded alone or Shattered with Staggered alone. With both, it still triggers both. | +4 |
 
 ---
 
@@ -1069,7 +1223,29 @@ Passive. Once learned, these apply to ALL Great Axe Techniques. Each adds its Ma
 
 #### Greatclub (Simple, Heavy Melee)
 
-TODO: full Technique list (caps at Rank 3). Condition signature: Force. Unique mechanic: Knockback into walls or terrain grants bonus Force stacks. Environmental combo weapon.
+#### Greatclub (Simple, Heavy Melee) — 5 Techniques
+
+**Unique Mechanic: Wall Slam.** When a Greatclub Technique knocks a target into a wall, obstacle, or another creature, apply 2 extra Force stacks and deal +1d6 bonus Bludgeon damage. Technique access caps at Rank 3.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Ground Slam | 2 Actions | 2d6 Bludgeon. Apply 1 Force. Push target 10 ft. If pushed into terrain or creature, trigger Wall Slam. |
+| 1 | Overhead Smash | 2 Actions | 2d6 Bludgeon. Apply 1 Force. Target rolls 2d10 + Body vs. DC 12 or falls prone. |
+| 2 | Follow-Through | 1 Action, 3 Mana | After a push, immediately charge to target's new location and strike. Free movement, does not provoke opportunity attacks. |
+| 2 | Avalanche Blow | 2 Actions, 3 Mana | 2d6 Bludgeon. Apply 2 Force. Push target 15 ft. If pushed into terrain, trigger Wall Slam twice (double bonus). |
+| 3 | Seismic Strike (Capstone) | 3 Actions, 10 Mana | Requires [Staggered]. Slam the ground. All enemies within 2 spaces take 2d6 Bludgeon, fall prone, and are pushed 10 ft outward. If pushed into terrain, trigger Wall Slam. Once per combat. |
+
+##### Greatclub Weapon Augments (Wall Slam)
+
+Passive. Once learned, these apply to ALL Greatclub Techniques. Each adds its Mana cost to every Greatclub Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Crumbling Impact | Wall Slam damage increases to +1d8 Bludgeon. | +1 |
+| 2 | Environmental Mastery | Wall Slam triggers even if the target is only pushed 5 ft. Any terrain counts. | +2 |
+| 3 | Aftershock | After Wall Slam, all enemies adjacent to the impact point take 1d4 Bludgeon. | +1 |
+| 4 | Momentum Crush | If you moved 2+ spaces before a Greatclub Technique, Wall Slam damage increases by +1d6 per space moved (max +3d6). | +2 |
+| 5 | Tectonic Blow | Seismic Strike push distance increases to 20 ft. Wall Slam from Seismic Strike deals triple damage. | +3 |
 
 ---
 
@@ -1240,15 +1416,90 @@ Passive. Once learned, these apply to ALL Whip Techniques. Each adds its Mana co
 
 #### Staff (Standard, Reach)
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Force stacks catalyze elemental stacks, dealing an extra tick on hit against targets with active elemental stacks. Primary gish bridge weapon. Arcane property boosts spell range.
+#### Staff (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Elemental Catalyst.** On hit against a target with active elemental stacks, deal +1 damage per elemental stack. Force stacks amplify this: each Force stack on the target adds +1 to the per-stack bonus (1 Force = +2 per elemental stack, 2 Force = +3 per elemental stack).
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Catalyst Strike | 1 Action | Strike. Apply 1 Force. Deal bonus damage equal to active elemental stacks on target (Elemental Catalyst). |
+| 1 | Staff Sweep | 1 Action | Strike up to 2 adjacent targets. Apply 1 Force to each hit. |
+| 2 | Force Channel | 1 Action, 3 Mana | Apply 2 Force. Deal Elemental Catalyst bonus using Force stacks as multiplier. |
+| 2 | Arcane Tempo | Free Action, 3 Mana | After casting a spell this turn, your next Staff Technique has Advantage and applies +1 extra Force stack. |
+| 3 | Elemental Resonance | 1 Action, 5 Mana | Requires any T2 elemental condition on target. On hit, that condition deals double tick damage for 2 rounds. Apply 2 Force. |
+| 3 | Spell Battery | Passive | When you hit a [Staggered] target with a Staff Technique, regain 3 Mana. Once per turn. |
+| 4 | Force Cascade | 1 Action, 8 Mana | Requires [Staggered]. On hit, all active elemental stacks deal double damage for 2 rounds. Trigger Shattered. |
+| 5 | Grand Conjunction (Capstone) | 2 Actions, 15 Mana | Requires [Staggered] and any T2 elemental condition on target. On hit, trigger Shattered and the T3 escalation of the elemental condition simultaneously. Once per long rest. |
+
+##### Staff Weapon Augments (Elemental Catalyst)
+
+Passive. Once learned, these apply to ALL Staff Techniques. Each adds its Mana cost to every Staff Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Arcane Range | Staff Techniques can be made at 10 ft range. While Arcane property is active, spell range increases by 10 ft. | +1 |
+| 2 | Amplified Catalyst | Elemental Catalyst deals +2 damage per elemental stack (instead of +1). Force amplification still applies on top. | +2 |
+| 3 | Sustained Channel | Elemental Resonance lasts 3 rounds instead of 2. | +1 |
+| 4 | Mana Efficiency | Spell Battery refunds 5 Mana instead of 3. | +2 |
+| 5 | True Conjunction | Grand Conjunction triggers two T3 escalations simultaneously if two different T2 elemental conditions are active on the target. | +4 |
 
 #### Trident (Standard, Reach)
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Impaled targets do not lose Bleed stacks to natural decay. Sustained pressure on pinned targets.
+#### Trident (Standard, Reach) — 8 Techniques
+
+**Unique Mechanic: Impale.** When you apply Bleed with a Trident Technique, the target is Impaled. While Impaled, Bleed stacks do not decay naturally. Impalement ends if the target moves 10+ ft away from you.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Piercing Thrust | 1 Action | 1d8 Piercing. Apply 1 Bleed. Target is Impaled. |
+| 1 | Three-Pronged Strike | 1 Action | 1d8 Piercing. Apply 1 Bleed. Make a second strike at -2 to hit. If it hits, apply 1 extra Bleed. |
+| 2 | Hold Position | 1 Action, 3 Mana | Strike. Apply 2 Bleed. Impaled target cannot move away without taking 1d6 Bleed damage per space moved (Body save vs. DC 12 to resist). |
+| 2 | Gut Hook | 1 Action, 3 Mana | On hit, deal 1d8 Piercing. Apply 1 Bleed. As a Free Action, twist: deal +1d4 Bleed damage and apply 1 extra Bleed. |
+| 3 | Drag and Rend | 1 Action, 5 Mana | On hit, pull the Impaled target up to 10 ft toward you. Apply 2 Bleed stacks. |
+| 3 | Sustained Hemorrhage | Free Action, 5 Mana | Requires Impaled target with 3+ Bleed. Deal the Bleed tick immediately (no wait for target's turn start). |
+| 4 | Deep Impalement | 2 Actions, 8 Mana | Requires [Shredded]. On hit, target is fully pinned: movement 0 until they spend 2 Actions to remove the trident. Apply 2 Bleed. |
+| 5 | Fatal Impalement (Capstone) | 2 Actions, 15 Mana | Requires [Shredded] and Impaled. On hit, trigger Exsanguination (T4): Bleed tick doubles each round. Once per long rest. |
+
+##### Trident Weapon Augments (Impale)
+
+Passive. Once learned, these apply to ALL Trident Techniques. Each adds its Mana cost to every Trident Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Barbed Tips | Target needs 3 Actions (instead of 2) to remove the trident and end Impalement. | +0 |
+| 2 | Sustained Pressure | While Impaled, target has -1 to all attack rolls per Bleed stack active on them. | +1 |
+| 3 | Serrated Tines | Bleed stacks from Trident Techniques deal +1 bonus damage per tick. | +2 |
+| 4 | Rend on Release | When Impalement ends (any means), deal 1d6 Bleed damage per Bleed stack currently active. | +2 |
+| 5 | True Impalement | While Impaled, the target cannot benefit from magical healing until the trident is removed. | +3 |
 
 #### Chain (Complex, Reach)
 
-TODO: full Technique list. Condition signature: Force. Unique mechanic: Entangled targets gain 1 Force stack per turn (constricting). Escalates to Staggered without additional attacks. Capstone: Cascade Failure (T4).
+#### Chain (Complex, Reach) — 8 Techniques
+
+**Unique Mechanic: Constriction.** When you apply Force with a Chain Technique, the target is Entangled. While Entangled, the target gains 1 Force stack at the start of each of their turns from constricting pressure, with no additional action from you.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Entangle | 1 Action | Strike. Apply 1 Force. Target is Entangled. |
+| 1 | Chain Whip | 1 Action | Strike at up to 15 ft. Apply 1 Force. On hit, disarm attempt: target rolls 2d10 + Body vs. your attack roll or drops one held item. |
+| 2 | Constrict | 1 Action, 3 Mana | Requires Entangled target. Apply 2 Force stacks immediately. |
+| 2 | Throw | 1 Action, 3 Mana | On hit, throw target 10 ft (Body save vs. DC 12 to resist). If thrown into terrain or creature, apply 2 extra Force stacks. |
+| 3 | Choke Hold | Passive, 5 Mana | Requires Entangled target. Target must save at start of each turn (2d10 + Body vs. DC 12) or lose 1 Action due to constriction. |
+| 3 | Iron Grip | Passive | Entanglement DC to break free increases by 2. Target has Disadvantage on attempts to remove the chain. |
+| 4 | Cascade | 2 Actions, 8 Mana | Requires [Staggered]. All Force stacks deal double tick damage for 2 rounds. Trigger Shattered. |
+| 5 | Cascade Failure (Capstone) | 3 Actions, 15 Mana | Requires [Shattered]. Fully constrict the target. Target takes weapon damage at start of each of their turns and cannot take Actions until freed. Freeing requires 2d10 + Body vs. DC 18 (costs 2 Actions). Once per long rest. |
+
+##### Chain Weapon Augments (Constriction)
+
+Passive. Once learned, these apply to ALL Chain Techniques. Each adds its Mana cost to every Chain Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Extended Chain | Chain Techniques can be used at 20 ft range. | +1 |
+| 2 | Auto-Constriction | Entangled targets gain 2 Force stacks per turn instead of 1. | +2 |
+| 3 | Choke Mastery | Choke Hold does not require an additional Mana expenditure once learned. | +0 |
+| 4 | Ripping Release | When Entanglement ends (any reason), deal 1d8 Bludgeon per Force stack active on the target. | +3 |
+| 5 | True Constriction | Cascade Failure persists between combat rounds if the target is not freed. It can only be broken by magical means if they also pass the Body save. | +4 |
 
 ---
 
@@ -1334,11 +1585,61 @@ Passive. Once learned, these apply to ALL Bow Techniques. Each adds its Mana cos
 
 #### Crossbow (Standard, Ranged)
 
-TODO: full Technique list. Condition signature: Bleed. Unique mechanic: Deep Penetration extends Pierce to Bleed ticks. High single-shot damage offset by Loading. Higher ranks unlock faster reload Techniques.
+#### Crossbow (Standard, Ranged) — 8 Techniques
+
+**Unique Mechanic: Deep Penetration.** Bleed ticks from Crossbow Techniques ignore 2 Physical DR. At [Shredded], Bleed ticks ignore ALL Physical DR. Crossbow requires 1 Action to reload after each shot (Loading property). Higher-rank Techniques reduce this cost.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Steady Shot | 1 Action + Load | Take aim. On hit, apply 1 Bleed. Bleed ticks ignore 2 Physical DR. |
+| 1 | Quick Release | 1 Action + Load | Fire without aiming. The Loading Action is included in this action (no separate reload needed). |
+| 2 | Bleeding Bolt | 1 Action + Load, 3 Mana | On hit, apply 2 Bleed. Bleed ticks ignore 2 Physical DR. |
+| 2 | Speed Load | Free Action | Reload as a Free Action (once per turn). Replaces the normal Loading Action cost. |
+| 3 | Pin Down | 1 Action + Load, 5 Mana | On hit, Restrain target for 1 round (Body save vs. DC 13 to resist). Apply 2 Bleed. |
+| 3 | Sustained Fire | Passive | After 2 reloads in the same combat, gain +1 to hit on all subsequent Crossbow Techniques this combat. |
+| 4 | Penetrating Bolt | 1 Action + Load, 8 Mana | On hit, bolt passes through target and strikes the creature directly behind (same attack roll). Both targets apply Bleed. |
+| 5 | Heartseeker (Capstone) | 2 Actions, 15 Mana | Requires [Shredded]. Auto-hit. Loading does not apply this shot. Weapon damage x 3. Bleed ticks deal double damage for 3 rounds. Once per long rest. |
+
+##### Crossbow Weapon Augments (Deep Penetration)
+
+Passive. Once learned, these apply to ALL Crossbow Techniques. Each adds its Mana cost to every Crossbow Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Armor-Piercing Bolt | Bleed from Crossbow Techniques ignores 1 additional Physical DR (3 total). | +1 |
+| 2 | Auto-Loading | Speed Load is always active. You never spend an Action to reload. | +2 |
+| 3 | Barbed Bolt | Crossbow Bleed stacks last 1 extra round before decaying. | +1 |
+| 4 | Explosive Tip | On critical hit, deal +1d8 bonus damage to all creatures within 5 ft of the target. | +2 |
+| 5 | True Penetration | Penetrating Bolt chains through up to 3 creatures in a line (same attack roll for all). | +3 |
 
 #### Hand Crossbow (Standard, Ranged)
 
-TODO: full Technique list. Condition signature: Poison. Unique mechanic: Every hit applies 1 Poison stack. Rapid-fire rushes Venomous (5 Poison). Rank 3: 2 Poison per hit. Capstone: Lethal Dose (T4, Neurotoxin).
+#### Hand Crossbow (Standard, Ranged) — 8 Techniques
+
+**Unique Mechanic: Venom Delivery.** Every Hand Crossbow Technique applies at least 1 Poison stack on hit. At Mastery Rank 3, all Techniques apply 2 Poison stacks per hit.
+
+| Rank | Technique | Cost | Effect |
+|---|---|---|---|
+| 1 | Poison Bolt | 1 Action | Fire. On hit, apply 1 Poison stack. |
+| 1 | Swift Fire | 1 Action | Fire twice at the same target. Each hit applies 1 Poison. |
+| 2 | Venomous Round | 1 Action, 3 Mana | On hit, apply 2 Poison stacks. |
+| 2 | Quick Draw | 1 Action, 3 Mana | Fire at up to 3 different targets within range. Each hit applies 1 Poison. Use the same attack roll vs. each target's individual AC. |
+| 3 | Double Poison | Passive | All Hand Crossbow Techniques apply 2 Poison stacks per hit instead of 1. |
+| 3 | Toxic Cloud | 1 Action, 5 Mana | Fire a special bolt. Creates a 5 ft radius toxic cloud for 2 rounds. Creatures entering or starting their turn in the cloud gain 1 Poison stack. |
+| 4 | Neurotoxin Bolt | 1 Action, 8 Mana | Requires [Venomous] (T2 Poison). On hit, apply Neurotoxin (T3): target movement becomes 0, Poison damage doubles each round. |
+| 5 | Lethal Dose (Capstone) | 2 Actions, 15 Mana | Requires Neurotoxin (T3) on target. On hit, Poison stacks jump to 35. Target permanently loses 1 Action per turn. Once per long rest. |
+
+##### Hand Crossbow Weapon Augments (Venom Delivery)
+
+Passive. Once learned, these apply to ALL Hand Crossbow Techniques. Each adds its Mana cost to every Hand Crossbow Technique you use.
+
+| # | Augment | Effect | Mana Cost |
+|---|---|---|---|
+| 1 | Coated Tips | Poison stacks from Hand Crossbow Techniques deal +1 per tick (+2 total per stack per round). | +2 |
+| 2 | Dual Wield | When dual-wielding Hand Crossbows, each Technique fires from both weapons. Second shot deals half damage but applies full Poison. | +3 |
+| 3 | Delayed Toxin | Poison stacks from Hand Crossbow Techniques cannot be removed by mundane healing. Only magical healing removes them. | +1 |
+| 4 | Accelerated Venom | Venomous (T2 Poison) activates at 4 stacks instead of 5. | +2 |
+| 5 | True Lethal Dose | Lethal Dose can trigger on [Venomous] (T2) instead of requiring Neurotoxin (T3). The Action loss is still permanent. | +4 |
 
 #### Bomb Flask (Standard, Ranged) — 9 Techniques
 
