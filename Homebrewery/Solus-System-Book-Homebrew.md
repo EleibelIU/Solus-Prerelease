@@ -914,65 +914,61 @@ Your race sets your base movement speed, character size, and racial traits. Reco
 
 #### Humans
 
-**Adaptable.** You start with one extra active proficiency slot (11 instead of 10).
+- **Adaptable.** You start with one extra active proficiency slot (11 instead of 10).
 
-**Determined.** Once per encounter, reroll one failed Proficiency Check. Keep the new result.
+- **Determined.** Once per encounter, reroll one failed Proficiency Check. Keep the new result.
 
 #### Elves
 
-**Darkvision.** See in darkness up to 60 ft.
+- **Darkvision.** See in darkness up to 60 ft.
 
-**Keen Senses.** Advantage on Investigation checks that rely on sight or hearing.
+- **Keen Senses.** Advantage on Investigation checks that rely on sight or hearing.
 
-**Trance.** 4 hours of rest counts as a full rest for you.
+- **Trance.** 4 hours of rest counts as a full rest for you.
 
 #### Dwarves
 
-**Darkvision.** See in darkness up to 60 ft.
+- **Darkvision.** See in darkness up to 60 ft.
 
-**Hardy.** Immune to the Venomous escalated condition. Advantage on saves against Poison effects.
+- **Hardy.** Immune to the Venomous escalated condition. Advantage on saves against Poison effects.
 
-**Stone Steady.** Heavy armor and stone or earth terrain do not reduce your speed.
+- **Stone Steady.** Heavy armor and stone or earth terrain do not reduce your speed.
 
 #### Orcs
 
-**Powerful Build.** Count as one size larger for grappling, shoving, and carrying capacity.
+- *Powerful Build.** Count as one size larger for grappling, shoving, and carrying capacity.
 
-**Aggressive.** On your turn, move up to your speed toward a visible hostile creature as part of another action. You must end closer to the target.
+- **Aggressive.** On your turn, move up to your speed toward a visible hostile creature as part of another action. You must end closer to the target.
+
+#### Gnomes
+
+- **Darkvision.** See in darkness up to 60 ft.
+
+- **Small Frame.** Move through spaces occupied by Medium or larger creatures. Advantage on Stealth checks when using cover.
+
+- **Arcane Cunning.** Advantage on Mind saves against spells and magical effects.
+
 
 {{footnote Character Creation}}
 {{pageNumber,auto}}
 
 \page
 
-#### Gnomes
-
-**Darkvision.** See in darkness up to 60 ft.
-
-**Small Frame.** Move through spaces occupied by Medium or larger creatures. Advantage on Stealth checks when using cover.
-
-**Arcane Cunning.** Advantage on Mind saves against spells and magical effects.
-
 #### Constructs
 
-**Living Machine.** Immune to Poison and Bleed tags. You cannot gain stacks or escalated conditions from either. Vulnerable to Acid: take +1 additional stack per Acid hit.
-
-**No Rest Required.** You do not sleep or eat. You remain alert during rest periods and cannot be caught off-guard while resting.
+- **Living Machine.** Immune to Poison and Bleed tags. You cannot gain stacks or escalated conditions from either. Vulnerable to Acid: take +1 additional stack per Acid hit.
+- **No Rest Required.** You do not sleep or eat. You remain alert during rest periods and cannot be caught off-guard while resting.
 
 #### Half-Breeds
 
 Choose your size: Medium or Small.
 
-**Dual Heritage.** Choose two other races. Gain one non-immunity trait from each. Record both source races on your sheet.
+- **Dual Heritage.** Choose two other races. Gain one non-immunity trait from each. Record both source races on your sheet.
 
 {{note
 **Expanded Races:** Future supplements may add races such as Fey, Beastkin, and Drakari. GMs who want these races now can use Half-Breed as a template and assign two thematic traits.
 }}
 
-{{footnote Character Creation}}
-{{pageNumber,auto}}
-
-\page
 
 ### Step 4: Choose Your Background
 
@@ -996,11 +992,6 @@ At the start of each combat, choose whether to roll initiative with **Body** or 
 ### Step 5.5: Roll Your Atraxia Pool
 
 Your GM chose a Campaign Tone at session zero. That tone sets the number of dice and the die type. Roll that many dice, add your Atraxia modifier to each one (minimum 1 per die). The total is your **Atraxia Pool**. Write it on your sheet. This number tracks how many times you can cheat death across your career. (See Attributes and Proficiencies: The Atraxia Pool for the full table and examples.)
-
-{{footnote Character Creation}}
-{{pageNumber,auto}}
-
-\page
 
 ### Step 6: Choose Your Tag Affinities
 
@@ -1035,7 +1026,15 @@ You begin with **one set of armor** (any tier except Enchanted).
 
 Your armor determines your Physical DR, Magic DR, Physical AC, and Magical AC (see Armor and Defense). Your weapon determines your damage dice, tags, and traits.
 
+{{footnote Character Creation}}
+{{pageNumber,auto}}
+
+\page
+
+{{note 
 TODO: add starting equipment rules for gear and supplies.
+}}
+
 
 ### Step 9: Review Your Sheet
 
@@ -1111,6 +1110,8 @@ Atraxia measures how deeply your character perceives the true nature of the worl
 
 Characters choose low Atraxia to access hidden knowledge and interact with forces invisible to others. Those forces can reach back.
 
+\page
+
 #### The Atraxia Pool
 
 Your **Atraxia Modifier** (-5 to +5) governs proficiency checks, the same as any other attribute. Your **Atraxia Pool** is a separate resource that represents how much punishment your body and mind can absorb before they give out for good. When your Pool hits 0, you are dead. 
@@ -1150,9 +1151,7 @@ Your Atraxia Pool does not regenerate between encounters nor sessions. Entering 
 
 ## Proficiencies
 
-A **proficiency** is a trained ability your character uses in and out of combat. Skills include climbing a wall, picking a lock, landing a precise combo, channeling energy through a weapon, persuading a merchant, or tracking an animal through snow. Martial characters fuel their combat skills with a steady mana drain at low cost. Casters spend mana in larger amounts per spell. Both draw from the same shared mana pool.
-
-When you attempt a non-combat action and the outcome is uncertain, the GM calls for a **Proficiency Check** (see Core Mechanics) using the relevant proficiency from the table below. The 11 proficiencies in the table cover non-combat Proficiency Checks and their attribute pairings.
+A **proficiency** is a trained ability your character uses in and out of combat. When you attempt a non-combat action and the outcome is uncertain, the GM calls for a **Proficiency Check** (see Core Mechanics) using the relevant proficiency from the table below. The 11 proficiencies in the table cover non-combat Proficiency Checks and their attribute pairings.
 
 Your character does not start with every proficiency.You choose which proficiencies to take during character creation, and you can gain or swap proficiencies between sessions.
 
@@ -1325,7 +1324,7 @@ Techniques come from three sources. Each layer has different unlock requirements
 
 You prepare up to 10 Techniques at a time from any combination of layers. You can swap your prepared list on a short or long rest.
 
-## Augment Layers
+## Augments
 
 Augments modify Techniques. Three layers exist, mirroring the Technique architecture.
 
@@ -1353,23 +1352,23 @@ Augments modify Techniques. Three layers exist, mirroring the Technique architec
 
 **Exclusivity.** Condition augments (Burn, Chill, Shock, Force, Bleed, Poison) are mutually exclusive on the same Technique. One added condition per Technique. The weapon's innate condition stacks freely.
 
-The full augment catalog for all 32 weapons lives in the companion web reference. This chapter covers all Universal Augments, Weapon Augments for each weapon, and full Technique Augments for Rapier and Katana as worked examples.
-
+\page
+{{wide 
 ## Universal Techniques
 
 Every character has access to these four Techniques regardless of weapon or Mastery Rank.
 
-**Brace.** Plant your feet. Until your next turn, gain +2 AC. You cannot move. Free Action to enter; costs your movement for the turn.
+- **Brace.** Plant your feet. Until your next turn, gain +2 AC. You cannot move. Free Action to enter; costs your movement for the turn.
 
-**Shove.** Push an adjacent creature 1 space. Roll `2d10 + Body` vs. target's `2d10 + Body`. Costs 1 Action.
+- **Shove.** Push an adjacent creature 1 space. Roll `2d10 + Body` vs. target's `2d10 + Body`. Costs 1 Action.
 
-**Taunt.** Force a target within 6 spaces to roll `2d10 + Social` vs. your `2d10 + Social`. On failure, the target must attack you on their next turn if able. Costs 1 Action.
+- **Taunt.** Force a target within 6 spaces to roll `2d10 + Social` vs. your `2d10 + Social`. On failure, the target must attack you on their next turn if able. Costs 1 Action.
 
-**Second Wind.** Recover `1d10 + Body modifier` HP. Costs 1 Action. Once per combat. Cannot use while Dying.
+- **Second Wind.** Recover `1d10 + Body modifier` HP. Costs 1 Action. Once per combat. Cannot use while Dying.
 
 ## Universal Augments
 
-Twenty-two Augments are available to all characters. Characters know all Universal Augments at creation. The first eighteen work with any Technique on any weapon. The last four (Spellblade Augments) bridge weapon attacks and spellcasting.
+Twenty-two Augments are available to all characters. Characters know all Universal Augments at creation.
 
 | Augment | Effect | Mana Cost Increase |
 |---|---|---|
@@ -1391,27 +1390,24 @@ Twenty-two Augments are available to all characters. Characters know all Univers
 | Execute | +50% damage to targets below 25% HP. | +3 |
 | Knockback | On hit, push target 1 space. | +1 |
 | Fortify | After using this Technique, gain +2 AC until your next turn. | +2 |
-
-### Spellblade Augments
-
-These four Augments connect weapon combat and spellcasting. Any character with Mana can use them.
-
-| Augment | Effect | Mana Cost Increase |
-|---|---|---|
 | Spell Strike | Deliver one Touch spell alongside a weapon attack. One roll, two payloads. Miss = spell not expended. | +0 (spell Mana paid separately) |
 | Arcane Infusion | After casting a spell this turn, your next Technique deals +1d8 elemental damage (matching the spell's element). | +2 |
 | Channeling | While concentrating on a spell, the Technique costs 2 less Mana (minimum 0). | +0 |
 | Mana Reave | On hit, restore Mana equal to your weapon's base damage die (e.g., 1d8 weapon = roll 1d8 Mana restored). Once per round. | +3 |
 
+}}
+
+\page
+{{wide
 ## Weapon Properties Reference
 
-Every weapon lists one or more properties in its stat block. Properties define what the weapon can do beyond dealing damage. Read the property line from left to right: the first property is the weapon's primary behavior, and the rest add secondary capabilities.
+Every weapon lists one or more **properties** in its stat block. Properties define what the weapon can do beyond dealing damage. Read the property line from left to right: the first property is the weapon's primary behavior, and the rest add secondary capabilities.
 
-Properties stack. A weapon with Light and Finesse lets you dual-wield and choose Body or Magic for attack rolls. A weapon with Two-Handed and Heavy requires both hands and penalizes low-Body characters.
+- Properties stack. A weapon with Light and Finesse lets you dual-wield and choose Body or Magic for attack rolls. A weapon with Two-Handed and Heavy requires both hands and penalizes low-Body characters.
 
-Some properties interact with Techniques. Reload governs how firearms cycle between shots. Paired means the weapon is always dual-wielded, which changes how Flurry (Universal Technique) works. Adaptive lets a weapon switch categories, unlocking different Category Techniques mid-combat.
+- Some properties interact with Techniques. Reload governs how firearms cycle between shots. Paired means the weapon is always dual-wielded, which changes how Flurry (Universal Technique) works. Adaptive lets a weapon switch categories, unlocking different Category Techniques mid-combat.
 
-Properties are fixed per weapon. You cannot add or remove them. Augments and Techniques may modify what a property does (e.g., Quick Reload augment changes Reload from 1 Action to a Free Action), but the property itself stays on the weapon.
+- Properties are fixed per weapon. You cannot add or remove them. Augments and Techniques may modify what a property does (e.g., Quick Reload augment changes Reload from 1 Action to a Free Action), but the property itself stays on the weapon.
 
 | Property | Effect |
 |---|---|
@@ -1447,17 +1443,16 @@ Properties are fixed per weapon. You cannot add or remove them. Augments and Tec
 | Conduit | Spell attack rolls gain +1 to hit while equipped. Bonus, not a requirement. |
 | Spellforged | Legendary property. Contains one spell, castable once per long rest as a free action (0 Actions, 0 Mana). |
 
+}}
+
+\page
+
 ## Weapon Categories
 
 Weapons are grouped into seven categories. Each category shares a fighting style and a set of Category Techniques. Category Techniques have their own Technique Augments, shared across all weapons in that category.
 
----
-
-## Light Melee
-
-Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, and condition application. These weapons strike often and stack conditions faster than any other category.
-
-### Light Melee Category Techniques
+## Light Weapons
+#### Light Melee Category Techniques
 
 | Rank | Technique | Cost | Effect |
 |---|---|---|---|
@@ -1467,7 +1462,7 @@ Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, an
 | 2 | Exploit Opening | Reaction | When an adjacent enemy misses an attack, make a free attack against them. |
 | 3 | Assassinate | 2 Actions | Attack an unaware target. On hit, double damage. |
 
-### Light Melee Category Technique Augments
+#### Light Melee Category Technique Augments
 
 | Technique | Augment | Effect | Mana Cost |
 |---|---|---|---|
@@ -1482,7 +1477,7 @@ Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, an
 | Assassinate | Vanishing Strike | After Assassinate, enter hiding if you have cover within 1 space. Repeatable kills. | +3 |
 | Assassinate | Lethal Ambush | Triple damage instead of double against unaware targets. | +3 |
 
-### Light Melee Weapons
+#### Light Melee Weapons
 
 | # | Weapon | Complexity | Base Damage | Properties |
 |---|---|---|---|---|
@@ -1493,9 +1488,9 @@ Fast, low-damage, high-frequency attacks. Light Melee favors evasion, combos, an
 | 5 | Sickle | Standard | 1d6 | Finesse, Light, Hooked |
 | 6 | Shield | Standard | 1d6 | Defensive (+2 AC), Bash |
 
-Shield occupies the off-hand. It functions as both a defensive item (+2 AC while equipped) and a weapon with its own Mastery track. Shield Techniques include bashes, blocks, pushes, and formation abilities.
+Shields occupy the off-hand. A Shield functions as both a defensive item (+2 AC while equipped) and a weapon with its own Mastery track.
 
-### Light Melee Condition Signatures
+#### Light Melee Condition Signatures
 
 | Weapon | Primary | Secondary | Unique Interaction |
 |---|---|---|---|
@@ -1506,9 +1501,13 @@ Shield occupies the off-hand. It functions as both a defensive item (+2 AC while
 | Sickle | Bleed | — | On kill, transfer remaining Bleed stacks to one adjacent enemy. |
 | Shield | Force | — | Shield Bash applies 1 Force stack. Repeated bashes build toward Staggered while maintaining high AC. |
 
-### Bare Hands (Simple, Light Melee) — 5 Techniques
+\page
 
-**Unique Mechanic: Iron Fist.** Bare Hands Techniques apply Force stacks to you, not the target. Spend stacks on your next hit for bonus damage. If you reach 5 Force stacks, you gain Staggered (T2 Force) on yourself. Manage your stacks or pay the price.
+## Light Weapon List
+
+#### Bare Hands (Simple, Light Melee) 
+###### Unique Mechanic
+Bare Hands Techniques apply Force stacks to you, not the target. Spend stacks on your next hit for bonus damage. If you reach 5 Force stacks, you gain Staggered (T2 Force) on yourself. Manage your stacks or pay the price.
 
 | Rank | Technique | Cost | Effect |
 |---|---|---|---|
@@ -1527,6 +1526,8 @@ Passive. Once learned, these apply to ALL Bare Hands Techniques. Each adds its M
 | 1 | Thick Skin | While you have 3+ Force stacks on yourself, gain +1 AC. | +0 |
 | 2 | Momentum | When you consume Force stacks with Burning Knuckles, gain temporary HP equal to stacks consumed × 2. | +1 |
 | 3 | Haymaker | When you consume 4+ Force stacks, add 1d6 Bludgeon on top of the per-stack bonus. | +2 |
+
+\column
 
 ### Dagger (Standard, Light Melee) — 8 Techniques
 
