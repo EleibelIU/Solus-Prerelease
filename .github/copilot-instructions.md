@@ -43,15 +43,16 @@ Keep this sequence. Do not reorder unless asked.
 2. Core Mechanics
 3. Character Creation
 4. Attributes and Skills
-5. Equipment, Armor, and Weapons
-6. Magic and Spellcasting
-7. Core Gameplay Loop
-8. Combat
-9. Conditions, Injuries, and Death
-10. NPCs, Enemies, and Encounters
-11. Advancement, Mastery, and Between-Session Play
-12. Running the Game
-13. Reference and Playtest Tools
+5. Armor and Defense
+6. Weapons, Techniques, and Augments
+7. Magic and Spellcasting
+8. Core Gameplay Loop
+9. Combat
+10. Conditions, Injuries, and Death
+11. NPCs, Enemies, and Encounters
+12. Advancement and Between-Session Play
+13. Running the Game
+14. Reference and Playtest Tools
 
 ## Open TODOs and Design Gaps
 
@@ -59,31 +60,32 @@ The full catalog of open questions is in `docs/superpowers/specs/2026-04-08-solu
 
 **Blocks the most other work — resolve these first:**
 
-- **Combat abilities system** (spec #6, #7) — the PoE2-inspired martial combat ability system needs its own chapter, name, and full mechanics; blocks character creation and combat chapters
 - **XP awards and encounter building** (spec #16) — no XP values per enemy tier or encounter type; blocks advancement and GM chapters
-- **T3/T4 effect tiers** (spec #10) — T3 (12 mana) and T4 (17 mana) have costs but no mechanical description; blocks spellcasting completion
 - **Save resolution** (spec #9) — Accuracy Type "Save" has no working mechanic since Resist Rolls were removed; blocks spellcasting completion
 
 **Blocks a single section each:**
 
 - **Atraxia pool restoration, modifier thresholds, and experience tables** (spec #3, #4, #5) — pool has no recovery rule; threshold effects are undefined
-- **Weapon trait list** (spec #12) — per-weapon traits are missing from the equipment tables
-- **Shields** (spec #13) — unknown whether shields exist in the system
 - **Short-term injury table** (spec #15) — Dying references rolling on this table but it doesn't exist
 - **GM pacing and DCs** (spec #18) — Running the Game chapter lacks encounter pacing and DC calibration guidance
+- **Full weapon Technique lists** — 24 of 32 weapons need full Technique tables (8 complete: Dagger, Katana, Greathammer, Spear, Greatsword, Shield, Bow, Rapier)
 
 **Quick confirmations needed from the designer:**
 
 - Hybrid mana: 70/10 or 75/10? (spec #19)
 - Main/Sub affinity system: keep, modify, or cut? (spec #11)
 - Starting equipment: budget, packages, or open pick? (spec #21)
-- Spell parameter table layout: group by action cost tier? (spec #14)
+- Spell parameter table layout: group by action cost tier? (spec #14) ✅ RESOLVED
 - Spell-created physical projectiles: Physical AC or Magical AC? (spec #8)
 
 **Resolved (do not re-open):**
 
 - Bleed (Shredded) and Force (Staggered) escalation conditions — fully written in both files ✅
 - Poisoned mechanical effect — confirmed as standard stack damage pattern ✅
+- Combat abilities system (spec #6, #7) — now "Weapons, Techniques, and Augments" chapter with 32 weapons, 3-layer Techniques, 3-layer Augments (Universal/Weapon/Technique) ✅
+- T3/T4 effect tiers (spec #10) — T3 = Enhanced Escalation (12 mana, Rank 3+), T4 = Ultimate Escalation (17 mana, Rank 5 capstone) ✅
+- Weapon trait list (spec #12) — full per-weapon properties and condition signatures written ✅
+- Shields (spec #13) — Shield is a Light Melee weapon with its own Mastery track and 8 Techniques ✅
 
 ## Core Mechanics Reference
 
@@ -134,9 +136,11 @@ The full catalog of open questions is in `docs/superpowers/specs/2026-04-08-solu
 
 Boss gets one extra +5 beyond the normal limit. Bosses use Enchanted armor.
 
-**Spell framework:** spells are built from parameters (Category, Function, Range, Size, Shape, Duration, Target Count, Accuracy Type, Effect Tier). No field can stay empty. Function costs: Utility +0, Movement +1, Defensive +1, Offensive +2; multi-function spells add both. Damage comes from range, target count, and size (one die each). Die scaling: d6 = +1 mana, d8 = +2, d10 = +3, d12 = +5. Main category costs normal; Sub category costs double. T3 and T4 mana costs exist (12 and 17) but their mechanical effects are unresolved — *spec #10*.
+**Spell framework:** spells are built from parameters (Category, Function, Range, Size, Shape, Duration, Target Count, Accuracy Type, Effect Tier). No field can stay empty. Function costs: Utility +0, Movement +1, Defensive +1, Offensive +2; multi-function spells add both. Damage comes from range, target count, and size (one die each). Die scaling: d6 = +1 mana, d8 = +2, d10 = +3, d12 = +5. Main category costs normal; Sub category costs double. T3 (12 mana) = Enhanced Escalation, T4 (17 mana) = Ultimate Escalation.
 
-**Advancement:** XP earned through combat, exploration, and conversation. Spent after sessions on new skills or raising existing skills (Rank 1–10, exponential cost). Combat abilities: 10 slots available from character creation, independent of proficiencies, changeable on short/long rests.
+**Weapons, Techniques, and Augments:** 32 weapons across 6 categories (Light Melee, Medium Melee, Heavy Melee, Reach, Ranged, Firearms). Each weapon has its own Mastery track (Rank 0-5). Techniques are active combat abilities at three layers: Universal (any weapon), Category (any weapon in that category), Weapon-Specific (only that weapon). Characters prepare 10 Techniques at a time, changeable on rest. Augments socket into Technique slots to modify behavior. Universal Augments (16) work on any Technique; Category Augments (3 per category) only on that category's Techniques. Augment Slots per Technique scale with Mastery Rank (0/1/1/2/2/3). Spellcasting requires only mana, never a weapon.
+
+**Advancement:** XP earned through combat, exploration, and conversation. Spent after sessions on new proficiencies, proficiency rank increases (Rank 1-10, exponential cost), Weapon Mastery ranks, and Augment purchases. Techniques: 10 slots available from character creation, changeable on short/long rests. XP is a shared budget across proficiencies, Weapon Mastery, and Augments.
 
 ## Writing Standard
 
